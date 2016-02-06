@@ -1,0 +1,52 @@
+{
+  "name": "csblogs-feed-downloader",
+  "version": "0.0.1",
+  "description": "An application to aggregate blog feeds for CS Blogs",
+  "main": "app/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "npm run build:js",
+    "build:js": "babel src/ -d app/",
+    "lint": "eslint .",
+    "test": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha -- --require tests/chai-config.js --recursive ./tests/*.tests.js",
+    "start": "npm run build && node app/main.js",
+    "start-cli": "npm start | bunyan"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csblogs/feed-downloader.git"
+  },
+  "keywords": [
+    "blog",
+    "downloader",
+    "rss",
+    "atom"
+  ],
+  "author": "Daniel Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csblogs/feed-downloader/issues"
+  },
+  "homepage": "https://github.com/csblogs/feed-downloader#readme",
+  "dependencies": {
+    "bunyan": "^1.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^5.0.0",
+    "eslint-plugin-mocha": "^1.1.0",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^2.4.5",
+    "pre-commit": "^1.1.2"
+  }
+}
