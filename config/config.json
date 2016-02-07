@@ -1,5 +1,7 @@
 {
-    "http": {
-        "port": 3000
+    "database": {
+        "name": "danielbrown",
+        "username": null,
+        "password": null
     }
 }

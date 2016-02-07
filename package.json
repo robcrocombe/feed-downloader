@@ -35,7 +35,10 @@
   },
   "homepage": "https://github.com/csblogs/feed-downloader#readme",
   "dependencies": {
-    "bunyan": "^1.5.1"
+    "bunyan": "^1.5.1",
+    "pg": "^4.4.4",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.19.2"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
