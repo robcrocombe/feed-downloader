@@ -7,7 +7,9 @@ log.info('CS Blogs Feed Aggregator Started');
 database.sync().then(() => {
   User.findAll({
     attributes: ['id', 'blogFeedURI']
-  }).forEach(user => {
-    log.info({ user }, 'User loaded from database');
+  }).then(users => {
+    users.forEach(user => {
+      log.info({ user }, 'User loaded from database');
+    });
   });
 });
