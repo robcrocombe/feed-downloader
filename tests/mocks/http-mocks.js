@@ -36,10 +36,16 @@ export const expectedFeedData = `<?xml version="1.0"?>
                                    </channel>
                                  </rss>`;
 
-export let mockModifiedDate;
 export function mockModifiedResponse() {
-  mockModifiedDate = new Date();
+  const mockModifiedDate = new Date();
   nock('https://httpmock-feeds.com')
-  .get('/modified')
-  .reply(200, expectedFeedData, { 'Last-Modified': mockModifiedDate.toUTCString() });
+    .get('/modified')
+    .reply(200, expectedFeedData, { 'Last-Modified': mockModifiedDate.toUTCString() });
+  return mockModifiedDate;
+}
+
+export function mock404Response() {
+  nock('https://httpmock-feeds.com')
+    .get('/404')
+    .reply(404, 'Not Found');
 }
