@@ -14,13 +14,22 @@ describe('if-modified-since-request', () => {
     });
 
     it(`should return modified:true, data and new lastModifiedDate if status code 200`, done => {
-      httpMocks.mockModifiedResponse();
+      const expectedModifiedDate = httpMocks.mockModifiedResponse();
       requestIfModifiedSince('https://httpmock-feeds.com/modified', new Date()).then(result => {
         expect(result.modified).to.equal(true);
         expect(result.data).to.equal(httpMocks.expectedFeedData);
-        expect(result.lastModified).to.equal(httpMocks.expectedModifiedDate);
+        expect(result.newLastModifiedDateTime.toUTCString()).to.equal(expectedModifiedDate.toUTCString());
         done();
       }).catch(done);
+    });
+
+    it('should throw error if connection times out / DNS lookup fails etc', () =>
+      expect(requestIfModifiedSince('https://madeupurl983989238893283928392389283892382.com', new Date())).to.be.rejectedWith('HTTP request unsuccessful')
+    );
+
+    it('should throw error if non-success status code recieved', () => {
+      httpMocks.mock404Response();
+      return expect(requestIfModifiedSince('https://httpmock-feeds.com/404', new Date())).to.be.rejectedWith('Non-success status code');
     });
 
     it('should throw error if DateTime not provided', () =>
@@ -32,7 +41,7 @@ describe('if-modified-since-request', () => {
     );
 
     it('should throw error if non-string URI is provided', () =>
-      expect(requestIfModifiedSince(null, new Date())).to.be.rejectedWith('URI required')
+      expect(requestIfModifiedSince(null, new Date())).to.be.rejectedWith('Valid URI required')
     );
   });
 });
