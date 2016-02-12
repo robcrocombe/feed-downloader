@@ -1,14 +1,23 @@
 import request from 'request';
 import log from '../log';
+import check from 'check-types';
 
-export default function requestIfModifiedSince(uri, dateTime = null) {
+export default function httpRequestIfModifiedSince(uri, dateTime = null) {
   return new Promise((resolve, reject) => {
+    if (!dateTime || check.instance(dateTime, Date.prototype)) {
+      reject(new Error('Valid DateTime required'));
+    }
+
+    if (!check.nonEmptyString(uri)) {
+      reject(new Error('URI required'));
+    }
+
     const requestOptions = {
       uri,
       headers: { 'If-Modified-Since': dateTime.toUTCString() }
     };
 
-    request(requestOptions, (error, response, body) => {
+    request(requestOptions, (error, response, data) => {
       if (error) {
         log.error({ uri, error },
                   'HTTP Request for resource resulted in error');
@@ -31,7 +40,7 @@ export default function requestIfModifiedSince(uri, dateTime = null) {
                      newLastModified: newLastModifiedDateTime.toUTCString()
                     }, 'Requested resource has been modified since oldLastModified date');
 
-          resolve({ modified: true, newLastModifiedDateTime, body });
+          resolve({ modified: true, newLastModifiedDateTime, data });
         }
       }
     });

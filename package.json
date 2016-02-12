@@ -36,6 +36,7 @@
   "homepage": "https://github.com/csblogs/feed-downloader#readme",
   "dependencies": {
     "bunyan": "^1.5.1",
+    "check-types": "^6.0.0",
     "pg": "^4.4.4",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.19.2"
