@@ -12,6 +12,7 @@
     "no-unused-expressions": [2, {
       "allowTernary": true
     }],
+    "max-len": 0,
     "strict": [2, "global"],
     "mocha/no-exclusive-tests": 2
   }
