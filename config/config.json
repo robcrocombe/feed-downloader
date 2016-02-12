@@ -3,5 +3,8 @@
         "name": "danielbrown",
         "username": null,
         "password": null
+    },
+    "http": {
+      "timeoutInMilliseconds": 500
     }
 }
