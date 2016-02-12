@@ -66,5 +66,9 @@ export default database.define('user', {
   twitterUsername: {
     type: Sequelize.STRING,
     field: 'twitter_username'
+  },
+  feedLastModified: {
+    type: Sequelize.DATE,
+    field: 'feed_last_modified'
   }
 });

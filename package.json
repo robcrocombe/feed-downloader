@@ -36,6 +36,7 @@
   "homepage": "https://github.com/csblogs/feed-downloader#readme",
   "dependencies": {
     "bunyan": "^1.5.1",
+    "check-types": "^6.0.0",
     "pg": "^4.4.4",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.19.2"
@@ -50,6 +51,7 @@
     "eslint-plugin-mocha": "^1.1.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.4.5",
+    "nock": "^7.0.2",
     "pre-commit": "^1.1.2"
   }
 }
