@@ -1,8 +1,10 @@
 {
     "database": {
         "name": "danielbrown",
-        "username": null,
-        "password": null
+        "host": "localhost",
+        "port": 5432,
+        "username": "",
+        "password": ""
     },
     "http": {
       "timeoutInMilliseconds": 500
