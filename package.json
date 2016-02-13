@@ -11,7 +11,7 @@
     "build:js": "rm -rf app/ && babel src/ -d app/",
     "lint": "eslint .",
     "test": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha -- --require tests/chai-config.js --recursive ./tests/*.tests.js",
-    "start": "npm run build && node app/main.js",
+    "start": "npm run build && node app/start.js",
     "start-cli": "npm start | bunyan",
     "deploy": "npm run create-deployment-package && npm run upload-deployment-package && npm run delete-deployment-package && npm install",
     "create-deployment-package": "rm -rf node_modules && npm install --production && npm build && zip -r lambda-deployment-package.zip .",
