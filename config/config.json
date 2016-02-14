@@ -4,7 +4,7 @@
         "host": "localhost",
         "port": 5432,
         "username": "",
-        "password": ""
+        "password": "",
         "logSQLStatements": true
     },
     "http": {
