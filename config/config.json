@@ -5,6 +5,7 @@
         "port": 5432,
         "username": "",
         "password": ""
+        "logSQLStatements": true
     },
     "http": {
       "timeoutInMilliseconds": 500
