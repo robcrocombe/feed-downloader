@@ -17,6 +17,9 @@ export function handle(event, context) {
     })
     .then(() => {
       // context.done() called so AWS knows function completed successfully
-      context.done();
+      context.succeed();
+    })
+    .catch(error => {
+      context.fail(error);
     });
 }

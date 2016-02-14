@@ -6,11 +6,10 @@ import { handle } from './lambda-handle';
 import log from './log';
 
 handle({}, {
-  done: (error, info) => {
-    if (info) {
-      log.info(info, 'Feed downloading process completed with information');
-    } else {
-      log.info('Feed downloading process completed');
-    }
+  succeed: result => {
+    log.info({ result: result || 'No result returned' }, 'Process succeeded');
+  },
+  fail: error => {
+    log.error({ error: error || 'No error returned' }, 'Process failed');
   }
 });
