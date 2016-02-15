@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/csblogs/feed-downloader#readme",
   "dependencies": {
+    "aws-sdk": "^2.2.35",
     "bunyan": "^1.5.1",
     "check-types": "^6.0.0",
     "pg": "^4.4.4",
