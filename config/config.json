@@ -15,7 +15,8 @@
         "accessKeyId": "",
         "secretAccessKey": "",
         "region": "",
-        "sslEnabled": true
+        "sslEnabled": true,
+        "signatureVersion": "v4"
       },
       "SNS": {
         "newPostARN": ""
