@@ -8,7 +8,7 @@ function publishToNewPostTopic(subject, message) {
   return new Promise((resolve, reject) => {
     const sns = new AWS.SNS();
     sns.publish({
-      TargetARN: config.AWS.SNS.newPostARN,
+      TargetArn: config.AWS.SNS.newPostARN,
       Subject: subject,
       Message: message
     }, (error, data) => {
