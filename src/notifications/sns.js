@@ -22,6 +22,22 @@ function publishToNewPostTopic(subject, message) {
   });
 }
 
-export default function notifyOfBlogUpdatesSNS() {
-  return publishToNewPostTopic('', '');
+export default function notifyOfBlogUpdatesSNS(usersToNewPosts) {
+  return new Promise(() => {
+    if (usersToNewPosts.length === 1) {
+      const singleAuthor = usersToNewPosts[0];
+      switch (singleAuthor.newPosts.length) {
+        case 1:
+          return publishToNewPostTopic(`${singleAuthor.firstName} ${singleAuthor.lastName} published a new blog post`,
+                                        singleAuthor.newPosts[0].title);
+        default:
+          return publishToNewPostTopic(`${singleAuthor.firstName} ${singleAuthor.lastName} published ${singleAuthor.newPosts.length} new blog posts`,
+                                       `Including: "${singleAuthor.newPosts[0].title}" and "${singleAuthor.newPosts[1].title}"`);
+      }
+    }
+
+    const numberOfNewPosts = 3; // TODO: Determine number of new posts (array.reduce)
+    return publishToNewPostTopic(`Read ${numberOfNewPosts} new posts by ${usersToNewPosts.length} authors`,
+                                 `Including posts by ${usersToNewPosts[0].firstName} ${usersToNewPosts[0].lastName} and ${usersToNewPosts[1].firstName} ${usersToNewPosts[1].lastName}`);
+  });
 }
