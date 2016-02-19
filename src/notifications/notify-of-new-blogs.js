@@ -1,4 +1,5 @@
 import AWS from 'aws-sdk';
+import check from 'check-types';
 import config from '../../config/config.json';
 import log from '../log';
 
@@ -24,8 +25,10 @@ function publishToNewPostTopic(subject, message) {
 }
 
 export default function notifyOfNewBlogs(usersToNewPosts) {
-  return new Promise(() => {
-    // TODO: throw if usersToNewPosts isnt a list or is of length 0
+  return new Promise((resolve, reject) => {
+    if (!check.array(usersToNewPosts) || usersToNewPosts.length === 0) {
+      reject(new Error('Valid array of users with new posts required'));
+    }
 
     if (usersToNewPosts.length === 1) {
       const singleAuthor = usersToNewPosts[0];
