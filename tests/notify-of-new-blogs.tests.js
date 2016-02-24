@@ -5,11 +5,11 @@ const expect = global.expect;
 describe('notify-of-new-blogs', () => {
   describe('notifyOfNewBlogs()', () => {
     it('should throw if no blog updates provided', () =>
-      expect(newPostNotification([])).to.be.rejectedWith('Error: Valid array of users with new posts required')
+      expect(() => newPostNotification([])).to.throw('Valid array of users with new posts required')
     );
 
     it('should throw if non-array passed as parameter', () =>
-      expect(newPostNotification('notAnArray')).to.be.rejectedWith('Error: Valid array of users with new posts required')
+      expect(() => newPostNotification('notAnArray')).to.throw('Valid array of users with new posts required')
     );
 
     it('should post correct message for a single new post', done => {
