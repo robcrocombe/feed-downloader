@@ -8,7 +8,7 @@ export function handle(event, context) {
   database.sync()
     .then(() =>
       User.findAll({
-        attributes: ['id', 'blogFeedURI']
+        attributes: ['id', 'authentication_provider', 'firstName', 'lastName', 'blogFeedURI']
       }))
     .then(users => {
       users.forEach(user => {
@@ -16,10 +16,11 @@ export function handle(event, context) {
       });
     })
     .then(() => {
-      // context.done() called so AWS knows function completed successfully
+      // context.succeed() called so AWS knows function completed successfully
       context.succeed();
     })
     .catch(error => {
+      // context.fail() to report error to AWS Lambda
       context.fail(error);
     });
 }

@@ -1,13 +1,25 @@
 {
     "database": {
-        "name": "danielbrown",
-        "host": "localhost",
-        "port": 5432,
-        "username": "",
-        "password": "",
-        "logSQLStatements": true
+      "name": "",
+      "host": "localhost",
+      "port": 5432,
+      "username": "",
+      "password": "",
+      "logSQLStatements": true
     },
     "http": {
       "timeoutInMilliseconds": 500
+    },
+    "AWS": {
+      "credentials": {
+        "accessKeyId": "",
+        "secretAccessKey": "",
+        "region": "",
+        "sslEnabled": true,
+        "signatureVersion": "v4"
+      },
+      "SNS": {
+        "newPostARN": ""
+      }
     }
 }
