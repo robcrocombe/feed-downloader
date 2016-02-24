@@ -8,7 +8,7 @@ export function handle(event, context) {
   database.sync()
     .then(() =>
       User.findAll({
-        attributes: ['id', 'blogFeedURI']
+        attributes: ['id', 'authentication_provider', 'firstName', 'lastName', 'blogFeedURI']
       }))
     .then(users => {
       users.forEach(user => {

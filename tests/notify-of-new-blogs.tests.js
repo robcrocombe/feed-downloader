@@ -1,6 +1,14 @@
-import newPostNotification from '../src/notifications/notify-of-new-blogs';
+import newPostNotification from './mocks/sns-mocks';
 
 const expect = global.expect;
+
+//
+// Makes heavy use of proxied newPostNofication module, which has its AWS
+// import mocked by proxyquire.
+//
+// The message id returned by this proxied object is used to determine that
+// the correct type of message has been sent on to AWS from the test.
+//
 
 describe('notify-of-new-blogs', () => {
   describe('notifyOfNewBlogs()', () => {
@@ -12,8 +20,8 @@ describe('notify-of-new-blogs', () => {
       expect(() => newPostNotification('notAnArray')).to.throw('Valid array of users with new posts required')
     );
 
-    it('should post correct message for a single new post', done => {
-      newPostNotification([
+    it('should post correct message for a single new post', () =>
+      expect(newPostNotification([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -21,13 +29,11 @@ describe('notify-of-new-blogs', () => {
             { title: 'The new CS Blogs platform!' }
           ]
         }
-      ])
-        .then(() => done())
-        .catch(done);
-    });
+      ])).to.eventually.equal(1)
+    );
 
-    it('should post correct message for 2 posts by one author', done => {
-      newPostNotification([
+    it('should post correct message for 2 posts by one author', () =>
+      expect(newPostNotification([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -36,13 +42,11 @@ describe('notify-of-new-blogs', () => {
             { title: 'HackTrain 2.0' }
           ]
         }
-      ])
-        .then(() => done())
-        .catch(done);
-    });
+      ])).to.eventually.equal(2)
+    );
 
-    it('should post correct message for >2 posts by one author', done => {
-      newPostNotification([
+    it('should post correct message for >2 posts by one author', () =>
+      expect(newPostNotification([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -52,13 +56,11 @@ describe('notify-of-new-blogs', () => {
             { title: 'Centre for Computing History' }
           ]
         }
-      ])
-        .then(() => done())
-        .catch(done);
-    });
+      ])).to.eventually.equal(3)
+    );
 
-    it('should post correct message for multiple posts by 2 authors', done => {
-      newPostNotification([
+    it('should post correct message for multiple posts by 2 authors', () =>
+      expect(newPostNotification([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -75,13 +77,11 @@ describe('notify-of-new-blogs', () => {
             { title: 'A walk through blog technologies' }
           ]
         }
-      ])
-      .then(() => done())
-      .catch(done);
-    });
+      ])).to.eventually.equal(4)
+    );
 
-    it('should post correct message for multiple posts by >2 authors', done => {
-      newPostNotification([
+    it('should post correct message for multiple posts by >2 authors', () =>
+      expect(newPostNotification([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -107,9 +107,7 @@ describe('notify-of-new-blogs', () => {
             { title: 'A walk through blog technologies' }
           ]
         }
-      ])
-      .then(() => done())
-      .catch(done);
-    });
+      ])).to.eventually.equal(5)
+    );
   });
 });
