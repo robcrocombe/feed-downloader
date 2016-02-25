@@ -14,20 +14,18 @@ function getUsersFeedAndUpdateLastModified(user) {
       if (result.modified && result.modified === false) {
         resolve(null);
       } else {
-        log.info('gonna update db');
         User.update({ feedLastModified: result.lastModified }, { where: { id: user.id } })
           .then(() => {
-            log.info('updated db');
             resolve(result.data);
           })
           .catch(exception => {
-            log.error({ exception }, 'fuck');
+            reject(exception);
           });
       }
     })
     .catch(exception => {
       log.error({ exception }, 'Error getting user feed / persisting new feedLastModified date');
-      reject();
+      reject(exception);
     });
   });
 }
