@@ -41,7 +41,7 @@ export default function httpRequestIfModifiedSince(uri, dateTime) {
                        newLastModified: newLastModifiedDateTime.toUTCString()
                      }, 'Requested resource has been modified since oldLastModified date');
 
-            resolve({ modified: true, newLastModifiedDateTime, data });
+            resolve({ lastModified: newLastModifiedDateTime, data });
           }
         }
       }
