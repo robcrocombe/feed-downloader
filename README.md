@@ -1,5 +1,7 @@
 # CS Blogs Feed Downloader
 [![Build Status](https://travis-ci.org/csblogs/feed-downloader.svg?branch=master)](https://travis-ci.org/csblogs/feed-downloader)
+[![Dependency Status](https://david-dm.org/csblogs/feed-downloader.svg)](https://david-dm.org/csblogs/feed-downloader)
+
 
 The service which aggregates the new blog posts of [Computer Science Blogs](http://csblogs.com) users. 
 
