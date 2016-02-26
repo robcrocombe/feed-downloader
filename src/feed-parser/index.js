@@ -1,6 +1,9 @@
-import log from '../log';
+import check from 'check-types';
 
 export default function parseSyndicationFeed(feedString) {
-  log.info({ feedString }, 'Parsing feed string');
-  throw new Error('Not Implemented');
+  return new Promise((resolve, reject) => {
+    if (!check.nonEmptyString(feedString)) {
+      reject(new Error('Valid RSS/ATOM Required'));
+    }
+  });
 }
