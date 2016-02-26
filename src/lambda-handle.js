@@ -1,5 +1,5 @@
 import log from './log';
-import aggregate from './aggregate.js';
+import aggregate from './aggregator';
 
 export function handle(event, context) {
   log.info('CS Blogs Feed Aggregator Started');
