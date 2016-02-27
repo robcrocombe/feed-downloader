@@ -11,5 +11,12 @@ describe('feed-parser', () => {
         expect(parseSyndicationFeed(1)).to.be.rejectedWith('Valid RSS/ATOM Required')
       ])
     );
+
+    it('should throw if feedString is not a valid XML document', () =>
+      Promise.all([
+        expect(parseSyndicationFeed('{data: \'This is JSON not XML\'}')).to.be.rejectedWith('Valid RSS/ATOM Required'),
+        expect(parseSyndicationFeed('<?xml version = "1.0"?><data><<</data>')).to.be.rejectedWith('Valid RSS/ATOM Required')
+      ])
+    );
   });
 });
