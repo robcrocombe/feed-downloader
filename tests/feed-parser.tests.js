@@ -1,6 +1,12 @@
+import fs from 'fs';
 import parseSyndicationFeed from '../src/feed-parser';
 
 const expect = global.expect;
+const TEST_FEEDS_DIRECTORY = './tests/syndication-feeds/';
+
+function loadTestSyndicationFeed(type, name) {
+  return fs.readFileSync(`${TEST_FEEDS_DIRECTORY}${type}/${name}.${type}`, { encoding: 'utf8' });
+}
 
 describe('feed-parser', () => {
   describe('parseSyndicationFeed(feedString)', () => {
@@ -18,5 +24,9 @@ describe('feed-parser', () => {
         expect(parseSyndicationFeed('<?xml version = "1.0"?><data><<</data>')).to.be.rejectedWith('Valid RSS/ATOM Required')
       ])
     );
+
+    it('should correctly parse minimum.rss', () => {
+      loadTestSyndicationFeed('rss', 'minimum');
+    });
   });
 });
