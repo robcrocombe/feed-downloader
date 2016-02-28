@@ -1,5 +1,6 @@
 # CS Blogs Feed Downloader
 [![Build Status](https://travis-ci.org/csblogs/feed-downloader.svg?branch=master)](https://travis-ci.org/csblogs/feed-downloader)
+[![Coverage Status](https://coveralls.io/repos/github/csblogs/feed-downloader/badge.svg?branch=master)](https://coveralls.io/github/csblogs/feed-downloader?branch=master)
 [![Dependency Status](https://david-dm.org/csblogs/feed-downloader.svg)](https://david-dm.org/csblogs/feed-downloader)
 
 
