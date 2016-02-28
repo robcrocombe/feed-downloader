@@ -1,5 +1,6 @@
 import check from 'check-types';
 import { parseString as parseXMLString } from 'xml2js';
+import formatDescription from './format-description';
 
 export default function parseSyndicationFeed(feedString) {
   return new Promise((resolve, reject) => {
