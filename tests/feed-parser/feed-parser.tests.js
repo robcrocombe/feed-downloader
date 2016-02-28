@@ -1,6 +1,6 @@
 import fs from 'fs';
 import moment from 'moment';
-import parseSyndicationFeed from '../src/feed-parser';
+import parseSyndicationFeed from '../../src/feed-parser';
 
 const expect = global.expect;
 const TEST_FEEDS_DIRECTORY = './tests/syndication-feeds/';

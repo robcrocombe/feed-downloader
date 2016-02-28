@@ -18,7 +18,7 @@ export default function parseSyndicationFeed(feedString) {
           link: item.link[0]
         };
 
-        if (item.description) { blogPost.description = item.description[0]; }
+        if (item.description) { blogPost.description = formatDescription(item.description[0]); }
         return blogPost;
       });
       resolve(posts);

@@ -1,5 +1,5 @@
-import requestIfModifiedSince from '../src/http/if-modified-since-request';
-import * as httpMocks from './mocks/http-mocks';
+import requestIfModifiedSince from '../../src/http/if-modified-since-request';
+import * as httpMocks from '../mocks/http-mocks';
 
 const expect = global.expect;
 

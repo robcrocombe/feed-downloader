@@ -1,4 +1,4 @@
-import newPostNotification from './mocks/sns-mocks';
+import newPostNotification from '../mocks/sns-mocks';
 
 const expect = global.expect;
 
