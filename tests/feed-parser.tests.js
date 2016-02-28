@@ -26,7 +26,19 @@ describe('feed-parser', () => {
     );
 
     it('should correctly parse minimum.rss', () => {
-      loadTestSyndicationFeed('rss', 'minimum');
+      const minimumRSS = loadTestSyndicationFeed('rss', 'minimum');
+      const expectedItems = [
+        {
+          title: 'You won\'t believe what happened next!',
+          link: 'http://example.com/what-happened-next',
+          description: 'Something uninteresting, you got click baited!'
+        },
+        {
+          title: 'Blog Authors hate him!',
+          link: 'http://example.com/blog-authors-hate-him'
+        }
+      ];
+      return expect(parseSyndicationFeed(minimumRSS)).to.eventually.deep.equal(expectedItems);
     });
   });
 });
