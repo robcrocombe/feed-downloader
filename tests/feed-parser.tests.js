@@ -43,7 +43,7 @@ describe('feed-parser', () => {
     });
 
     it('should correctly parse wordpress.com.rss', () => {
-      const wordpressOrgRSS = loadTestSyndicationFeed('rss', 'wordpress.com');
+      const wordpressComRSS = loadTestSyndicationFeed('rss', 'wordpress.com');
       const expectedItems = [
         {
           title: 'Graduating from York',
@@ -115,7 +115,7 @@ describe('feed-parser', () => {
           datePublished: moment('Mon, 27 Jul 2015 21:13:14 +0000')
         }
       ];
-      return expect(parseSyndicationFeed(wordpressOrgRSS)).to.eventually.deep.equal(expectedItems);
+      return expect(parseSyndicationFeed(wordpressComRSS)).to.eventually.deep.equal(expectedItems);
     });
   });
 });
