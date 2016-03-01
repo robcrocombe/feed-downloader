@@ -2,6 +2,11 @@ import cheerio from 'cheerio';
 
 export default function formatDescription(unformattedDescription) {
   const $ = cheerio.load(unformattedDescription);
-  const textRepresentation = $.root().text();
+  let textRepresentation = $.root().text();
+
+  if (textRepresentation.endsWith('[…]')) {
+    textRepresentation = textRepresentation.slice(0, textRepresentation.length - 3);
+  }
+
   return textRepresentation.trim();
 }

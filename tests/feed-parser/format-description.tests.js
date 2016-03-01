@@ -18,5 +18,10 @@ describe('format-description', () => {
       const entites = '&#33;&quot;&#60;&gt;&#64;&#8212;';
       expect(formatDescription(entites)).to.equal('!"<>@—');
     });
+
+    it('should remove ellipses added by wordpress to end of descriptions', () => {
+      const descriptionEndingInEllipses = 'Interesting things await [&#8230;]';
+      expect(formatDescription(descriptionEndingInEllipses)).to.equal('Interesting things await');
+    });
   });
 });
