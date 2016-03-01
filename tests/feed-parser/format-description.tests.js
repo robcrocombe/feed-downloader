@@ -13,5 +13,10 @@ describe('format-description', () => {
       const htmlString = '<b>Danny</b> is a <i>cool guy</i>, but does he really need to <u>underline</u> everything?';
       expect(formatDescription(htmlString)).to.equal('Danny is a cool guy, but does he really need to underline everything?');
     });
+
+    it('should decode HTML Entities (names and numbers)', () => {
+      const entites = '&#33;&quot;&#60;&gt;&#64;&#8212;';
+      expect(formatDescription(entites)).to.equal('!"<>@—');
+    });
   });
 });
