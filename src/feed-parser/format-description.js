@@ -1,4 +1,7 @@
+import cheerio from 'cheerio';
+
 export default function formatDescription(unformattedDescription) {
-  const description = unformattedDescription.trim();
-  return description;
+  const $ = cheerio.load(unformattedDescription);
+  const textRepresentation = $.root().text();
+  return textRepresentation.trim();
 }
