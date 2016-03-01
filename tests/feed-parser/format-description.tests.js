@@ -29,5 +29,11 @@ describe('format-description', () => {
 
       expect(formatDescription(wordpressComDescription)).to.equal('On January 23rd I graduated with an MSc in Advanced Computer Science from The University of York. It was a nice occasion to get together and be merry with the family, and of course for some photos in my cap and gown — this time they were grey and blue. My parents took my degree');
     });
+    
+    it('should parse a blogger description (<content>) correctly', () => {
+      const bloggerContent = 'A quick update on what I\'ve been working on recently.&lt;br /&gt;&lt;br /&gt;For one of my modules Simulations and 3D Graphics, we were set a task to learn lighting and materials. So far I have implemented a single light, using ADS and blinn-phong (again).&lt;br /&gt;&lt;br /&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="https://1.bp.blogspot.com/-74kEkoti2zU/Vs84kp7mLdI/AAAAAAAAEM0/MFcbjuNxPM8/s1600/2016-02-25_17-18-06.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="504" src="https://1.bp.blogspot.com/-74kEkoti2zU/Vs84kp7mLdI/AAAAAAAAEM0/MFcbjuNxPM8/s640/2016-02-25_17-18-06.png" width="640" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;The camera can rotate, move forward/backward. The armadillo can be rotated on it\'s &lt;span data-dobid="hdw"&gt;pedestal and the whole scene can be rotated.&lt;/span&gt;';
+      
+      expect(formatDescription(bloggerContent)).to.equal('A quick update on what I\'ve been working on recently. For one of my modules Simulations and 3D Graphics, we were set a task to learn lighting and materials. So far I have implemented a single light, using ADS and blinn-phong (again). The camera can rotate, move forward/backward. The armadillo can be rotated on it\'s pedestal and the whole scene can be rotated.');
+    });
   });
 });
