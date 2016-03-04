@@ -1,3 +1,4 @@
+import moment from 'moment';
 import check from 'check-types';
 import { parseString as parseXMLString } from 'xml2js';
 import formatDescription from './format-description';
@@ -21,6 +22,7 @@ export default function parseSyndicationFeed(feedString) {
         };
 
         if (item.description) { blogPost.description = formatDescription(item.description[0]); }
+        if (item.pubDate) { blogPost.datePublished = moment(new Date(item.pubDate)); }
 
         const image = extractPostImage(item);
         if (image) { blogPost.imageURI = image; }
