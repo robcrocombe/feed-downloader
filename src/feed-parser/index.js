@@ -1,6 +1,7 @@
 import check from 'check-types';
 import { parseString as parseXMLString } from 'xml2js';
 import formatDescription from './format-description';
+import extractPostImage from './extract-post-image';
 
 export default function parseSyndicationFeed(feedString) {
   return new Promise((resolve, reject) => {
@@ -20,6 +21,10 @@ export default function parseSyndicationFeed(feedString) {
         };
 
         if (item.description) { blogPost.description = formatDescription(item.description[0]); }
+
+        const image = extractPostImage(item);
+        if (image) { blogPost.imageURI = image; }
+
         return blogPost;
       });
       resolve(posts);
