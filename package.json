@@ -8,11 +8,15 @@
   },
   "scripts": {
     "build": "npm run build:js",
-    "build:js": "babel src/ -d app/",
+    "build:js": "rm -rf app/ && babel src/ -d app/",
     "lint": "eslint .",
     "test": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha -- --require tests/chai-config.js --recursive ./tests/*.tests.js",
-    "start": "npm run build && node app/main.js",
-    "start-cli": "npm start | bunyan"
+    "start": "npm run build && node app/start.js",
+    "start-cli": "npm start | bunyan",
+    "deploy": "npm run create-deployment-package && npm run upload-deployment-package && npm run delete-deployment-package && npm install",
+    "create-deployment-package": "npm run build && rm -rf node_modules && npm install --production && zip -r lambda-deployment-package.zip .",
+    "delete-deployment-package": "rm lambda-deployment-package.zip",
+    "upload-deployment-package": "aws lambda update-function-code --function-name csblogs-feed-downloader --zip-file fileb://lambda-deployment-package.zip"
   },
   "pre-commit": [
     "lint",
@@ -35,6 +39,7 @@
   },
   "homepage": "https://github.com/csblogs/feed-downloader#readme",
   "dependencies": {
+    "aws-sdk": "^2.2.35",
     "bunyan": "^1.5.1",
     "check-types": "^6.0.0",
     "pg": "^4.4.4",
@@ -46,12 +51,14 @@
     "babel-preset-es2015": "^6.3.13",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.2.0",
+    "coveralls": "^2.11.8",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^5.0.0",
     "eslint-plugin-mocha": "^1.1.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.4.5",
     "nock": "^7.0.2",
-    "pre-commit": "^1.1.2"
+    "pre-commit": "^1.1.2",
+    "proxyquire": "^1.7.4"
   }
 }
