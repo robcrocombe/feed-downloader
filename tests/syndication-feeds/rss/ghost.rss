@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Charlotte Godley]]></title><description><![CDATA[Thoughts, stories and ideas.]]></description><link>http://charlottegodley.co.uk/</link><generator>Ghost 0.6</generator><lastBuildDate>Sun, 27 Dec 2015 23:43:38 GMT</lastBuildDate><atom:link href="http://charlottegodley.co.uk/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Opensourcing my Final Year Project - a lesson in python versions]]></title><description><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[Charlotte Godley]]></title>
+        <description><![CDATA[Thoughts, stories and ideas.]]></description>
+        <link>http://charlottegodley.co.uk/</link>
+        <generator>Ghost 0.6</generator>
+        <lastBuildDate>Sun, 27 Dec 2015 23:43:38 GMT</lastBuildDate>
+        <atom:link href="http://charlottegodley.co.uk/rss/" rel="self" type="application/rss+xml" />
+        <ttl>60</ttl>
+        <item>
+            <title><![CDATA[Opensourcing my Final Year Project - a lesson in python versions]]></title>
+            <description><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
 
 <ul>
 <li><a href="https://github.com/Godley/Music-Library/releases/download/v1.0-alpha/MuseLib.dmg">Mac</a></li>
 <li><a href="http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/">Windows</a></li>
 </ul>
 
-<p>Over the past few months I've been trying to create installers for Windows, Mac and Ubuntu for my final year project, <a href="http://github.com/godley/music-library">Music Library</a>. Despite some issues with Windows DLLs, I've succeeded</p>]]></description><link>http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/</link><guid isPermaLink="false">36a1707e-d303-4266-9600-68f4ae5f9588</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Wed, 23 Dec 2015 22:37:29 GMT</pubDate><content:encoded><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
+<p>Over the past few months I've been trying to create installers for Windows, Mac and Ubuntu for my final year project, <a href="http://github.com/godley/music-library">Music Library</a>. Despite some issues with Windows DLLs, I've succeeded</p>]]></description>
+            <link>http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/</link>
+            <guid isPermaLink="false">36a1707e-d303-4266-9600-68f4ae5f9588</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Wed, 23 Dec 2015 22:37:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
 
 <ul>
 <li><a href="https://github.com/Godley/Music-Library/releases/download/v1.0-alpha/MuseLib.dmg">Mac</a></li>
@@ -23,7 +39,16 @@
 
 <p>For now I've gone ahead and open sourced the repo. A couple of the tests still break on linux as shown by my travis CI, but I think this is something to do with the musescore API so I'm not entirely sure it's <em>actually</em> broken.</p>
 
-<p>Happy sheet music organisering?</p>]]></content:encoded></item><item><title><![CDATA[Do I use an Arduino or a Raspberry Pi?]]></title><description><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>]]></description><link>http://charlottegodley.co.uk/do-i-use-an-arduino-or-a-raspberry-pi/</link><guid isPermaLink="false">f0fd1b91-2413-4523-8f60-b738b32f2748</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Fri, 18 Dec 2015 23:04:26 GMT</pubDate><content:encoded><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>
+<p>Happy sheet music organisering?</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Do I use an Arduino or a Raspberry Pi?]]></title>
+            <description><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>]]></description>
+            <link>http://charlottegodley.co.uk/do-i-use-an-arduino-or-a-raspberry-pi/</link>
+            <guid isPermaLink="false">f0fd1b91-2413-4523-8f60-b738b32f2748</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Fri, 18 Dec 2015 23:04:26 GMT</pubDate>
+            <content:encoded><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>
 
 <ol>
 <li>Multithreading <em>can</em> be done on an arduino, but akin to the internet question, it will take more effort and time than on a Raspberry Pi.  </li>
@@ -33,7 +58,17 @@
 </ol>
 
 <p>Please feel free to spread this flowchart around if it's useful to you, but if you can credit this to me then please do :) <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/12/flow-pi-1.png" alt=""></p>]]></content:encoded></item><item><title><![CDATA[Building and testing for multiple platforms]]></title><description><![CDATA[<p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of</p>]]></description><link>http://charlottegodley.co.uk/building-and-testing-for-multiple-platforms/</link><guid isPermaLink="false">b6561d7b-4694-4465-bac5-4f81ee8c3384</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Fri, 06 Nov 2015 23:02:51 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" alt="Building and testing for multiple platforms"><p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of open sourcing their projects that in general, <strong>you should ask your university first</strong> because technically, they own the project. </p>
+<img src="http://charlottegodley.co.uk/content/images/2015/12/flow-pi-1.png" alt=""></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Building and testing for multiple platforms]]></title>
+            <description><![CDATA[<p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of</p>]]></description>
+            <link>http://charlottegodley.co.uk/building-and-testing-for-multiple-platforms/</link>
+            <guid isPermaLink="false">b6561d7b-4694-4465-bac5-4f81ee8c3384</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Fri, 06 Nov 2015 23:02:51 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" alt="Building and testing for multiple platforms"><p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of open sourcing their projects that in general, <strong>you should ask your university first</strong> because technically, they own the project. </p>
 
 <p>Since then I've not really touched it until recently because I had various other things on the go, and to be honest I spent so long <a href="http://charlottegodley.co.uk/arguing-with-poppler-and-qt-on-windows/">arguing with windows and poppler</a> that I needed a break to think about it.</p>
 
@@ -129,8 +164,17 @@ test_script:
 
 <p>A perhaps greater thing for open source projects though is that the whole service is free if your project is public on github, and Travis is included in the Github education package so students get it free for private projects too!</p>
 
-<p>I strongly encourage developers, especially students to start using continuous integration. With great services out there for all platforms that require minimal setup, there's really no excuse and it's not just something that large teams should be using.</p>]]></content:encoded></item><item><title><![CDATA[Making a shopping list when you're a lazy programmer]]></title><description><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.</a></p></blockquote></p>]]></description><link>http://charlottegodley.co.uk/making-a-shopping-list-when-youre-a-lazy-programmer/</link><guid isPermaLink="false">563878a0-9e85-4d91-b071-b23975c825e6</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Sun, 25 Oct 2015 11:51:16 GMT</pubDate><content:encoded><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
+<p>I strongly encourage developers, especially students to start using continuous integration. With great services out there for all platforms that require minimal setup, there's really no excuse and it's not just something that large teams should be using.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Making a shopping list when you're a lazy programmer]]></title>
+            <description><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.</a></p></blockquote></p>]]></description>
+            <link>http://charlottegodley.co.uk/making-a-shopping-list-when-youre-a-lazy-programmer/</link>
+            <guid isPermaLink="false">563878a0-9e85-4d91-b071-b23975c825e6</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Sun, 25 Oct 2015 11:51:16 GMT</pubDate>
+            <content:encoded><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.twitter.com/V0FUOIJm8T</a></p>&mdash; Daniel Brown (@DanTonyBrown) <a href="https://twitter.com/DanTonyBrown/status/658012687671119872">October 24, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
 <p>As a programmer, though, there's a lot about preparing to cook that's tedious and which I was sure could be automated. It takes time to figure out what you want to make, then work out how much that's going to cost based on what's in your cupboard, and get out and buy the stuff, especially if you're doing something with meat that you will need to go to the butcher to get. I seriously don't get why our retail economy is based on the 9-5 pattern, when our office jobs are also based on this pattern - when the hell am I supposed to get the time to get midweek meat if the butcher closes before I've even got out of the science park?! I want to support local economies and in the Mill Road area this is particularly easy, but c'mon now. You're not making this easy for me.</p>
@@ -271,8 +315,18 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'DjangoMeals.settings'
 </code></pre>
 
 <p>And run it from command line: <code>scrapy crawl goodfood</code>. <br>
-This blog's getting pretty long, so I'll be splitting this into several blogs which I'll publish every few days. In the meantime, the repo is <a href="https://github.com/Godley/MealPlanner.git">here</a>. Happy hacking!</p>]]></content:encoded></item><item><title><![CDATA[Platformio review]]></title><description><![CDATA[<p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
-Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I</p>]]></description><link>http://charlottegodley.co.uk/writing-libraries-for-arduino/</link><guid isPermaLink="false">137ed7c8-15a3-4f85-a156-587807b45e10</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Fri, 25 Sep 2015 22:56:50 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" alt="Platformio review"><p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
+This blog's getting pretty long, so I'll be splitting this into several blogs which I'll publish every few days. In the meantime, the repo is <a href="https://github.com/Godley/MealPlanner.git">here</a>. Happy hacking!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Platformio review]]></title>
+            <description><![CDATA[<p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
+Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I</p>]]></description>
+            <link>http://charlottegodley.co.uk/writing-libraries-for-arduino/</link>
+            <guid isPermaLink="false">137ed7c8-15a3-4f85-a156-587807b45e10</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Fri, 25 Sep 2015 22:56:50 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" alt="Platformio review"><p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
 Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I wanted to find a good tool for the job. <br>
 When I started, I was literally writing the code in atom, opening up arduino, writing a sketch, installing then importing the library, running it, finding a bug and running the whole process again. I quickly got sick of it. <br>
 I went on a hunt via twitter for better tools.</p>
@@ -290,9 +344,19 @@ I couldn't even get to working with it because the settings I gave it were appar
 <p>Next I went to platformio, because ukscone raves about it. Me likey. <br>
 Essentially it provides a sort of structure and framework for your projects, whereby you have a folder for any libs which is where it looks first when you do imports, and a folder for your source. Works with a lot of diff boards including many that aren't arduino, you can make it automatically run and upload your code, has a library manager which is usable both through the internet and the command line (altho...I'm still not sure how well it works - I've installed a few libraries and they don't seem to be found when I do an import of any of them). Pretty much everything I want when checking a library is valid code, but if I were on larger projects I'd still quite like to have a full IDE which isn't just a text editor with an upload button.</p>
 
-<p>Still, when I eventually have time where I'm not building stuff but still want something to do, I would like to make my own IDE probably with platformio integrated into it to make it do the arduino-y bit. For now, Atom and Platformio are my tools of choice.</p>]]></content:encoded></item><item><title><![CDATA[How did YOU end up in technology?]]></title><description><![CDATA[<p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
+<p>Still, when I eventually have time where I'm not building stuff but still want something to do, I would like to make my own IDE probably with platformio integrated into it to make it do the arduino-y bit. For now, Atom and Platformio are my tools of choice.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How did YOU end up in technology?]]></title>
+            <description><![CDATA[<p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
 Why? <br>
-I like hearing about people's decisions, and whilst that</p>]]></description><link>http://charlottegodley.co.uk/how-did-you-end-up-in-technology/</link><guid isPermaLink="false">c0647868-f7ab-42af-9879-205e340a2b69</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Thu, 17 Sep 2015 22:41:41 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" alt="How did YOU end up in technology?"><p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
+I like hearing about people's decisions, and whilst that</p>]]></description>
+            <link>http://charlottegodley.co.uk/how-did-you-end-up-in-technology/</link>
+            <guid isPermaLink="false">c0647868-f7ab-42af-9879-205e340a2b69</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Thu, 17 Sep 2015 22:41:41 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" alt="How did YOU end up in technology?"><p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
 Why? <br>
 I like hearing about people's decisions, and whilst that kind of thing didn't bother me 5 or 6 years ago, I'm at that point in my life where it's useful to know what pathways and decisions people have made. Having made the mistake at A level of not taking Maths when I was going to be a CompSci and finding out from my dad as I started sixth form that it was "impossible to do good CompSci without maths*" meant I realise now how important it is to get all the information you can about life, the universe and everything, and that's something you can only really gain by asking people questions like this.</p>
 
@@ -300,7 +364,17 @@ I like hearing about people's decisions, and whilst that kind of thing didn't bo
 
 <p>My own pathway? wanted to be a music teacher, then a musician, was doing HTML in the background for kids games, got annoyed at music teacher, went with CompSci instead. I wouldn't change any of it.</p>
 
-<p>*This isn't actually 100% true, but it will narrow your choices at University if you don't take it.</p>]]></content:encoded></item><item><title><![CDATA[Girls can code.]]></title><description><![CDATA[<p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish"</p>]]></description><link>http://charlottegodley.co.uk/girls-can-code/</link><guid isPermaLink="false">9f502563-ea46-479b-a9ab-4a4f6c048594</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Mon, 14 Sep 2015 21:55:24 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" alt="Girls can code."><p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish", the rest of it really doesn't seem to have that much going for it.</p>
+<p>*This isn't actually 100% true, but it will narrow your choices at University if you don't take it.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Girls can code.]]></title>
+            <description><![CDATA[<p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish"</p>]]></description>
+            <link>http://charlottegodley.co.uk/girls-can-code/</link>
+            <guid isPermaLink="false">9f502563-ea46-479b-a9ab-4a4f6c048594</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 21:55:24 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" alt="Girls can code."><p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish", the rest of it really doesn't seem to have that much going for it.</p>
 
 <p>Unlike a few of my friends on Twitter and Facebook, my overall feeling didn't stray too far from my initial reaction.</p>
 
@@ -325,16 +399,35 @@ The program's subjects suffer from a lack of diversity for me - one of them love
 
 <p>Overall...I will give it a second chance next week, but right now I'm annoyed and frustrated at a lot of the show's content. I'm very much praying it will get better.</p>
 
-<p>If you're interested, <a href="http://www.bbc.co.uk/iplayer/episode/b06ccksx/girls-can-code-episode-1">here's the iPlayer link</a></p>]]></content:encoded></item><item><title><![CDATA[I've not posted in a month]]></title><description><![CDATA[<p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
+<p>If you're interested, <a href="http://www.bbc.co.uk/iplayer/episode/b06ccksx/girls-can-code-episode-1">here's the iPlayer link</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[I've not posted in a month]]></title>
+            <description><![CDATA[<p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
 
-<p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but</p>]]></description><link>http://charlottegodley.co.uk/ive-not-posted-in-a-month/</link><guid isPermaLink="false">711eb4f1-28d6-44df-ae4b-5ff5f8dac11d</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Fri, 04 Sep 2015 23:31:15 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" alt="I've not posted in a month"><p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
+<p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but</p>]]></description>
+            <link>http://charlottegodley.co.uk/ive-not-posted-in-a-month/</link>
+            <guid isPermaLink="false">711eb4f1-28d6-44df-ae4b-5ff5f8dac11d</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Fri, 04 Sep 2015 23:31:15 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" alt="I've not posted in a month"><p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
 
 <p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but I already wrote about that. I <em>didn't</em> go to South Korea because of MERS and was incredibly lucky I hadn't booked my flights, as Global Hackathon Seoul has severely dented its reputation by running out of money and not being able to help people get their flights refunded.</p>
 
 <p>The most notable thing I guess of this month was that I sorted housing for Cambridge and played my first "gig" with my sisters at my uncle's wedding. Did it for free, went down a storm. <a href="http://music.charlottegodley.co.uk">We're now planning to do more of them as a part time job</a>, the website of which (if you click that link) is temporarily up as a sub domain but will probably get a full domain whenever I decide what domain to buy.</p>
 
-<p>Since that occasion which was last week I've pretty much been chillin', modifying my projects page and tweeting about how I've not written anything. I'm now in the waiting period where I just...do nothing until the journey to Cambridge on Sunday. Exciting times.</p>]]></content:encoded></item><item><title><![CDATA[Doing my best at documentation]]></title><description><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
-Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I</p>]]></description><link>http://charlottegodley.co.uk/doing-my-best-at-documentation/</link><guid isPermaLink="false">dd214f9a-ecda-4211-a69d-b7aea0d6350e</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Mon, 27 Jul 2015 23:23:54 GMT</pubDate><content:encoded><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
+<p>Since that occasion which was last week I've pretty much been chillin', modifying my projects page and tweeting about how I've not written anything. I'm now in the waiting period where I just...do nothing until the journey to Cambridge on Sunday. Exciting times.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Doing my best at documentation]]></title>
+            <description><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
+Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I</p>]]></description>
+            <link>http://charlottegodley.co.uk/doing-my-best-at-documentation/</link>
+            <guid isPermaLink="false">dd214f9a-ecda-4211-a69d-b7aea0d6350e</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Mon, 27 Jul 2015 23:23:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
 Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I was working with, and much of the code was either written by developers who had left or the current developers had long forgotten how bits of it worked, which is completely natural when you have a huge project to work on. Often I kind of reverted to using the dir() method in python quite a lot and just guessing my way round stuff.</p>
 
 <p>At E14 I was pretty much flying solo - any help I received took days to come back from people who were working with other things, and again, may or may not remember how to use the devices. It's also a different work environment - the code at Airbus was mostly in-house, if not contracted for their purposes. E14 were just the distributors for most of the kit I was working with, so it's natural people would be less fluent.</p>
@@ -379,7 +472,17 @@ minors = {-7: "Aflat", -6: "Eflat", -5: "Bflat", -4: "F", -3: "C", -2: "G", -1: 
 
 <p>Annoyingly the navigation isn't all that great - if I headed into a class, I couldn't get back without using the back button. Despite this, the template looks so beautiful that I uploaded it to my own hosting.</p>
 
-<p>You can now view the docs <a href="http://docs.charlottegodley.co.uk/MuseParse">here</a> at my new fancy subdomain, and view overviews of any upcoming projects on the new <a href="http://charlottegodley.co.uk/projects">projects page</a>.</p>]]></content:encoded></item><item><title><![CDATA[Cross-platform python: the ubuntu edition]]></title><description><![CDATA[<p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest</p>]]></description><link>http://charlottegodley.co.uk/cross-platform-python-the-ubuntu-edition/</link><guid isPermaLink="false">5a65a4c3-6311-49a4-878a-a58b88890f01</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Tue, 21 Jul 2015 00:43:25 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"><p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest of my FYP on ubuntu while I was at it. <br>
+<p>You can now view the docs <a href="http://docs.charlottegodley.co.uk/MuseParse">here</a> at my new fancy subdomain, and view overviews of any upcoming projects on the new <a href="http://charlottegodley.co.uk/projects">projects page</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cross-platform python: the ubuntu edition]]></title>
+            <description><![CDATA[<p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest</p>]]></description>
+            <link>http://charlottegodley.co.uk/cross-platform-python-the-ubuntu-edition/</link>
+            <guid isPermaLink="false">5a65a4c3-6311-49a4-878a-a58b88890f01</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Tue, 21 Jul 2015 00:43:25 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"><p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest of my FYP on ubuntu while I was at it. <br>
 To begin with, it was going swimmingly. Got the packages I needed from apt-get:  </p>
 
 <pre><code>sudo apt-get install python3-qt4  
@@ -394,12 +497,21 @@ Until, as usual, poppler fell out with me.</p>
 python3-qt4, python-qt4-dev, python3-sip, python3-sip-dev, libpoppler-qt4-4, libpoppler-qt4-dev <br>
 Then run <code>pip3 install python-poppler-qt4</code> and it <em>should</em> work just fine. <br>
 And finally it functions in full on 2 platforms: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"></p>]]></content:encoded></item><item><title><![CDATA[My first "proper" OSS release]]></title><description><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
+<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[My first "proper" OSS release]]></title>
+            <description><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
 
 <p>During the past year I've been working on my Final Year Project as you're probably sick of hearing about. I promised myself and my lecturers that I would open source it for several reasons:</p>
 
 <ol>
-<li><p>I made it because music software is expensive and I wanted something that I could pick</p></li></ol>]]></description><link>http://charlottegodley.co.uk/my-first-proper-oss-release/</link><guid isPermaLink="false">bb9160cc-fab7-4aa4-8a9f-46e54713683a</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Mon, 20 Jul 2015 16:56:25 GMT</pubDate><content:encoded><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
+<li><p>I made it because music software is expensive and I wanted something that I could pick</p></li></ol>]]></description>
+            <link>http://charlottegodley.co.uk/my-first-proper-oss-release/</link>
+            <guid isPermaLink="false">bb9160cc-fab7-4aa4-8a9f-46e54713683a</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Mon, 20 Jul 2015 16:56:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
 
 <p>During the past year I've been working on my Final Year Project as you're probably sick of hearing about. I promised myself and my lecturers that I would open source it for several reasons:</p>
 
@@ -415,15 +527,34 @@ And finally it functions in full on 2 platforms: <br>
 After that was done and I'd tested by building, installing and finally changing my original FYP to use only that package rather than the project's local copy, with bated breath, I followed this <a href="https://jamie.curle.io/posts/my-first-experience-adding-package-pypi/">tutorial</a> and released it onto the Python Package Index. Now all you need to do to get that package is use <code>pip3 install MuseParse</code> and you're away. <br>
 Note I have yet to test if it works with Python 2.7. I really doubt there's much to change if it doesn't work in 2.7.</p>
 
-<p>There's still some documentation work to do if anyone wants to use the classes for anything other than how the test scripts tell you to use them, which I hope to write over the next few days. For now, enjoy!</p>]]></content:encoded></item><item><title><![CDATA[Graduation and what]]></title><description><![CDATA[<p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
-My</p>]]></description><link>http://charlottegodley.co.uk/graduation-and-what/</link><guid isPermaLink="false">ad6b92bf-0777-49e5-9106-81f6de5e061f</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Sat, 18 Jul 2015 00:17:56 GMT</pubDate><media:content url="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" medium="image"/><content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" alt="Graduation and what"><p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
+<p>There's still some documentation work to do if anyone wants to use the classes for anything other than how the test scripts tell you to use them, which I hope to write over the next few days. For now, enjoy!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Graduation and what]]></title>
+            <description><![CDATA[<p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
+My</p>]]></description>
+            <link>http://charlottegodley.co.uk/graduation-and-what/</link>
+            <guid isPermaLink="false">ad6b92bf-0777-49e5-9106-81f6de5e061f</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Sat, 18 Jul 2015 00:17:56 GMT</pubDate>
+            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" medium="image" />
+            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" alt="Graduation and what"><p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
 My favourite photos: <br>
 <img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0809.JPG" alt="Graduation and what">
 <em>Passerby: You'll have people coming here for the wrong reasons</em>
 <img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0827.JPG" alt="Graduation and what">
 The following day was my big sister's graduation in Newcastle, so we continued the fun by heading up there and finally coming back to reality this afternoon. <br>
 <img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0936.JPG" alt="Graduation and what">
-Fabulous week. Congratulations all!</p>]]></content:encoded></item><item><title><![CDATA[Results!]]></title><description><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what</p>]]></description><link>http://charlottegodley.co.uk/css-bug-in-cx_freezepyqt4/</link><guid isPermaLink="false">e0d42c8c-0e47-4448-93bc-48f8d4526cf4</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Thu, 09 Jul 2015 14:53:27 GMT</pubDate><content:encoded><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what I'd said. Honestly, I was hoping to hit a specific percent hence I said that.</p>
+Fabulous week. Congratulations all!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Results!]]></title>
+            <description><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what</p>]]></description>
+            <link>http://charlottegodley.co.uk/css-bug-in-cx_freezepyqt4/</link>
+            <guid isPermaLink="false">e0d42c8c-0e47-4448-93bc-48f8d4526cf4</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Thu, 09 Jul 2015 14:53:27 GMT</pubDate>
+            <content:encoded><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what I'd said. Honestly, I was hoping to hit a specific percent hence I said that.</p>
 
 <p>Anyhow, very pleased to say I got my first. I'm a bit disappointed that I pretty much dive-bombed both the exams in that term. I'm not sure how that happened, but the last term of uni was always going to be a stressful time and I guess I just didn't know the material or answer questions in the right way. </p>
 
@@ -433,9 +564,18 @@ Fabulous week. Congratulations all!</p>]]></content:encoded></item><item><title>
 
 <p>On top of that first, I got a pretty good grade on my final year project which is the part I was (and still am) most passionate about. In total I got 93%, which breaks down to 68% in my first report (worth 3%), 75% in my second (worth 7%), and a whopping 95% in my final report (worth the remaining 90%). I'm incredibly pleased and proud of what I accomplished there and I can't wait to open source what I have once a few bugs are fixed and sections are tidied and improved. My target is to have it ready for public viewing by the end of the year, and as I don't have an awful lot to do over the summer I'll probably spend a fair amount of time on it during this period.</p>
 
-<p>A big thank you to the people who reviewed my report - that is, obviously my supervisor Helen who's been brilliant throughout the year, David Jones, David Whale, Zach Zebrowski, my own mum and dad, probably a couple of others I've forgotten. I really think that's what gave me a boost in terms of grades, and spending the last 24 hours putting in all of your changes was well worth the effort, so thank you so much for taking the time to read and give honest feedback.</p>]]></content:encoded></item><item><title><![CDATA[The InCredible Hull-k]]></title><description><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
+<p>A big thank you to the people who reviewed my report - that is, obviously my supervisor Helen who's been brilliant throughout the year, David Jones, David Whale, Zach Zebrowski, my own mum and dad, probably a couple of others I've forgotten. I really think that's what gave me a boost in terms of grades, and spending the last 24 hours putting in all of your changes was well worth the effort, so thank you so much for taking the time to read and give honest feedback.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The InCredible Hull-k]]></title>
+            <description><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
 
-<p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT,</p>]]></description><link>http://charlottegodley.co.uk/the-incredible-hull-k/</link><guid isPermaLink="false">a7323673-4848-4210-9768-2ff78381964d</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Mon, 01 Jun 2015 15:33:01 GMT</pubDate><content:encoded><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
+<p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT,</p>]]></description>
+            <link>http://charlottegodley.co.uk/the-incredible-hull-k/</link>
+            <guid isPermaLink="false">a7323673-4848-4210-9768-2ff78381964d</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Mon, 01 Jun 2015 15:33:01 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
 
 <p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT, WE DINE, IN HULL etc etc., it seemed only fitting to come up with an extremely bad pun to title my final blog post on my time here.</p>
 
@@ -451,10 +591,19 @@ Fabulous week. Congratulations all!</p>]]></content:encoded></item><item><title>
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/bolCulCh60E" frameborder="0" allowfullscreen></iframe>
 
-<p>P.S. Yesterday I turned a year older.</p>]]></content:encoded></item><item><title><![CDATA[Working with Poppler/PyQT to present PDFs]]></title><description><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
+<p>P.S. Yesterday I turned a year older.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Working with Poppler/PyQT to present PDFs]]></title>
+            <description><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
 Today I have another tutorial because I've been fiddling again. This time I was working on changing my application so that it will show each pair of pages horizontally, and then subsequent pairs vertically as if it were a book. Important for musicians because it requires less page turning. </p>
 
-<p>What</p>]]></description><link>http://charlottegodley.co.uk/working-with-popplerpyqt-to-present-pdfs/</link><guid isPermaLink="false">deaa09c9-3302-46bc-b453-8b0f91616216</guid><dc:creator><![CDATA[Charlotte]]></dc:creator><pubDate>Sun, 24 May 2015 17:54:10 GMT</pubDate><content:encoded><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
+<p>What</p>]]></description>
+            <link>http://charlottegodley.co.uk/working-with-popplerpyqt-to-present-pdfs/</link>
+            <guid isPermaLink="false">deaa09c9-3302-46bc-b453-8b0f91616216</guid>
+            <dc:creator><![CDATA[Charlotte]]></dc:creator>
+            <pubDate>Sun, 24 May 2015 17:54:10 GMT</pubDate>
+            <content:encoded><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
 Today I have another tutorial because I've been fiddling again. This time I was working on changing my application so that it will show each pair of pages horizontally, and then subsequent pairs vertically as if it were a book. Important for musicians because it requires less page turning. </p>
 
 <p>What this requires is producing 2 layouts - the main one which holds sub layouts and is vertical, and each sub layout which is horizontal. The libraries I'm using here are PyQt4, Poppler for PDF rendering on Python 3.4. Both of these can be fetched from PyPi.</p>
@@ -483,4 +632,7 @@ Today I have another tutorial because I've been fiddling again. This time I was 
 
 <p>Essentially what we do here is loop through the pages but increment every 2 pages instead of every page. <br>
 Note I've used a list for every variable. This is because of memory management. When an item gets added to a scene or a layout, the object <em>itself</em> gets added, not a copy or the data that it holds, because C++. In normal circumstances to avoid messing up the layout by creating a new object and overwriting the old one, we'd use <code>copy.deepcopy</code> which copies the data of that object into a new object - the objects held in the layouts here are "shallow copied", meaning their memory space is exactly the same as the one we created. <br>
-In PyQt, Poppler and other libraries which python is <em>wrapping</em>, not managing itself, we can't use deep copy because python isn't able to manage the object itself - that's handled by C++. </p>]]></content:encoded></item></channel></rss>
+In PyQt, Poppler and other libraries which python is <em>wrapping</em>, not managing itself, we can't use deep copy because python isn't able to manage the object itself - that's handled by C++. </p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
