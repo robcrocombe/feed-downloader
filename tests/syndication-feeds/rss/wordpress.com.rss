@@ -1,638 +1,460 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
-        <title><![CDATA[Charlotte Godley]]></title>
-        <description><![CDATA[Thoughts, stories and ideas.]]></description>
-        <link>http://charlottegodley.co.uk/</link>
-        <generator>Ghost 0.6</generator>
-        <lastBuildDate>Sun, 27 Dec 2015 23:43:38 GMT</lastBuildDate>
-        <atom:link href="http://charlottegodley.co.uk/rss/" rel="self" type="application/rss+xml" />
-        <ttl>60</ttl>
+        <title>Danny – Computer Scientist</title>
+        <atom:link href="https://dannycomputerscientist.wordpress.com/feed/" rel="self" type="application/rss+xml" />
+        <link>https://dannycomputerscientist.wordpress.com</link>
+        <description>Software Engineer, Technology Enthusiast, Blogger</description>
+        <lastBuildDate>Fri, 05 Feb 2016 18:05:18 +0000</lastBuildDate>
+        <language>en</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>http://wordpress.com/</generator>
+        <cloud domain="dannycomputerscientist.wordpress.com" port="80" path="/?rsscloud=notify" registerProcedure="" protocol="http-post" />
+        <image>
+            <url>https://s2.wp.com/i/buttonw-com.png</url>
+            <title>Danny – Computer Scientist</title>
+            <link>https://dannycomputerscientist.wordpress.com</link>
+        </image>
+        <atom:link rel="search" type="application/opensearchdescription+xml" href="https://dannycomputerscientist.wordpress.com/osd.xml" title="Danny - Computer Scientist" />
+        <atom:link rel="hub" href="https://dannycomputerscientist.wordpress.com/?pushpress=hub" />
         <item>
-            <title><![CDATA[Opensourcing my Final Year Project - a lesson in python versions]]></title>
-            <description><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
+            <title>Graduating from York</title>
+            <link>https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/#respond</comments>
+            <pubDate>Fri, 05 Feb 2016 18:05:12 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[University - Masters]]></category>
+            <category><![CDATA[Graduation]]></category>
+            <category><![CDATA[MSc Advanced Computer Science]]></category>
+            <category><![CDATA[University of York]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3840</guid>
+            <description><![CDATA[On January 23rd I graduated with an MSc in Advanced Computer Science from The University of York. It was a nice occasion to get together and be merry with the family, and of course for some photos in my cap and gown &#8212; this time they were grey and blue. My parents took my degree [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3840&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>On January 23rd I graduated with an MSc in Advanced Computer Science from The University of York. It was a nice occasion to get together and be merry with the family, and of course for some photos in my cap and gown &#8212; this time they were grey and blue.</p>
 
-<ul>
-<li><a href="https://github.com/Godley/Music-Library/releases/download/v1.0-alpha/MuseLib.dmg">Mac</a></li>
-<li><a href="http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/">Windows</a></li>
-</ul>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0113/'><img width="113" height="150" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0113.jpg?w=113&#038;h=150" class="attachment-thumbnail size-thumbnail" alt="IMG_0113" data-attachment-id="3856" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0113.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453555217&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;160&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0113" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0113.jpg?w=225" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0113.jpg?w=480" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0066/'><img width="150" height="113" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0066.jpg?w=150&#038;h=113" class="attachment-thumbnail size-thumbnail" alt="IMG_0066" data-attachment-id="3854" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0066.jpg" data-orig-size="640,480" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453546521&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;160&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0066" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0066.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0066.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0077/'><img width="150" height="113" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0077.jpg?w=150&#038;h=113" class="attachment-thumbnail size-thumbnail" alt="IMG_0077" data-attachment-id="3855" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0077.jpg" data-orig-size="640,480" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453546563&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;125&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0077" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0077.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0077.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0121/'><img width="113" height="150" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0121.jpg?w=113&#038;h=150" class="attachment-thumbnail size-thumbnail" alt="IMG_0121" data-attachment-id="3858" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0121.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453555268&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0121" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0121.jpg?w=225" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0121.jpg?w=480" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0124/'><img width="113" height="150" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0124.jpg?w=113&#038;h=150" class="attachment-thumbnail size-thumbnail" alt="IMG_0124" data-attachment-id="3859" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0124.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453557102&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;80&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0124" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0124.jpg?w=225" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0124.jpg?w=480" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0082/'><img width="113" height="150" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0082.jpg?w=113&#038;h=150" class="attachment-thumbnail size-thumbnail" alt="IMG_0082" data-attachment-id="3857" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0082.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453546713&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0082" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0082.jpg?w=225" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0082.jpg?w=480" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/img_0107/'><img width="113" height="150" src="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0107.jpg?w=113&#038;h=150" class="attachment-thumbnail size-thumbnail" alt="IMG_0107" data-attachment-id="3860" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0107.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1453550081&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.03030303030303&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0107" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0107.jpg?w=225" data-large-file="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0107.jpg?w=480" /></a>
 
-<p>Over the past few months I've been trying to create installers for Windows, Mac and Ubuntu for my final year project, <a href="http://github.com/godley/music-library">Music Library</a>. Despite some issues with Windows DLLs, I've succeeded</p>]]></description>
-            <link>http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/</link>
-            <guid isPermaLink="false">36a1707e-d303-4266-9600-68f4ae5f9588</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Wed, 23 Dec 2015 22:37:29 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
-
-<ul>
-<li><a href="https://github.com/Godley/Music-Library/releases/download/v1.0-alpha/MuseLib.dmg">Mac</a></li>
-<li><a href="http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/">Windows</a></li>
-</ul>
-
-<p>Over the past few months I've been trying to create installers for Windows, Mac and Ubuntu for my final year project, <a href="http://github.com/godley/music-library">Music Library</a>. Despite some issues with Windows DLLs, I've succeeded in producing a windows installer. I'll find somewhere to put it so I can link to it later.</p>
-
-<p>Despite the OS X edition being the original, I'm actually having trouble getting my laptop back to the exact state it was in when cx_freeze built and froze my python into an app file. The main reason is for some reason I updated my python to 3.5 one day, and then my build seg faulted, then I rewound to 3.4.3 then...I just don't really know what happened. I started to mess with my python config and yeah. It gets confusing when you have installers for python and home-brew installations.</p>
-
-<p>What's the lesson here? I'm not actually that sure. In general my belief is we should stick to latest and greatest no matter what the language is, but in python's case something almost always breaks and it's hard to predict in exactly what way.</p>
-
-<p>Ultimately I will probably just flush out the config on this laptop and start over. It's a good thing to do anyway so I know how to write developer install instructions properly.</p>
-
-<p>For now I've gone ahead and open sourced the repo. A couple of the tests still break on linux as shown by my travis CI, but I think this is something to do with the musescore API so I'm not entirely sure it's <em>actually</em> broken.</p>
-
-<p>Happy sheet music organisering?</p>]]></content:encoded>
+<p>My parents took my degree home with them and hung it up next to my undergraduate degree and departmental award. I think they look nice together.</p>
+<p><img class="alignnone size-full wp-image-3850" src="https://dannycomputerscientist.files.wordpress.com/2016/02/12656110_1522924184675043_1926747582_o.jpg?w=519" alt="12656110_1522924184675043_1926747582_o"   /></p>
+<p>For some more nice pictures you can check out my <a href="https://pnbrown13blog.wordpress.com/2016/01/30/dannys-masters-graduation/">dads blog post about it.</a></p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3840/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3840/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3840&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2016/02/05/graduating-from-york/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0091.jpg?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0091.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0091</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0121.jpg?w=113" medium="image">
+                <media:title type="html">IMG_0121</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0082.jpg?w=113" medium="image">
+                <media:title type="html">IMG_0082</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0077.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0077</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0107.jpg?w=113" medium="image">
+                <media:title type="html">IMG_0107</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0124.jpg?w=113" medium="image">
+                <media:title type="html">IMG_0124</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0066.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0066</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/img_0113.jpg?w=113" medium="image">
+                <media:title type="html">IMG_0113</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/02/12656110_1522924184675043_1926747582_o.jpg" medium="image">
+                <media:title type="html">12656110_1522924184675043_1926747582_o</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Do I use an Arduino or a Raspberry Pi?]]></title>
-            <description><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>]]></description>
-            <link>http://charlottegodley.co.uk/do-i-use-an-arduino-or-a-raspberry-pi/</link>
-            <guid isPermaLink="false">f0fd1b91-2413-4523-8f60-b738b32f2748</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 18 Dec 2015 23:04:26 GMT</pubDate>
-            <content:encoded><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>
-
-<ol>
-<li>Multithreading <em>can</em> be done on an arduino, but akin to the internet question, it will take more effort and time than on a Raspberry Pi.  </li>
-<li>Some paths could lead to you using both - for example, you might need a complex algorithm to parse some data which then displays it repeatedly on an LED matrix (see Amy Mather's Game of Life project). I left this out because I decided it would complicate the simplicity of the flow chart.  </li>
-<li>Analogue IO could probably also go on there which would lead to arduino. Meh.  </li>
-<li>Some paths could point to either I guess. Again, meh.</li>
-</ol>
-
-<p>Please feel free to spread this flowchart around if it's useful to you, but if you can credit this to me then please do :) <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/12/flow-pi-1.png" alt=""></p>]]></content:encoded>
+            <title>HackTrain 2.0</title>
+            <link>https://dannycomputerscientist.wordpress.com/2016/01/10/hacktrain-2-0/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2016/01/10/hacktrain-2-0/#respond</comments>
+            <pubDate>Sun, 10 Jan 2016 22:01:22 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[Hackathons]]></category>
+            <category><![CDATA[Eventful]]></category>
+            <category><![CDATA[HackTrain]]></category>
+            <category><![CDATA[HackTrain 2.0]]></category>
+            <category><![CDATA[SilverRail]]></category>
+            <category><![CDATA[TheTrainLine]]></category>
+            <category><![CDATA[Trainline]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3603</guid>
+            <description><![CDATA[It seems like a lifetime ago, but the first HackTrain event was actually only 9 months ago &#8212; It probably feels so long ago to me as so much has change in the interim, including me getting a job as a result of the first event. When an opportunity came up to represent Trainline at [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3603&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>It seems like a lifetime ago, but the first HackTrain event was actually only 9 months ago &#8212; It probably feels so long ago to me as so much has change in the interim, including me <a href="https://dannycomputerscientist.wordpress.com/2015/07/03/all-aboard-the-employment-train/">getting a job as a result of the first event</a>.</p>
+<p>When an opportunity came up to represent Trainline at the second HackTrain I jumped at it as I thought it would be nice to go full circle in a  sense, going back with a job in the industry, and simply because I loved the friendly competitive atmosphere of the hackathon.</p>
+<p>HackTrain 2.0 was a much larger event than the original, with 3 trains of Hackers rather than 1. I was assigned to the Big Data Train, in which participants would focus on using the APIs made available by the rail industry,</p>
+<p>I originally thought I would be mentoring teams and helping them get set up with any RailTech APIs I knew about, however I actually ended up participating in a team consisting of myself, two Computer Science students and an engineer from french national rail operator SNCF. We worked together to build a web application called TrainGuard.</p>
+<div data-shortcode="caption" id="attachment_3810" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2015/12/screen-shot-2015-11-22-at-10-12-43.png" rel="attachment wp-att-3810"><img class="size-full wp-image-3810" src="https://dannycomputerscientist.files.wordpress.com/2015/12/screen-shot-2015-11-22-at-10-12-43.png?w=519&#038;h=313" alt="Desktop view of TrainGuard" width="519" height="313" /></a><p class="wp-caption-text">Desktop view of TrainGuard</p></div>
+<p>TrainGuards tagline is Calmer, Drier journeys. This is because the aim of the application, which is written in Node.js, is to allow customers to make more informed choices about their journeys. When using travel booking services that are currently available you can see what time you&#8217;ll depart from your origin and what time you&#8217;re expected to get to your destination, but nothing is said about what will happen in between.</p>
+<p>When we were conducting market research on our South West Trains service to Bournemouth a lot of people told us they disliked being on trains which were full of football fans, or loud people coming out from a gig. The small sample we took rated those experiences as being as bad or worse than being on a delayed train, and that to avoid such circumstances they would be willing to reschedule their booking. Weather factored into peoples travel decisions less, but was still important.</p>
+<div data-shortcode="caption" id="attachment_3811" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2015/12/screen-shot-2015-11-22-at-10-12-32.png" rel="attachment wp-att-3811"><img class="size-full wp-image-3811" src="https://dannycomputerscientist.files.wordpress.com/2015/12/screen-shot-2015-11-22-at-10-12-32.png?w=519&#038;h=788" alt="Mobile View of TrainGuard" width="519" height="788" /></a><p class="wp-caption-text">Mobile View of TrainGuard</p></div>
+<p>On match days, or other particularly busy periods of rail travel the Train Operating Companies (TOCs) would much rather that their load of passengers was more evenly distributed throughout the days services. This is because each minute a train is delayed on the British Rail Network the train operating company gets fined, in some cases hundreds or thousands of pounds per minute &#8212; depending on where the tardiness occurs and how many other train services are affected by it.</p>
+<p>The idea therefore occurred to me that we could aid both the traveller and the TOCs by allowing passengers who wish to avoid such events a chance to reschedule their journey and change their tickets. Initially we started out with the idea of making this an API that ticket distributors, such as Trainline, could tap into &#8212; however, we realised that at a hackathon client facing applications are more likely to do well.</p>
+<p>As a team we implemented a subsystem that could connect to the <a href="http://silverrailtech.com">SilverRail</a> travel planning API, which had been specially opened up to the public for HackTrain 2.0. This subsystem would accept a journey plan in the form of an origin station code, a destination station code and a departure time and return a list of stations comprising the complete route. Using this information we then checked for events within a given distance of each station en route on <a href="http://eventful.com">Eventful</a>, which is itself an aggregation of many other event websites &#8212; using specific filters we could find only the events that we felt could cause disruption to the end user.</p>
+<p>In a perfect world this information would be shown to the user at or before the time of booking, or if circumstances changed their could be alerted via a notification on their phone &#8212; however, for our prototype they would have to visit a webpage hosted by us. The webpage was written using semantic HTML5 and styled using CSS3, it was designed to be responsive and as you can see above it works well on both desktop and mobile, mobile being especially important of course as the act of travelling means you&#8217;re most likely to be on a mobile rather than a desktop when you check this page.</p>
+<p>When designing the page I wanted to make it beautiful to look at, but also really easy to grok what the page was trying to tell you &#8212; therefore I went with a design that included Bootstrap Jumbotrons with parallax scrolling high quality image backgrounds.</p>
+<p>As with all Hackathons the most nerve-racking, but equally exciting, part of the weekend was the pitching at the end. We felt we had a good product that was mutually beneficial for both the industry and its customers but we had to convince 2 panels of judges of that. As I mentioned before, the event this time round took place on 3 different trains, so in order to get to the final we had to have one of the top 3 pitches out of the 10 teams on our train.</p>
+<p>Excitingly we did make it to the final, in which we pitched to judges from the rail industry. There were judges from SilverRail, Trainline, Great Western Trains and The Ministry of Transport. Unfortunately we didn&#8217;t come in the top 3 teams at then end, but we had a lot of fun over the weekend and were proud that we got to the final and were given an opportunity to tell the industry how we felt they could deliver Smarter Journeys &#8212; which is something Trainline is currently focused on.</p>
+<p>Thanks to everyone at HackPartners who made the event possible, and all of the sponsors of the event for making it so fun and giving 120 of the best hackers a chance to develop much needed improvements for the Rail industry.</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3603/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3603/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3603&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2016/01/10/hacktrain-2-0/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/12/12304083_786742814805282_703787864428458423_o.jpg?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/12304083_786742814805282_703787864428458423_o.jpg?w=150" medium="image">
+                <media:title type="html">12304083_786742814805282_703787864428458423_o</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/screen-shot-2015-11-22-at-10-12-43.png" medium="image">
+                <media:title type="html">Desktop view of TrainGuard</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/screen-shot-2015-11-22-at-10-12-32.png" medium="image">
+                <media:title type="html">Mobile View of TrainGuard</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Building and testing for multiple platforms]]></title>
-            <description><![CDATA[<p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of</p>]]></description>
-            <link>http://charlottegodley.co.uk/building-and-testing-for-multiple-platforms/</link>
-            <guid isPermaLink="false">b6561d7b-4694-4465-bac5-4f81ee8c3384</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 06 Nov 2015 23:02:51 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" alt="Building and testing for multiple platforms"><p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of open sourcing their projects that in general, <strong>you should ask your university first</strong> because technically, they own the project. </p>
-
-<p>Since then I've not really touched it until recently because I had various other things on the go, and to be honest I spent so long <a href="http://charlottegodley.co.uk/arguing-with-poppler-and-qt-on-windows/">arguing with windows and poppler</a> that I needed a break to think about it.</p>
-
-<p>About a week ago I started the process of making sure everything was ready by <a href="http://travis-ci.org">setting up travis</a>. For anyone who's not initiated into continuous integration, the idea is that every push to your repo gets built against your unit tests to confirm nothing's broken. "But I can just do that on my local machine!" I hear you cry. </p>
-
-<p>Storytime! A couple of years ago my friends and I took part in the infamous <a href="https://www.youtube.com/watch?v=1GkvKC8Ls9E">Three Thing Game</a>. Like a lot of the uninitiated second year newbs, none of us had got into the habit of using source code control, and we decided to just write our separate bits, pass them around on memory sticks and do a big merge in the end.</p>
-
-<p>This did not go well, and whilst the idea was brilliant and we'd seen parts of our code working together, ultimately our separate sections fought with each other.</p>
-
-<p>To me this is something that continuous integration would have been brilliant for fixing, because it would systematically not only prove whose code was the cause, but it would also give a more precise estimate as to which sections of code caused the problems. A few other reasons to think about:</p>
-
-<ol>
-<li>Do you really want to sit watching unit tests build for however long? Having a build machines allows you to go off and work on something else, knowing you'll get told when something's broken.  </li>
-<li>What about if you're building for multiple operating systems? Before using CI, to test ready for my final year project demo I had to launch 2 VMs and clone or else copy the same repo into each one and run my tests 3 times. I have around about 2.5k tests, it really wasn't fun.  </li>
-<li>How do you know that when you deploy to a machine that doesn't have your developer set up it's all going to work just the same?</li>
-</ol>
-
-<p>In this particular project, the thing that using continuous integration has improved the most has been the last one. Having ran my tests a lot on OS X, I was pretty confident they would all pass without a hitch on travis which by default runs ubuntu linux (I had also previously ran tests on ubuntu which passed). </p>
-
-<p>To my surprise, about 5 tests failed because I had used far too many absolute paths to folders that obviously wouldn't exist on another machine, and a couple failed because requirements.txt (the list of python packages used in the project) was incorrect.</p>
-
-<p>I fixed all of these and then tried it out on windows again. Multiple tests failed because windows isn't unix compatible, so handles files and opening and closing them differently. <br>
-From that experience, and particularly as I had been keen with this project to provide all the same features on every major platform, I knew I wasn't happy with just travis, so I went in search of a windows based continuous integration platform, and found <a href="http://appveyor.com">appveyor</a> which feels very similar.</p>
-
-<p>I found both appveyor and travis very easy to use, because you merely give them a yml file which defines your environment. Here's .travis.yml:  </p>
-
-<pre><code>language: python  
-python:  
-- '3.3'
-- '3.4'
-- '3.5'
-- 3.5-dev
-- nightly
-install: pip3 install -r requirements.txt  
-script: python3 -m "nose" --logging-level=WARNING
-
-os:  
-- linux
-# - osx
-
-notifications:  
-  email:
-    on_success: change
-    on_failure: change
-</code></pre>
-
-<p>aanaard appveyor.yml:  </p>
-
-<pre><code># Taken from: https://packaging.python.org/en/latest/appveyor.html
-# and from: https://bitbucket.org/pygame/pygame/pull-request/45/create-python-wheel-builds-using-appveyor/diff
-
-environment:  
-  matrix:
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "32"
-      DISTRIBUTIONS: "bdist_wheel"
-
-    - PYTHON: "C:\\Python34"
-      PYTHON_VERSION: "3.4.1"
-      PYTHON_ARCH: "32"
-      DISTRIBUTIONS: "bdist_wheel"
-
-    - PYTHON: "C:\\Python33-x64"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "64"
-      WINDOWS_SDK_VERSION: "v7.1"
-      DISTRIBUTIONS: "bdist_wheel"
-
-    - PYTHON: "C:\\Python34-x64"
-      PYTHON_VERSION: "3.4.1"
-      PYTHON_ARCH: "64"
-      WINDOWS_SDK_VERSION: "v7.1"
-      DISTRIBUTIONS: "bdist_wheel"
-
-init:
-
-  - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
-
-install:  
-  - "set PATH=%PATH%;%PYTHON%;%PYTHON%\\Scripts"
-  - "pip install nose"
-  - "pip install -r requirements.txt"
-  - "set HOME=%APPVEYOR_BUILD_FOLDER%"
-
-build: off
-
-test_script:  
-  - "nosetests --logging-level=WARNING"
-</code></pre>
-
-<p>This makes it very easy to define every element, including downloading non-python packages in <a href="http://github.com/godley/museparse">museparse</a>'s case. </p>
-
-<p>A perhaps greater thing for open source projects though is that the whole service is free if your project is public on github, and Travis is included in the Github education package so students get it free for private projects too!</p>
-
-<p>I strongly encourage developers, especially students to start using continuous integration. With great services out there for all platforms that require minimal setup, there's really no excuse and it's not just something that large teams should be using.</p>]]></content:encoded>
+            <title>Centre for Computing History</title>
+            <link>https://dannycomputerscientist.wordpress.com/2016/01/10/centre-for-computing-history/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2016/01/10/centre-for-computing-history/#respond</comments>
+            <pubDate>Sun, 10 Jan 2016 17:39:38 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[Life]]></category>
+            <category><![CDATA[Centre for Computing History]]></category>
+            <category><![CDATA[Charlotte Godley]]></category>
+            <category><![CDATA[UK Computer Museum]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3801</guid>
+            <description><![CDATA[Since September, Charlotte and I have lived about a minutes walk from the UK Computer Museum (which also seems to go by the name Centre for Computing History), but we&#8217;d never actually gone inside. Today after my flying lesson we went to have a quick look. Whilst it made me feel old to see things I [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3801&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>Since September, Charlotte and I have lived about a minutes walk from the UK Computer Museum (which also seems to go by the name Centre for Computing History), but we&#8217;d never actually gone inside.</p>
+<p>Today after my flying lesson we went to have a quick look. Whilst it made me feel old to see things I remember from childhood in a museum, such as a PlayStation; a Dreamcast and an Acorn PC, I really enjoyed the hour or so we spent there.</p>
+<p>There were a few exhibits, including: the history of ARM, military computers and the history of Sinclair. The best thing about the museum was that you were encouraged to touch, and play with, any machine that was turned on. I hadn&#8217;t played on a BBC Micro before, but had heard a lot about them from lecturers and other techies from the era they were made. It was fun to figure out the classic GOTO 10 infinite loop, which you can see in the image above I put to good use informing the public of Charlotte&#8217;s lameness.</p>
+<p>One of the nice things the Museum has is a classroom to get children interested in Computing. Its the kind of thing I know I would have enjoyed as a kid.</p>
+<div data-shortcode="caption" id="attachment_3803" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2016/01/future-of-computing.jpg" rel="attachment wp-att-3803"><img class="size-full wp-image-3803" src="https://dannycomputerscientist.files.wordpress.com/2016/01/future-of-computing.jpg?w=519&#038;h=692" alt="A display at the Centre for Computing History" width="519" height="692" /></a><p class="wp-caption-text">A display at the Centre for Computing History</p></div>
+<p>I recommend anyone who reads this blog to go to the museum if you&#8217;re in the Cambridge area, you&#8217;d probably enjoy it.</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3801/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3801/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3801&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2016/01/10/centre-for-computing-history/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2016/01/bbc-micro.jpg?w=113" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/01/bbc-micro.jpg?w=113" medium="image">
+                <media:title type="html">A BBC Micro at the Centre for Computing History</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2016/01/future-of-computing.jpg" medium="image">
+                <media:title type="html">A display at the Centre for Computing History</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Making a shopping list when you're a lazy programmer]]></title>
-            <description><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.</a></p></blockquote></p>]]></description>
-            <link>http://charlottegodley.co.uk/making-a-shopping-list-when-youre-a-lazy-programmer/</link>
-            <guid isPermaLink="false">563878a0-9e85-4d91-b071-b23975c825e6</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Sun, 25 Oct 2015 11:51:16 GMT</pubDate>
-            <content:encoded><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.twitter.com/V0FUOIJm8T</a></p>&mdash; Daniel Brown (@DanTonyBrown) <a href="https://twitter.com/DanTonyBrown/status/658012687671119872">October 24, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p>As a programmer, though, there's a lot about preparing to cook that's tedious and which I was sure could be automated. It takes time to figure out what you want to make, then work out how much that's going to cost based on what's in your cupboard, and get out and buy the stuff, especially if you're doing something with meat that you will need to go to the butcher to get. I seriously don't get why our retail economy is based on the 9-5 pattern, when our office jobs are also based on this pattern - when the hell am I supposed to get the time to get midweek meat if the butcher closes before I've even got out of the science park?! I want to support local economies and in the Mill Road area this is particularly easy, but c'mon now. You're not making this easy for me.</p>
-
-<p>Anyway. I use BBC Good food quite a lot because usually when I google an ingredient I want to use, that'll be the first thing that pops up. So I thought I'd try to make my own site or app which would allow me to automate how I browse BBC Good food, so that the app would know what I have in my kitchen, and give me the list of recipes that best match what I have, then produce a shopping list for my way out of work (ALDI is conveniently located near work). <br>
-I'd seen a working couple on reddit had made something similar, but with text files storing recipes and current stock instead of any kind of database. <br>
-I'd really rather skip a lot of user entry and for that instance the couple had certain recipes they knew well and liked doing, which isn't the same in my case. I've never actually written a screen scraper before, so I thought I'd give it a try.</p>
-
-<p>I started with <a href="http://djangoproject.com">Django</a> as my framework because I've used it sparingly at work and I can see what the hype is about. I like being able to model my databases from in python without having to dive into SQL, and changes late on are really easy. I'll be explaining how everything works here, but it's assumed you already know a bit about setting up django and setting up scrapy.</p>
-
-<p>My models are relatively simple. The atom, if you like, is a stock item. All this needs is a name, a quantity and a weight - this gives you options as to what you're using. E.g if it's lemons, you'd say how many as opposed to weight, but if it's flour etc. You get the point.  </p>
-
-<pre><code>class Stock(models.Model):  
-    title = models.CharField(max_length=200)
-    quantity = models.IntegerField(default=0)
-    weight = models.IntegerField(default=0)
-    recipes = models.ManyToManyField(Recipe)
-</code></pre>
-
-<p>This has a many to many relation with recipe, which has a title and instructions. This is likely to change when I've fixed other problems, because in addition to linking many to many to stock, we need to know <em>how much</em> of that stock the recipe should use, and how it'll be prepared, so it's likely I'll add another model to cover that.  </p>
-
-<pre><code>class Recipe(models.Model):  
-    title = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
-</code></pre>
-
-<p>Finally we have Menu, which is how I'm going to plan each week. This will have a many to many link to recipe.  </p>
-
-<pre><code>class Menu(models.Model):  
-    recipes = models.ManyToManyField(Recipe)
-    pub_date = models.DateTimeField('date published')
-</code></pre>
-
-<p>Next up I looked at screen scraping. There's really 2 favoured frameworks - <a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> and <a href="http://scrapy.org">Scrapy</a>. Scrapy feels very similar to Django and there's a wealth of tutorials on integrating it, probably because the creators were heavily inspired by it, so I went with Scrapy.</p>
-
-<p>My first foure into scraping BBC Good Food was getting the ingredients. I figured this would be the easiest way to get a list of stock or expected stock for my cupboard without physically entering it myself, so that it's all in the db and I just have to update how much of each thing I have. <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/10/Screen-Shot-2015-10-25-at-11-22-30.png" alt="">
- Then when it comes to scraping each recipe's page, all I'd need to do was query the db for the collected ingredients and link them together. I also wasn't sure on exactly how things work together, so I wanted to do a simple scrape before delving into relational databases.</p>
-
-<p>First off, I ran the scrapy command for generating a scraper. <code>scrapy genspider goodfood bbcgoodfood.com</code>. <br>
-This spits out:  </p>
-
-<pre><code># -*- coding: utf-8 -*-
-import scrapy
-
-
-class GoodFoodSpider(scrapy.Spider):  
-    name = "goodfood"
-    allowed_domains = ["bbcgoodfood.com"]
-    start_urls = (
-        'http://www.bbcgoodfood.com/',
-    )
-
-    def parse(self, response):
-        pass
-</code></pre>
-
-<p>I needed to change the following:</p>
-
-<ul>
-<li><p>put in a rule so the spider knows which pages to trawl into</p></li>
-<li><p>set up a callback for when that happens.</p></li>
-<li><p>Change the URL to be the ingredients page</p></li>
-<li><p>write the parse callback</p></li>
-</ul>
-
-<p>And here we are:  </p>
-
-<pre><code># -*- coding: utf-8 -*-
-from scrapy.contrib.spiders import CrawlSpider, Rule  
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor  
-from scrapy.selector import HtmlXPathSelector  
-from items import StockItem, RecipeItem  
-import sys  
-print sys.path  
-from meals.models import Stock  
-from scrapy.http import Request  
-import django
-
-
-
-
-class GoodfoodSpider(CrawlSpider):  
-    name = "goodfood"
-    allowed_domains = ["bbcgoodfood.com"]
-    start_urls = (
-        'http://www.bbcgoodfood.com/recipes/category/ingredients',
-    )
-
-    rules = (
-        Rule(SgmlLinkExtractor(allow=(), restrict_xpaths=('//li[@class="views-row-odd views-row-first"]','//li[@class="views-row-even"]','//li[@class="views-row-odd"]', '//li[@class="views-row-odd views-row-last"]',)), callback="parse_items", follow= True),
-    )
-    def parse_items(self, response):
-        hxs = HtmlXPathSelector(response)
-        titles = hxs.xpath('//span[@class="field-content"]/text()')
-        items = []
-        for title in titles:
-            item = StockItem()
-            item["title"] = title.extract()
-            items.append(item)
-        return(items)
-</code></pre>
-
-<p>Basically what I did here was find the classes used by each link. This is where "restrict<em>paths" comes from. Every time scrap finds a link inside li, it will follow it and use the parse</em>items method to parse it. <br>
-Alongside the scraper, we need to store everything in Django. This is where we setup an item inside items.py:  </p>
-
-<pre><code>import scrapy  
-from meals.models import Stock, Recipe  
-from scrapy_djangoitem import DjangoItem
-
-
-class StockItem(DjangoItem):  
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    django_model=Stock
-</code></pre>
-
-<p>And a pipeline in pipelines.py so that scrap will know what to do with the item:  </p>
-
-<pre><code>class GoodFoodStockPipeline(object):
-
-    def process_item(self, item, spider):
-        item.save()
-        return item
-</code></pre>
-
-<p>The django project also needs to be in our python path, so that we can import from it. Do this in settings.py:  </p>
-
-<pre><code>sys.path.append('/Users/charlottegodley/PycharmProjects/MealPlanner/DjangoMeals')  
-os.environ['DJANGO_SETTINGS_MODULE'] = 'DjangoMeals.settings'  
-</code></pre>
-
-<p>Also add your pipeline somewhere in settings with:  </p>
-
-<pre><code>ITEM_PIPELINES = {  
-   'pipelines.GoodFoodStockPipeline': 300
-}
-</code></pre>
-
-<p>And run it from command line: <code>scrapy crawl goodfood</code>. <br>
-This blog's getting pretty long, so I'll be splitting this into several blogs which I'll publish every few days. In the meantime, the repo is <a href="https://github.com/Godley/MealPlanner.git">here</a>. Happy hacking!</p>]]></content:encoded>
+            <title>Tracking Moving Trains (with the minimum possible effort)</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/12/22/tracking-moving-trains-with-minimum-possible-effort/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/12/22/tracking-moving-trains-with-minimum-possible-effort/#respond</comments>
+            <pubDate>Tue, 22 Dec 2015 01:52:55 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[Mobile Application Development]]></category>
+            <category><![CDATA[Block Signalling]]></category>
+            <category><![CDATA[Cambridge]]></category>
+            <category><![CDATA[GPS]]></category>
+            <category><![CDATA[HackTrain]]></category>
+            <category><![CDATA[HTML5]]></category>
+            <category><![CDATA[iPhone]]></category>
+            <category><![CDATA[Location]]></category>
+            <category><![CDATA[Nomad Digital]]></category>
+            <category><![CDATA[Trains]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3659</guid>
+            <description><![CDATA[Trains are, in many respects, wonderful machines. They&#8217;re simultaneously both the most romantic form of travel and the most grueling way to get to work every morning. One thing trains are not however, is up-to-date with modern technology. Whilst you can follow the course, in real time, of a plane soaring at 36,000 feet above [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3659&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>Trains are, in many respects, wonderful machines. They&#8217;re simultaneously both the most romantic form of travel and the most grueling way to get to work every morning. One thing trains are not however, is up-to-date with modern technology.</p>
+<p>Whilst you can follow the course, in real time, of a plane soaring at 36,000 feet above the ground all the way from San Francisco to London you may be surprised that Train Operating Companies (TOCs) lack the ability to pinpoint the locations of their trains between stations. In other words, they may know that your train is between Cambridge and Foxton but they wont know exactly where.</p>
+<p>Not knowing exactly where Trains are doesn&#8217;t cause any satefy issues &#8212;&nbsp;<a href="https://en.wikipedia.org/wiki/Signalling_block_system">Block Signalling</a> has been used to safely manage the passage of trains by identifying which &#8220;block&#8221; of track they were in, without an exact location, since the 1850s &nbsp;&#8212; however, it does mean that the decisions that control rooms make are being made on educated guesses of a trains exact position at any given time.</p>
+<p>Control rooms are the brain room of the modern railway and make decisions when things&nbsp;go wrong. If you&#8217;ve ever been told a train cannot run due to a &#8220;lack of train crew&#8221; its unlikely the driver was off sick and instead much more likely that a delay on a train they were driving earlier&nbsp;has cascaded down to your service and they simply never arrived at your station to drive the train. Control rooms try to avoid this &#8212; and many other issues.</p>
+<p>Our earlier examples of Cambridge and Foxton aren&#8217;t exactly a million miles apart, and on a normal service you would expect a train to travel&nbsp;between them in around 5 minutes &#8212; but as the railway gets more and more congested making real-time decisions based on a time resolution of minutes will&nbsp;result in more and more decisions resulting in delays and cancelations.</p>
+<p>After having learnt about this situation, whilst onboard <a href="http://hacktrain.com">HackTrain 2.0</a>, I decided to have a go at resolving it in my own time.</p>
+<p>One constraint of working with technology for use on trains is that, for all intents and purposes, you cannot add hardware to trains. The Rail Industry in the UK is, thankfully, obsessed with safety and that means that anything added to a train has to go through rigorous Health &amp; Safety checks. This means it can take months, or years, for anything to be installed trackside or in a vehicle.</p>
+<p>Whilst staff who work for South West Trains (who explained the situation to HackTrain competitors) are all issued with BlackBerry devices, some companies have started issueing their Guards and Conductors with relatively modern Android devices, some of which even act as ticket printing machine for on-the-train ticket purchases.</p>
+<p>Armed with this knowledge I decided to try and validate my idea that a train could be tracked using just the smartphone device a member of train crew is already carrying. As I didn&#8217;t know if the idea would work in reality I set about making a working prototype with the minimum possible effort.</p>
+<p>My acceptance criteria&nbsp;was pretty simple: Be able to view in real time the position of a train from Cambridge to Kings Cross. This wasn&#8217;t exactly the most measurable criteria (what does &#8220;real time&#8221; mean, for example?) but it gave me something to work towards.</p>
+<p>In just a few hours over two evenings I developed&nbsp;a solution with a server written in Node.js that hosted two pages: `map.html` which, using the Google Maps JavaScript API, showed the current position and historic route of all trains being tracked and `report.html` which delivered a tiny JavaScript application to a browser which allowed it to report its location &#8212; attained through a HTML5 geolocation watch &#8212; via WebSockets, to the server.</p>
+<p><div data-shortcode="caption" id="attachment_3781" style="width: 179px" class="wp-caption aligncenter"><img class="wp-image-3781 size-medium" src="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0620.png?w=169&#038;h=300" alt="The Prototype JavaScript client on an iPhone" width="169" height="300"><p class="wp-caption-text">The Prototype JavaScript client on an iPhone</p></div>The client and the server were, in the nicest way possible, scrappy. In order to identify a Train the guard (in these feasability tests that was me) would have to manually enter a <a href="https://en.wikipedia.org/wiki/Train_reporting_number">Headcode</a>&nbsp;into a JavaScript prompt and then leave the browser window open for the entire trip &#8212; I didn&#8217;t bother developing a background task.&nbsp;Each trains location data was stored in one big multidimensional array on the serverside that had no persistence code. But that was all fine, these applications were never intended to be production ready, just prove an idea was workable.</p>
+<p>I walked down a few streets with my prototype client open in the Safari Browser on my iPhone and it appeared to report its location to the server as intended. So,&nbsp;on one of my final commutes into work before the holiday season I tested the system on a moving train on a route that includes tunnels, large areas of poor phone signal and central London; and all the different challenges&nbsp;these environments bring.</p>
+<p><div data-shortcode="caption" id="attachment_3763" style="width: 2058px" class="wp-caption alignnone"><img class="wp-image-3763 size-full" src="https://dannycomputerscientist.files.wordpress.com/2015/12/12377958_1507144549586340_4299821453224118620_o.jpg?w=519" alt="The route of my commute from Cambridge to London Kings Cross as tracked by my system"  ><p class="wp-caption-text">The route of my commute from Cambridge to London Kings Cross as tracked by my system</p></div>I was pleasently suprised with the results, shown above , despite a few anomalies.</p>
+<p>Due to the fact I was using the `watchLocation()` function the train didn&#8217;t report its location in even time periods, as it would if you were polling the location, but rather only when the trains position changed significantly. Despite this fact, the period between the train attemting to send its location whilst on the move was never more than around 10 seconds.</p>
+<p>I say attempted because, as expected, there were some issues with mobile coverage. I had expected to have issues in tunnels, but actually only the final tunnel before Kings Cross (which goes under the Grand Union Canal) caused issues. Lack of signal otherwised occured&nbsp;in a few blackspots in rural Cambridgeshire. This issue could be mitigated by employing a system such as that provided by <a href="http://nomad-digital.com">Nomad Digital</a>&nbsp;which provides an internet connection to a train using multiple sim cards connected to multiple network providers.</p>
+<p>Another issue you can see in the above screenshot&nbsp;is that my train appears to have left the tracks a few times. I can assure you that this didn&#8217;t actually happen, but appears to have done so due to a combination of some inaccurate GPS readings and some failed data transfer caused by the aforementioned network connectivity problems. These errors could be mitigated using a host of techniques: comparing GPS position to known track locations, buffering changes in location that seem too great and only accepting them as true if subsequent location changes appear to be in the same area.</p>
+<p>This was a pretty interesting project to work on. It gave me an oppertunity to develop a simple solution to a real life problem in a short period of time and learn about the awesome Socket.io library. I was happy to see it work so well, and to be wrong about tunnels. I look forward to making some of the improvements I&#8217;ve mentioned in this post and making the UI prettier and data storage a little bit more resilient.</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3659/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3659/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3659&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/12/22/tracking-moving-trains-with-minimum-possible-effort/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/12/12106848_1494412047526257_4658382875925199724_n.jpg?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/12106848_1494412047526257_4658382875925199724_n.jpg?w=150" medium="image">
+                <media:title type="html">12106848_1494412047526257_4658382875925199724_n</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0620.png?w=169" medium="image">
+                <media:title type="html">The Prototype JavaScript client on an iPhone</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/12377958_1507144549586340_4299821453224118620_o.jpg" medium="image">
+                <media:title type="html">The route of my commute from Cambridge to London Kings Cross as tracked by my system</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Platformio review]]></title>
-            <description><![CDATA[<p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
-Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I</p>]]></description>
-            <link>http://charlottegodley.co.uk/writing-libraries-for-arduino/</link>
-            <guid isPermaLink="false">137ed7c8-15a3-4f85-a156-587807b45e10</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 25 Sep 2015 22:56:50 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" alt="Platformio review"><p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
-Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I wanted to find a good tool for the job. <br>
-When I started, I was literally writing the code in atom, opening up arduino, writing a sketch, installing then importing the library, running it, finding a bug and running the whole process again. I quickly got sick of it. <br>
-I went on a hunt via twitter for better tools.</p>
+            <title>Captain Danny</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/#respond</comments>
+            <pubDate>Wed, 09 Dec 2015 21:12:16 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[Flying]]></category>
+            <category><![CDATA[Cambridge Airport]]></category>
+            <category><![CDATA[Private Pilots License]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3606</guid>
+            <description><![CDATA[One of the nice things about working, opposed to studying, is that I now don&#8217;t feel guilty about not spending all my time working on coursework. Time for a hobby! Living 15 minutes walk from Cambridge Airport I quite often see people learning to fly, and thought it looked like fun &#8212; so decided to start [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3606&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>One of the nice things about working, opposed to studying, is that I now don&#8217;t feel guilty about not spending <em>all</em> my time working on coursework. Time for a hobby!</p>
+<p>Living 15 minutes walk from Cambridge Airport I quite often see people learning to fly, and thought it looked like fun &#8212; so decided to start myself on a course to gain a PPL (Private Pilots License). It should take around 50 hours of flying time, and 8 exams on topics ranging from Radio Communication to Meteorology, to gain my license.</p>
+<p>Here are some photos from my first flight out:</p>
 
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/charwarz">@charwarz</a> platformio is your friend. dump the yukky ide and work from the command line and have a lib manager for free</p>&mdash; Russell Davis (@ukscone) <a href="https://twitter.com/ukscone/status/643521348216713218">September 14, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0678/'><img width="150" height="85" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0678.jpg?w=150&#038;h=85" class="attachment-thumbnail size-thumbnail" alt="IMAG0678" data-attachment-id="3631" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0678.jpg" data-orig-size="3264,1840" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467247&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.63&quot;,&quot;iso&quot;:&quot;500&quot;,&quot;shutter_speed&quot;:&quot;0.05&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0678" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0678.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0678.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0675/'><img width="150" height="85" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0675.jpg?w=150&#038;h=85" class="attachment-thumbnail size-thumbnail" alt="IMAG0675" data-attachment-id="3630" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0675.jpg" data-orig-size="3264,1840" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467201&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.63&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.0499&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0675" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0675.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0675.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0677/'><img width="150" height="84" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0677.jpg?w=150&#038;h=84" class="attachment-thumbnail size-thumbnail" alt="IMAG0677" data-attachment-id="3629" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0677.jpg" data-orig-size="1280,720" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467227&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;2.18&quot;,&quot;iso&quot;:&quot;250&quot;,&quot;shutter_speed&quot;:&quot;0.07&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0677" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0677.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0677.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0676/'><img width="150" height="84" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06761.jpg?w=150&#038;h=84" class="attachment-thumbnail size-thumbnail" alt="IMAG0676" data-attachment-id="3628" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06761.jpg" data-orig-size="1280,720" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467217&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;2.18&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.07&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0676" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06761.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06761.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0674/'><img width="150" height="85" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06741.jpg?w=150&#038;h=85" class="attachment-thumbnail size-thumbnail" alt="IMAG0674" data-attachment-id="3627" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06741.jpg" data-orig-size="3264,1840" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467195&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.63&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.0048&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0674" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06741.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06741.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0673/'><img width="150" height="85" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06731.jpg?w=150&#038;h=85" class="attachment-thumbnail size-thumbnail" alt="IMAG0673" data-attachment-id="3626" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06731.jpg" data-orig-size="3264,1840" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467191&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.63&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.0038&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0673" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06731.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06731.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0672/'><img width="150" height="85" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06721.jpg?w=150&#038;h=85" class="attachment-thumbnail size-thumbnail" alt="IMAG0672" data-attachment-id="3625" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06721.jpg" data-orig-size="3264,1840" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467186&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.63&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.04&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0672" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06721.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06721.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/imag0671/'><img width="150" height="85" src="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0671.jpg?w=150&#038;h=85" class="attachment-thumbnail size-thumbnail" alt="IMAG0671" data-attachment-id="3624" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0671.jpg" data-orig-size="3264,1840" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;HTC One X&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448467182&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.63&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.03&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMAG0671" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0671.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0671.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/img_0560/'><img width="150" height="113" src="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05601.jpg?w=150&#038;h=113" class="attachment-thumbnail size-thumbnail" alt="IMG_0560" data-attachment-id="3622" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05601.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s Plus&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448469290&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;0.25&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0560" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05601.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05601.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/img_0558/'><img width="150" height="113" src="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0558.jpg?w=150&#038;h=113" class="attachment-thumbnail size-thumbnail" alt="IMG_0558" data-attachment-id="3620" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0558.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s Plus&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448469276&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.25&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0558" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0558.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0558.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/img_0559/'><img width="150" height="113" src="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05591.jpg?w=150&#038;h=113" class="attachment-thumbnail size-thumbnail" alt="IMG_0559" data-attachment-id="3619" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05591.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s Plus&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448469281&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.25&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0559" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05591.jpg?w=300" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05591.jpg?w=519" /></a>
+<a href='https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/img_0555-2/'><img width="113" height="150" src="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05551.jpg?w=113&#038;h=150" class="attachment-thumbnail size-thumbnail" alt="IMG_0555" data-attachment-id="3617" data-orig-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05551.jpg" data-orig-size="3024,4032" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s Plus&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1448464502&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;25&quot;,&quot;shutter_speed&quot;:&quot;0.0023696682464455&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;keywords&quot;:&quot;Array&quot;}" data-image-title="IMG_0555" data-image-description="" data-medium-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05551.jpg?w=225" data-large-file="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05551.jpg?w=519" /></a>
 
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/charwarz">@charwarz</a> <a href="https://twitter.com/arduino">@arduino</a> <a href="http://t.co/fjnlPB3eM5">http://t.co/fjnlPB3eM5</a> is your friend</p>&mdash; Louis Taylor (@kragniz) <a href="https://twitter.com/kragniz/status/643523024914935808">September 14, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/charwarz">@charwarz</a> make? <a href="https://t.co/JX2JAOGz1G">https://t.co/JX2JAOGz1G</a></p>&mdash; D Jones (@drjtwit) <a href="https://twitter.com/drjtwit/status/643685428055420928">September 15, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p>I then googled it, and found the alternate to the obove suggestions, all of which are based heavily in the commandline/terminal, was using an eclipse plugin. <br>
-Considering the other day I had a discussion with a co worker, and we agreed saying "it's better than eclipse" really isn't a bench mark for how good an IDE is, I'm not the biggest of fans of eclipse. I worked in it heavily for a year whilst in industry in python 2.7, but most experiences with it have been poor. Still, I gave it a shot. <br>
-I couldn't even get to working with it because the settings I gave it were apparently wrong. Googled the errors, several issues, stack overflow posts and I still couldn't figure out the problem.</p>
-
-<p>Next I went to platformio, because ukscone raves about it. Me likey. <br>
-Essentially it provides a sort of structure and framework for your projects, whereby you have a folder for any libs which is where it looks first when you do imports, and a folder for your source. Works with a lot of diff boards including many that aren't arduino, you can make it automatically run and upload your code, has a library manager which is usable both through the internet and the command line (altho...I'm still not sure how well it works - I've installed a few libraries and they don't seem to be found when I do an import of any of them). Pretty much everything I want when checking a library is valid code, but if I were on larger projects I'd still quite like to have a full IDE which isn't just a text editor with an upload button.</p>
-
-<p>Still, when I eventually have time where I'm not building stuff but still want something to do, I would like to make my own IDE probably with platformio integrated into it to make it do the arduino-y bit. For now, Atom and Platformio are my tools of choice.</p>]]></content:encoded>
+<p>My tutor, Vanessa, said I seemed to have a natural talent for it, and even allowed me to make the final approach to landing &#8212; only taking control from me when 10ft from the ground &#8212; perhaps all those video game hours have finally paid off.</p>
+<p>I have another lesson on Sunday and cannot wait!</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3606/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3606/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3606&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/12/09/captain-danny/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05611.jpg?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05611.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0561</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0678.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0678</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0675.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0675</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0677.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0677</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06761.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0676</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06741.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0674</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06731.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0673</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag06721.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0672</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/imag0671.jpg?w=150" medium="image">
+                <media:title type="html">IMAG0671</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05601.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0560</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0558.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0558</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05591.jpg?w=150" medium="image">
+                <media:title type="html">IMG_0559</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_05551.jpg?w=113" medium="image">
+                <media:title type="html">IMG_0555</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[How did YOU end up in technology?]]></title>
-            <description><![CDATA[<p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
-Why? <br>
-I like hearing about people's decisions, and whilst that</p>]]></description>
-            <link>http://charlottegodley.co.uk/how-did-you-end-up-in-technology/</link>
-            <guid isPermaLink="false">c0647868-f7ab-42af-9879-205e340a2b69</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Thu, 17 Sep 2015 22:41:41 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" alt="How did YOU end up in technology?"><p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
-Why? <br>
-I like hearing about people's decisions, and whilst that kind of thing didn't bother me 5 or 6 years ago, I'm at that point in my life where it's useful to know what pathways and decisions people have made. Having made the mistake at A level of not taking Maths when I was going to be a CompSci and finding out from my dad as I started sixth form that it was "impossible to do good CompSci without maths*" meant I realise now how important it is to get all the information you can about life, the universe and everything, and that's something you can only really gain by asking people questions like this.</p>
-
-<p>More recently I did it while networking, and I've noticed a lot more lately that looking at my own pathway and comparing it to other people's is...interesting. No two ways into your job will ever be the same, and there's so many decisions that have lead me personally down this track that it's impossible to predict what's next, but if I learn a bit more about what other people did, maybe when the next change comes I'll be more informed of what direction to go in to get where I want to be. Which I still don't know just yet.</p>
-
-<p>My own pathway? wanted to be a music teacher, then a musician, was doing HTML in the background for kids games, got annoyed at music teacher, went with CompSci instead. I wouldn't change any of it.</p>
-
-<p>*This isn't actually 100% true, but it will narrow your choices at University if you don't take it.</p>]]></content:encoded>
+            <title>Trainline at Silicon Milkroundabout</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/12/04/trainline-at-silicon-milkroundabout/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/12/04/trainline-at-silicon-milkroundabout/#respond</comments>
+            <pubDate>Fri, 04 Dec 2015 23:12:03 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[thetrainline]]></category>
+            <category><![CDATA[Merch]]></category>
+            <category><![CDATA[Recruitment]]></category>
+            <category><![CDATA[Silicon Milkroundabout]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3597</guid>
+            <description><![CDATA[A few weeks ago I was lucky enought to be part of the team that tried, and hopefully succeeded, to entice more developers to come and work with us at Trainline at the Silicon Milkroundabout tech recruitment event. I really enjoy talking to people about technology and it was especially nice to talk to people who [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3597&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>A few weeks ago I was lucky enought to be part of the team that tried, and hopefully succeeded, to entice more developers to come and work with us at Trainline at the <em>Silicon Milkroundabout</em> tech recruitment event.</p>
+<p>I really enjoy talking to people about technology and it was especially nice to talk to people who were genuinly interested in what we do at Trainline. Some, who were also recent graduates were especially interested in how I got my job and what I do in my day-to-day work &#8212; I reccomended that a lot of these people try events like HackTrain.</p>
+<p>Like all cool tech companies we had merch to give out to people. My particular favourite was a Trainline ticket holder, which replaces my standard National Rail one and looks like it will be much easier to find due to its nice bright colours!</p>
+<div data-shortcode="caption" id="attachment_3600" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0523.jpg" rel="attachment wp-att-3600"><img class="size-full wp-image-3600" src="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0523.jpg?w=519&#038;h=692" alt="Trainline Ticket Holder" width="519" height="692" /></a><p class="wp-caption-text">Trainline Ticket Holder</p></div>
+<p>As well as nabbing some of the march, I also managed to get my hands on a Trainline Staff Polo, as beautifully modelled below:</p>
+<div data-shortcode="caption" id="attachment_3601" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2015/12/12241490_1500142350286560_5215665042379666587_n.jpg" rel="attachment wp-att-3601"><img class="size-full wp-image-3601" src="https://dannycomputerscientist.files.wordpress.com/2015/12/12241490_1500142350286560_5215665042379666587_n.jpg?w=519&#038;h=519" alt="Trainline Polo Shirt" width="519" height="519" /></a><p class="wp-caption-text">Trainline Polo Shirt</p></div>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3597/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3597/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3597&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/12/04/trainline-at-silicon-milkroundabout/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0521.jpg?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0521.jpg?w=150" medium="image">
+                <media:title type="html">Some of the Trainline team at Silicon Milkroundabout</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/img_0523.jpg" medium="image">
+                <media:title type="html">Trainline Ticket Holder</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/12/12241490_1500142350286560_5215665042379666587_n.jpg" medium="image">
+                <media:title type="html">Trainline Polo Shirt</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Girls can code.]]></title>
-            <description><![CDATA[<p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish"</p>]]></description>
-            <link>http://charlottegodley.co.uk/girls-can-code/</link>
-            <guid isPermaLink="false">9f502563-ea46-479b-a9ab-4a4f6c048594</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 14 Sep 2015 21:55:24 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" alt="Girls can code."><p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish", the rest of it really doesn't seem to have that much going for it.</p>
-
-<p>Unlike a few of my friends on Twitter and Facebook, my overall feeling didn't stray too far from my initial reaction.</p>
-
-<p>The program essentially follows the paths of five young women who are roughly the same age as me or a bit younger who aren't a fan of tech. The type of girly girls who take selfies, dress themselves in a more feminine way than I do and in general think consuming technology is their place.</p>
-
-<p>The idea is to show them the best of tech - from what children are being taught about making jam sandwiches as robots to producing games.</p>
-
-<p>Fine, fab, brilliant, just what we need to do: take the best, show them who built it and that they could do the same thing.</p>
-
-<p>The first issue I take with the program is so many of the roles presented are not technical. The girls are shown programs run on step by step instructions and will only do what you tell them by children, but don't write code. </p>
-
-<p>I attended an event a couple of years ago for a major tech company which was a diversity intro day. All I was presented with were the women from HR, marketing, business etc and we produced an app design in teams but no actual code. To me this once again was a big sign in my face saying "this is what you're meant to do, not the complex stuff you enjoy". It pissed me off so much that whilst I respect the company for the technology they produce, they will probably always have a black mark in my book until I see something spectacular that swings it for me.</p>
-
-<p>Back to the program. If tech roles being barely represented wasn't bad enough, any time the women are doing anything technical it's a man helping them to do it, or even worse, a man doing it for them. As someone who works in the usual office space where I'm one of two women in the room, I appreciate honesty that this is what tech looks like, but at the same time I know that if you present better role models that the target audience can see themselves as, it's probably a better way to get them thinking "that could be me".</p>
-
-<p>On the flip side, there's a lot of female role models, including Dr. Sue Black who is living proof that if she can do it with what she's had to deal with, so can anyone else. Again though, of those who are presented as female role models, maybe two out of them are technical. Still not seeing the title being fairly represented, here.</p>
-
-<p>The next issue I take with the program is that I'm not a girly girl. Nor am I a total nerd. I'm somewhere in between. I rarely wear makeup, doesn't mean I don't like wearing it for a special occasion and looking in the mirror going "god I'm gorgeous". I want to look presentable on a day to day occasion, but in general I like and am happy with who I am, how I dress and what my face looks like without having to be uncomfortably dressed. Not everyone's that lucky, my parents just managed to avoid teaching me to care. That's probably my super power. <br>
-The program's subjects suffer from a lack of diversity for me - one of them loves gaming, I appreciate that, there's another one that's an art student, but mostly, they're all girly girls. I don't see myself before I joined the tech industry represented in the program, and it's not like I've been interested in technology since birth. If we're to get more girls interested, we need to cater for all the amazing and different interests young women have.</p>
-
-<p>I also think there's far more mind-blowing technology to be shown, but to some extent this goes back to my point on diverse subjects. If you are going to influence how people think about technology when they have no desire to enter that industry or understand how it works, then you have to use what they're interested in.</p>
-
-<p>Overall...I will give it a second chance next week, but right now I'm annoyed and frustrated at a lot of the show's content. I'm very much praying it will get better.</p>
-
-<p>If you're interested, <a href="http://www.bbc.co.uk/iplayer/episode/b06ccksx/girls-can-code-episode-1">here's the iPlayer link</a></p>]]></content:encoded>
+            <title>On-boarding at Trainline</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/10/29/on-boarding-at-trainline/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/10/29/on-boarding-at-trainline/#respond</comments>
+            <pubDate>Thu, 29 Oct 2015 17:57:27 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[thetrainline]]></category>
+            <category><![CDATA[Best Fare Finder]]></category>
+            <category><![CDATA[BFF]]></category>
+            <category><![CDATA[ES6]]></category>
+            <category><![CDATA[JSON]]></category>
+            <category><![CDATA[Node.js]]></category>
+            <category><![CDATA[REST]]></category>
+            <category><![CDATA[RESTful API]]></category>
+            <category><![CDATA[Roundals]]></category>
+            <category><![CDATA[Trainline]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3592</guid>
+            <description><![CDATA[I&#8217;m now entering the sixth week of my time at Trainline. It&#8217;s been quite the experience, due to it being my first full-time job and it being a time of significant changes at Trainline in terms of technology, branding and even an expansion into the European rail market. It&#8217;s been great to be in a [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3592&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>I&#8217;m now entering the sixth week of my time at Trainline. It&#8217;s been quite the experience, due to it being my first full-time job and it being a time of significant changes at Trainline in terms of technology, branding and even an expansion into the European rail market.</p>
+<p>It&#8217;s been great to be in a team of people who know so much about Software Engineering and the systems in use at Trainline, and whom are so willing to pass that knowledge on. I&#8217;ve also been blessed with some really cool projects to work on at the start of my trainline career. The first thing I was tasked with doing was replacing the standalone Best Fare Finder application, with deep links to an improved Best Fare Finder experience which was already built in to the main ticket purchasing flow.</p>
+<blockquote><p>The Best Fare Finder allows you to find the cheapest tickets avaliable between two stations if you&#8217;re willing to be flexible on dates and times of travel</p></blockquote>
+<div data-shortcode="caption" id="attachment_3595" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-standalone-bff.png"><img class="size-full wp-image-3595" src="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-standalone-bff.png?w=519&#038;h=278" alt="Trainline Standalone BFF" width="519" height="278" /></a><p class="wp-caption-text">Trainline Standalone BFF</p></div>
+<p>The Standalone BFF, pictured above, wasn&#8217;t responsive; didn&#8217;t look like the the newly rebranded trainline homepage and purchase funnel and required additional maintenence. Removing it and using the best fare functionality baked into the main purchase flow improved the experience for users and reduced the costs, both financial and of technical debt, to the company. The inline best fare finder which replaces it can be seen below:</p>
+<div data-shortcode="caption" id="attachment_3594" style="width: 529px" class="wp-caption aligncenter"><a href="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-inline-bff.png"><img class="size-full wp-image-3594" src="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-inline-bff.png?w=519&#038;h=272" alt="Trainline Inline BFF" width="519" height="272" /></a><p class="wp-caption-text">Trainline Inline BFF</p></div>
+<p>The pictures of popular locations you can see in the screenshot of the homepage, or Roundals as I&#8217;ve started calling them (inspired by the name of the famous Tube logo which is a similar shape), had to be updated as part of this work. This was quite exciting as it meant that within a week of my first job I had pushed a change, albeit relatively minor, to the home page of a website with millions of visitors a month. The deep linking I developed for this inline BFF is now also used in Trainline emails to customers.</p>
+<p>As part of doing this work I discovered that some parts of the Best Fare Finder backend were a bit difficult to work with and that access to useful information could be greatly simplified leading to a reduction in the number of places in which static data was manually updated by humans. I proposed that a RESTful API was developed with some easy to understand endpoints that delivered a JSON response.</p>
+<p>My development manager and product manager were supportive of the idea and therefore I started working on a set of requirements and use-cases for the product, which I simply called BFF API (Best Fare Finder Application Programming Interface). The resulting system is written in Node.js 4 &#8212; making great use of all the new features of ES6 such as block scoping, destructuring and arrow functions &#8212; Hapi.js and an assortment of the libraries avaiable from npm.</p>
+<p>It is unlikely that this system will be made user facing itself, but it may contribute to some of the things a user can see from the backend.</p>
+<p>I&#8217;ve learned rather a lot in the last few weeks: including the business and technological processes involved in developing enterprise quality software, how to navigate through and modify/maintain legacy systems and some more about the Node.js ecosystem. Expect a blog post in the new few weeks about how I&#8217;ve changed the way I develop Node.js code in order to aid correctness and the ability to tests things.</p>
+<p>Whilst some parts of the transition from academia to Real Life™ have been difficult to get used to (what is waking up at 7am and commuting?!) overall I&#8217;m enjoying the new experience and feel like I&#8217;m learning as much or more than I was at university and being paid to do so &#8212; the best of both worlds!</p>
+<p>I will keep the blog up-to-date with my progress at Trainline.</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3592/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3592/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3592&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/10/29/on-boarding-at-trainline/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-homepage.png?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-homepage.png?w=150" medium="image">
+                <media:title type="html">trainline-homepage</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-standalone-bff.png" medium="image">
+                <media:title type="html">Trainline Standalone BFF</media:title>
+            </media:content>
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/10/trainline-inline-bff.png" medium="image">
+                <media:title type="html">Trainline Inline BFF</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[I've not posted in a month]]></title>
-            <description><![CDATA[<p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
-
-<p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but</p>]]></description>
-            <link>http://charlottegodley.co.uk/ive-not-posted-in-a-month/</link>
-            <guid isPermaLink="false">711eb4f1-28d6-44df-ae4b-5ff5f8dac11d</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 04 Sep 2015 23:31:15 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" alt="I've not posted in a month"><p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
-
-<p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but I already wrote about that. I <em>didn't</em> go to South Korea because of MERS and was incredibly lucky I hadn't booked my flights, as Global Hackathon Seoul has severely dented its reputation by running out of money and not being able to help people get their flights refunded.</p>
-
-<p>The most notable thing I guess of this month was that I sorted housing for Cambridge and played my first "gig" with my sisters at my uncle's wedding. Did it for free, went down a storm. <a href="http://music.charlottegodley.co.uk">We're now planning to do more of them as a part time job</a>, the website of which (if you click that link) is temporarily up as a sub domain but will probably get a full domain whenever I decide what domain to buy.</p>
-
-<p>Since that occasion which was last week I've pretty much been chillin', modifying my projects page and tweeting about how I've not written anything. I'm now in the waiting period where I just...do nothing until the journey to Cambridge on Sunday. Exciting times.</p>]]></content:encoded>
+            <title>MSc Finished</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/09/13/msc-finished/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/09/13/msc-finished/#respond</comments>
+            <pubDate>Sun, 13 Sep 2015 01:13:58 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[University - Masters]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3584</guid>
+            <description><![CDATA[&#160; Last week I submitted my thesis, workshop report and conference presentation for my MSc in Advanced Computer Science. Two days after my submission I was also required to present my research and answer a few questions fielded from a lecturer in Yorks Department of Computer Science who had not previously seen my work. The [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3584&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<div style="width: 519px; " class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-3584-1" width="519" height="292" preload="metadata" controls="controls"><source type="video/mp4" src="http://dannybrown.net/resources/videos/msc-presentation.mp4?_=1" /><a href="http://dannybrown.net/resources/videos/msc-presentation.mp4">http://dannybrown.net/resources/videos/msc-presentation.mp4</a></video></div>
+<p>&nbsp;</p>
+<p>Last week I submitted my thesis, workshop report and conference presentation for my MSc in Advanced Computer Science. Two days after my submission I was also required to present my research and answer a few questions fielded from a lecturer in Yorks Department of Computer Science who had not previously seen my work. The video shown above is the one which will be used to mark my presentation and question answering skills.</p>
+<p>Having completed the three deliverables and the presentation my research semester, and thus my masters, is complete.</p>
+<p>I expect to find out my final result in 4 to 6 weeks, however currently I am more focused on my impending start at Trainline &#8212; which I hope to write about soon.</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3584/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3584/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3584&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/09/13/msc-finished/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <enclosure url="http://dannybrown.net/resources/videos/msc-presentation.mp4" length="84067204" type="video/mp4" />
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Doing my best at documentation]]></title>
-            <description><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
-Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I</p>]]></description>
-            <link>http://charlottegodley.co.uk/doing-my-best-at-documentation/</link>
-            <guid isPermaLink="false">dd214f9a-ecda-4211-a69d-b7aea0d6350e</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 27 Jul 2015 23:23:54 GMT</pubDate>
-            <content:encoded><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
-Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I was working with, and much of the code was either written by developers who had left or the current developers had long forgotten how bits of it worked, which is completely natural when you have a huge project to work on. Often I kind of reverted to using the dir() method in python quite a lot and just guessing my way round stuff.</p>
-
-<p>At E14 I was pretty much flying solo - any help I received took days to come back from people who were working with other things, and again, may or may not remember how to use the devices. It's also a different work environment - the code at Airbus was mostly in-house, if not contracted for their purposes. E14 were just the distributors for most of the kit I was working with, so it's natural people would be less fluent.</p>
-
-<p>So why are docs more important? Because if I'm mostly relying on those to figure out how your code works and you don't explain what a method does, I'm probably not going to use that method. So you just wasted a long time on it if your intended user is an OS developer.</p>
-
-<p>Anyhow. I promised myself on my FYP open source plan that I wouldn't just dump my program out there for the world to see with the note "lol I built this for me only have fun figuring out how it works", and today I've been working on automatic documentation.</p>
-
-<p>In python, automatic documenters use introspection to examine the docstrings of each class and method. A docstring in python terms is the first string inside that method or class, where you can indicate what the method does. I started on this by running through each class and most of the methods within that class which weren't obviously titled (Hey, guess what addStaff does!). For each one I tried to give a brief explanation of the purpose and for classes, an indication of the variables within it.</p>
-
-<p>I started off looking at pydoc, the module provided by the foundation with python. This worked pretty well, but if I was going to publish the docs anywhere...well...here's a screenshot: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-27-at-22-37-33.png" alt="">
-Colourful, yes, but ick. Not really all that readable or pretty, to be honest. </p>
-
-<p>So I went for a browse, and OSS and python being the fabulous community that they are, there's a lot of other tools that do this. If I remember correctly, epydoc was the one we used to use at work. A lot of other people have used it too, but unfortunately python3 support isn't great, so yeah. Maybe not.</p>
-
-<p>The one I've gone for is <a href="http://github.com/BurntSushi/pdoc">pdoc</a>, which looks like this: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-27-at-22-36-51.png" alt=""></p>
-
-<p>Nice, right? It supports some markdown notation, and has an additional feature in which it can figure out docstrings for different variables, which pydoc doesn't do. <br>
-For example:  </p>
-
-<pre><code>majors = {-  
-          7: "Cflat", -
-          6: "Gflat", -
-          5: "Dflat", -
-          4: "Aflat", -
-          3: "Eflat", -
-          2: "Bflat", -
-          1: "F", 0: "C", 1: "G", 2: "D", 3: "A", 4: "E", 5: "B", 6: "Fsharp", 7: "Csharp"}
-'''dictionary of all key signature names in the major mode, indexed by their number of fifths'''  
-minors = {-7: "Aflat", -6: "Eflat", -5: "Bflat", -4: "F", -3: "C", -2: "G", -1: "D",  
-          0: "A", 1: "E", 2: "B", 3: "Fsharp", 4: "Csharp", 5: "Gsharp", 6: "Dsharp", 7: "Asharp"}
-'''dictionary of all key signature names in the minor mode, indexed by their number of fifths'''  
-</code></pre>
-
-<p>pydoc then figures out what those two strings mean, and does this:</p>
-
-<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-28-at-00-22-25.png" alt=""></p>
-
-<p>Pretty!</p>
-
-<p>Annoyingly the navigation isn't all that great - if I headed into a class, I couldn't get back without using the back button. Despite this, the template looks so beautiful that I uploaded it to my own hosting.</p>
-
-<p>You can now view the docs <a href="http://docs.charlottegodley.co.uk/MuseParse">here</a> at my new fancy subdomain, and view overviews of any upcoming projects on the new <a href="http://charlottegodley.co.uk/projects">projects page</a>.</p>]]></content:encoded>
+            <title>Expect the unexpected</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/08/02/expect-the-unexpected/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/08/02/expect-the-unexpected/#respond</comments>
+            <pubDate>Sun, 02 Aug 2015 20:19:55 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[Canvas]]></category>
+            <category><![CDATA[Dr. David Parker]]></category>
+            <category><![CDATA[HTML5]]></category>
+            <category><![CDATA[JavaScript]]></category>
+            <category><![CDATA[Orrery]]></category>
+            <category><![CDATA[Solar System Simulation]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3580</guid>
+            <description><![CDATA[When you design software you usually have a few use cases in mind, in the case of EpsilonGit the use case I keep coming back to is a project lead who wants an overview of how his team is working and how they are using their version control software. Back in second year when I [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3580&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>When you design software you usually have a few use cases in mind, in the case of EpsilonGit the use case I keep coming back to is a project lead who wants an overview of how his team is working and how they are using their version control software.</p>
+<p>Back in second year when I developed <a href="https://dannycomputerscientist.wordpress.com/2012/11/11/2d-graphics-coursework-a-javascript-orrery/">The JavaScript Orrery</a> my target audience was <a href="http://www.goparker.com">David Parker</a> and the only use of the software was to impress him for degree credit.</p>
+<p>A short while later I made a few small adaptations to package the orrery as a Windows Store (now called Universal Windows) Application. I thought a few people might enjoy watching the planets go around the screen, but didn&#8217;t really expect too many people to download it. To be completely honest, I mainly packaged it as an app to get points for the <a href="https://dannycomputerscientist.wordpress.com/2013/02/19/microsoft-app-builder-rewards/">App Builder Rewards competition</a>.</p>
+<p>I haven&#8217;t touched the orrery, packaged as Solar System Simulation on Windows, for years. However, I wrote a little while back about someone who used it to teach <a href="https://dannycomputerscientist.wordpress.com/2013/03/09/a-heartwarming-review/">their daughter about space</a>, an unexpected use but a nice one.</p>
+<p>Today I got an email from a student in Brazil who wondered if the software had a function to see planet locations at specific dates, as he liked the simple 2D graphics and wanted to use them to make a tattoo of the layout of the solar system on his birthday. Strange, but cool.</p>
+<p>Unfortunately the Solar System Simulation (which is a gratuitous name &#8212; its in no way even close to a &#8216;simulation&#8217;) doesn&#8217;t support this function &#8212; but its a cool idea, and one I wouldn&#8217;t have thought of.</p>
+<p>It might be fun to add it in one day, and see how popular some of the ideas I have would be compared to those that a user has had and wanted to be implemented enough to go to the effort to email me about it. I <em>suspect</em> the user submitted ideas might be more popular, because no one knows how well a customer users your product as well as a customer. But I might be wrong, it could be an interesting bit of research.</p>
+<p>So, expect the unexpected uses of your software and services &#8212; both in positive ways, such as odd-but-exciting use cases, and negative, such as malformed input &#8212; but also be excited by the prospect.</p>
+<p>Danny</p>
+<p>P.S <a href="https://www.microsoft.com/en-US/store/Apps/Solar-System-Simulation/9WZDNCRDPBJH">&#8216;Solar System Simulation&#8217; is still available</a> and works on Windows 8, 8.1 and 10.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3580/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3580/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3580&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/08/02/expect-the-unexpected/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/08/screen-shot-2015-08-02-at-21-16-29.png?w=150" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/08/screen-shot-2015-08-02-at-21-16-29.png?w=150" medium="image">
+                <media:title type="html">Solar System Simulation Windows 10</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
         </item>
         <item>
-            <title><![CDATA[Cross-platform python: the ubuntu edition]]></title>
-            <description><![CDATA[<p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest</p>]]></description>
-            <link>http://charlottegodley.co.uk/cross-platform-python-the-ubuntu-edition/</link>
-            <guid isPermaLink="false">5a65a4c3-6311-49a4-878a-a58b88890f01</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Tue, 21 Jul 2015 00:43:25 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"><p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest of my FYP on ubuntu while I was at it. <br>
-To begin with, it was going swimmingly. Got the packages I needed from apt-get:  </p>
-
-<pre><code>sudo apt-get install python3-qt4  
-sudo apt-get install python3-pip  
-</code></pre>
-
-<p>along with some other programs, fetched my code and my module from git and pip respectively. <br>
-Ran the program and the library, all functioned as expected... <br>
-Until, as usual, poppler fell out with me.</p>
-
-<p>In order to note this for later use, you need the following packages to get poppler to function on ubuntu: <br>
-python3-qt4, python-qt4-dev, python3-sip, python3-sip-dev, libpoppler-qt4-4, libpoppler-qt4-dev <br>
-Then run <code>pip3 install python-poppler-qt4</code> and it <em>should</em> work just fine. <br>
-And finally it functions in full on 2 platforms: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[My first "proper" OSS release]]></title>
-            <description><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
-
-<p>During the past year I've been working on my Final Year Project as you're probably sick of hearing about. I promised myself and my lecturers that I would open source it for several reasons:</p>
-
-<ol>
-<li><p>I made it because music software is expensive and I wanted something that I could pick</p></li></ol>]]></description>
-            <link>http://charlottegodley.co.uk/my-first-proper-oss-release/</link>
-            <guid isPermaLink="false">bb9160cc-fab7-4aa4-8a9f-46e54713683a</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 20 Jul 2015 16:56:25 GMT</pubDate>
-            <content:encoded><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
-
-<p>During the past year I've been working on my Final Year Project as you're probably sick of hearing about. I promised myself and my lecturers that I would open source it for several reasons:</p>
-
-<ol>
-<li><p>I made it because music software is expensive and I wanted something that I could pick out what I wanted. Seems dumb to release it for money or just as shareware or whatever when I'm sure there's plenty of other people who are equally frustrated at music software being crap or expensive.</p></li>
-<li><p>There's a lot of stuff in there that's useful but hasn't been released before, or not documented in a way that you can actually use it for your own projects.</p></li>
-<li><p>I'd really hate for all that code to go to waste.</p></li>
-</ol>
-
-<p>On Wednesday I graduated, so I guess that means all of that code is definitely one hundred percent never going to get assessed again. Today I cleaned out the last horrible global variables from my parser, moved the folders into a better more manageable structure and released the drawing portion of my project into the wild on <a href="http://github.com/Godley/MuseParse">Github</a>. I call this my first "proper" release because most things I've worked on which are not for the purposes of university are already open source on my personal Github account, but none of them were really documented or intended for other people to work on.</p>
-
-<p>I still have a bunch of issues to move over from their original location in my still-private FYP repo, but all the code and tests are now on there. <br>
-After that was done and I'd tested by building, installing and finally changing my original FYP to use only that package rather than the project's local copy, with bated breath, I followed this <a href="https://jamie.curle.io/posts/my-first-experience-adding-package-pypi/">tutorial</a> and released it onto the Python Package Index. Now all you need to do to get that package is use <code>pip3 install MuseParse</code> and you're away. <br>
-Note I have yet to test if it works with Python 2.7. I really doubt there's much to change if it doesn't work in 2.7.</p>
-
-<p>There's still some documentation work to do if anyone wants to use the classes for anything other than how the test scripts tell you to use them, which I hope to write over the next few days. For now, enjoy!</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Graduation and what]]></title>
-            <description><![CDATA[<p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
-My</p>]]></description>
-            <link>http://charlottegodley.co.uk/graduation-and-what/</link>
-            <guid isPermaLink="false">ad6b92bf-0777-49e5-9106-81f6de5e061f</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Sat, 18 Jul 2015 00:17:56 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" alt="Graduation and what"><p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
-My favourite photos: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0809.JPG" alt="Graduation and what">
-<em>Passerby: You'll have people coming here for the wrong reasons</em>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0827.JPG" alt="Graduation and what">
-The following day was my big sister's graduation in Newcastle, so we continued the fun by heading up there and finally coming back to reality this afternoon. <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0936.JPG" alt="Graduation and what">
-Fabulous week. Congratulations all!</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Results!]]></title>
-            <description><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what</p>]]></description>
-            <link>http://charlottegodley.co.uk/css-bug-in-cx_freezepyqt4/</link>
-            <guid isPermaLink="false">e0d42c8c-0e47-4448-93bc-48f8d4526cf4</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Thu, 09 Jul 2015 14:53:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what I'd said. Honestly, I was hoping to hit a specific percent hence I said that.</p>
-
-<p>Anyhow, very pleased to say I got my first. I'm a bit disappointed that I pretty much dive-bombed both the exams in that term. I'm not sure how that happened, but the last term of uni was always going to be a stressful time and I guess I just didn't know the material or answer questions in the right way. </p>
-
-<p>A difference this year has been I've found it difficult to integrate back into third year, with a lot of my friends having moved on or gone into fourth year, and that's tough. A big part of the first two years was being able to talk through issues with people working on the same stuff, so I attribute part of my lower grades to feeling isolated and that's kinda sucky.</p>
-
-<p>What I'm trying to force myself to not do is dwell on it. Even if I didn't get the mark I wanted, I got a first and most people would be happy with that. Heck, A-Level studying Charlotte is looking at me right now thinking "what the hell, dude, quit moaning" because at that point I was happy with getting a high grade and sod the excess. Funny how much you notice you've changed.</p>
-
-<p>On top of that first, I got a pretty good grade on my final year project which is the part I was (and still am) most passionate about. In total I got 93%, which breaks down to 68% in my first report (worth 3%), 75% in my second (worth 7%), and a whopping 95% in my final report (worth the remaining 90%). I'm incredibly pleased and proud of what I accomplished there and I can't wait to open source what I have once a few bugs are fixed and sections are tidied and improved. My target is to have it ready for public viewing by the end of the year, and as I don't have an awful lot to do over the summer I'll probably spend a fair amount of time on it during this period.</p>
-
-<p>A big thank you to the people who reviewed my report - that is, obviously my supervisor Helen who's been brilliant throughout the year, David Jones, David Whale, Zach Zebrowski, my own mum and dad, probably a couple of others I've forgotten. I really think that's what gave me a boost in terms of grades, and spending the last 24 hours putting in all of your changes was well worth the effort, so thank you so much for taking the time to read and give honest feedback.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[The InCredible Hull-k]]></title>
-            <description><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
-
-<p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT,</p>]]></description>
-            <link>http://charlottegodley.co.uk/the-incredible-hull-k/</link>
-            <guid isPermaLink="false">a7323673-4848-4210-9768-2ff78381964d</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 01 Jun 2015 15:33:01 GMT</pubDate>
-            <content:encoded><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
-
-<p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT, WE DINE, IN HULL etc etc., it seemed only fitting to come up with an extremely bad pun to title my final blog post on my time here.</p>
-
-<p>There's been upsides, there's been downsides, there's been moments where I've wondered "what the hell am I doing" and wanted to leave, but overall, I don't think I'd change any of it, and that agonising decision over which university to go to ended pretty well for me. I will miss people asking me "where's Hulli?" when I go to international conferences (or in fact, even when I go to events in London), I will miss the chip spice and I will miss the lecturers and the students here, but it's time to move on and I'm super excited.</p>
-
-<p>What's next? Tomorrow I'm heading North for a road trip around Scotland with my sister who is soon to be MEng Chemical Engineering, then in 16 days I'm heading out to South America to visit Argentina, Uruguay and Brazil. I've been to Paraguay before but didn't get to Iguazu Falls which borders Brazil, Paraguay and Argentina, so I needed another visit to make sure I'd done that and pick up some Terere (Paraguayan Tea which you can drink warm or cold. It's an acquired taste, but after 10 days in 30-40 degree heat I loved it).</p>
-
-<p>Yeah that's still not all. When I get back I have a week or so to rest and then I graduate, and then the next day my sister graduates, so the night of graduation I'll probably be in the back of a car heading up to Newcastle. A couple of weeks after that I have a place at Global Hackathon Seoul which is almost all expenses paid, so I'll be spending about a week or so in Seoul at the hackathon and then probably a week or so travelling South Korea and Japan. When I get back I'm working with Fire Tech Camp as a camp instructor in Manchester and then Leeds, then I'm off to Ireland for a week for my uncle's wedding, and FINALLY <em>DUN DUN DUN</em>...</p>
-
-<p>I'm moving to Cambridge. I start my new job a week into September at Cambridge Consultants, which I'm super excited about because it's one of the jobs I've read where I've gone "This is me. This is what I want" and I never expected to have figured that out by this point. I've dropped hints about this job for several months because I was lucky enough to have my job sorted from the end of 2014 which was a definite weight off my mind heading into second term of final year.</p>
-
-<p>Christ. I'm exhausted reading that. Finally, all that's left to leave you with is this:</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/bolCulCh60E" frameborder="0" allowfullscreen></iframe>
-
-<p>P.S. Yesterday I turned a year older.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Working with Poppler/PyQT to present PDFs]]></title>
-            <description><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
-Today I have another tutorial because I've been fiddling again. This time I was working on changing my application so that it will show each pair of pages horizontally, and then subsequent pairs vertically as if it were a book. Important for musicians because it requires less page turning. </p>
-
-<p>What</p>]]></description>
-            <link>http://charlottegodley.co.uk/working-with-popplerpyqt-to-present-pdfs/</link>
-            <guid isPermaLink="false">deaa09c9-3302-46bc-b453-8b0f91616216</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Sun, 24 May 2015 17:54:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
-Today I have another tutorial because I've been fiddling again. This time I was working on changing my application so that it will show each pair of pages horizontally, and then subsequent pairs vertically as if it were a book. Important for musicians because it requires less page turning. </p>
-
-<p>What this requires is producing 2 layouts - the main one which holds sub layouts and is vertical, and each sub layout which is horizontal. The libraries I'm using here are PyQt4, Poppler for PDF rendering on Python 3.4. Both of these can be fetched from PyPi.</p>
-
-<h2 id="thecodealgorithm">The code/algorithm</h2>
-
-<h3 id="tldr">TLDR</h3>
-
-<p>The full code is here in case you're feeling lazy:  </p>
-
-<script src="https://gist.github.com/Godley/a95675c11d9e37166a9c.js"></script>  
-
-<h3 id="verticallayout">Vertical layout</h3>
-
-<p>The implementation of this form of layout is relatively simple. First, we need to produce the vertical layout  </p>
-
-<script src="https://gist.github.com/Godley/d0d6a06e8238806c844e.js"></script>  
-
-<p>This has loaded no pages, but the point here is to show how poppler and piquet work together. What we basically do is create a layout and a scene, put the pages into the scene, the scene into the layout and then set the graphics widget's layout to be that layout.</p>
-
-<h3 id="horizontallayoutandpageloading">Horizontal layout and page loading</h3>
-
-<p>Next up we need to pop in the code that handles the pages. This needs to go before the line <code>graphicsWidget = QtGui.QGraphicsWidget()</code></p>
-
-<script src="https://gist.github.com/Godley/149d7ca1456c863bfa83.js"></script>
-
-<p>Essentially what we do here is loop through the pages but increment every 2 pages instead of every page. <br>
-Note I've used a list for every variable. This is because of memory management. When an item gets added to a scene or a layout, the object <em>itself</em> gets added, not a copy or the data that it holds, because C++. In normal circumstances to avoid messing up the layout by creating a new object and overwriting the old one, we'd use <code>copy.deepcopy</code> which copies the data of that object into a new object - the objects held in the layouts here are "shallow copied", meaning their memory space is exactly the same as the one we created. <br>
-In PyQt, Poppler and other libraries which python is <em>wrapping</em>, not managing itself, we can't use deep copy because python isn't able to manage the object itself - that's handled by C++. </p>]]></content:encoded>
+            <title>Thesis writing begins</title>
+            <link>https://dannycomputerscientist.wordpress.com/2015/07/27/thesis-writing-begins/</link>
+            <comments>https://dannycomputerscientist.wordpress.com/2015/07/27/thesis-writing-begins/#respond</comments>
+            <pubDate>Mon, 27 Jul 2015 21:13:14 +0000</pubDate>
+            <dc:creator><![CDATA[Danny Brown]]></dc:creator>
+            <category><![CDATA[University - Masters]]></category>
+            <category><![CDATA[Advanced Querying and Analysis of Git Repositories]]></category>
+            <category><![CDATA[Dimitris Kolovos]]></category>
+            <category><![CDATA[Masters Thesis]]></category>
+            <guid isPermaLink="false">http://dannycomputerscientist.wordpress.com/?p=3574</guid>
+            <description><![CDATA[Today I started work on my masters thesis covering my research for and development of EpsilonGit. There&#8217;s no template provided for the layout of such reports, so today I&#8217;ve been sketching out a rough outline of what I hope to include in the report. e.g. Chapter names, section headings and comments for things to talk [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3574&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+            <content:encoded><![CDATA[<p>Today I started work on my masters thesis covering my research for and development of <a href="https://dannycomputerscientist.wordpress.com/2015/05/01/research-semester-begins/">EpsilonGit</a>.</p>
+<p>There&#8217;s no template provided for the layout of such reports, so today I&#8217;ve been sketching out a rough outline of what I hope to include in the report. e.g. Chapter names, section headings and comments for things to talk about in each section. One of the other things I did was make a pretty title page, because who doesn&#8217;t like doing that?</p>
+<p>I&#8217;d like to be in a position by the end of the week whereby I can roll into the lab, open <a href="https://www.texpadapp.com">TexPad</a> and start writing within a structure I&#8217;m already happy with and have had &#8216;signed off&#8217; by my supervisor.</p>
+<p>Eventually my thesis will sit at around 30,000 words and will be accompanied by a 6 page workshop to briefly describe what my project does and a Beamer presentation which could be used at conferences.</p>
+<p>Danny</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/dannycomputerscientist.wordpress.com/3574/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/dannycomputerscientist.wordpress.com/3574/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3574&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+            <wfw:commentRss>https://dannycomputerscientist.wordpress.com/2015/07/27/thesis-writing-begins/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://dannycomputerscientist.files.wordpress.com/2015/07/screen-shot-2015-07-27-at-22-02-20.png?w=123" />
+            <media:content url="https://dannycomputerscientist.files.wordpress.com/2015/07/screen-shot-2015-07-27-at-22-02-20.png?w=123" medium="image">
+                <media:title type="html">Thesis Title Page</media:title>
+            </media:content>
+            <media:content url="https://0.gravatar.com/avatar/f4a65378f2b463cac0b246756019206c?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">dannycomputerscientist</media:title>
+            </media:content>
         </item>
     </channel>
 </rss>

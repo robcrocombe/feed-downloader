@@ -1,638 +1,1029 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
     <channel>
-        <title><![CDATA[Charlotte Godley]]></title>
-        <description><![CDATA[Thoughts, stories and ideas.]]></description>
-        <link>http://charlottegodley.co.uk/</link>
-        <generator>Ghost 0.6</generator>
-        <lastBuildDate>Sun, 27 Dec 2015 23:43:38 GMT</lastBuildDate>
-        <atom:link href="http://charlottegodley.co.uk/rss/" rel="self" type="application/rss+xml" />
-        <ttl>60</ttl>
+        <title>Alex Rodgers</title>
+        <atom:link href="http://alexrodgers.co.uk/feed/" rel="self" type="application/rss+xml" />
+        <link>http://alexrodgers.co.uk</link>
+        <description>Computer Science, Programming, 3D Graphics, Gaming</description>
+        <lastBuildDate>Wed, 22 Jul 2015 11:20:43 +0000</lastBuildDate>
+        <language>en-GB</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>http://wordpress.org/?v=4.2.7</generator>
         <item>
-            <title><![CDATA[Opensourcing my Final Year Project - a lesson in python versions]]></title>
-            <description><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
+            <title>Hybrid Rendered Dragon Scene (Ray Marching, Forward Rendering)</title>
+            <link>http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/</link>
+            <comments>http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/#comments</comments>
+            <pubDate>Wed, 08 Jul 2015 20:06:36 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[C++]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[DirectX]]></category>
+            <category><![CDATA[Geometry]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[Implicit]]></category>
+            <category><![CDATA[lighting]]></category>
+            <category><![CDATA[MSc]]></category>
+            <category><![CDATA[phong]]></category>
+            <category><![CDATA[Ray Marching]]></category>
+            <category><![CDATA[ray tracing]]></category>
+            <category><![CDATA[Rendering]]></category>
+            <category><![CDATA[Shader]]></category>
+            <guid isPermaLink="false">http://alexrodgers.co.uk/?p=973</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/"><img title="4Featured" src="http://alexrodgers.co.uk/wp-content/uploads/2015/07/11-640x477.png" alt="Hybrid Rendered Dragon Scene (Ray Marching, Forward Rendering)" width="640" height="477" /></a>
+	</div>
+<p>	This is a quick run down on my Advanced Rendering coursework submission. It uses my own renderer using C++ and DirectX 11. Below I&#8217;ll basically post the report contents that I submitted with the code which details how each effect has been &#8230; <a href="http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/">Hybrid Rendered Dragon Scene (Ray Marching, Forward Rendering)</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/"><img title="4Featured" src="http://alexrodgers.co.uk/wp-content/uploads/2015/07/11-640x477.png" alt="Hybrid Rendered Dragon Scene (Ray Marching, Forward Rendering)" width="640" height="477" /></a>
+	</div>
+	<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span>
+<p>This is a quick run down on my Advanced Rendering coursework submission. It uses my own renderer using C++ and DirectX 11. Below I&#8217;ll basically post the report contents that I submitted with the code which details how each effect has been implemented.</p>
+<p><span style="text-decoration: underline;"><strong>Effect Descriptions</strong></span></p>
+<p><strong>Effect 1: Chamber Room Environment</strong></p>
 
+
+
+
+
+<p style="text-align: left;">The chamber walls and ceilings were ray traced by ray marching implicit geometry using distance functions.</p>
+<p style="text-align: left;">The walls and ceiling are done inside the pixel shader on an screen sized quad. I then perform a second ray tracing pass for the interior pillar geometry. I did this in a separate pass in order to be able to blend the geometry in the correct order i.e. the pillars needed to sit on top of the forward rendered floor which meant I would need to render first the walls, then the floor  and finally the pillars. The hybrid ray tracing and forward rendering passes were combined in the scene using blending.</p>
+<p>The structure is comprised of 4 large radius spheres for efficiency. The texture and bump-mapping effect is done via ray tracing a texture lookup and modifying the distance function to adjust the intersection point on the ray based on the texture sample.</p>
+<p>All lighting in the program is done based on the ‘Blinn-Phong’ reflection model.</p>
+<p style="text-align: left;"><strong>Effect 2: Animated Dragon</strong></p>
+
+
+
+
+
+<p>The dragon is a forward rendered basic mesh model with texture-mapping and shading. The dragon is animated via the vertex shader performing multiple different motions of local body parts. The tail sways up and down and the neck and head move gently but differently from each other. Breathing was also emulated on the dragon’s torso and throat.</p>
+<p>The animation aims to give the impression of a living, breathing creature guarding its treasure horde. The animations themselves were performed by passing in a timer value to the vertex shader and using ‘smooth step’ functions of time, sine and cosine.</p>
+<p>Normal bump-mapping is also implemented using a separate normal map texture.</p>
+<p><strong>Effect 3: Four Bumpy Stone Pillars</strong></p>
+
+
+
+
+<p>Similar to the walls and ceiling, a separate ray tracing pass was done for the stone pillars. Four capped cylinders were defined using distance functions. The parallax bump -mapping was done in the same way as before.</p>
+<p><strong>Effect 4: Geometry Shader-based Particle Systems</strong></p>
+<p></p>
+<p>Both fire and smoke particle system effects were created on the GPU using the geometry shader. The systems are created from a base mesh model of a cone  (procedurally generated). Each cone vertex is input individually into the geometry shader which then creates an additional 3 vertices to form a quad, effectively transforming the cone into a quad array. The resultant quad is bill-boarded to ensure it is always facing to the camera.</p>
+<p>The particle systems are animated using functions of time, sine and cosine inside the vertex shader.  The fire system uses additive blending. The smoke particles use an alpha fade to make them appear transparent.</p>
+<p>The centre fire can be toggled to show the original preserved shape using the  ‘FireShape’ UI variable.</p>
+
+
+
+
+<p>A mesh model of a wall torch was used to contain the fire and smoke particle systems for each pillar. The torch is forward rendered and features normal bump-mapping. An additional central fire inside a torus brazier was also added.</p>
+<p><strong>Effect 5: A Procedural Bumpy Floor</strong></p>
+
+
+
+
+<p>The floor is made from a single quad primitive input into the tessellation  stage of the shader pipeline (hull and domain shaders). The quad is tessellated in a triangle domain using a variety of partitioning methods changeable via the UI. The domain shader also perturbs the height of the floor using a ‘smooth step’ function based on the coordinate of the tessellated triangle patch, sine and cosine.  The normals are also recalculated by processing two adjacent positions with the same function, calculating a slope for each and normalizing them.</p>
+
+
+
+
+<p>View dependent tessellation is implemented inside the hull shader based on the camera distance from the floor plane. The closer the camera is, the more triangles are tessellated.</p>
+<p><strong>Effect 6: Ellipsoid and Torus using Tessellation Shaders</strong></p>
+
+
+
+
+<p>Both the dragon egg and brazier are made from single points that are input into the pipeline and converted inside the domain shader using parametric representations of an ellipsoid and a torus. This is done by ‘wrapping’ the patch UV coordinate space around the respective shape.</p>
+<p><strong>Effect 7: Dragon Tail Spikes</strong></p>
+<p></p>
+<p>The dragon tail spikes were created inside the geometry shader by calculating  a single new centroid vertex and utilising the existing vertices to form three new triangles faces. The effect was localised to just the tail using the world position of the vertices.</p>
+<p><strong>Extra Features:</strong></p>
+
+
+
+
+<p>Extra features include a strong wooden door made by texturing and bump mapping a quad. I also added some precious gem stones to the floor made the same way as the egg (parametric ellipsoid) but tessellated much less to make them look more geometric.</p>
+<p></p>
+<p>This coursework took my in the region of 2-3 weeks including research and learning the more advanced shader pipeline stages such as hardware tessellation and geometry shaders. Blending the scene components together was quite a headache and there are some noticeable blocky bits around the particle systems when they over lap caused by some issues I had blending everything together. Despite this it was a great learning opportunity for some of the more advanced forward rendering techniques and luckily my past experience with ray tracing helped a great deal. In the end I received a mark of 96% for it.</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/">Hybrid Rendered Dragon Scene (Ray Marching, Forward Rendering)</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2015/07/08/hybrid-rendered-dragon-scene-ray-marching-forward-rendering/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>3D Pinball Game – Development Project</title>
+            <link>http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/</link>
+            <comments>http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/#comments</comments>
+            <pubDate>Wed, 01 Jul 2015 19:28:19 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Game Development]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Bullet]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[Development]]></category>
+            <category><![CDATA[DirectX]]></category>
+            <category><![CDATA[Engine]]></category>
+            <category><![CDATA[Flippers]]></category>
+            <category><![CDATA[FMOD]]></category>
+            <category><![CDATA[Game]]></category>
+            <category><![CDATA[GameDev]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[MSc]]></category>
+            <category><![CDATA[physics]]></category>
+            <category><![CDATA[Pinball]]></category>
+            <category><![CDATA[Pincab]]></category>
+            <category><![CDATA[Singularity]]></category>
+            <category><![CDATA[Solaris]]></category>
+            <guid isPermaLink="false">http://alexrodgers.co.uk/?p=957</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/"><img title="Featured2" src="http://alexrodgers.co.uk/wp-content/uploads/2015/07/3-640x491.png" alt="3D Pinball Game &#8211; Development Project" width="640" height="491" /></a>
+	</div>
+<p>	&#160; This is a 3D pinball game developed as part of my MSc Computer Science. The module was a group project and we were tasked with developing a 3D pinball without using an existing propriety game engine (such as Unity or &#8230; <a href="http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/">3D Pinball Game &#8211; Development Project</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/"><img title="Featured2" src="http://alexrodgers.co.uk/wp-content/uploads/2015/07/3-640x491.png" alt="3D Pinball Game &#8211; Development Project" width="640" height="491" /></a>
+	</div>
+	<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span>
+<p>&nbsp;</p>
+<p>This is a 3D pinball game developed as part of my MSc Computer Science. The module was a group project and we were tasked with developing a 3D pinball without using an existing propriety game engine (such as Unity or Unreal etc.).</p>
+<p>I developed an easy to use DX11 renderer for use by the group and we incorporated the Bullet physics and FMOD libraries to put the game together.</p>
+<p>The time constraints on the project were intense and so this was put together in around 10 days (some crazy hours ensued). Many cans of energy drink and cups of coffee later this was the result. Its not exactly pinball FX but factoring in timeframe and tool constraints, I&#8217;m pleased with how it turned out. I wouldn&#8217;t expect a public release any time soon though!</p>
+<p><strong>Gallery:</strong></p>
+
+
+
+
+
+
+
+
+
+<p>Bullet physics is pretty fiddly to get up and running and took a bit of research to get to grips with. As with most open source libraries there are many conflicting sources of documentation and versions floating around which often serve only to confuse, but for a free physics library you can hardly complain.</p>
+<p>I worked on quite a bit of the project, putting together the renderer and framework that the group used for production. I programmed the graphics, did any required artwork (base textures were sourced online) and worked a lot on the important physics such as the flippers and launch mechanism. With more time we could have improved quite a bit, as it stands the physics aren&#8217;t on a fixed time step and neither is it on an independent thread, therefore bad things happen if the frame rate gets low. For this reason it&#8217;s designed to run more or less perfectly on the system we developed it on and we were marked on, but it would need a fair bit of improvement to get it working nicely on any system and I doubt I&#8217;ll have time for that any time soon.</p>
+<p>The project was probably my first real taste of game dev crunch or &#8216;death march&#8217;. Really it was worse, with 16+ hour days, often leaving the lab after sunrise. In the end, I think it was worth it though and I had actually always quite fancied trying my hand at developing a pinball game!</p>
+<p>PS. Thanks to the guys (and gal) for such a hard-working group.</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/">3D Pinball Game &#8211; Development Project</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2015/07/01/3d-pinball-game-development-project/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Falling Object Simulator – Simulation &amp; Concurrency</title>
+            <link>http://alexrodgers.co.uk/2015/07/01/falling-object-simulator-simulation-concurrency/</link>
+            <comments>http://alexrodgers.co.uk/2015/07/01/falling-object-simulator-simulation-concurrency/#comments</comments>
+            <pubDate>Wed, 01 Jul 2015 15:31:32 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Simulation]]></category>
+            <category><![CDATA[C++]]></category>
+            <category><![CDATA[Cloth]]></category>
+            <category><![CDATA[Collision Detection]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[Demo]]></category>
+            <category><![CDATA[DirectX]]></category>
+            <category><![CDATA[Engine]]></category>
+            <category><![CDATA[Hook's Law]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[Interpenetration]]></category>
+            <category><![CDATA[Mass Aggregate]]></category>
+            <category><![CDATA[MSc]]></category>
+            <category><![CDATA[Multithreading]]></category>
+            <category><![CDATA[Networking]]></category>
+            <category><![CDATA[physics]]></category>
+            <category><![CDATA[Rigid Bodies]]></category>
+            <category><![CDATA[Rods]]></category>
+            <category><![CDATA[simulation]]></category>
+            <category><![CDATA[Springs]]></category>
+            <category><![CDATA[Winsock]]></category>
+            <guid isPermaLink="false">http://alexrodgers.co.uk/?p=946</guid>
+            <description><![CDATA[<p>&#160; As part of my MSC Computer Science degree, the Simulation &#38; Concurrency module was probably the most intense module on the course, tasking us to produce a physics engine from scratch with robust network and multi-threading integration in order &#8230; <a href="http://alexrodgers.co.uk/2015/07/01/falling-object-simulator-simulation-concurrency/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/07/01/falling-object-simulator-simulation-concurrency/">Falling Object Simulator &#8211; Simulation &#038; Concurrency</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span>
+<p>&nbsp;</p>
+<p>As part of my MSC Computer Science degree, the Simulation &amp; Concurrency module was probably the most intense module on the course, tasking us to produce a physics engine from scratch with robust network and multi-threading integration in order to implement a simulation of balls falling into a box, with removable trays and also a cloth simulated net.</p>
+<p>Having done only a little previous physics programming for <a href="http://alexrodgers.co.uk/2013/05/28/the-column-3d-graphics-simulation/">&#8216;The Column&#8217;,</a> I set about researching the topic since implementing a solid and robust physics engine is no trivial task, even without a networking element. Although I found several good sources, for specific elements, Ian Millington&#8217;s &#8216;Game Physics Engine Development&#8217; was an excellent book that covered many aspects of getting a basic physics engine up and running. I promptly devoured about a third of the book during this project though it lacks any real depth on collision detection and doesn&#8217;t real cover cloth simulation as I recall.</p>
+<p>In the end I received 87% for the ACW which I&#8217;m pleased with. With more time I would have implemented rigid body motion but this second semester of the MSc has been pretty insane in terms of work load, mainly due to the fact that the UK carries out MSc degrees in a single year, rather then 2 like everywhere else in the world! Additionally, the University of Hull&#8217;s MSc degree is extremely practical, which although I find preferable to more theoretical based degrees (how better to learn then via implementation?) does result in a heavy work load. The good side is that if you put the work in, your get an extensive portfolio at the end of the degree.</p>
+<p><strong>Project Description:</strong></p>
+<p>The result of the project was a multi-threaded interactive falling object simulator developed from scratch using C++ and DirectX 11. The physics engine is a mass aggregate system using particles i.e. no rigid body motion. It features simple sphere and plane based collision detection and interpenetration resolution.</p>
+<p>Each tray features different friction and elasticity attributes as per the specification.</p>
+<p>An advanced feature is the cloth simulation for the net made using a lattice of spring constraints (Hook&#8217;s law) with four anchored corners.</p>
+<p>Net collision detection is made using small spheres mapped to the vertices of the net, this however means I had to make the springs quite rigid to stop balls from forcing their way in-between the vertices hence the cloth is not very fluid or fluttery.</p>
+<p>Without rigid body dynamics to get the cube rotations I used rod constraints connected to each vertex of the cube. This is a simple way to get rotations using just particles.</p>
+<p>Rendering and physics integration are performed on separate threads, with an additional 3 threads for handling network. Rendering frame rate is hence independent from the simulation and both can be changed to run at a specific target rate.</p>
+<p>Not shown in the video, but being a significant part of the project is the peer-to-peer network aspect. The program can be run on 2 peers, each peer will communicate and synchronise the simulation using linear interpolation of the scenes physics data. Each peer can be interacted with i.e. camera can be moved independently (think multiplayer) and commands such as open/close tray and spawn ball is communicated across the network to each peer. Network coding was done using Winsock. UDP broadcasting was used purely for peer detection and TCP for data transmission. Packet loss and latency resilience was also implemented.</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/07/01/falling-object-simulator-simulation-concurrency/">Falling Object Simulator &#8211; Simulation &#038; Concurrency</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2015/07/01/falling-object-simulator-simulation-concurrency/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Sandy Snow Globe – Deferred Shading</title>
+            <link>http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/</link>
+            <comments>http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/#comments</comments>
+            <pubDate>Mon, 23 Mar 2015 02:20:44 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Buffer]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[deferred lighting]]></category>
+            <category><![CDATA[deferred rendering]]></category>
+            <category><![CDATA[deferred shading]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[Description]]></category>
+            <category><![CDATA[DirectX]]></category>
+            <category><![CDATA[environment mapping]]></category>
+            <category><![CDATA[GBuffer]]></category>
+            <category><![CDATA[Geometry]]></category>
+            <category><![CDATA[Graphics]]></category>
+            <category><![CDATA[height mapping]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[lighting]]></category>
+            <category><![CDATA[Overview]]></category>
+            <category><![CDATA[particles]]></category>
+            <category><![CDATA[PCF]]></category>
+            <category><![CDATA[Performance]]></category>
+            <category><![CDATA[Project]]></category>
+            <category><![CDATA[Render]]></category>
+            <category><![CDATA[Rendering]]></category>
+            <category><![CDATA[Shader]]></category>
+            <category><![CDATA[shadow mapping]]></category>
+            <category><![CDATA[Snow globe]]></category>
+            <category><![CDATA[Texture]]></category>
+            <category><![CDATA[tutorial]]></category>
+            <category><![CDATA[Video]]></category>
+            <guid isPermaLink="false">http://alexrodgers.co.uk/?p=913</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/"><img title="DesertGlobe2" src="http://alexrodgers.co.uk/wp-content/uploads/2015/03/DesertGlobeACW24Crop.png" alt="Sandy Snow Globe &#8211; Deferred Shading" width="640" height="455" /></a>
+	</div>
+<p>	&#160; For the Real-Time Graphics module as part of my MSc in Computer Science we were tasked with developing a real-time graphics application representing a snow globe but with a few added twists. Instead of a wintery landscape, the theme would &#8230; <a href="http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/">Sandy Snow Globe &#8211; Deferred Shading</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/"><img title="DesertGlobe2" src="http://alexrodgers.co.uk/wp-content/uploads/2015/03/DesertGlobeACW24Crop.png" alt="Sandy Snow Globe &#8211; Deferred Shading" width="640" height="455" /></a>
+	</div>
+	<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span>
+<p>&nbsp;</p>
+<p>For the Real-Time Graphics module as part of my MSc in Computer Science we were tasked with developing a real-time graphics application representing a snow globe but with a few added twists. Instead of a wintery landscape, the theme would be desert with specific requirements including a day/night cycle, seasonal effects, shadow mapping and particle systems. Additional marks would be awarded for various advanced features, the highest being deferred shading. Having always wanted to try my hand at implementing it I went about researching the topic.</p>
+<p>I implemented the project using my own engine I have been developing during my MSc written in C++ and utilising DirectX 11. The snow globe features deferred shading, particle systems, blending, PCF filtered shadow mapping, normal bump mapping, height mapping and environment mapping. The Snow Globe has a simple day/night cycle via two orbiting directional lights (Sun and Moon) and alternating summer/winter seasons. Summer nights = fireflies, winter nights = snow. Each firefly has a point light and using &#8216;deferred shading&#8217;, significant numbers of lights can be processed while maintaining good performance.</p>
+<p>&#8216;Deferred shading&#8217;, particular for non 3D programming experts, can be a rather tricky concept to grasp fully and so please find below my own attempt at describing what deferred shading is and why its a really cool technique.</p>
+<p><strong><span style="text-decoration: underline;">Deferred Shading: Overview</span></strong></p>
+<p>&#8216;Deferred Shading&#8217; is a multi-pass rendering technique that has the distinct advantage of deferring the scene lighting to a second pass meaning put simply the calculation becomes one of a 2D domain rather then 3D. Usually with standard forward rendering, lighting is calculated in the pixel shader for every interpolated fragment after processing in the vertex shader. This means that every geometric object in your scene will be required to perform the lighting calculations which in &#8216;Big O&#8217; notation looks like <em><strong>O(lights * meshes)</strong></em>. The wonderful thing about deferred shading is that by using just one extra pass we can reduce that to <em><strong>O(lights + meshes)</strong></em> or to look at it another way in terms of fragments, we can reduce it from <em><strong>O(lights * geometryFragments) </strong></em>down to <em><strong>O(lights * screenFragments)</strong></em>.</p>
+<div id="attachment_915" style="width: 1351px" class="wp-caption alignnone"><p class="wp-caption-text">Deferred Shading &#8211; Sandy Snow Globe</p></div>
+<p>&nbsp;</p>
+<p>This has massive implications for performance. With forward rendering, more than half dozen or so light sources is enough to seriously impact performance, though modern games generally get away with this number by limiting how many are visible at a time. Deferred shading however as demonstrated in the above video can handle many times that amount of lights simultaneously with little performance impact. For the coursework I demonstrated a scene with 100 point lights which although pushed the GPU a little, still ran comfortably at over 30 FPS.</p>
+<p>There are multiple deferred rendering techniques with &#8216;deferred shading&#8217; being a 2 pass solution unlike &#8216;deferred lighting&#8217; which introduces a third pass. Basically, for systems with lower GPU memory such as old-gen console hardware, &#8216;deferred lighting&#8217; is preferable since it allows the size of the &#8216;G-buffer&#8217; to be smaller because of the extra pass. Deferred shading is a simpler and more elegant solution but does require a larger &#8216;G-buffer&#8217; and hence is better suited for &#8216;beefier&#8217; GPU hardware.</p>
+<p></p>
+<p><span style="text-decoration: underline;"><strong>How it Works?</strong></span></p>
+<p>Deferred shading works as described using two separate rendering passes. The first pass is called the &#8216;geometry pass&#8217; and works similar to a normal pixel shader carried out in forward rendering, except instead of outputting to the back buffer, we output to a selection of render targets, collectively referred to as the &#8216;G-buffer&#8217;. Each render target stores specific scene information so that once fed into the second &#8216;lighting pass&#8217; the correct lighting calculations can be performed. Exactly what information you store in the &#8216;G-Buffer&#8217; is fairly flexible although at a minimum you will require 3 buffers for colour data, normal data and preferably depth information. I say preferably because you could instead choose to store the 3D world position but this results in storing superfluous information since by using just the depth information we can reconstruct the 3D world position for each screen pixel later at a much cheaper memory cost (1 vs 3 floats per pixel).</p>
+<p>As a bonus, when it comes to the &#8216;lighting pass&#8217;, you can further enhance performance by computing lighting on only the pixels that are effected by a particular light, by representing the light as a basic primitive based on its type. A full-screen quad for a directional light, a sphere for a point light and a cone for a spotlight.</p>
+<p></p>
+<p><span style="text-decoration: underline;"><strong>What&#8217;s the Catch?</strong></span></p>
+<p><strong>Blending:</strong></p>
+<p>This brings us to the added complexity of deferred rendering. Because we effectively flatten the scene into 2D inside our buffers, we lose the depth information from the scene, meaning when it comes to blending operations such as those used in transparency, it&#8217;s hard to know in which order the scene should be arranged. There are however a few solutions to this including manually depth sorting your geometry and rendering in a &#8216;painters algorithm&#8217; fashion, or even simpler, rendering your transparent objects in a separate forward rendering pass and blending, which is how I achieved the transparent snow globe.</p>
+<p><strong>Materials:</strong></p>
+<p>Because every object is encoded inside our &#8216;G-buffers&#8217;, any info about the scene that isn&#8217;t in there, the lighting pass will simply not know about. This presents a problem for geometric material properties because normally these would be passed into the shaders on a &#8216;per object&#8217; basis via constant-buffers (DirectX), but because our &#8216;lighting-pass&#8217; will only run &#8216;per light&#8217; and not &#8216;per object&#8217; we have no way of assigning the required material to the objects. One simple solution to this is to use a material ID value and throw this into one of the existing buffers like the colour buffer and then define a material array inside the lighting shader utilising the ID as an index.</p>
+<p></p>
+<p>Overall I&#8217;d implement deferred shading for any project in the future where time is not a concern as it does slightly complicate things but the benefits more than make up for this. If your game or 3D program doesn&#8217;t need more than a few lights then its not something that is strictly necessary however many modern games are already using deferred rendering techniques to enhance scene lighting. I&#8217;d also say if you can successfully implement deferred shading and understand the technique then you have gotten to grips with one of the more advanced multi-pass rendering techniques and this brings with it an enhanced understanding of the graphics pipeline.</p>
+<p>&nbsp;</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/">Sandy Snow Globe &#8211; Deferred Shading</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2015/03/23/sandy-snow-globe-deferred-shading/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Cross-Platform Game Engine</title>
+            <link>http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/</link>
+            <comments>http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/#comments</comments>
+            <pubDate>Sun, 22 Feb 2015 20:06:53 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Game Development]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Bump Mapping]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[dev]]></category>
+            <category><![CDATA[DirectX]]></category>
+            <category><![CDATA[Game]]></category>
+            <category><![CDATA[games]]></category>
+            <category><![CDATA[Graphics]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[Metro]]></category>
+            <category><![CDATA[Project]]></category>
+            <category><![CDATA[Windows Phone]]></category>
+            <category><![CDATA[Windows Store]]></category>
+            <category><![CDATA[WP8]]></category>
+            <guid isPermaLink="false">http://alexrodgers.co.uk/?p=894</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/"><img title="4" src="http://alexrodgers.co.uk/wp-content/uploads/2015/02/4.png" alt="Cross-Platform Game Engine" width="640" height="360" /></a>
+	</div>
+<p>	In the first semester of my MSc Computer Science degree as part of the Games Development Architectures module we were tasked to design and implement a cross-platform game engine. A game would also be made using the engine. The chosen platforms were a &#8230; <a href="http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/">Cross-Platform Game Engine</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/"><img title="4" src="http://alexrodgers.co.uk/wp-content/uploads/2015/02/4.png" alt="Cross-Platform Game Engine" width="640" height="360" /></a>
+	</div>
+	<p>In the first semester of my MSc Computer Science degree as part of the Games Development Architectures module we were tasked to design and implement a cross-platform game engine. A game would also be made using the engine.</p>
+<p>The chosen platforms were a Windows PC and Windows Phone 8 device. I decided that considering Microsoft had developed a Universal Application framework for targeting both of these, I would utilise it. This was good from the point of view that it simplified the cross-platform compatibility, but introduced a few limitations (namely having to work with the Windows RT platform and resultant consequences for dealing with inputs via &#8216;ref classes&#8217; etc.. Coming from experience with Win32 desktop programs, Windows RT feels very different to program for and much less flexible, but then again Win32 really does need some modernisation.</p>
+<p></p>
+<p><strong>Project Details:</strong></p>
 <ul>
-<li><a href="https://github.com/Godley/Music-Library/releases/download/v1.0-alpha/MuseLib.dmg">Mac</a></li>
-<li><a href="http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/">Windows</a></li>
+<li>Engine coded in C++ (Visual Studio).</li>
+<li>DirectX11 rendering engine component coded from scratch.</li>
+<li>HLSL shaders.</li>
+<li>The Universal App framework used to contain the code solution and deploy to both platforms.</li>
 </ul>
-
-<p>Over the past few months I've been trying to create installers for Windows, Mac and Ubuntu for my final year project, <a href="http://github.com/godley/music-library">Music Library</a>. Despite some issues with Windows DLLs, I've succeeded</p>]]></description>
-            <link>http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/</link>
-            <guid isPermaLink="false">36a1707e-d303-4266-9600-68f4ae5f9588</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Wed, 23 Dec 2015 22:37:29 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>TLDR: here's the binaries/installers for my final year project. I'd appreciate people having a click through:</strong></p>
-
-<ul>
-<li><a href="https://github.com/Godley/Music-Library/releases/download/v1.0-alpha/MuseLib.dmg">Mac</a></li>
-<li><a href="http://charlottegodley.co.uk/opensourcing-my-final-year-project-2/">Windows</a></li>
-</ul>
-
-<p>Over the past few months I've been trying to create installers for Windows, Mac and Ubuntu for my final year project, <a href="http://github.com/godley/music-library">Music Library</a>. Despite some issues with Windows DLLs, I've succeeded in producing a windows installer. I'll find somewhere to put it so I can link to it later.</p>
-
-<p>Despite the OS X edition being the original, I'm actually having trouble getting my laptop back to the exact state it was in when cx_freeze built and froze my python into an app file. The main reason is for some reason I updated my python to 3.5 one day, and then my build seg faulted, then I rewound to 3.4.3 then...I just don't really know what happened. I started to mess with my python config and yeah. It gets confusing when you have installers for python and home-brew installations.</p>
-
-<p>What's the lesson here? I'm not actually that sure. In general my belief is we should stick to latest and greatest no matter what the language is, but in python's case something almost always breaks and it's hard to predict in exactly what way.</p>
-
-<p>Ultimately I will probably just flush out the config on this laptop and start over. It's a good thing to do anyway so I know how to write developer install instructions properly.</p>
-
-<p>For now I've gone ahead and open sourced the repo. A couple of the tests still break on linux as shown by my travis CI, but I think this is something to do with the musescore API so I'm not entirely sure it's <em>actually</em> broken.</p>
-
-<p>Happy sheet music organisering?</p>]]></content:encoded>
+<hr />
+<p>We were given a design specification for a simple game called &#8216;Tunnel Terror&#8217;. It involved the player having to control a vehicle/object through a tunnel, avoiding various obstacles. The speed would gradually increase the longer the player survived and any collisions with obstacles would result in death. Score was determined by length of survival. I decided to add various extras including power ups such as coins and a randomised speed-up/slow-down. The game would need to play on both a PC and Windows Phone 8 device, allowing for the differing input controls to play. I decided the PC would utilise keyboard whereas the phone would rely on the accelerometer (tilt) sensor to manoeuvre the player through the tunnel. The PC also required a 2 player mode. Main menu, high score table and game over screens would be needed as well as Multiple camera modes such as first-person, third-person and death fly-by cameras.</p>
+<p></p>
+<p>Although marks were given for the game implementation and extra features, much of the module was graded based on the engine design, implementation and accompanying report. My report justified the design based on four principles of games architecture, namely &#8216;Simplicity&#8217;, &#8216;Reusability&#8217;, &#8216;Abstractness&#8217; and &#8216;Modularity&#8217;. Below is an example of the UML design used for my engines platform independent rendering component, with examples given to how behaviour could be derived for both DirectX and OpenGL.</p>
+<p></p>
+<p>In the report we also had to research how we would have implemented the game on next-generation architecture such as the PlayStation 4 and how the engine would deal with the addition of different kinds of input devices.</p>
+<p>There were some marks awarded for graphics quality and since the target platforms were both Microsoft, DirectX11 was used for the graphics. I implemented normal bump mapping to give it a nice look when flying down the tunnel. I also randomly changed the textures of each tunnel section and reset them to the end of the sequence once passing behind the frustum to give the impression of an endless tunnel with non-repeating sections.</p>
+<p>Annoyingly because the game is a Windows Store application there is no runnable executable so without actually publishing it to the Store and getting past all the certification requirements I cannot put it up anywhere to play! What is worse though is that currently I know of no screen capture software that can even record footage of the game running (at a decent FPS), both Fraps and Bandicam do not capture it since it&#8217;s not a desktop application. Bandicam does have desktop capture support but this also didn&#8217;t seem able to see the game and is not suitable for high frame-rate applications. So, as it stands I can&#8217;t make a video of the game running without hardware recording. Hopefully, this is something that won&#8217;t always be the case.</p>
+<p>I was very pleased with the final engine and received a 92% grade for the module. I have since improved upon it and reused design elements for subsequent modules such as Real-time Graphics. I think a lot of what I coded for this project will be extremely useful going forward.</p>
+<p><a href="http://alexrodgers.co.uk/wp-content/uploads/2015/02/2.png" target="_blank"> </a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/">Cross-Platform Game Engine</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2015/02/22/cross-platform-game-engine/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
         </item>
         <item>
-            <title><![CDATA[Do I use an Arduino or a Raspberry Pi?]]></title>
-            <description><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>]]></description>
-            <link>http://charlottegodley.co.uk/do-i-use-an-arduino-or-a-raspberry-pi/</link>
-            <guid isPermaLink="false">f0fd1b91-2413-4523-8f60-b738b32f2748</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 18 Dec 2015 23:04:26 GMT</pubDate>
-            <content:encoded><![CDATA[<p>I commonly get asked the above question by friends who want to get into hardware prototyping for the first time and have a project idea. I thought I'd share my input and show the questions I normally ask in the form of a flow chart. Some notes based on feedback:</p>
+            <title>Bit’s Blitz – Puzzle Game</title>
+            <link>http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/</link>
+            <comments>http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/#comments</comments>
+            <pubDate>Sat, 21 Feb 2015 16:12:34 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[2D Graphics]]></category>
+            <category><![CDATA[Game Development]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Bit's]]></category>
+            <category><![CDATA[Blitz]]></category>
+            <category><![CDATA[BSc]]></category>
+            <category><![CDATA[C#]]></category>
+            <category><![CDATA[Challenge]]></category>
+            <category><![CDATA[Chip's]]></category>
+            <category><![CDATA[Commercial Game Development]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[dev]]></category>
+            <category><![CDATA[Game]]></category>
+            <category><![CDATA[games]]></category>
+            <category><![CDATA[Group]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[indie]]></category>
+            <category><![CDATA[Project]]></category>
+            <category><![CDATA[Puzzle]]></category>
+            <category><![CDATA[State Design Pattern]]></category>
+            <category><![CDATA[Team]]></category>
+            <category><![CDATA[Tile Engine]]></category>
+            <category><![CDATA[Tiled]]></category>
+            <category><![CDATA[XML]]></category>
+            <category><![CDATA[XNA]]></category>
+            <guid isPermaLink="false">http://alexrodgers.co.uk/?p=880</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/"><img title="Bit&#039;s Blitz Poster" src="http://alexrodgers.co.uk/wp-content/uploads/2015/02/Poster.png" alt="Bit&#8217;s Blitz &#8211; Puzzle Game" width="640" height="512" /></a>
+	</div>
+<p>	In the third year of my Computer Science BSc (2013) as part of the Commercial Games Development module, we were placed into groups and tasked to produce a computer themed game designed for children. Each of the group members had to &#8230; <a href="http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/">Bit&#8217;s Blitz &#8211; Puzzle Game</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/"><img title="Bit&#039;s Blitz Poster" src="http://alexrodgers.co.uk/wp-content/uploads/2015/02/Poster.png" alt="Bit&#8217;s Blitz &#8211; Puzzle Game" width="640" height="512" /></a>
+	</div>
+	<div id="attachment_883" style="width: 2570px" class="wp-caption alignnone"><p class="wp-caption-text">Bit&#8217;s Blitz &#8211; Puzzle Game</p></div>
+<p>In the third year of my Computer Science BSc (2013) as part of the Commercial Games Development module, we were placed into groups and tasked to produce a computer themed game designed for children. Each of the group members had to produce a game design document, one of which would be chosen for the group to develop. My group consisted of me, Aaron Ridge, Michael Killingbeck, Andrew Woodrow, Joshua Twigg and Alex Lynch.</p>
+<p>The group decided to go with my game design which was inspired by the classic puzzle game <a title="Chip's Challenge" href="http://en.wikipedia.org/wiki/Chip's_Challenge" target="_blank">Chip&#8217;s Challenge</a>, with the idea being to reimagine it and modernise the graphics.</p>
+<p>Game synopsis:<br />
+<em> &#8220;&#8216;Bit&#8217;s Blitz&#8217; is a fun 2D puzzle game following the escapades of its protagonist &#8216;Bit&#8217;. The game takes place across a series of levels increasing gradually in difficulty, gradually introducing new game-play elements. The player controls &#8216;Bit&#8217; around a grid, constrained by a series of maze-like blocks and hazards. &#8216;Bit&#8217; must successfully collect all the computer components that are scattered around the level and then repair his computer to proceed to the next level.&#8221;</em></p>
+<p>Details:<em><br />
+</em>Developed using C# and the XNA framework for the PC platform (Windows XP+).</p>
+<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span>
+<p>&nbsp;</p>
+<p>The nice thing about this game design was that we could focus on the puzzle aspect of the game, time and imagination permitting, due to the simple overhead on technical implementation. The tile-based game engine was written from scratch using XNA, utilising XML data structures to store level data and a custom made loader. A cool and free little program called <a title="Tiled" href="http://www.mapeditor.org/" target="_blank">Tiled</a> was used to &#8216;paint&#8217; the level layout and export it into our XML format. I&#8217;d strongly recommend this to any considering 2D tile-based games for constructing levels, having said that, it&#8217;s a nice programming exercise to develop your own editor if you get the chance.</p>
+<p>All gameplay aspects including animations and particle systems were programmed for the game, using no other libraries except XNA. I designed the game framework based on the <a title="State Design Pattern" href="http://en.wikipedia.org/wiki/State_pattern" target="_blank">State Design Pattern</a> which worked out really well and continue to use it for game development.</p>
+<p>With the use of XML and Tiled it allowed us to churn out level designs at an alarming rate and the final product has over 20 levels! Not bad considering the 2 week development time. When giving the presentation of the game, we literally only had time to demonstrate about 5 of the best levels, odd considering level variety tends to be in short supply for prototypes.</p>
+<p>Sound effects were added (free assets) however I&#8217;ve removed these from the video and added music since honestly, they weren&#8217;t brilliant! The above gameplay video demonstrates various levels (played by me). I could barely remember most of the levels so it&#8217;s pretty much a blind play-through with some genuine mistakes.</p>
+<p>For the project we all chipped in and the group worked well together. The game was never released or published anywhere, though if anyone is interested I could stick the executable on here for download.</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/">Bit&#8217;s Blitz &#8211; Puzzle Game</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2015/02/21/bits-blitz-puzzle-game/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Meshless Real-time Ray Tracing Demo Video</title>
+            <link>http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/</link>
+            <comments>http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/#comments</comments>
+            <pubDate>Mon, 15 Sep 2014 22:01:14 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Software Development]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[Demo]]></category>
+            <category><![CDATA[DirectX 11]]></category>
+            <category><![CDATA[Geometry]]></category>
+            <category><![CDATA[HLSL]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[Implicit]]></category>
+            <category><![CDATA[Light]]></category>
+            <category><![CDATA[MSc]]></category>
+            <category><![CDATA[Project]]></category>
+            <category><![CDATA[Ray]]></category>
+            <category><![CDATA[Ray Marching]]></category>
+            <category><![CDATA[ray tracing]]></category>
+            <category><![CDATA[Reflections]]></category>
+            <category><![CDATA[Rendering]]></category>
+            <category><![CDATA[Shader]]></category>
+            <category><![CDATA[Shadows]]></category>
+            <category><![CDATA[Video]]></category>
+            <guid isPermaLink="false">http://arodgersblog.wordpress.com/?p=739</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/"><img title="7" src="http://alexrodgers.co.uk/wp-content/uploads/2015/01/Mirror24.png" alt="Meshless Real-time Ray Tracing Demo Video" width="640" height="338" /></a>
+	</div>
+<p>	I was recently asked to put together a video showcasing my ray tracing project for the University of Hull to show some of the new Computer Science students starting this September. As detailed in my last post, ray tracing was &#8230; <a href="http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/">Meshless Real-time Ray Tracing Demo Video</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/"><img title="7" src="http://alexrodgers.co.uk/wp-content/uploads/2015/01/Mirror24.png" alt="Meshless Real-time Ray Tracing Demo Video" width="640" height="338" /></a>
+	</div>
+	<div id="attachment_750" style="width: 1929px" class="wp-caption alignnone"><p class="wp-caption-text">Meshless Real-time Ray Tracer</p></div>
+<p>I was recently asked to put together a video showcasing my ray tracing project for the University of Hull to show some of the new Computer Science students starting this September. As detailed in my last post, ray tracing was the subject of my third year dissertation project and I have since been extending the project into real-time using DirectX 11, endeavouring hopefully to continue it as part of my MSc by creating a rendering program that can be used to design and produce complex implicit ray marched geometry through a simple UI interface.</p>
+<p>The video unfortunately had to be recorded at 640&#215;480 resolution to maintain good FPS due to my aging laptop GPU (around 4 years old now!). As a result, I recommend not viewing it in full-screen to avoid scaling &#8216;fuzziness&#8217;.</p>
+<p>&nbsp;</p>
+<p><span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span></p>
+<p>&nbsp;</p>
+<h1><span style="text-decoration: underline;"><strong>Scene Loading:</strong></span></h1>
+<p>Recently I have been working on a scene loading system for it in preparation for implementing a UI with the ability to save and load created scenes. I developed a scene scripting format that allows simple definition of the various distance functions that make up a scene, along with material types and lighting properties. The scene loader parses a scene file and then procedurally generates the HLSL distance field code that will be executed in the pixel shader to render the scene. I&#8217;ve used a similar looking format to POVRay&#8217;s scene files.</p>
+<div>Below is an example of one of my scene files showing a simple scene with a single sphere and plane with a single light :</div>
+<div></div>
+<div>
+<hr />
+</div>
+<div>
+<div style="padding-left: 30px;"><em>#Scene Test</em><br />
+<em> </em><br />
+<em>light</em><br />
+<em>{</em><br />
+<em>     position &lt;-1.5, 3, -4.5&gt;</em><br />
+<em>}</em><br />
+<em> </em><br />
+<em>sphere</em><br />
+<em>{</em><br />
+<em>     radius 1</em><br />
+<em>     position &lt;-2,1,0&gt; </em><br />
+<em>}</em></div>
+<div style="padding-left: 30px;"><em>material</em><br />
+<em>{</em><br />
+<em>     diffuse &lt;1,0,0,0.25&gt;</em><br />
+<em>     specular &lt;1,1,1,25&gt;  </em><br />
+<em>}</em><br />
+<em> </em><br />
+<em>plane</em><br />
+<em>{</em><br />
+<em>     normal &lt;0,1,0&gt;</em><br />
+<em>}</em><br />
+<em>material</em><br />
+<em>{</em><br />
+<em>     diffuse &lt;0.5,1,0.5,0.5&gt;</em><br />
+<em>     specular &lt;1,1,1,99&gt;  </em><br />
+<em>}</em></div>
+<div style="padding-left: 30px;"></div>
+<div>
+<hr />
+</div>
+</div>
+<div>More complex operations such as blending can be represented in the scene file as follows:</div>
+<div>
+<hr />
+</div>
+<div>
+<div style="padding-left: 30px;"><i>blend</i></div>
+<div style="padding-left: 30px;"><i>{</i></div>
+<div style="padding-left: 30px;"><i>    threshold 1</i></div>
+<div style="padding-left: 30px;"><i>    sphere</i></div>
+<div style="padding-left: 30px;"><i>    {</i></div>
+<div style="padding-left: 30px;"><i>        radius 1</i></div>
+<div style="padding-left: 30px;"><i>        position &lt;-2,1,0&gt; </i></div>
+<div style="padding-left: 30px;"><i>    } </i><i>   </i></div>
+<div style="padding-left: 30px;"><i>    torus</i></div>
+<div style="padding-left: 30px;"><i>    {</i></div>
+<div style="padding-left: 30px;"><i>        radius &lt;1, 0.44&gt;</i></div>
+<div style="padding-left: 30px;"><i>        position &lt;2,1,0&gt; </i></div>
+<div style="padding-left: 30px;"><i>    }</i></div>
+<div style="padding-left: 30px;"><i>}</i></div>
+</div>
+<div></div>
+<div><span style="background-color: #cccccc;"> </span></div>
+<div>
+<hr />
+</div>
+<div>Due to the recursive nature in which I have implemented the parsing, it also allows me to nest blending operations like the following series of blended spheres, resulting in a single complex surface:</div>
+<div></div>
+<div><span style="background-color: #cccccc;"> </span></div>
+<div>
+<hr />
+</div>
+<div style="padding-left: 30px;"><em>blend</em><br />
+<em>{</em><br />
+<em>     threshold 1</em><br />
+<em>     blend</em><br />
+<em>     {</em><br />
+<em>          threshold 1</em><br />
+<em>          blend </em><br />
+<em>          {</em><br />
+<em>               threshold 1</em><br />
+<em>               sphere</em><br />
+<em>               {</em><br />
+<em>                    radius 1</em><br />
+<em>                    position &lt;-2,1,0&gt;</em><br />
+<em>               }</em><br />
+<em>               sphere</em><br />
+<em>               {</em><br />
+<em>                    radius 1</em><br />
+<em>                    position &lt;2,1,0&gt;</em><br />
+<em>               } </em><br />
+<em>          }</em><br />
+<em>          sphere</em><br />
+<em>          {</em><br />
+<em>               radius 1</em><br />
+<em>               position &lt;0,2,0&gt;</em><br />
+<em>          }</em><br />
+<em>     }</em><br />
+<em>     sphere</em><br />
+<em>     {</em><br />
+<em>          radius 1</em><br />
+<em>          position &lt;0,1,-2&gt;</em><br />
+<em>     }</em><br />
+<em>} </em><br />
+<em>material</em><br />
+<em>{</em><br />
+<em>     diffuse &lt;1,0,1,0.25&gt;</em><br />
+<em>     specular &lt;1,1,1,25&gt;  </em><br />
+<em>}</em></div>
+<div></div>
+<div>
+<hr />
+</div>
+<div>For more complex scene featuring blending, twisting and domain repetition, an example scene file looks like this:</div>
+<div></div>
+<div>
+<hr />
+</div>
+<div style="padding-left: 30px;"><em>#Scene Test</em><br />
+<em> </em><br />
+<em>light</em><br />
+<em>{</em><br />
+<em>     position &lt;-1.5, 3, -4.5&gt;</em><br />
+<em>}</em><br />
+<em> </em><br />
+<em>repeatBegin</em><br />
+<em>{</em><br />
+<em>     frequency &lt;8.1,0,8.1&gt; </em><br />
+<em>}</em><br />
+<em> </em><br />
+<em>twistY</em><br />
+<em>{</em><br />
+<em>     magnitude 0.04</em><br />
+<em>     box</em><br />
+<em>     {</em><br />
+<em>          dimensions &lt;1,4,1&gt; </em><br />
+<em>          position &lt;0,3,0&gt; </em><br />
+<em>     }</em><br />
+<em>}</em><br />
+<em>material</em><br />
+<em>{</em><br />
+<em>     diffuse &lt;1,0.5,0,0.1&gt;</em><br />
+<em>     specular &lt;1,1,1,5&gt;  </em><br />
+<em>}</em><br />
+<em> </em><br />
+<em>sphere</em><br />
+<em>{</em><br />
+<em>     radius 2</em><br />
+<em>     position &lt;0,9,0&gt;</em><br />
+<em>}</em><br />
+<em>material</em><br />
+<em>{</em><br />
+<em>     diffuse &lt;0,0.5,1,0.5&gt;</em><br />
+<em>     specular &lt;1,1,1,30&gt;  </em><br />
+<em>}</em><br />
+<em> </em><br />
+<em>repeatEnd</em><br />
+<em> </em><br />
+<em>plane</em><br />
+<em>{</em><br />
+<em>     normal &lt;0,1,0&gt;</em><br />
+<em>}</em><br />
+<em>material</em><br />
+<em>{</em><br />
+<em>     diffuse &lt;0.2,0.2,0.2,0.5&gt;</em><br />
+<em>     specular &lt;1,1,1,99&gt;  </em><br />
+<em>}</em></div>
+<div></div>
+<div>
+<hr />
+</div>
+<div>Currently my scene files support spheres, cubes, tori and also a &#8216;Blob&#8217; shape which takes any number of component spheres as parameters and blends them together. It also supports custom blending of the above shapes, domain twisting and repetition operations. Materials can be specified with both diffuse and specular components, with the 4th diffuse tuple representing reflectivity, and the 4th specular tuple representing shininess.</div>
+<p>&nbsp;</p>
+<div></div>
+<div>As the project develops, I&#8217;ll need to implement a way of creating custom distance functions that aren&#8217;t just template primitive shapes, but defined more generally to allow users to create surfaces using anchor points This will likely be a main focus for my masters dissertation if I take this topic.</div>
+<p>&nbsp;</p>
+<div></div>
+<div></div><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/">Meshless Real-time Ray Tracing Demo Video</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2014/09/15/meshless-real-time-ray-tracing-demo-video/feed/</wfw:commentRss>
+            <slash:comments>2</slash:comments>
+        </item>
+        <item>
+            <title>CUDA Ray Tracer – Dissertation Project</title>
+            <link>http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/</link>
+            <comments>http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/#comments</comments>
+            <pubDate>Fri, 15 Aug 2014 11:56:11 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Education]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Software Development]]></category>
+            <category><![CDATA[Uncategorized]]></category>
+            <category><![CDATA[BSc]]></category>
+            <category><![CDATA[C#]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[CUDA]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[Development]]></category>
+            <category><![CDATA[DirectX]]></category>
+            <category><![CDATA[Dissertation]]></category>
+            <category><![CDATA[Distance Function]]></category>
+            <category><![CDATA[DX11]]></category>
+            <category><![CDATA[Geometry]]></category>
+            <category><![CDATA[GPU]]></category>
+            <category><![CDATA[Graphics]]></category>
+            <category><![CDATA[Hull]]></category>
+            <category><![CDATA[Implicit]]></category>
+            <category><![CDATA[Marching]]></category>
+            <category><![CDATA[Maths]]></category>
+            <category><![CDATA[Mesh]]></category>
+            <category><![CDATA[Models]]></category>
+            <category><![CDATA[phong]]></category>
+            <category><![CDATA[Pixar]]></category>
+            <category><![CDATA[Project]]></category>
+            <category><![CDATA[Ray]]></category>
+            <category><![CDATA[Ray Marching]]></category>
+            <category><![CDATA[ray tracing]]></category>
+            <category><![CDATA[Rendering]]></category>
+            <category><![CDATA[Shader]]></category>
+            <category><![CDATA[Shadertoy]]></category>
+            <category><![CDATA[Tracing]]></category>
+            <category><![CDATA[University]]></category>
+            <guid isPermaLink="false">http://arodgersblog.wordpress.com/?p=688</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/"><img title="cropped-green-glass-artifacts-fixed2.png" src="http://alexrodgers.co.uk/wp-content/uploads/2014/08/raymarch-repetition-1920x1080-8xaa-2044s.png" alt="CUDA Ray Tracer &#8211; Dissertation Project" width="640" height="360" /></a>
+	</div>
+<p>	After on and off work for a year, and many thousand words later, my final year BSc dissertation project and report was completed. Can a ray tracer ever be truly &#8216;complete&#8217;? This post a brief description and summary of my project. &#8230; <a href="http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/">CUDA Ray Tracer &#8211; Dissertation Project</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/"><img title="cropped-green-glass-artifacts-fixed2.png" src="http://alexrodgers.co.uk/wp-content/uploads/2014/08/raymarch-repetition-1920x1080-8xaa-2044s.png" alt="CUDA Ray Tracer &#8211; Dissertation Project" width="640" height="360" /></a>
+	</div>
+	<p>After on and off work for a year, and many thousand words later, my final year BSc dissertation project and report was completed. Can a ray tracer ever be truly &#8216;complete&#8217;? This post a brief description and summary of my project.</p>
+<p>A download to my full dissertation report can be found below and as well as a few renderings from my prototypes:</p>
+<p>Report: <div class="sdm_download_link"><a href="http://alexrodgers.co.uk/?smd_process_download=1&download_id=871" class="sdm_download black" title="CUDA Ray Tracer Dissertation" >Download Now!</a></div><div class="sdm_download_count"><span class="sdm_count_number">229</span><span class="sdm_count_string"> Downloads</span></div></p>
+<p>Prototype Renderings:</p>
 
+
+
+
+
+
+
+
+
+
+<p>The project from a personal point of view was an important one. It was a period where I gained heightened interest in graphics programming, gaining an understanding of the principles of computer graphics, the mathematics involved and also the creative satisfaction that comes from it. When creating realistic virtual graphics from essentially nothing but code, maths and a display, on the face of it, it&#8217;s very easy to gloss over the &#8216;magic&#8217; of it all, especially when you understand the complexity of how we actually perceive the Universe and the shortcuts that must be taken for computers to accurately mimic the natural phenomena of our brain&#8217;s visual perception.</p>
+<p>&nbsp;</p>
+<div id="attachment_708" style="width: 1930px" class="wp-caption alignnone"><p class="wp-caption-text">CUDA Ray Tracer &#8211; Dissertation Project</p></div>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">A Bit of Biology and Philosophy:</span></strong></p>
+<p>The modern computer when you think of it, is really just a primitive extension of our own bodies, simple enough that we can manipulate, manage and understand it, with much greater control and predictability then our biology. They allow us to achieve things we could not otherwise do and many of the components inside a computer carry out very similar roles to organs found within us. Of course we can think of the CPU as a brain, but what else? Going into more detail, the GPU could be seen as a specialised part of the brain engineered to handle visual computation, just as our brain has it&#8217;s own visual cortex. A virtual camera in a rendering program replicates the capabilities of part of our eye, defining an aperture or lens through which to calculate rays of light, and like-wise, an &#8216;image plane&#8217; positioned in front of the camera, carries out essentially the same functionality as our retina, but using pixels to make up the visual image of what we see.</p>
+<p>When you understand the detailed steps required to render something in 3D, you realise that we are essential trying to recreate our own little simplified universe, it&#8217;s a pretty profound concept that when taken much further, manifests itself in popular science fiction such as the Matrix. After all, is mathematics not simply the &#8216;code&#8217; of our Universe? It&#8217;s perhaps not as silly as it may sound, when you get down to the fundamentals of game developers creating virtual worlds, graphics programming being an essential component, and looking just how real and immersive these worlds are starting to become.</p>
+<p><span style="text-decoration: underline;"><strong>So What Is Ray Tracing?</strong></span></p>
+<p></p>
+<p>Of all popular rendering techniques, it&#8217;s ray tracing that perhaps stands out the most in respect to my previous comments above. We all know roughly how and why we see, where light rays shine from a light source such as our Sun, they travel millions of miles to get to us and out of all the infinite number of rays, the tiniest percentage may find it&#8217;s way directly into our eye. This could be from directly looking at the Sun (not recommended!), and also from scattered or reflected light that has hit a surface, finding it&#8217;s way on a collision course with our eye.<br />
+This is fundamentally close to how ray tracing works, but with important differences. If a computer had to calculate the trajectory of all possible rays been fired out from a light source, this would be impossible with modern hardware, there are just too many potential rays, of which, only an infinitesimally small amount would ever find there way into the camera (eye) of the scene, and it&#8217;s only these rays we are interested in anyway. Instead, and referred to as &#8216;Backwards Ray Tracing&#8217;, light is fired from the camera (eye) into the scene and then traced backwards as it is reflected, refracted or simply absorbed by whatever material it hits. We then only have to fire a ray from the camera for each pixel in the image, which is still potentially a considerable number of rays (1920&#215;1080 = 2073600 primary rays) and that&#8217;s without counting all the secondary rays as light scatters throughout the scene, but at least this reduced number is quite feasible.</p>
+<p>Still, it is ray tracing&#8217;s close semblance to how light interacts with us in the real world that makes it a very elegant and simple algorithm for rendering images, allowing for what is known as &#8216;physically based rendering&#8217;, where light is simulated to create realistic looking scenes with mathematically accurate shadows, caustics and more advanced features such as &#8216;global illumination&#8217;, something that other faster and more common rendering techniques like rasterization (pipeline-based) cannot do.</p>
+<p><span style="text-decoration: underline;"><strong>Illumination and Shading:</strong></span></p>
+<div id="attachment_717" style="width: 616px" class="wp-caption aligncenter"><p class="wp-caption-text">Phong shading</p></div>
+<p>The ultimate main job of firing the rays into a scene in the first place is to determine what colour the pixel in our image should be. This is found by looking at what a ray hits when fired into a 3D scene. Put simply, if it hits a red sphere, the pixel is set to red. We can define the material information for every object in the scene in similar fashion to how we know in the real world that a matt yellow box reflects light. Technically, the box is yellow because it reflects yellow light, and is matt (not shiny) because it has a microscopically uneven surface (diffuse) that scatters the light more evenly away from the surface. Compare this to light hitting a smooth (specular) surface, most of the light would bounce off the surface in the same direction and appear shiny to our eyes. Clearly, for computer graphics, we are not likely to program a surface material literally in such microscopic detail as to define if it is rough or smooth, but we can cheat using a popular and effective local illumination model such as Phong, essentially using the &#8216;normal&#8217; of a surface, the directions of our light source and camera and some vector math to put it all together and calculate the colour of the surface based on it&#8217;s material and angle, creating a smooth shaded object rather than a &#8216;flat&#8217; colour.</p>
+<p><span style="text-decoration: underline;"><strong>Intersections, Distance Functions and Ray Marching:</strong></span></p>
+<p></p>
+<p>So we know why we need to fire the rays, but how do know a ray has hit a surface? There&#8217;s a few different ways this can be done, all down to the complexity of the geometry you&#8217;re trying to render. Ray intersections with simple shape such as planes or spheres can be calculated precisely using linear and quadratic equations respectively. Additionally, for complex explicit 3D models made from triangle mesh, linear algebra and vector math can also be used to compute the intersections.</p>
+<p>Another technique, has been gaining popularity in recent years, despite been around quite some time in academic circles. Rendering complex implicit geometry using &#8216;distance functions&#8217; with nothing but a pixel shader on your GPU as shown on websites like <a title="Shadertoy" href="http://shadertoy.com" target="_blank">Shadertoy</a> have popularised a subset of ray tracing called &#8216;ray marching&#8217;, requiring no 3D mesh models, vertices or even textures to produce startlingly realistic real-time 3D renderings. It is in fact, the very freedom from mesh constraints that is apparent when you observe the complex, organic and smooth ray marched geometry possible using the technique. Ray marching allows you to do things you simply cannot do using explicit mesh, such as blending surfaces seamlessly together, akin to sticking two lumps of clay together to form a more complicated object. Endless repetition of objects throughout a scene at little extra cost using simple modulus maths is another nifty trick allowing for infinite scenes. By manipulating the surface positions along cast rays, you can effectively transform your objects, twist, contort and even animate; it&#8217;s all good stuff.</p>
+<p><span style="text-decoration: underline;"><strong>The Dissertation Project:</strong></span></p>
+<p>My development project was comprised of two parts, a prototype phase to create a ray tracer using GPGPU techniques and a hefty report detailing the theory, implementation and outcomes. For those unfamiliar, <span class="st">General-purpose computing on graphics processing units</span> (GPGPU) is a area of programming aimed at using the specialised hardware found in GPU&#8217;s to perform arithmetic tasks normally carried out by the CPU, and is widely used in supercomputing. Though the CPU hardware is singularly much more powerful than the processors in a GPU; GPU&#8217;s make up for it in sheer numbers, meaning they excel and outperform CPU&#8217;s when computing simple highly parallel tasks. Ray tracing, is one such highly parallel candidate that is well suited to GPGPU techniques and for my dissertation I was tasked to use NVIDIA&#8217;s GPGPU framework called CUDA to create an offline ray tracer, done from scratch using no existing graphics API. Offline rendering means not real-time, and is clearly unsuitable for games, yet is commonly used in 3D graphics industry for big budget animations like those by Pixar and DreamWorks, with each frame individually rendered to ultra high quality, sometimes over a period in excess of 24 hours for a single frame.</p>
+<p>In the end I produced four different ray tracing prototypes for comparison, incorporating previously mentioned techniques. Prototype 1, running purely on a CPU single thread using simple implicit intersections of spheres and planes. Prototype 2, the same but implemented using a single CUDA kernel and running purely on the GPU across millions of threads. Prototype 3, a CPU ray marcher using distance functions to render more complex implicit geometry. Prototype 4, the same as 3, but implemented using CUDA. My aim for the project was to assess GPGPU performance and the rendering qualities of the ray marching technique, the findings of which can be found in the <a title="report" href="http://www.alexrodgers.co.uk/downloads/CUDARayTracerDissertation.pdf" target="_blank">report</a>.</p>
+<p>I knew when I picked this project that I was not taking an easy topic by any stretch, and a great thing I can take away from this is the extensive research experience and planning needed to simultaneously implement many different difficult concepts I had no prior knowledge about, yet still managed to produce a cohesive project, and fully working prototypes, achieving an 88% mark for my efforts, which I am very pleased with. As expected, with heinsight there are things that I would do differently if repeated, but nothing too major, and really, it&#8217;s all part of the learning process.</p>
+<p>Ray tracing, ray marching, GPGPU, CUDA, distance functions and implicit geometry were all concepts I had to pickup and learn. I bought some books, but in the end, research on the internet in the form of tutorials, blogs, academic papers and lectures proved more beneficial. Sometimes, it takes a certain kind of way to present the information for your brain to &#8216;click&#8217; with certain principles, and all of us are different. The Internet is a treasure trove in this regard, if you spend the time, you can usually eventually find some explanation that will suit your grey matter, failing that, re-reading it a million times can sometimes help!</p>
+<p><span style="text-decoration: underline;"><strong>Future Plans:</strong></span></p>
+
+
+
+
+<p>On the back of this, I will be continuing this subject into my masters degree and will likely be pursuing this further during my masters dissertation. I am already busy at work on a real-time implicit render with UI functionality running in DirectX 11 (A couple of early screenshots above). Additionally, I&#8217;d love to get a chance to contribute to a research paper on the subject, but we&#8217;ll see.</p>
+<p>I plan to make some easy to follow tutorials on implementing ray tracing and ray marching at some point for this website, when I get the chance. Hopefully, they could  help out other students or anyone else wanting to learn the aforementioned topics. I know first hand and from friends, that at times it can be frustrating since although there is theory out there, there is comparatively very little information on actual implementation details for the subject, when compared to say pipeline-based rendering.</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/">CUDA Ray Tracer &#8211; Dissertation Project</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2014/08/15/cuda-ray-tracer-dissertation-project/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>My BSc in Computer Science – Results Summary</title>
+            <link>http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/</link>
+            <comments>http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/#comments</comments>
+            <pubDate>Mon, 28 Jul 2014 12:54:10 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[Education]]></category>
+            <category><![CDATA[Game Development]]></category>
+            <category><![CDATA[Personal]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[BSc]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[Degree]]></category>
+            <category><![CDATA[Grades]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[Mature]]></category>
+            <category><![CDATA[MSc degree in Computer Science]]></category>
+            <category><![CDATA[Results]]></category>
+            <category><![CDATA[Student]]></category>
+            <category><![CDATA[University of Hull]]></category>
+            <guid isPermaLink="false">http://arodgersblog.wordpress.com/?p=681</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/"><img title="My BSc in Computer Science &#8211; Results Summary" src="http://arodgersblog.files.wordpress.com/2014/07/year1.png?w=300" alt="My BSc in Computer Science &#8211; Results Summary" width="200" height="113" /></a>
+	</div>
+<p>	The past three years at the University of Hull have flown incredibly fast; A good sign, that I have thoroughly enjoyed my time there studying for my BSc in Computer Science with Games Development. In fact, it was probably one &#8230; <a href="http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/">My BSc in Computer Science &#8211; Results Summary</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/"><img title="My BSc in Computer Science &#8211; Results Summary" src="http://arodgersblog.files.wordpress.com/2014/07/year1.png?w=300" alt="My BSc in Computer Science &#8211; Results Summary" width="200" height="113" /></a>
+	</div>
+	<p>The past three years at the University of Hull have flown incredibly fast; A good sign, that I have thoroughly enjoyed my time there studying for my BSc in Computer Science with Games Development. In fact, it was probably one of the best decisions I ever made, despite how hard it was to take up the challenge as a 27 year old with commitments and nearly 10 years since prior academic study.</p>
+<p>My plan will now be to continue on at Hull University to study a post-graduate MSc degree in Computer Science. Relocation and seeking employment will be on the cards aferwards, but I can rest assured having &#8216;put my all&#8217; into the past several years, I am proud of the results I have acheived and I certainly never expected to do as well as I did, acheiving a First Class honours degree. Below is a summary of my results from the past three years:</p>
+<p style="text-align:left;"><span style="text-decoration:underline;"><strong>Year 1</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td width="281">Module</td>
+<td width="208">Mark</td>
+<td width="127">Credit</td>
+</tr>
+<tr>
+<td width="281">Computer Systems</td>
+<td width="208">73</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">IT and Professional Skills</td>
+<td width="208">80</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Programming 1</td>
+<td width="208">92</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Programming 2</td>
+<td width="208">96</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Quantitative Methods for Computing</td>
+<td width="208">87</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Software Engineering and HCI</td>
+<td width="208">77</td>
+<td width="127">20</td>
+</tr>
+</tbody>
+</table>
+<div id="attachment_682" style="width: 310px" class="wp-caption aligncenter"><p class="wp-caption-text">Year 1 average</p></div>
+<p style="text-align:left;"><strong><span style="text-decoration:underline;">Year 2</span></strong></p>
+<table>
+<tbody>
+<tr>
+<td width="281">Module</td>
+<td width="208">Mark</td>
+<td width="127">Credit</td>
+</tr>
+<tr>
+<td width="281">2D Graphics and User Interface Design</td>
+<td width="208">89</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Advanced Programming</td>
+<td width="208">83</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Artificial Intelligence</td>
+<td width="208">78</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Networking and Games Architecture</td>
+<td width="208">88</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Simulation and 3D Graphics</td>
+<td width="208">94</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="281">Systems Analysis, Design and Process</td>
+<td width="208">83</td>
+<td width="127">20</td>
+</tr>
+</tbody>
+</table>
+<div id="attachment_683" style="width: 310px" class="wp-caption aligncenter"><p class="wp-caption-text">Year 2 average</p></div>
+<p style="text-align:left;"><span style="text-decoration:underline;"><strong>Year 3</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td width="319">Module</td>
+<td width="170">Mark</td>
+<td width="127">Credit</td>
+</tr>
+<tr>
+<td width="319">Commercial Games Development</td>
+<td width="170">81</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="319">Games Programming &amp; Advanced Graphics</td>
+<td width="170">94</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="319">Mobile Devices and Applications</td>
+<td width="170">83</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="319">Visualization</td>
+<td width="170">86</td>
+<td width="127">20</td>
+</tr>
+<tr>
+<td width="319">Development Project</td>
+<td width="170">88</td>
+<td width="127">40</td>
+</tr>
+</tbody>
+</table>
+<div id="attachment_684" style="width: 310px" class="wp-caption aligncenter"><p class="wp-caption-text">Year 3 average</p></div>
+<p>&nbsp;</p>
+<p><strong>A &#8216;Mature&#8217; Reflection:</strong></p>
+<p>To any people out there reading this who may fall into the mature student catagory of being a little older and thinking of studying a degree, I would say this; If you are passionate about the subject that you want to study, have proven your interest in it through personal projects, and can cope with the lower standard of living while you study, then go for it and don&#8217;t look back. It&#8217;s not just about career development, but also a time of personal acheivement and self discovery, where you can find much about your own abilities that perhaps you never knew you had. I think many people can muddle on in life not knowing if they would be any good at &#8216;this&#8217; or &#8216;that&#8217;. A formal degree can help answer this, giving you confidence in that discipline, which can be it&#8217;s own reward. When you realise that generally speaking, unless your lucky enough to be the next Einstein, people achieve great things not through raw intellect or genius, but &#8216;hard work&#8217; and effort. In this regards, mature students probably have a motivational advantage, since they have more to lose, less time to dawdle and life experience to help them focus.</p>
+<p>&nbsp;</p><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/">My BSc in Computer Science &#8211; Results Summary</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2014/07/28/my-bsc-in-computer-science-results-summary/feed/</wfw:commentRss>
+            <slash:comments>1</slash:comments>
+        </item>
+        <item>
+            <title>Halloween Pumpkin’s – GLSL Programming</title>
+            <link>http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/</link>
+            <comments>http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/#comments</comments>
+            <pubDate>Wed, 23 Jul 2014 15:03:39 +0000</pubDate>
+            <dc:creator><![CDATA[Alex Rodgers]]></dc:creator>
+            <category><![CDATA[3D Graphics]]></category>
+            <category><![CDATA[Programming]]></category>
+            <category><![CDATA[Computer Science]]></category>
+            <category><![CDATA[coursework]]></category>
+            <category><![CDATA[GLSL]]></category>
+            <category><![CDATA[Graphics]]></category>
+            <category><![CDATA[Halloween]]></category>
+            <category><![CDATA[Hull University]]></category>
+            <category><![CDATA[OpenGL]]></category>
+            <category><![CDATA[Pumpkin]]></category>
+            <category><![CDATA[Rendering]]></category>
+            <category><![CDATA[RenderMonkey]]></category>
+            <category><![CDATA[Shader]]></category>
+            <guid isPermaLink="false">http://arodgersblog.wordpress.com/?p=660</guid>
+            <description><![CDATA[<div>
+	<a href="http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/"><img title="ACW2.rfx-Pumpkin Party" src="http://arodgersblog.files.wordpress.com/2014/07/pass1.png?w=300" alt="Halloween Pumpkin&#8217;s &#8211; GLSL Programming" width="200" height="125" /></a>
+	</div>
+<p>	&#160; For the Advanced Graphics module as part of my BSc in Computer Science, we were tasked to create a 3D scene with a theme of a &#8216;Halloween Pumpkin Party&#8217;. The scene was produced using RenderMonkey and programmed via GLSL &#8230; <a href="http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/">Halloween Pumpkin&#8217;s &#8211; GLSL Programming</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+	<div>
+	<a href="http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/"><img title="ACW2.rfx-Pumpkin Party" src="http://arodgersblog.files.wordpress.com/2014/07/pass1.png?w=300" alt="Halloween Pumpkin&#8217;s &#8211; GLSL Programming" width="200" height="125" /></a>
+	</div>
+	<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='584' height='359' src= frameborder='0' allowfullscreen='true'></iframe></span>
+<p>&nbsp;</p>
+<p>For the Advanced Graphics module as part of my BSc in Computer Science, we were tasked to create a 3D scene with a theme of a &#8216;Halloween Pumpkin Party&#8217;. The scene was produced using RenderMonkey and programmed via GLSL vertex and fragment shaders.</p>
+<p>The scene displays a variety of shader effects including: Cube mapping, displacement mapping, height bump-mapping, parallax bump-mapping, fragment based-lighting, particle systems, texture bill boarding, smooth-step vertex transformations and stencil masks.</p>
+<p>Below is a brief description of each component of the scene and how it was implemented.</p>
+<p><span style="text-decoration: underline;"><strong>Enviroment</strong></span></p>
+<p><strong>Cube Mapped Skybox</strong></p>
+<p>I created a new cube map using several textures by creating a DDS file using the &#8216;DirectX Texture Tool&#8217;. The cube map was then applied onto a cube model in RenderMonkey.</p>
+<p><strong>Terrain Displacement Map and Height Map</strong></p>
+<div id="attachment_665" style="width: 310px" class="wp-caption aligncenter"><p class="wp-caption-text">Terrain Displacement Map</p></div>
+<p>The terrain features texture displacement mapping, a height bump map and fragment lighting. It was made using a single tessellated plane with a terrain texture. In the vertex shader I displaced each vertex along its normal using the texture colour values. I applied a uniform coefficient to control scaling.</p>
+<p>A separate texture is used for bump mapping to create a grass effect. The height map was done by transforming the view direction and light direction into tangent space via a matrix. In the fragment shader, I retrieved the height map data, calculated the difference between two pixel samples and determined the normal for each fragment. All other objects that use height bump maps in the scene are done the same way.</p>
+<p><strong>Dispersed Fog Particle System</strong></p>
+<div id="attachment_666" style="width: 310px" class="wp-caption aligncenter"><p class="wp-caption-text">Fog Particles</p></div>
+<p>The fog is implemented using a particle system and quad array. A time coefficient is first calculated and then another coefficient used to progressively spread the particles apart from each other. Each quad in the system is &#8216;bill boarded&#8217; to always face the view, which is achieved using the inverse view matrix. The fog colour transitions across the texture by decrementing it&#8217;s coordinate using the timer resulting in multi hued particles. A smooth fade is added around the edge of each quad to help it blend better. By increasing the size of the particles, lowering the speed and extending the particle system range, I created the above effect.</p>
+<p><strong>Fireworks Particle System</strong></p>
+<div id="attachment_662" style="width: 310px" class="wp-caption aligncenter"><p class="wp-caption-text">Firework Particle System</p></div>
+<p>The fireworks use the same principles as the fog except using a different algorithm. All particles start on top of each other, ascend into the air, and then spread apart, slowly drifting down. This is achieved by setting an initial velocity, it then checks if each particle is below the explosion threshold. If it is, it increments the particles with positive velocity. If not, it decrements the particle by the negative velocity and spreads them apart over time.The particles slowly fall back down.</p>
+<p><strong><span style="text-decoration: underline;">Pumpkins</span></strong></p>
+<p><strong>Pumpkin 1</strong></p>
+<div id="attachment_667" style="width: 245px" class="wp-caption aligncenter"><p class="wp-caption-text">Cube Mapped Pumpkin</p></div>
+<p>Features:</p>
 <ol>
-<li>Multithreading <em>can</em> be done on an arduino, but akin to the internet question, it will take more effort and time than on a Raspberry Pi.  </li>
-<li>Some paths could lead to you using both - for example, you might need a complex algorithm to parse some data which then displays it repeatedly on an LED matrix (see Amy Mather's Game of Life project). I left this out because I decided it would complicate the simplicity of the flow chart.  </li>
-<li>Analogue IO could probably also go on there which would lead to arduino. Meh.  </li>
-<li>Some paths could point to either I guess. Again, meh.</li>
+<li>Cube mapped.</li>
 </ol>
-
-<p>Please feel free to spread this flowchart around if it's useful to you, but if you can credit this to me then please do :) <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/12/flow-pi-1.png" alt=""></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Building and testing for multiple platforms]]></title>
-            <description><![CDATA[<p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of</p>]]></description>
-            <link>http://charlottegodley.co.uk/building-and-testing-for-multiple-platforms/</link>
-            <guid isPermaLink="false">b6561d7b-4694-4465-bac5-4f81ee8c3384</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 06 Nov 2015 23:02:51 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/11/logos-continuous-integration-tools.png" alt="Building and testing for multiple platforms"><p>When I graduated from Hull, I set myself a target that I would open source my project by Christmas. At the time I was ready to release the first chunk as a python package and did so <a href="http://github.com/godley/museparse">here</a>. I should note to anyone else who's at university and thinking of open sourcing their projects that in general, <strong>you should ask your university first</strong> because technically, they own the project. </p>
-
-<p>Since then I've not really touched it until recently because I had various other things on the go, and to be honest I spent so long <a href="http://charlottegodley.co.uk/arguing-with-poppler-and-qt-on-windows/">arguing with windows and poppler</a> that I needed a break to think about it.</p>
-
-<p>About a week ago I started the process of making sure everything was ready by <a href="http://travis-ci.org">setting up travis</a>. For anyone who's not initiated into continuous integration, the idea is that every push to your repo gets built against your unit tests to confirm nothing's broken. "But I can just do that on my local machine!" I hear you cry. </p>
-
-<p>Storytime! A couple of years ago my friends and I took part in the infamous <a href="https://www.youtube.com/watch?v=1GkvKC8Ls9E">Three Thing Game</a>. Like a lot of the uninitiated second year newbs, none of us had got into the habit of using source code control, and we decided to just write our separate bits, pass them around on memory sticks and do a big merge in the end.</p>
-
-<p>This did not go well, and whilst the idea was brilliant and we'd seen parts of our code working together, ultimately our separate sections fought with each other.</p>
-
-<p>To me this is something that continuous integration would have been brilliant for fixing, because it would systematically not only prove whose code was the cause, but it would also give a more precise estimate as to which sections of code caused the problems. A few other reasons to think about:</p>
-
+<p>Each fragment is coloured using a reflection vector to access the texture data from the cube. The shape is a 3D model.</p>
+<p><strong>Pumpkin 2<br />
+</strong></p>
+<div id="attachment_668" style="width: 219px" class="wp-caption aligncenter"><p class="wp-caption-text">Parallax Bump-mapped Pumpkin</p></div>
+<p>Features:</p>
 <ol>
-<li>Do you really want to sit watching unit tests build for however long? Having a build machines allows you to go off and work on something else, knowing you'll get told when something's broken.  </li>
-<li>What about if you're building for multiple operating systems? Before using CI, to test ready for my final year project demo I had to launch 2 VMs and clone or else copy the same repo into each one and run my tests 3 times. I have around about 2.5k tests, it really wasn't fun.  </li>
-<li>How do you know that when you deploy to a machine that doesn't have your developer set up it's all going to work just the same?</li>
+<li>Parallax Bump Mapping (normalheight map)</li>
+<li>Non-uniform vertex transformation light flickering.</li>
+<li>Flame bill board.</li>
+<li>Fragment lighting.</li>
+<li>3D model used.</li>
 </ol>
-
-<p>In this particular project, the thing that using continuous integration has improved the most has been the last one. Having ran my tests a lot on OS X, I was pretty confident they would all pass without a hitch on travis which by default runs ubuntu linux (I had also previously ran tests on ubuntu which passed). </p>
-
-<p>To my surprise, about 5 tests failed because I had used far too many absolute paths to folders that obviously wouldn't exist on another machine, and a couple failed because requirements.txt (the list of python packages used in the project) was incorrect.</p>
-
-<p>I fixed all of these and then tried it out on windows again. Multiple tests failed because windows isn't unix compatible, so handles files and opening and closing them differently. <br>
-From that experience, and particularly as I had been keen with this project to provide all the same features on every major platform, I knew I wasn't happy with just travis, so I went in search of a windows based continuous integration platform, and found <a href="http://appveyor.com">appveyor</a> which feels very similar.</p>
-
-<p>I found both appveyor and travis very easy to use, because you merely give them a yml file which defines your environment. Here's .travis.yml:  </p>
-
-<pre><code>language: python  
-python:  
-- '3.3'
-- '3.4'
-- '3.5'
-- 3.5-dev
-- nightly
-install: pip3 install -r requirements.txt  
-script: python3 -m "nose" --logging-level=WARNING
-
-os:  
-- linux
-# - osx
-
-notifications:  
-  email:
-    on_success: change
-    on_failure: change
-</code></pre>
-
-<p>aanaard appveyor.yml:  </p>
-
-<pre><code># Taken from: https://packaging.python.org/en/latest/appveyor.html
-# and from: https://bitbucket.org/pygame/pygame/pull-request/45/create-python-wheel-builds-using-appveyor/diff
-
-environment:  
-  matrix:
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "32"
-      DISTRIBUTIONS: "bdist_wheel"
-
-    - PYTHON: "C:\\Python34"
-      PYTHON_VERSION: "3.4.1"
-      PYTHON_ARCH: "32"
-      DISTRIBUTIONS: "bdist_wheel"
-
-    - PYTHON: "C:\\Python33-x64"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "64"
-      WINDOWS_SDK_VERSION: "v7.1"
-      DISTRIBUTIONS: "bdist_wheel"
-
-    - PYTHON: "C:\\Python34-x64"
-      PYTHON_VERSION: "3.4.1"
-      PYTHON_ARCH: "64"
-      WINDOWS_SDK_VERSION: "v7.1"
-      DISTRIBUTIONS: "bdist_wheel"
-
-init:
-
-  - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
-
-install:  
-  - "set PATH=%PATH%;%PYTHON%;%PYTHON%\\Scripts"
-  - "pip install nose"
-  - "pip install -r requirements.txt"
-  - "set HOME=%APPVEYOR_BUILD_FOLDER%"
-
-build: off
-
-test_script:  
-  - "nosetests --logging-level=WARNING"
-</code></pre>
-
-<p>This makes it very easy to define every element, including downloading non-python packages in <a href="http://github.com/godley/museparse">museparse</a>'s case. </p>
-
-<p>A perhaps greater thing for open source projects though is that the whole service is free if your project is public on github, and Travis is included in the Github education package so students get it free for private projects too!</p>
-
-<p>I strongly encourage developers, especially students to start using continuous integration. With great services out there for all platforms that require minimal setup, there's really no excuse and it's not just something that large teams should be using.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Making a shopping list when you're a lazy programmer]]></title>
-            <description><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.</a></p></blockquote></p>]]></description>
-            <link>http://charlottegodley.co.uk/making-a-shopping-list-when-youre-a-lazy-programmer/</link>
-            <guid isPermaLink="false">563878a0-9e85-4d91-b071-b23975c825e6</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Sun, 25 Oct 2015 11:51:16 GMT</pubDate>
-            <content:encoded><![CDATA[<p>I'm a big fan of cooking. For me, it's super relaxing to just spend some time prepping, cooking, splitting the cooking wine between your pan and your glass (heheh), listening to some music and finally, eating what you've created. <br>
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m mainly with <a href="https://twitter.com/charwarz">@charwarz</a> for her cooking ability. <a href="https://t.co/V0FUOIJm8T">pic.twitter.com/V0FUOIJm8T</a></p>&mdash; Daniel Brown (@DanTonyBrown) <a href="https://twitter.com/DanTonyBrown/status/658012687671119872">October 24, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p>As a programmer, though, there's a lot about preparing to cook that's tedious and which I was sure could be automated. It takes time to figure out what you want to make, then work out how much that's going to cost based on what's in your cupboard, and get out and buy the stuff, especially if you're doing something with meat that you will need to go to the butcher to get. I seriously don't get why our retail economy is based on the 9-5 pattern, when our office jobs are also based on this pattern - when the hell am I supposed to get the time to get midweek meat if the butcher closes before I've even got out of the science park?! I want to support local economies and in the Mill Road area this is particularly easy, but c'mon now. You're not making this easy for me.</p>
-
-<p>Anyway. I use BBC Good food quite a lot because usually when I google an ingredient I want to use, that'll be the first thing that pops up. So I thought I'd try to make my own site or app which would allow me to automate how I browse BBC Good food, so that the app would know what I have in my kitchen, and give me the list of recipes that best match what I have, then produce a shopping list for my way out of work (ALDI is conveniently located near work). <br>
-I'd seen a working couple on reddit had made something similar, but with text files storing recipes and current stock instead of any kind of database. <br>
-I'd really rather skip a lot of user entry and for that instance the couple had certain recipes they knew well and liked doing, which isn't the same in my case. I've never actually written a screen scraper before, so I thought I'd give it a try.</p>
-
-<p>I started with <a href="http://djangoproject.com">Django</a> as my framework because I've used it sparingly at work and I can see what the hype is about. I like being able to model my databases from in python without having to dive into SQL, and changes late on are really easy. I'll be explaining how everything works here, but it's assumed you already know a bit about setting up django and setting up scrapy.</p>
-
-<p>My models are relatively simple. The atom, if you like, is a stock item. All this needs is a name, a quantity and a weight - this gives you options as to what you're using. E.g if it's lemons, you'd say how many as opposed to weight, but if it's flour etc. You get the point.  </p>
-
-<pre><code>class Stock(models.Model):  
-    title = models.CharField(max_length=200)
-    quantity = models.IntegerField(default=0)
-    weight = models.IntegerField(default=0)
-    recipes = models.ManyToManyField(Recipe)
-</code></pre>
-
-<p>This has a many to many relation with recipe, which has a title and instructions. This is likely to change when I've fixed other problems, because in addition to linking many to many to stock, we need to know <em>how much</em> of that stock the recipe should use, and how it'll be prepared, so it's likely I'll add another model to cover that.  </p>
-
-<pre><code>class Recipe(models.Model):  
-    title = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
-</code></pre>
-
-<p>Finally we have Menu, which is how I'm going to plan each week. This will have a many to many link to recipe.  </p>
-
-<pre><code>class Menu(models.Model):  
-    recipes = models.ManyToManyField(Recipe)
-    pub_date = models.DateTimeField('date published')
-</code></pre>
-
-<p>Next up I looked at screen scraping. There's really 2 favoured frameworks - <a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> and <a href="http://scrapy.org">Scrapy</a>. Scrapy feels very similar to Django and there's a wealth of tutorials on integrating it, probably because the creators were heavily inspired by it, so I went with Scrapy.</p>
-
-<p>My first foure into scraping BBC Good Food was getting the ingredients. I figured this would be the easiest way to get a list of stock or expected stock for my cupboard without physically entering it myself, so that it's all in the db and I just have to update how much of each thing I have. <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/10/Screen-Shot-2015-10-25-at-11-22-30.png" alt="">
- Then when it comes to scraping each recipe's page, all I'd need to do was query the db for the collected ingredients and link them together. I also wasn't sure on exactly how things work together, so I wanted to do a simple scrape before delving into relational databases.</p>
-
-<p>First off, I ran the scrapy command for generating a scraper. <code>scrapy genspider goodfood bbcgoodfood.com</code>. <br>
-This spits out:  </p>
-
-<pre><code># -*- coding: utf-8 -*-
-import scrapy
-
-
-class GoodFoodSpider(scrapy.Spider):  
-    name = "goodfood"
-    allowed_domains = ["bbcgoodfood.com"]
-    start_urls = (
-        'http://www.bbcgoodfood.com/',
-    )
-
-    def parse(self, response):
-        pass
-</code></pre>
-
-<p>I needed to change the following:</p>
-
-<ul>
-<li><p>put in a rule so the spider knows which pages to trawl into</p></li>
-<li><p>set up a callback for when that happens.</p></li>
-<li><p>Change the URL to be the ingredients page</p></li>
-<li><p>write the parse callback</p></li>
-</ul>
-
-<p>And here we are:  </p>
-
-<pre><code># -*- coding: utf-8 -*-
-from scrapy.contrib.spiders import CrawlSpider, Rule  
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor  
-from scrapy.selector import HtmlXPathSelector  
-from items import StockItem, RecipeItem  
-import sys  
-print sys.path  
-from meals.models import Stock  
-from scrapy.http import Request  
-import django
-
-
-
-
-class GoodfoodSpider(CrawlSpider):  
-    name = "goodfood"
-    allowed_domains = ["bbcgoodfood.com"]
-    start_urls = (
-        'http://www.bbcgoodfood.com/recipes/category/ingredients',
-    )
-
-    rules = (
-        Rule(SgmlLinkExtractor(allow=(), restrict_xpaths=('//li[@class="views-row-odd views-row-first"]','//li[@class="views-row-even"]','//li[@class="views-row-odd"]', '//li[@class="views-row-odd views-row-last"]',)), callback="parse_items", follow= True),
-    )
-    def parse_items(self, response):
-        hxs = HtmlXPathSelector(response)
-        titles = hxs.xpath('//span[@class="field-content"]/text()')
-        items = []
-        for title in titles:
-            item = StockItem()
-            item["title"] = title.extract()
-            items.append(item)
-        return(items)
-</code></pre>
-
-<p>Basically what I did here was find the classes used by each link. This is where "restrict<em>paths" comes from. Every time scrap finds a link inside li, it will follow it and use the parse</em>items method to parse it. <br>
-Alongside the scraper, we need to store everything in Django. This is where we setup an item inside items.py:  </p>
-
-<pre><code>import scrapy  
-from meals.models import Stock, Recipe  
-from scrapy_djangoitem import DjangoItem
-
-
-class StockItem(DjangoItem):  
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    django_model=Stock
-</code></pre>
-
-<p>And a pipeline in pipelines.py so that scrap will know what to do with the item:  </p>
-
-<pre><code>class GoodFoodStockPipeline(object):
-
-    def process_item(self, item, spider):
-        item.save()
-        return item
-</code></pre>
-
-<p>The django project also needs to be in our python path, so that we can import from it. Do this in settings.py:  </p>
-
-<pre><code>sys.path.append('/Users/charlottegodley/PycharmProjects/MealPlanner/DjangoMeals')  
-os.environ['DJANGO_SETTINGS_MODULE'] = 'DjangoMeals.settings'  
-</code></pre>
-
-<p>Also add your pipeline somewhere in settings with:  </p>
-
-<pre><code>ITEM_PIPELINES = {  
-   'pipelines.GoodFoodStockPipeline': 300
-}
-</code></pre>
-
-<p>And run it from command line: <code>scrapy crawl goodfood</code>. <br>
-This blog's getting pretty long, so I'll be splitting this into several blogs which I'll publish every few days. In the meantime, the repo is <a href="https://github.com/Godley/MealPlanner.git">here</a>. Happy hacking!</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Platformio review]]></title>
-            <description><![CDATA[<p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
-Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I</p>]]></description>
-            <link>http://charlottegodley.co.uk/writing-libraries-for-arduino/</link>
-            <guid isPermaLink="false">137ed7c8-15a3-4f85-a156-587807b45e10</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 25 Sep 2015 22:56:50 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Arduino_Logo-svg_.png" alt="Platformio review"><p>I've embarked on a new project recently, as part of a crew of other faces you'd probably recognise. <br>
-Personally my job at mo is to write wrapper libraries for the hardware. I've done some before, but small ones, whereas this one I had several to write so it meant I wanted to find a good tool for the job. <br>
-When I started, I was literally writing the code in atom, opening up arduino, writing a sketch, installing then importing the library, running it, finding a bug and running the whole process again. I quickly got sick of it. <br>
-I went on a hunt via twitter for better tools.</p>
-
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/charwarz">@charwarz</a> platformio is your friend. dump the yukky ide and work from the command line and have a lib manager for free</p>&mdash; Russell Davis (@ukscone) <a href="https://twitter.com/ukscone/status/643521348216713218">September 14, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/charwarz">@charwarz</a> <a href="https://twitter.com/arduino">@arduino</a> <a href="http://t.co/fjnlPB3eM5">http://t.co/fjnlPB3eM5</a> is your friend</p>&mdash; Louis Taylor (@kragniz) <a href="https://twitter.com/kragniz/status/643523024914935808">September 14, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/charwarz">@charwarz</a> make? <a href="https://t.co/JX2JAOGz1G">https://t.co/JX2JAOGz1G</a></p>&mdash; D Jones (@drjtwit) <a href="https://twitter.com/drjtwit/status/643685428055420928">September 15, 2015</a></blockquote> <script async src="http://charlottegodley.co.uk//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p>I then googled it, and found the alternate to the obove suggestions, all of which are based heavily in the commandline/terminal, was using an eclipse plugin. <br>
-Considering the other day I had a discussion with a co worker, and we agreed saying "it's better than eclipse" really isn't a bench mark for how good an IDE is, I'm not the biggest of fans of eclipse. I worked in it heavily for a year whilst in industry in python 2.7, but most experiences with it have been poor. Still, I gave it a shot. <br>
-I couldn't even get to working with it because the settings I gave it were apparently wrong. Googled the errors, several issues, stack overflow posts and I still couldn't figure out the problem.</p>
-
-<p>Next I went to platformio, because ukscone raves about it. Me likey. <br>
-Essentially it provides a sort of structure and framework for your projects, whereby you have a folder for any libs which is where it looks first when you do imports, and a folder for your source. Works with a lot of diff boards including many that aren't arduino, you can make it automatically run and upload your code, has a library manager which is usable both through the internet and the command line (altho...I'm still not sure how well it works - I've installed a few libraries and they don't seem to be found when I do an import of any of them). Pretty much everything I want when checking a library is valid code, but if I were on larger projects I'd still quite like to have a full IDE which isn't just a text editor with an upload button.</p>
-
-<p>Still, when I eventually have time where I'm not building stuff but still want something to do, I would like to make my own IDE probably with platformio integrated into it to make it do the arduino-y bit. For now, Atom and Platformio are my tools of choice.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[How did YOU end up in technology?]]></title>
-            <description><![CDATA[<p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
-Why? <br>
-I like hearing about people's decisions, and whilst that</p>]]></description>
-            <link>http://charlottegodley.co.uk/how-did-you-end-up-in-technology/</link>
-            <guid isPermaLink="false">c0647868-f7ab-42af-9879-205e340a2b69</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Thu, 17 Sep 2015 22:41:41 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/fork-in-the-road.jpg" alt="How did YOU end up in technology?"><p>I started a new thing at a family party last weekend. I asked all my family what they do for a living, why they do it and how they got there, or else what they used to do before retirement. <br>
-Why? <br>
-I like hearing about people's decisions, and whilst that kind of thing didn't bother me 5 or 6 years ago, I'm at that point in my life where it's useful to know what pathways and decisions people have made. Having made the mistake at A level of not taking Maths when I was going to be a CompSci and finding out from my dad as I started sixth form that it was "impossible to do good CompSci without maths*" meant I realise now how important it is to get all the information you can about life, the universe and everything, and that's something you can only really gain by asking people questions like this.</p>
-
-<p>More recently I did it while networking, and I've noticed a lot more lately that looking at my own pathway and comparing it to other people's is...interesting. No two ways into your job will ever be the same, and there's so many decisions that have lead me personally down this track that it's impossible to predict what's next, but if I learn a bit more about what other people did, maybe when the next change comes I'll be more informed of what direction to go in to get where I want to be. Which I still don't know just yet.</p>
-
-<p>My own pathway? wanted to be a music teacher, then a musician, was doing HTML in the background for kids games, got annoyed at music teacher, went with CompSci instead. I wouldn't change any of it.</p>
-
-<p>*This isn't actually 100% true, but it will narrow your choices at University if you don't take it.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Girls can code.]]></title>
-            <description><![CDATA[<p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish"</p>]]></description>
-            <link>http://charlottegodley.co.uk/girls-can-code/</link>
-            <guid isPermaLink="false">9f502563-ea46-479b-a9ab-4a4f6c048594</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 14 Sep 2015 21:55:24 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/maxresdefault.jpg" alt="Girls can code."><p>This week BBC Three started a new series with the above title. I got sent the advert for it the other week and thought "OH DEAR GOD LORD PLEASE NO DON'T DO THIS", because when you open a program about tech with a girl saying "I think tech is rubbish", the rest of it really doesn't seem to have that much going for it.</p>
-
-<p>Unlike a few of my friends on Twitter and Facebook, my overall feeling didn't stray too far from my initial reaction.</p>
-
-<p>The program essentially follows the paths of five young women who are roughly the same age as me or a bit younger who aren't a fan of tech. The type of girly girls who take selfies, dress themselves in a more feminine way than I do and in general think consuming technology is their place.</p>
-
-<p>The idea is to show them the best of tech - from what children are being taught about making jam sandwiches as robots to producing games.</p>
-
-<p>Fine, fab, brilliant, just what we need to do: take the best, show them who built it and that they could do the same thing.</p>
-
-<p>The first issue I take with the program is so many of the roles presented are not technical. The girls are shown programs run on step by step instructions and will only do what you tell them by children, but don't write code. </p>
-
-<p>I attended an event a couple of years ago for a major tech company which was a diversity intro day. All I was presented with were the women from HR, marketing, business etc and we produced an app design in teams but no actual code. To me this once again was a big sign in my face saying "this is what you're meant to do, not the complex stuff you enjoy". It pissed me off so much that whilst I respect the company for the technology they produce, they will probably always have a black mark in my book until I see something spectacular that swings it for me.</p>
-
-<p>Back to the program. If tech roles being barely represented wasn't bad enough, any time the women are doing anything technical it's a man helping them to do it, or even worse, a man doing it for them. As someone who works in the usual office space where I'm one of two women in the room, I appreciate honesty that this is what tech looks like, but at the same time I know that if you present better role models that the target audience can see themselves as, it's probably a better way to get them thinking "that could be me".</p>
-
-<p>On the flip side, there's a lot of female role models, including Dr. Sue Black who is living proof that if she can do it with what she's had to deal with, so can anyone else. Again though, of those who are presented as female role models, maybe two out of them are technical. Still not seeing the title being fairly represented, here.</p>
-
-<p>The next issue I take with the program is that I'm not a girly girl. Nor am I a total nerd. I'm somewhere in between. I rarely wear makeup, doesn't mean I don't like wearing it for a special occasion and looking in the mirror going "god I'm gorgeous". I want to look presentable on a day to day occasion, but in general I like and am happy with who I am, how I dress and what my face looks like without having to be uncomfortably dressed. Not everyone's that lucky, my parents just managed to avoid teaching me to care. That's probably my super power. <br>
-The program's subjects suffer from a lack of diversity for me - one of them loves gaming, I appreciate that, there's another one that's an art student, but mostly, they're all girly girls. I don't see myself before I joined the tech industry represented in the program, and it's not like I've been interested in technology since birth. If we're to get more girls interested, we need to cater for all the amazing and different interests young women have.</p>
-
-<p>I also think there's far more mind-blowing technology to be shown, but to some extent this goes back to my point on diverse subjects. If you are going to influence how people think about technology when they have no desire to enter that industry or understand how it works, then you have to use what they're interested in.</p>
-
-<p>Overall...I will give it a second chance next week, but right now I'm annoyed and frustrated at a lot of the show's content. I'm very much praying it will get better.</p>
-
-<p>If you're interested, <a href="http://www.bbc.co.uk/iplayer/episode/b06ccksx/girls-can-code-episode-1">here's the iPlayer link</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[I've not posted in a month]]></title>
-            <description><![CDATA[<p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
-
-<p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but</p>]]></description>
-            <link>http://charlottegodley.co.uk/ive-not-posted-in-a-month/</link>
-            <guid isPermaLink="false">711eb4f1-28d6-44df-ae4b-5ff5f8dac11d</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Fri, 04 Sep 2015 23:31:15 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/photo-1415201364774-f6f0bb35f28f.jpeg" alt="I've not posted in a month"><p>This is me stopping myself from never writing again by promising I will write as soon as I have something interesting to say.</p>
-
-<p>The reason I haven't written anything for a whole August is that nothing of note really happened. I spent 2 weeks working at Fire Tech Camp, but I already wrote about that. I <em>didn't</em> go to South Korea because of MERS and was incredibly lucky I hadn't booked my flights, as Global Hackathon Seoul has severely dented its reputation by running out of money and not being able to help people get their flights refunded.</p>
-
-<p>The most notable thing I guess of this month was that I sorted housing for Cambridge and played my first "gig" with my sisters at my uncle's wedding. Did it for free, went down a storm. <a href="http://music.charlottegodley.co.uk">We're now planning to do more of them as a part time job</a>, the website of which (if you click that link) is temporarily up as a sub domain but will probably get a full domain whenever I decide what domain to buy.</p>
-
-<p>Since that occasion which was last week I've pretty much been chillin', modifying my projects page and tweeting about how I've not written anything. I'm now in the waiting period where I just...do nothing until the journey to Cambridge on Sunday. Exciting times.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Doing my best at documentation]]></title>
-            <description><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
-Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I</p>]]></description>
-            <link>http://charlottegodley.co.uk/doing-my-best-at-documentation/</link>
-            <guid isPermaLink="false">dd214f9a-ecda-4211-a69d-b7aea0d6350e</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 27 Jul 2015 23:23:54 GMT</pubDate>
-            <content:encoded><![CDATA[<p>I'm a firm believer that documentation is probably more important than your code. <br>
-Why? Well, mainly this stems from my industrial year combined with blogging for Element14. In my industrial year, I had to spend a long time looking at the docs before I understood any of the stuff I was working with, and much of the code was either written by developers who had left or the current developers had long forgotten how bits of it worked, which is completely natural when you have a huge project to work on. Often I kind of reverted to using the dir() method in python quite a lot and just guessing my way round stuff.</p>
-
-<p>At E14 I was pretty much flying solo - any help I received took days to come back from people who were working with other things, and again, may or may not remember how to use the devices. It's also a different work environment - the code at Airbus was mostly in-house, if not contracted for their purposes. E14 were just the distributors for most of the kit I was working with, so it's natural people would be less fluent.</p>
-
-<p>So why are docs more important? Because if I'm mostly relying on those to figure out how your code works and you don't explain what a method does, I'm probably not going to use that method. So you just wasted a long time on it if your intended user is an OS developer.</p>
-
-<p>Anyhow. I promised myself on my FYP open source plan that I wouldn't just dump my program out there for the world to see with the note "lol I built this for me only have fun figuring out how it works", and today I've been working on automatic documentation.</p>
-
-<p>In python, automatic documenters use introspection to examine the docstrings of each class and method. A docstring in python terms is the first string inside that method or class, where you can indicate what the method does. I started on this by running through each class and most of the methods within that class which weren't obviously titled (Hey, guess what addStaff does!). For each one I tried to give a brief explanation of the purpose and for classes, an indication of the variables within it.</p>
-
-<p>I started off looking at pydoc, the module provided by the foundation with python. This worked pretty well, but if I was going to publish the docs anywhere...well...here's a screenshot: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-27-at-22-37-33.png" alt="">
-Colourful, yes, but ick. Not really all that readable or pretty, to be honest. </p>
-
-<p>So I went for a browse, and OSS and python being the fabulous community that they are, there's a lot of other tools that do this. If I remember correctly, epydoc was the one we used to use at work. A lot of other people have used it too, but unfortunately python3 support isn't great, so yeah. Maybe not.</p>
-
-<p>The one I've gone for is <a href="http://github.com/BurntSushi/pdoc">pdoc</a>, which looks like this: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-27-at-22-36-51.png" alt=""></p>
-
-<p>Nice, right? It supports some markdown notation, and has an additional feature in which it can figure out docstrings for different variables, which pydoc doesn't do. <br>
-For example:  </p>
-
-<pre><code>majors = {-  
-          7: "Cflat", -
-          6: "Gflat", -
-          5: "Dflat", -
-          4: "Aflat", -
-          3: "Eflat", -
-          2: "Bflat", -
-          1: "F", 0: "C", 1: "G", 2: "D", 3: "A", 4: "E", 5: "B", 6: "Fsharp", 7: "Csharp"}
-'''dictionary of all key signature names in the major mode, indexed by their number of fifths'''  
-minors = {-7: "Aflat", -6: "Eflat", -5: "Bflat", -4: "F", -3: "C", -2: "G", -1: "D",  
-          0: "A", 1: "E", 2: "B", 3: "Fsharp", 4: "Csharp", 5: "Gsharp", 6: "Dsharp", 7: "Asharp"}
-'''dictionary of all key signature names in the minor mode, indexed by their number of fifths'''  
-</code></pre>
-
-<p>pydoc then figures out what those two strings mean, and does this:</p>
-
-<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-28-at-00-22-25.png" alt=""></p>
-
-<p>Pretty!</p>
-
-<p>Annoyingly the navigation isn't all that great - if I headed into a class, I couldn't get back without using the back button. Despite this, the template looks so beautiful that I uploaded it to my own hosting.</p>
-
-<p>You can now view the docs <a href="http://docs.charlottegodley.co.uk/MuseParse">here</a> at my new fancy subdomain, and view overviews of any upcoming projects on the new <a href="http://charlottegodley.co.uk/projects">projects page</a>.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cross-platform python: the ubuntu edition]]></title>
-            <description><![CDATA[<p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest</p>]]></description>
-            <link>http://charlottegodley.co.uk/cross-platform-python-the-ubuntu-edition/</link>
-            <guid isPermaLink="false">5a65a4c3-6311-49a4-878a-a58b88890f01</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Tue, 21 Jul 2015 00:43:25 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"><p>I'm still plodding on with my final year project given I don't have a lot else to do right now. I'm now up to moving to ubuntu, which I started on because of my latest OSS release which I needed to check anyhow, so I decided to test the rest of my FYP on ubuntu while I was at it. <br>
-To begin with, it was going swimmingly. Got the packages I needed from apt-get:  </p>
-
-<pre><code>sudo apt-get install python3-qt4  
-sudo apt-get install python3-pip  
-</code></pre>
-
-<p>along with some other programs, fetched my code and my module from git and pip respectively. <br>
-Ran the program and the library, all functioned as expected... <br>
-Until, as usual, poppler fell out with me.</p>
-
-<p>In order to note this for later use, you need the following packages to get poppler to function on ubuntu: <br>
-python3-qt4, python-qt4-dev, python3-sip, python3-sip-dev, libpoppler-qt4-4, libpoppler-qt4-dev <br>
-Then run <code>pip3 install python-poppler-qt4</code> and it <em>should</em> work just fine. <br>
-And finally it functions in full on 2 platforms: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-21-at-01-40-49.png" alt="Cross-platform python: the ubuntu edition"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[My first "proper" OSS release]]></title>
-            <description><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
-
-<p>During the past year I've been working on my Final Year Project as you're probably sick of hearing about. I promised myself and my lecturers that I would open source it for several reasons:</p>
-
+<p>The parallax bump-mapping gives a nice bumpy surface using a simple brick texture. The is effect achieved in the fragment shader by retrieving the normal and height texture data and then correcting the texture coordinate.</p>
+<p>I created a nice lighting effect to simulate flickering flame light. It works by displacing the normal slightly based on a sine function. This is done on all flame pumpkins.</p>
+<div id="attachment_663" style="width: 124px" class="wp-caption aligncenter"><p class="wp-caption-text">Flame billboard</p></div>
+<p>The pumpkin flame is created using 3 different textures, a shape , colour and a noise layer. The vertex shader billboards the quad and in the fragment shader, the shape layers are animated and transformed.</p>
+<p><strong>Pumpkin 3</strong></p>
+<div id="attachment_669" style="width: 199px" class="wp-caption aligncenter"><p class="wp-caption-text">Stencil-masked Spherical Pumpkin</p></div>
+<p>Features:</p>
 <ol>
-<li><p>I made it because music software is expensive and I wanted something that I could pick</p></li></ol>]]></description>
-            <link>http://charlottegodley.co.uk/my-first-proper-oss-release/</link>
-            <guid isPermaLink="false">bb9160cc-fab7-4aa4-8a9f-46e54713683a</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 20 Jul 2015 16:56:25 GMT</pubDate>
-            <content:encoded><![CDATA[<p><img src="http://charlottegodley.co.uk/content/images/2015/07/Screen-Shot-2015-07-20-at-17-38-54.png" alt=""></p>
-
-<p>During the past year I've been working on my Final Year Project as you're probably sick of hearing about. I promised myself and my lecturers that I would open source it for several reasons:</p>
-
-<ol>
-<li><p>I made it because music software is expensive and I wanted something that I could pick out what I wanted. Seems dumb to release it for money or just as shareware or whatever when I'm sure there's plenty of other people who are equally frustrated at music software being crap or expensive.</p></li>
-<li><p>There's a lot of stuff in there that's useful but hasn't been released before, or not documented in a way that you can actually use it for your own projects.</p></li>
-<li><p>I'd really hate for all that code to go to waste.</p></li>
+<li>Stencil masked cut-out holes.</li>
+<li>Smooth step transformation from a sphere. Top is removed.</li>
+<li>Height Bump Mapping.</li>
+<li>Non-uniform vertex transformation (breathing, veins swelling, light flickering).</li>
+<li>Flame bill board.</li>
+<li>Fragment lighting.</li>
 </ol>
-
-<p>On Wednesday I graduated, so I guess that means all of that code is definitely one hundred percent never going to get assessed again. Today I cleaned out the last horrible global variables from my parser, moved the folders into a better more manageable structure and released the drawing portion of my project into the wild on <a href="http://github.com/Godley/MuseParse">Github</a>. I call this my first "proper" release because most things I've worked on which are not for the purposes of university are already open source on my personal Github account, but none of them were really documented or intended for other people to work on.</p>
-
-<p>I still have a bunch of issues to move over from their original location in my still-private FYP repo, but all the code and tests are now on there. <br>
-After that was done and I'd tested by building, installing and finally changing my original FYP to use only that package rather than the project's local copy, with bated breath, I followed this <a href="https://jamie.curle.io/posts/my-first-experience-adding-package-pypi/">tutorial</a> and released it onto the Python Package Index. Now all you need to do to get that package is use <code>pip3 install MuseParse</code> and you're away. <br>
-Note I have yet to test if it works with Python 2.7. I really doubt there's much to change if it doesn't work in 2.7.</p>
-
-<p>There's still some documentation work to do if anyone wants to use the classes for anything other than how the test scripts tell you to use them, which I hope to write over the next few days. For now, enjoy!</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Graduation and what]]></title>
-            <description><![CDATA[<p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
-My</p>]]></description>
-            <link>http://charlottegodley.co.uk/graduation-and-what/</link>
-            <guid isPermaLink="false">ad6b92bf-0777-49e5-9106-81f6de5e061f</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Sat, 18 Jul 2015 00:17:56 GMT</pubDate>
-            <media:content url="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" medium="image" />
-            <content:encoded><![CDATA[<img src="http://charlottegodley.co.uk/content/images/2015/09/IMG_0793.JPG" alt="Graduation and what"><p>From Tuesday to Wednesday I was in Hull, graduating. Really awesome couple of days, got photos with a lot of people in funny hats and all of it was free as I was lucky enough to win the NSS prize of robe hire and official photography nobody thinks exists. <br>
-My favourite photos: <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0809.JPG" alt="Graduation and what">
-<em>Passerby: You'll have people coming here for the wrong reasons</em>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0827.JPG" alt="Graduation and what">
-The following day was my big sister's graduation in Newcastle, so we continued the fun by heading up there and finally coming back to reality this afternoon. <br>
-<img src="http://charlottegodley.co.uk/content/images/2015/07/IMG_0936.JPG" alt="Graduation and what">
-Fabulous week. Congratulations all!</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Results!]]></title>
-            <description><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what</p>]]></description>
-            <link>http://charlottegodley.co.uk/css-bug-in-cx_freezepyqt4/</link>
-            <guid isPermaLink="false">e0d42c8c-0e47-4448-93bc-48f8d4526cf4</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Thu, 09 Jul 2015 14:53:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p>While I was away in South America I got my results. Honestly, I was fairly sure I'd got a first. Whilst I was with my tour group someone asked what I was expecting to get and I said "at least a first", so he laughed and told his friend what I'd said. Honestly, I was hoping to hit a specific percent hence I said that.</p>
-
-<p>Anyhow, very pleased to say I got my first. I'm a bit disappointed that I pretty much dive-bombed both the exams in that term. I'm not sure how that happened, but the last term of uni was always going to be a stressful time and I guess I just didn't know the material or answer questions in the right way. </p>
-
-<p>A difference this year has been I've found it difficult to integrate back into third year, with a lot of my friends having moved on or gone into fourth year, and that's tough. A big part of the first two years was being able to talk through issues with people working on the same stuff, so I attribute part of my lower grades to feeling isolated and that's kinda sucky.</p>
-
-<p>What I'm trying to force myself to not do is dwell on it. Even if I didn't get the mark I wanted, I got a first and most people would be happy with that. Heck, A-Level studying Charlotte is looking at me right now thinking "what the hell, dude, quit moaning" because at that point I was happy with getting a high grade and sod the excess. Funny how much you notice you've changed.</p>
-
-<p>On top of that first, I got a pretty good grade on my final year project which is the part I was (and still am) most passionate about. In total I got 93%, which breaks down to 68% in my first report (worth 3%), 75% in my second (worth 7%), and a whopping 95% in my final report (worth the remaining 90%). I'm incredibly pleased and proud of what I accomplished there and I can't wait to open source what I have once a few bugs are fixed and sections are tidied and improved. My target is to have it ready for public viewing by the end of the year, and as I don't have an awful lot to do over the summer I'll probably spend a fair amount of time on it during this period.</p>
-
-<p>A big thank you to the people who reviewed my report - that is, obviously my supervisor Helen who's been brilliant throughout the year, David Jones, David Whale, Zach Zebrowski, my own mum and dad, probably a couple of others I've forgotten. I really think that's what gave me a boost in terms of grades, and spending the last 24 hours putting in all of your changes was well worth the effort, so thank you so much for taking the time to read and give honest feedback.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[The InCredible Hull-k]]></title>
-            <description><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
-
-<p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT,</p>]]></description>
-            <link>http://charlottegodley.co.uk/the-incredible-hull-k/</link>
-            <guid isPermaLink="false">a7323673-4848-4210-9768-2ff78381964d</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Mon, 01 Jun 2015 15:33:01 GMT</pubDate>
-            <content:encoded><![CDATA[<p>Today I completed my last demonstration for an academic purpose (hopefully!). Last week I did my last exam, and in a couple of months I will officially be Charlotte Godley BSc Hons. </p>
-
-<p>As my time at Hull has been fraught with puns - Costa Del Hull, Highway to Hull, TONIGHT, WE DINE, IN HULL etc etc., it seemed only fitting to come up with an extremely bad pun to title my final blog post on my time here.</p>
-
-<p>There's been upsides, there's been downsides, there's been moments where I've wondered "what the hell am I doing" and wanted to leave, but overall, I don't think I'd change any of it, and that agonising decision over which university to go to ended pretty well for me. I will miss people asking me "where's Hulli?" when I go to international conferences (or in fact, even when I go to events in London), I will miss the chip spice and I will miss the lecturers and the students here, but it's time to move on and I'm super excited.</p>
-
-<p>What's next? Tomorrow I'm heading North for a road trip around Scotland with my sister who is soon to be MEng Chemical Engineering, then in 16 days I'm heading out to South America to visit Argentina, Uruguay and Brazil. I've been to Paraguay before but didn't get to Iguazu Falls which borders Brazil, Paraguay and Argentina, so I needed another visit to make sure I'd done that and pick up some Terere (Paraguayan Tea which you can drink warm or cold. It's an acquired taste, but after 10 days in 30-40 degree heat I loved it).</p>
-
-<p>Yeah that's still not all. When I get back I have a week or so to rest and then I graduate, and then the next day my sister graduates, so the night of graduation I'll probably be in the back of a car heading up to Newcastle. A couple of weeks after that I have a place at Global Hackathon Seoul which is almost all expenses paid, so I'll be spending about a week or so in Seoul at the hackathon and then probably a week or so travelling South Korea and Japan. When I get back I'm working with Fire Tech Camp as a camp instructor in Manchester and then Leeds, then I'm off to Ireland for a week for my uncle's wedding, and FINALLY <em>DUN DUN DUN</em>...</p>
-
-<p>I'm moving to Cambridge. I start my new job a week into September at Cambridge Consultants, which I'm super excited about because it's one of the jobs I've read where I've gone "This is me. This is what I want" and I never expected to have figured that out by this point. I've dropped hints about this job for several months because I was lucky enough to have my job sorted from the end of 2014 which was a definite weight off my mind heading into second term of final year.</p>
-
-<p>Christ. I'm exhausted reading that. Finally, all that's left to leave you with is this:</p>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/bolCulCh60E" frameborder="0" allowfullscreen></iframe>
-
-<p>P.S. Yesterday I turned a year older.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Working with Poppler/PyQT to present PDFs]]></title>
-            <description><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
-Today I have another tutorial because I've been fiddling again. This time I was working on changing my application so that it will show each pair of pages horizontally, and then subsequent pairs vertically as if it were a book. Important for musicians because it requires less page turning. </p>
-
-<p>What</p>]]></description>
-            <link>http://charlottegodley.co.uk/working-with-popplerpyqt-to-present-pdfs/</link>
-            <guid isPermaLink="false">deaa09c9-3302-46bc-b453-8b0f91616216</guid>
-            <dc:creator><![CDATA[Charlotte]]></dc:creator>
-            <pubDate>Sun, 24 May 2015 17:54:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p><center><img src="http://charlottegodley.co.uk/content/images/2015/05/Screen-Shot-2015-05-24-at-18-57-25.png" alt="" title=""></center> <br>
-Today I have another tutorial because I've been fiddling again. This time I was working on changing my application so that it will show each pair of pages horizontally, and then subsequent pairs vertically as if it were a book. Important for musicians because it requires less page turning. </p>
-
-<p>What this requires is producing 2 layouts - the main one which holds sub layouts and is vertical, and each sub layout which is horizontal. The libraries I'm using here are PyQt4, Poppler for PDF rendering on Python 3.4. Both of these can be fetched from PyPi.</p>
-
-<h2 id="thecodealgorithm">The code/algorithm</h2>
-
-<h3 id="tldr">TLDR</h3>
-
-<p>The full code is here in case you're feeling lazy:  </p>
-
-<script src="https://gist.github.com/Godley/a95675c11d9e37166a9c.js"></script>  
-
-<h3 id="verticallayout">Vertical layout</h3>
-
-<p>The implementation of this form of layout is relatively simple. First, we need to produce the vertical layout  </p>
-
-<script src="https://gist.github.com/Godley/d0d6a06e8238806c844e.js"></script>  
-
-<p>This has loaded no pages, but the point here is to show how poppler and piquet work together. What we basically do is create a layout and a scene, put the pages into the scene, the scene into the layout and then set the graphics widget's layout to be that layout.</p>
-
-<h3 id="horizontallayoutandpageloading">Horizontal layout and page loading</h3>
-
-<p>Next up we need to pop in the code that handles the pages. This needs to go before the line <code>graphicsWidget = QtGui.QGraphicsWidget()</code></p>
-
-<script src="https://gist.github.com/Godley/149d7ca1456c863bfa83.js"></script>
-
-<p>Essentially what we do here is loop through the pages but increment every 2 pages instead of every page. <br>
-Note I've used a list for every variable. This is because of memory management. When an item gets added to a scene or a layout, the object <em>itself</em> gets added, not a copy or the data that it holds, because C++. In normal circumstances to avoid messing up the layout by creating a new object and overwriting the old one, we'd use <code>copy.deepcopy</code> which copies the data of that object into a new object - the objects held in the layouts here are "shallow copied", meaning their memory space is exactly the same as the one we created. <br>
-In PyQt, Poppler and other libraries which python is <em>wrapping</em>, not managing itself, we can't use deep copy because python isn't able to manage the object itself - that's handled by C++. </p>]]></content:encoded>
+<p>The face is made using holes that are cut out using a simple face texture as a stencil mask and then discarding fragments. The pumpkin shape is made from a basic sphere that has been stretched and the top removed in the shader.</p>
+<p>A breathing effect has been added where the veins on the texture swell when the pumpkin exhales, this is achieved by applying a sine function to the bump normal. The breathing is done using a &#8216;smooth step&#8217; sine function on the lower vertices.</p>
+<p><strong>Pumpkin 4:</strong></p>
+<div id="attachment_670" style="width: 182px" class="wp-caption aligncenter"><p class="wp-caption-text">Glowing Pumpkin</p></div>
+<p>Features:</p>
+<ol>
+<li>Glowing eye and mouth holes via blended billboard.</li>
+<li>Glowing aura via billboard texture.</li>
+<li>Non-uniform vertex transformation light flickering.</li>
+<li>Fragment lighting.</li>
+<li>3D model used.</li>
+</ol>
+<p>The glowing eyes and mouth are made using separate passes. It is done by bill boarding a texture and blending it over the holes. A direction is calculated so that it only glows when it&#8217;s looking at the camera.</p>
+<p><strong>Pumpkin 5</strong></p>
+<div id="attachment_671" style="width: 264px" class="wp-caption aligncenter"><p class="wp-caption-text">Transformed and displaced pumpkin from teapot model</p></div>
+<p>Features:</p>
+<ol>
+<li>Smooth step transformation from a teapot. Handle and spout translated inside.</li>
+<li>Wings extruded via smooth step and animated.</li>
+<li>Displacement mapped spikes.</li>
+<li>Hovering animation.</li>
+<li>Height Bump mapped fur.</li>
+<li>Fragment lighting.</li>
+</ol>
+<p>Shape is made by translating the spout and handle vertices inside the pot. The wings are extruded via smooth step to make them curved. The spikes are made by deforming the vertices along the normal based on a texture. The hovering is done by applying a sine and cosine function to the vertices x and z components, the wings are similarly animated.</p>
+<p><strong>Gravestones</strong></p>
+<p>Simple 3D models featuring bump-mapping and fragment lighting.</p>
+<p><strong>Summary</strong></p>
+<p>The project was challenging and very fun to work on, allowing me to learn many different shader rendering techniques and effects that are a staple in modern graphics and games programming. Using RenderMonkey allowed focus to be directly on shader programming and not the OpenGL framework i.e handling model loading and vertex buffers etc, which made sense considering the limited allocated time for the coursework. I was also very pleased to have received a mark of 90%!</p>
+<div id="attachment_661" style="width: 594px" class="wp-caption aligncenter"><p class="wp-caption-text">Final Scene</p></div><p>The post <a rel="nofollow" href="http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/">Halloween Pumpkin&#8217;s &#8211; GLSL Programming</a> appeared first on <a rel="nofollow" href="http://alexrodgers.co.uk">Alex Rodgers</a>.</p>
+]]></content:encoded>
+            <wfw:commentRss>http://alexrodgers.co.uk/2014/07/23/halloween-pumpkins-glsl-programming/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
         </item>
     </channel>
 </rss>
