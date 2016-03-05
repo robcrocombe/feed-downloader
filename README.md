@@ -6,12 +6,13 @@
 
 The service which aggregates the new blog posts of [Computer Science Blogs](http://csblogs.com) users. 
 
-feed-downloader replaces the csblogs-feed-aggregator service which wasn't well tested and mainly consisted of spaghetti code. This service intends to avoid a repeat of that by using ES2015 (via Babel transpilation), ESLint code linting and Chai/Mocha behaviour and unit tests with high code coverage.
+It replaces the [csblogs-feed-aggregator](https://github.com/csblogs/csblogs-feed-aggregator) and improves upon it in the following ways:
+* Can correctly parse a larger range of syndication feeds. ATOM feed parsing is significantly improved.
+* Is much easier to modify and extend thanks to the use of a full behavioural test suite and code linting
+* Discovery of new blog posts kicks off the Amazon Simple Notification Service to inform future iOS/Android CS Blogs apps and the CS Blogs Slack group
+* Move to PostgreSQL from MongoDB
+* Performance is improved by
+  * Using an [If-Modified-Since](http://www.freesoft.org/CIE/RFC/1945/58.htm) HTTP request to only download and parse feeds that purports to have changed
+  * Increased use of concurrency using [ES2015 Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
-As a standard node.js application it can be ran from any device with a node runtime, however it is expected that in production the feed-downloader will be ran as an AWS Lambda application.
-
-**Roadmap:**
-* Develop parser for RSS and ATOM feeds
-* Develop blog post persistence to postgres DB
-* Add new blog notification support (through Amazon SNS)
-* Replace cs-blogs-feed-aggregator in production
+The application uses some AWS (Amazon Web Services) specific features, however it is platform agnostic and can be ran from any system which supports Node.js. The transpiled output of the source code has been verified as working on node v0.10.36 and above.
