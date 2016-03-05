@@ -42,11 +42,11 @@ describe('feed-parser', () => {
       return expect(parseSyndicationFeed(minimumRSS)).to.eventually.deep.equal(expectedItems);
     });
 
-    // it('should correctly parse blogger atom', () => {
-    //   const bloggerATOM = loadTestSyndicationFeed('atom', 'blogger');
-    //   const expectedItems = [];
-    //   return expect(parseSyndicationFeed(bloggerATOM)).to.eventually.deep.equal(expectedItems);
-    // });
+    it('should correctly parse blogger.atom', () => {
+      const bloggerATOM = loadTestSyndicationFeed('atom', 'blogger');
+      const expectedItems = [];
+      return expect(parseSyndicationFeed(bloggerATOM)).to.eventually.deep.equal(expectedItems);
+    });
 
     it('should correctly parse wordpress.com.rss', () => {
       const wordpressComRSS = loadTestSyndicationFeed('rss', 'wordpress.com');

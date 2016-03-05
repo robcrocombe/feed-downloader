@@ -1,8 +1,15 @@
-import moment from 'moment';
 import check from 'check-types';
 import { parseString as parseXMLString } from 'xml2js';
-import formatDescription from './format-description';
-import extractPostImage from './extract-post-image';
+import parseRSSPosts from './parse-rss';
+import parseATOMPosts from './parse-atom';
+
+function isRSS(parsedXml) {
+  return parsedXml.rss !== undefined;
+}
+
+function isATOM(parsedXml) {
+  return parsedXml.feed !== undefined;
+}
 
 export default function parseSyndicationFeed(feedString) {
   return new Promise((resolve, reject) => {
@@ -15,21 +22,15 @@ export default function parseSyndicationFeed(feedString) {
         reject(new Error('Valid RSS/ATOM Required'));
       }
 
-      const posts = parsedXML.rss.channel[0].item.map(item => {
-        const blogPost = {
-          title: item.title[0],
-          link: item.link[0]
-        };
-
-        if (item.description) { blogPost.description = formatDescription(item.description[0]); }
-        if (item.pubDate) { blogPost.datePublished = moment(new Date(item.pubDate)); }
-
-        const image = extractPostImage(item);
-        if (image) { blogPost.imageURI = image; }
-
-        return blogPost;
-      });
-      resolve(posts);
+      if (isRSS(parsedXML)) {
+        const posts = parseRSSPosts(parsedXML);
+        resolve(posts);
+      } else if (isATOM(parsedXML)) {
+        const posts = parseATOMPosts(parsedXML);
+        resolve(posts);
+      } else {
+        reject(new Error('Valid RSS/ATOM Required'));
+      }
     });
   });
 }
