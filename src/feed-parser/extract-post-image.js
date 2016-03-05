@@ -1,6 +1,6 @@
 import url from 'url';
 
-function removeImageSizeGetParamsFromURI(imageURL) {
+function removeImageSizeGetParamsFromURL(imageURL) {
   // Wordpress tends to add image resizing get parameters. Remove them for full size image
   return `${imageURL.protocol}${imageURL.slashes ? '//' : ''}${imageURL.host}${imageURL.pathname}`;
 }
@@ -16,7 +16,7 @@ export default function extractPostImage(post) {
 
     // except when it's a gravatar
     if (!isGravatar(imageURL)) {
-      return removeImageSizeGetParamsFromURI(imageURL);
+      return removeImageSizeGetParamsFromURL(imageURL);
     }
   }
 }
