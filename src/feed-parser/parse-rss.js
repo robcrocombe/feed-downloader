@@ -1,6 +1,6 @@
 import moment from 'moment';
 import formatDescription from './format-description';
-import extractPostImage from './extract-post-image';
+import { extractRSSPostImage } from './extract-post-image';
 
 export default function parseRSSPosts(parsedXML) {
   return parsedXML.rss.channel[0].item.map(item => {
@@ -12,7 +12,7 @@ export default function parseRSSPosts(parsedXML) {
     if (item.description) { blogPost.description = formatDescription(item.description[0]); }
     if (item.pubDate) { blogPost.datePublished = moment(new Date(item.pubDate)); }
 
-    const image = extractPostImage(item);
+    const image = extractRSSPostImage(item);
     if (image) { blogPost.imageURI = image; }
 
     return blogPost;

@@ -1,5 +1,6 @@
 import moment from 'moment';
 import formatDescription from './format-description';
+import { extractATOMPostImage } from './extract-post-image';
 
 function getBestLink(postLinks) {
   let preferredLink = '';
@@ -22,6 +23,9 @@ export default function parseATOMPosts(parsedXML) {
       link: getBestLink(entry.link),
       description: formatDescription(entry.content[0]._)
     };
+
+    const image = extractATOMPostImage(entry);
+    if (image) { blogPost.imageURI = image; }
 
     if (entry.updated) { blogPost.dateUpdated = moment(new Date(entry.updated[0])); }
     if (entry.published) { blogPost.datePublished = moment(new Date(entry.published[0])); }
