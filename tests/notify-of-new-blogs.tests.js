@@ -1,4 +1,4 @@
-import newPostNotification from './mocks/sns-mocks';
+import { notifyWorkingSNS, notifyErroringSNS } from './mocks/sns-mocks';
 
 const expect = global.expect;
 
@@ -13,15 +13,27 @@ const expect = global.expect;
 describe('notify-of-new-blogs', () => {
   describe('notifyOfNewBlogs()', () => {
     it('should throw if no blog updates provided', () =>
-      expect(() => newPostNotification([])).to.throw('Valid array of users with new posts required')
+      expect(() => notifyWorkingSNS([])).to.throw('Valid array of users with new posts required')
     );
 
     it('should throw if non-array passed as parameter', () =>
-      expect(() => newPostNotification('notAnArray')).to.throw('Valid array of users with new posts required')
+      expect(() => notifyWorkingSNS('notAnArray')).to.throw('Valid array of users with new posts required')
+    );
+
+    it('should reject if SNS raises an error', () =>
+      expect(notifyErroringSNS([
+        {
+          firstName: 'Danny',
+          lastName: 'Brown',
+          newPosts: [
+            { title: 'The new CS Blogs platform!' }
+          ]
+        }
+      ])).to.be.rejectedWith('Error publishing to new post SNS topic')
     );
 
     it('should post correct message for a single new post', () =>
-      expect(newPostNotification([
+      expect(notifyWorkingSNS([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -33,7 +45,7 @@ describe('notify-of-new-blogs', () => {
     );
 
     it('should post correct message for 2 posts by one author', () =>
-      expect(newPostNotification([
+      expect(notifyWorkingSNS([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -46,7 +58,7 @@ describe('notify-of-new-blogs', () => {
     );
 
     it('should post correct message for >2 posts by one author', () =>
-      expect(newPostNotification([
+      expect(notifyWorkingSNS([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -60,7 +72,7 @@ describe('notify-of-new-blogs', () => {
     );
 
     it('should post correct message for multiple posts by 2 authors', () =>
-      expect(newPostNotification([
+      expect(notifyWorkingSNS([
         {
           firstName: 'Danny',
           lastName: 'Brown',
@@ -81,7 +93,7 @@ describe('notify-of-new-blogs', () => {
     );
 
     it('should post correct message for multiple posts by >2 authors', () =>
-      expect(newPostNotification([
+      expect(notifyWorkingSNS([
         {
           firstName: 'Danny',
           lastName: 'Brown',
