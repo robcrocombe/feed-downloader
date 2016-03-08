@@ -1,6 +1,6 @@
 import proxyquire from 'proxyquire';
 
-export default proxyquire('../../src/notifications/notify-of-new-blogs', {
+export const notifyWorkingSNS = proxyquire('../../src/notifications/notify-of-new-blogs', {
   'aws-sdk': {
     SNS: function SNS() {
       return {
@@ -24,6 +24,18 @@ export default proxyquire('../../src/notifications/notify-of-new-blogs', {
           if (Subject.endsWith(' authors') && Message.startsWith('Including posts by')) {
             callback(null, { MessageId: 5 });
           }
+        }
+      };
+    }
+  }
+}).default;
+
+export const notifyErroringSNS = proxyquire('../../src/notifications/notify-of-new-blogs', {
+  'aws-sdk': {
+    SNS: function SNS() {
+      return {
+        publish: function publish({ TargetArn, Subject, Message }, callback) {
+          callback(new Error('Simulated Error'), null);
         }
       };
     }
