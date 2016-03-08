@@ -15,7 +15,7 @@ function publishToNewPostTopic(subject, message) {
     }, (error, data) => {
       if (error) {
         log.error({ error }, 'Error publishing to new post SNS topic');
-        reject(error);
+        reject(new Error('Error publishing to new post SNS topic'));
       } else {
         log.info({ subject, message }, 'Posted to new post SNS Topic');
         resolve(data.MessageId);
