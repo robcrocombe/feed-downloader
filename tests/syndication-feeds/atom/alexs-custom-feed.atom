@@ -1,1 +1,1654 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Mr Pringle Online</title>
+    <link href="http://www.alexpringle.co.uk/" rel="alternate"></link>
+    <link href="http://www.alexpringle.co.uk/feeds/all.atom.xml" rel="self"></link>
+    <id>http://www.alexpringle.co.uk/</id>
+    <updated>2015-07-30T15:28:00+01:00</updated>
+    <entry>
+        <title>Cycling out of the north</title>
+        <link href="http://www.alexpringle.co.uk/cycling-out-of-the-north.html" rel="alternate"></link>
+        <updated>2015-07-30T15:28:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2015-07-30:cycling-out-of-the-north.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Humber From South Ferriby" src="/images/humber-from-ferriby.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Many students spend the few days (weeks) after finishing university drinking heavily and enjoying themselves. I
+however had my eye on an epic bike ride for a few months and used the downtime as the perfect opportunity to cycle from Hull to Leicester.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Edge Of Humberside" src="/images/edge-of-humberside.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The whole trip covered 110 miles of Humberside, Lincolnshire and Leicestershire. Passing over the Humber bridge, through Lincoln and through many many villages on the way.
+It was quite a nice day, conditions were good and my spirits were high throughout. The day started at 6am and I arrived as planned in time for a friends birthday meal out - perfect.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Harby Hill" src="/images/harby-hill.png" /&gt;&lt;/p&gt;
+&lt;p&gt;All in all, a great day out cycling and much better than stumbling home at 4am.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Home in the sun" src="/images/home-in-sun.png" /&gt;&lt;/p&gt;
+&lt;iframe height='405' width='590' frameborder='0' style='display:block;margin: 0 auto' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/332767526/embed/dad6f9289bafe02725d3d12a52d2b10cfda9a129'&gt;&lt;/iframe&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Hull"></category>
+        <category term="Leicester"></category>
+        <category term="Cycling"></category>
+    </entry>
+    <entry>
+        <title>Touring the North</title>
+        <link href="http://www.alexpringle.co.uk/touring-the-north.html" rel="alternate"></link>
+        <updated>2015-05-07T14:38:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2015-05-07:touring-the-north.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Brid" src="/images/brid.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;It's been a long time since I last posted, a lot has happened but I've largely been touring The North™ on my bike. As usual there has been plenty of
+development action, however I'll leave that for future posts.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Old Trafford" src="/images/oldtrafford.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I've also been to plenty of football matches, at the KC here in Hull, Old Trafford and of course the King Power Stadium back in Leicester.
+As summer approaches and university life comes to a close for good, I'm looking to continue the adventures accross the country, hopefully with some
+epic summer bike rides around the south.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bike on the Humber" src="/images/humberbike.jpg" /&gt;&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Hull"></category>
+    </entry>
+    <entry>
+        <title>End Of The Tour</title>
+        <link href="http://www.alexpringle.co.uk/end-of-the-tour.html" rel="alternate"></link>
+        <updated>2014-10-18T13:25:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2014-10-18:end-of-the-tour.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Walk To Work" src="/images/IMG_20140815_081559.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;My tour of ‘The South’ finally came to a close as I left IBM in August. 
+It's was a truly epic 14 months of nonstop friend making, code writing, 
+landlord ranting, and train journeys. I’ve spent a large amount of time in London, seeing the sights, planning world domination and enjoying conference talks.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tickets" src="/images/IMG_20140816_151318.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Big Ben" src="/images/IMG_20140222_192547.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I’ve also been out travelling as far as Bletchley Park and Watford, 
+learning about Alan Turing and the somewhat less important (and fictional) Harry Potter.
+ I’ve also once again spent a sizable number of summer evenings enjoying the company of my friend Rob in Fareham.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Winchester Sunset" src="/images/IMG_20140815_194903.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Sunset in Winchester. My tour of 'The South' may be over, but I'll be back soon enough no doubt.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://plus.google.com/photos/103065951393722630730/albums/6071504578081047009"&gt;More Photos&lt;/a&gt;&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Winchester"></category>
+    </entry>
+    <entry>
+        <title>About 30 Minutes</title>
+        <link href="http://www.alexpringle.co.uk/about-30-minutes.html" rel="alternate"></link>
+        <updated>2014-06-14T11:00:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2014-06-14:about-30-minutes.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Sunday Roast" src="/images/IMG_20140601_195851.png" /&gt;&lt;/p&gt;
+&lt;p&gt;In the past three years I've had some 'interesting' living experiences, with everything usually descending into madness. Crazy landlords, insane hazards and genuinely disturbing living conditions have all featured in my stories at the pub.&lt;/p&gt;
+&lt;p&gt;Back in January I fled my last house, which was a good call. It's added about 30 minutes to my journey to and from work every day, however this is an hour filled with satisfaction. &lt;/p&gt;
+&lt;p&gt;The photo above says it all, no trouble in sight.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Winchester"></category>
+    </entry>
+    <entry>
+        <title>Touring The South : Trains, Software Engineering &amp; Friends</title>
+        <link href="http://www.alexpringle.co.uk/touring-the-south-trains-software-engineering-friends.html" rel="alternate"></link>
+        <updated>2013-11-09T21:45:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-11-09:touring-the-south-trains-software-engineering-friends.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="housealt" src="/images/IMG_20130710_163544.png" /&gt;&lt;/p&gt;
+&lt;p&gt;IBM Hursley - Hursley House&lt;/p&gt;
+&lt;p&gt;I’m in the south, and while not being caught in record heat waves and
+storms I’ve been engineering software, on trains and hanging out with
+friends. Sometimes all three at once.&lt;/p&gt;
+&lt;p&gt;The primary reason I’m in the south however, is that I’m working at IBM
+on work placement. It’s going really well, lots of challenging and
+interesting work with plenty of chances to learn and network. It’s great
+being in a environment densely packed with people who are passionate
+about software.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Winchester Cathedral" src="/images/IMG_20130428_114206.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Outside of work, I’ve spent an awful lot of time on trains. I’ve been to
+Fareham, Botley and numerous other places, visiting old and new friends.
+I seem to find myself eating very civilised meals with friend’s
+families around the south and visiting an awful lot of pubs.National
+Rail, despite it’s problems, has facilitated some awesome weekends.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Drinks at home" src="/images/IMG_20131013_231230.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I’ve made a whole load of friends, and am positioned well to see some
+very good old friends during the holidays. Outings out in the south have
+been great, new people and new places are always the most exciting part
+of moving across the country.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botley Train Station" src="/images/IMG_20131102_192813.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Side projects continue, several new popping up and a couple (slowly)
+closing. The thing I love most about side projects is working along side
+people who are passionate and smart, it makes the work even more
+rewarding. The south has provided even more people to collaborate with,
+which of course is awesome, especially when thinking about future plans.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bags packed" src="/images/IMG_20131014_103053.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The tour continues.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Holidays"></category>
+        <category term="Winchester"></category>
+    </entry>
+    <entry>
+        <title>Rounding Up</title>
+        <link href="http://www.alexpringle.co.uk/rounding-up.html" rel="alternate"></link>
+        <updated>2013-08-03T20:40:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-08-03:rounding-up.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20130521_181122.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Final 12 hour post exam Sanc trip to mark the end of an era.&lt;/p&gt;
+&lt;p&gt;The past year has once again been pretty crazy, last year I posted a
+round up and it seems fitting to do the same this year.&lt;/p&gt;
+&lt;p&gt;I’ve been up to all sorts and kept myself very busy for most of the year
+– which is good stuff. Modules this year have been solid, interesting
+and useful. The year even involved using some non .net based
+technologies (to my delight).&lt;/p&gt;
+&lt;p&gt;It was not however without any complaints, generally on the admin side
+of things with some assessments seemingly designed to frustrate and
+confuse students. This was however limited to one module and was not
+representative of the whole course.&lt;/p&gt;
+&lt;p&gt;Overall, in my opinion the department delivered a good standard of
+education once again.&lt;/p&gt;
+&lt;p&gt;Once again I have spent a large chunk of my year working on side
+projects, with a couple of releases, and some cool games made in 24
+hours. At least one more app from the last year should be making itself
+out to market soon, so watch this space.&lt;/p&gt;
+&lt;p&gt;The housing situation was pretty bleak this year. I intend to do
+everything in my power to never deal with a student housing company in
+Hull again. Despite this, housing this year still managed to provide
+some good times. Trips to Wetherspoons, Model World, Vue and assorted
+shopping centres all featuring in my highlights. Having a few drinks
+with some new found history loving acquaintances also proved to be great
+– a real break from the drama of student life.&lt;/p&gt;
+&lt;p&gt;I was definitely ready to go home though. On the way to my exam I
+dropped my keys off and upon finishing I picked up my bags and ran for
+the bus. See you next time Hull.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20130530_114956.png" /&gt;
+Northern Rail's 11:27 Rescue Service&lt;/p&gt;
+&lt;p&gt;Some highlights:&lt;/p&gt;
+&lt;p&gt;Getting out and about  &lt;/p&gt;
+&lt;p&gt;Another year of pool  &lt;/p&gt;
+&lt;p&gt;Pub trips  &lt;/p&gt;
+&lt;p&gt;Hanging out with Joe from back home  &lt;/p&gt;
+&lt;p&gt;Being walking distance to University (I do miss the Lawns Bus though)  &lt;/p&gt;
+&lt;p&gt;Many trips to the Union shop and Sanctuary  &lt;/p&gt;
+&lt;p&gt;Awesome group project  &lt;/p&gt;
+&lt;p&gt;Brynmor Jones Library – providing a sanctuary from a terrible student
+house  &lt;/p&gt;
+&lt;p&gt;Watching WrestleMania with &lt;a href="http://waseemakhtar.co.uk/"&gt;Waseem &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Eating far to much takeaway far to often from Prima  &lt;/p&gt;
+&lt;p&gt;Collaborating with my fellow students for side projects – especially
+Marcin  &lt;/p&gt;
+&lt;p&gt;And ofcourse a lot more&lt;/p&gt;
+&lt;p&gt;Most of all I enjoyed spending time with the good friends I have
+acquired in the past two years. Unfortunately the end of this year marks
+the end of seeing almost all of them during the remainder of my time at
+University.&lt;/p&gt;
+&lt;p&gt;Not to worry though, I have a rail card and I’m not afraid to use it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20130614_223823.png" /&gt;
+Home in time for drinks and bowling (something that's rapidly becoming a
+trend)&lt;/p&gt;
+&lt;p&gt;Summer lasted just 2 weeks, but I managed to cram a lot of good times in
+before heading to Winchester.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Holidays"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Capturing Attention With Magic</title>
+        <link href="http://www.alexpringle.co.uk/capturing-attention-with-magic.html" rel="alternate"></link>
+        <updated>2013-06-11T01:44:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-06-11:capturing-attention-with-magic.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20130611_023604.png" /&gt;
+Magic Development?&lt;/p&gt;
+&lt;p&gt;Creating great software is key to making what &lt;a href="http://www.youtube.com/watch?v=GcNNx2zdXN4"&gt;Reto Meier at
+Google&lt;/a&gt; calls “magical apps”. Apps that capture the user’s attention
+with unprecedented and seemingly ‘magic’ experiences, often leaving the
+user wondering how it all works.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.motionportrait.ZombieBooth"&gt;Zombie Booth&lt;/a&gt; is what I would call ‘magic’. It showcases what
+smartphones can do by combining facial recognition and advanced graphics
+to create an experience that just a few years ago would have seemed
+absurd.&lt;/p&gt;
+&lt;p&gt;Showing the app to friends recently I came to a conclusion that I
+thought of note. What struck me as interesting is that it didn’t capture
+our attention for long. In fact it’s quite remarkable display didn’t
+even warrant a download for the rest of the group. Most of our
+smartphone time was spent on other, not necessarily ‘magic’, apps.&lt;/p&gt;
+&lt;p&gt;Zombie Booth has millions of downloads,and it would be farcical to deny
+it’s success. To me the anecdote has shown that whilst making ‘magical’
+experiences is a great way to go, it’s not always enough, at least on
+its own, to win everyone over.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="apps"></category>
+        <category term="Blog"></category>
+        <category term="Mobile"></category>
+    </entry>
+    <entry>
+        <title>Technology in the Wild : Mobile</title>
+        <link href="http://www.alexpringle.co.uk/technology-in-the-wild-mobile.html" rel="alternate"></link>
+        <updated>2013-06-06T01:08:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-06-06:technology-in-the-wild-mobile.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/2013-04-25-21.59.59.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Pringle calling&lt;/p&gt;
+&lt;p&gt;I like to think of myself as primarily a technology enthusiast. Whilst
+software engineering is a realistic definition of what I get up to in my
+academic and ‘real’ life, it doesn’t quite encompass the fascination and
+appreciation that can be had for technology.&lt;/p&gt;
+&lt;p&gt;The physical, theoretical and mathematical grounding of technology is
+fantastic but commanding my attention recently has the been the ‘softer’
+side of technology. With the media and Silicon Valley declaring that
+mobile devices are pivotal to the future of technology and with their
+ubiquitous presence everywhere we go, it’s never been easier to observe
+world changing technology in the wild.&lt;/p&gt;
+&lt;p&gt;The mobile industry is massive, affecting almost everyone on the planet.
+In just six years since the iPhone was launched, the smartphone
+revolution has permanently changed the way we think about and use
+technology. It’s even managed to capture revolutions along the way.&lt;/p&gt;
+&lt;p&gt;Not long after I saw this display in person, it was torn down as part of
+the Tunisian revolution, smartphones played a large role in the coverage
+of the Arab Spring.&lt;/p&gt;
+&lt;p&gt;In India and across Africa for the first time migrant workers are able
+to call back home at a low cost thanks to cheap phones and budget
+telecom providers. Not just familiar voices can be sent back home
+though, mobile banking allows money to be sent long distance between two
+mobile numbers using services such as &lt;a href="http://www.mpesa.in/"&gt;M-Pesa&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mobile is truly having a huge influence and changing lives in some of
+the world’s fastest changing places.&lt;/p&gt;
+&lt;p&gt;It’s not just in far flung places we can see the impact of mobile
+technology. In the past week alone I was sold a milkshake using an iPad,
+signed for an Amazon package on an Android device and received photos
+from Turkey directly from my Dad’s camera.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/dad-e1370475881828.png" /&gt;&lt;/p&gt;
+&lt;p&gt;My Dad yesterday - away from the protests&lt;/p&gt;
+&lt;p&gt;In an ever more connected world where every day someone has a new app to
+show off down at the pub, it’s easy to marvel at the wonders surrounding
+us. But with mobile technology reaching as far as &lt;a href="http://www.bbc.co.uk/news/technology-22395602"&gt;war-zones&lt;/a&gt; and
+&lt;a href="http://www.zdnet.com/androids-in-space-nexus-one-blasts-into-orbit-this-month-7000011051/"&gt;space&lt;/a&gt;, now is the perfect time to get the smartphone out and think
+of something new.&lt;/p&gt;
+&lt;p&gt;And while we’re at it, why not try and change the world in the process.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Mobile"></category>
+        <category term="Software Engineering"></category>
+        <category term="android"></category>
+        <category term="iOS"></category>
+        <category term="iphone"></category>
+        <category term="M-Pesa"></category>
+        <category term="mobile"></category>
+    </entry>
+    <entry>
+        <title>On Broken Windows</title>
+        <link href="http://www.alexpringle.co.uk/on-broken-windows.html" rel="alternate"></link>
+        <updated>2013-04-21T23:34:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-04-21:on-broken-windows.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/2013-04-10-14.34.27.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A broken wall at Brynmor Jones Library , is it worth fixing?&lt;/p&gt;
+&lt;p&gt;When it comes to violent crime and disorder, can one offence lead to
+another?&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href="http://www.theatlantic.com/magazine/archive/1982/03/broken-windows/304465/"&gt;Broken Window Theory&lt;/a&gt;, yes. It suggests that one act
+of vandalism left untouched, such as a broken window, creates a sense
+that the area has been abandoned. This then invites further crimes and
+eventually what was a minor issue spirals into something more
+serious altogether.&lt;/p&gt;
+&lt;p&gt;Whilst the theory is useful reading for those presiding over
+law enforcement, it also has a place in software engineering. Think
+about a project of yours, does it have any broken windows? Perhaps
+undocumented code, dodgy library dependencies or a  ’temporary’
+solution that’s been marked “//TODO: fix this” for the past two months.&lt;/p&gt;
+&lt;p&gt;Fixing such problems promptly can prevent larger issues further down the
+road. Keeping a project in good shape will keep morale up, promote good
+software engineering practices and ensure that the project is still
+cared for.&lt;/p&gt;
+&lt;p&gt;Of course no project is developed in a perfect world. With restrictions
+on time, money and resources I think the real skill is to judge what
+windows can be left and what windows must be fixed. What is for sure
+though is that keeping track of your windows isn’t a bad idea at all.&lt;/p&gt;
+&lt;p&gt;Further reading:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.theatlantic.com/magazine/archive/1982/03/broken-windows/304465/"&gt;Broken Windows – George L. Kelling and James Q. Wilson – The
+Atlantic&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pragprog.com/the-pragmatic-programmer/extracts/softwar-entropy"&gt;The Pragmatic Bookshelf | Software Entropy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X"&gt;The Pragmatic Programmer – Andrew Hunt, David Thomas ISBN: 978-0201616224&lt;/a&gt;&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Software Engineering"></category>
+    </entry>
+    <entry>
+        <title>About 12 hours</title>
+        <link href="http://www.alexpringle.co.uk/about-12-hours.html" rel="alternate"></link>
+        <updated>2013-04-01T03:18:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-04-01:about-12-hours.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/2013-03-27-00.33.08.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A good setup&lt;/p&gt;
+&lt;p&gt;It’s amazing what you can do in about 12 hours. The other day my good
+friend Tom and I decided to have a “App Jam”. In the space of half a day
+we managed to come up with a concept from nowhere and ended up with
+something close to a proof of concept.&lt;/p&gt;
+&lt;p&gt;That is before we crashed out, If only we hadn’t been suffering from
+lack of sleep at the start. If we have a 24 hour session during the
+week, I’m certain we can get our app very workable using maps, gps
+and bar codes, all good stuff.&lt;/p&gt;
+&lt;p&gt;I think the best way to go about limited time dev sessions is to get a
+solid idea, stick with it and make decisions that will ensure you see
+progress as fast as possible.&lt;/p&gt;
+&lt;p&gt;As soon as you start to see your physics engine working, or your
+maps API working, it’s a mental downhill journey from there.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="Game Jams"></category>
+        <category term="Holidays"></category>
+        <category term="Lan"></category>
+        <category term="Leicester"></category>
+    </entry>
+    <entry>
+        <title>Sun, Servers &amp; Suspicious Deals</title>
+        <link href="http://www.alexpringle.co.uk/sun-servers-suspicious-deals.html" rel="alternate"></link>
+        <updated>2013-03-02T16:12:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-03-02:sun-servers-suspicious-deals.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/2013-02-14-14.10.18.png" /&gt;&lt;/p&gt;
+&lt;p&gt;One of the nicest views on campus&lt;/p&gt;
+&lt;p&gt;The Sun’s been out the past week or so. Hull is a much nicer place in
+the Sun and the Uni looks even better.&lt;/p&gt;
+&lt;p&gt;We’re now over half way through our degrees, which is absolutely mad.
+Things that happened over a year ago feel like recent memories. With
+time flying by so fast it’s important to keep track of what’s gone on.
+The blog is perfect for this.&lt;/p&gt;
+&lt;p&gt;The only issue has been my hosting, all sorts of goodies and
+“99.9%” uptime for no charge. It seemed too good to be true and for the
+most part was.&lt;/p&gt;
+&lt;p&gt;I’ve been meaning to switch to a proper hosting plan for months, and
+managed it smoothly thanks to some quick research and some SQL skills.
+I’ve now got much more flexibility with the site and as a result can
+rest easy at night knowing everything’s safe and in good working order.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Iterating Towards Insanity : Game Jam</title>
+        <link href="http://www.alexpringle.co.uk/iterating-towards-insanity-game-jam.html" rel="alternate"></link>
+        <updated>2013-02-13T21:47:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-02-13:iterating-towards-insanity-game-jam.html</id>
+        <summary type="html">&lt;p&gt;A couple of weeks ago was Global Game Jam, a 48 hour game dev event,
+this year’s theme was the sound of a heart beating. Our local event was
+hosted at Hull College with students present from Hull, Grimsby and
+around Yorkshire. I thoroughly enjoyed the weekend and most of all
+bonding with my fellow course mates.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/strongheart.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I teamed up with Marcin who arrived half way through. I spent the first
+day messing around with our Android engine of choice : AndEngine. A nice
+engine, but the documentation did not lend itself to my perhaps insane
+stance of “lets use something that’s not XNA and it doesn’t matter if
+we’ve never used it before”.&lt;/p&gt;
+&lt;p&gt;Marcin arrived on Saturday, 24 hours in and with no sleep we began
+making a game.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2013-01-26-23.16.36-225x300.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Work underway&lt;/p&gt;
+&lt;p&gt;We were seated next to the “Heart Attack Team”, consisting of
+&lt;a href="http://jvanrij.com"&gt;John&lt;/a&gt;, &lt;a href="http://www.nickcase.co.uk/"&gt;Nick&lt;/a&gt; and Tom. These guys helped make the weekend, sharing
+trips to the shops and just chatting helps keep you sane. I also enjoyed
+some quality “banter” with &lt;a href="http://betajester.co.uk/"&gt;Beta Jester&lt;/a&gt; and &lt;a href="http://www.mbajer.co.uk/blogs/"&gt;Mateusz&lt;/a&gt;, all great
+guys who seemed to get a lot more sleep than myself.&lt;/p&gt;
+&lt;p&gt;We ended up at Wetherspoons for breakfast, where I was pretty
+much delirious with lack of sleep, I still managed a 1400 calorie meal
+though.&lt;/p&gt;
+&lt;p&gt;As the event progressed and as the time between commits became longer
+and the bugs became more ridiculous, me and John came up with the very
+appropriate phrase “iterating towards insanity”.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2013-01-26-04.03.20.png" /&gt;&lt;/p&gt;
+&lt;p&gt;John - well on his way to insanity
+Overall I really enjoyed Game Jam, although I would have preferred if
+there was no competition aspect. It’s better just “jamming” the
+way musicians do and having a good time sharing our common interests.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/screen1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Not forgetting the game, Doodle Heart, which is available now for
+Android. It’s doodle themed, high score based,physics fun. We love it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/screen2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Many thanks to the guys at Hull College, Simon Grey and everyone who ran
+the event, and of course to Marcin who is a pleasure to work with  -
+more from us in the pipeline.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://play.google.com/store/apps/details?id=com.havmedia.doodleheart"&gt;
+&lt;img alt="Imported Image" src="/images/en_generic_rgb_wo_60.png" /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thoughts from Game Jam:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Git really is better than SVN, especially with a dodgy network / Hull Uni SVN.&lt;/p&gt;
+&lt;p&gt;Drinking loads of Robinsons and having 0 caffeine keeps you awake for days.&lt;/p&gt;
+&lt;p&gt;Simple ideas are the king of game dev events.&lt;/p&gt;
+&lt;p&gt;Polish goes a long way.&lt;/p&gt;
+&lt;p&gt;XNA is infact optional.&lt;/p&gt;
+&lt;p&gt;As always, a good tunes lifts morale #isWasntMe&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="Game Jams"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>3TG : No Method, No Class &amp; Monkeys</title>
+        <link href="http://www.alexpringle.co.uk/3tg-no-method-no-class-monkeys.html" rel="alternate"></link>
+        <updated>2013-02-07T21:37:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-02-07:3tg-no-method-no-class-monkeys.html</id>
+        <summary type="html">&lt;p&gt;![Imported Image]&lt;a href="/images/boost2.png"&gt;alt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Game mechanics involving angry, vicious and thirsty monkeys.&lt;/p&gt;
+&lt;p&gt;In October I teamed up with Shaun and John (both first years) for Three
+Thing Game, a 24 hour game dev event here at the University of Hull.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/boost1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Monkeys, power ups, caffeine and insane "caffeine high" techno mode
+gameplay&lt;/p&gt;
+&lt;p&gt;To summarise, I drank obscene amounts of Robinsons whilst we made a
+brilliant game that made players smile.&lt;/p&gt;
+&lt;p&gt;We made the finals and presented something we, and everyone else loved.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/team.png" /&gt;&lt;/p&gt;
+&lt;p&gt;No Method(), No Class{} having a rest&lt;/p&gt;
+&lt;p&gt;The only criticism I have for Three Thing Game this time around was the
+judging/judging criteria.&lt;/p&gt;
+&lt;p&gt;How well it matched the three things  &lt;/p&gt;
+&lt;p&gt;Completeness  &lt;/p&gt;
+&lt;p&gt;Fun to play&lt;/p&gt;
+&lt;p&gt;We hit all three well and were disappointed to see what we thought was
+judging not based on the criteria. Great graphics and complex game
+play are impressive, but surely having a solid story line and fun
+complete game play take precedence.&lt;/p&gt;
+&lt;p&gt;Despite this a great time was had making a great game. Which to me is
+far more important than winning Microsoft swag.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/boost3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Game over, time for bed.&lt;/p&gt;
+&lt;p&gt;Many congratulations to all those involved, lots of great competition.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Hullfire Android</title>
+        <link href="http://www.alexpringle.co.uk/hullfire-android.html" rel="alternate"></link>
+        <updated>2013-01-04T19:58:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2013-01-04:hullfire-android.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/phone1f.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Looks good!&lt;/p&gt;
+&lt;p&gt;After my exams finished I decided to go ahead and blast out an app for
+&lt;a href="http://www.thehullfire.com"&gt;The Hullfire&lt;/a&gt;. Myself  Sam Cooke and Mark Dyer had been in discussion
+about Hullfire apps and also developing a web framework for the content
+during the past semester.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/n71f.png" /&gt;
+Tablet support also&lt;/p&gt;
+&lt;p&gt;The only thing left to do was to finish building it.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://play.google.com/store/apps/details?id=com.havmedia.hullfire"&gt;
+&lt;img alt="Imported Image" src="/images/en_generic_rgb_wo_60.png" /&gt;&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good stuff I think.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="christmas"></category>
+        <category term="hull"></category>
+        <category term="Hullfire"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Busy</title>
+        <link href="http://www.alexpringle.co.uk/busy.html" rel="alternate"></link>
+        <updated>2012-12-31T00:27:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-12-31:busy.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/beans.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The local has jelly beans now #result&lt;/p&gt;
+&lt;p&gt;It’s been an incredibly busy past couple of months. Most notably I’ve
+been down to Winchester for an IBM assessment centre which was a
+great experience, it felt like the young apprentice, but with nice
+people.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/wintree.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A Christmas tree in Winchester. May I one day be blessed with a steady
+hand when I'm on the go&lt;/p&gt;
+&lt;p&gt;Working on my own projects, hunting for a placement and getting all the
+coursework done has been hard work, but It’s a good feeling when you
+start to see it all pay off.&lt;/p&gt;
+&lt;p&gt;I’ve been up to all sorts this semester, none of which I had really
+expected, so who knows what the new year will bring.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/bombay.png" /&gt;
+There's not enough Indian takeaways in Hull. Leicester's Bombay Bites
+makes up for the absence though&lt;/p&gt;
+&lt;p&gt;Being home for Christmas has been great, home is pure luxury compared to
+student living. I’ve been working hard on some apps but have managed to
+relax a little after the semester with countless trips to the pub and
+takeaways. It’s always great to catch up with the mates.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="christmas"></category>
+        <category term="hull"></category>
+        <category term="Leicester"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Demo 2012</title>
+        <link href="http://www.alexpringle.co.uk/demo-2012.html" rel="alternate"></link>
+        <updated>2012-12-03T21:34:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-12-03:demo-2012.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/roadagain.png" /&gt;&lt;/p&gt;
+&lt;p&gt;On the road once again.&lt;/p&gt;
+&lt;p&gt;On November 21st, thousands of students took to the streets of London to
+shout at the government in protest of rising tuition fees and education
+cuts.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/signs.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Signs everywhere. Socialists tried to convert us too.&lt;/p&gt;
+&lt;p&gt;It was another epic adventure with &lt;a href="https://twitter.com/BeastallJoe"&gt;Joe&lt;/a&gt; and an experience you can
+only get as a student.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/theeye.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A testament to my photography skills #curseTheTrees&lt;/p&gt;
+&lt;p&gt;The only problem was the highly persistent rain which was more powerful
+than my shower.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/thefuzz.png" /&gt;&lt;/p&gt;
+&lt;p&gt;On the beat and gave us many a wave.&lt;/p&gt;
+&lt;p&gt;No ifs, no buts, no education cuts!&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Politics"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>November 5th &amp; 11th</title>
+        <link href="http://www.alexpringle.co.uk/november-5th-11th.html" rel="alternate"></link>
+        <updated>2012-11-14T22:48:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-11-14:november-5th-11th.html</id>
+        <summary type="html">&lt;p&gt;We went over to Tom and Joe’s house for fireworks. Cracking night of
+fireworks and a roaring fire, a great trial for my new coat. The only
+down side being that I didn’t take any pictures.&lt;/p&gt;
+&lt;p&gt;It’s Diwali time in Leicester, the lights are up all over the place.
+Gotta love the golden mile, you just don’t experience other cultures
+like this in Hull.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/lights.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Paramedic dodging blurry photo taking skills #trainLeftBeforeSwitchOn&lt;/p&gt;
+&lt;p&gt;On Sunday myself, Josh, Joe and Oli smarted up and walked into Hull for
+the Annual Remembrance Service at the Cenotaph. It was nice to pay some
+respects, and sacrificing a student lie in is nothing compared to
+the sacrifices of those who have served for us.&lt;/p&gt;
+&lt;p&gt;After this we stumbled into a Hull wartime exhibition. We spent a good
+hour chatting to the guys running the place and got keyed up on our
+local wartime knowledge.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/joshgun1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Josh manning a rather large machine gun&lt;/p&gt;
+&lt;p&gt;We made our way to a greasy spoon for breakfast and
+rather humorously ended up looking like a losing team from the
+apprentice (only with more brains). The food was ok, but I didn’t get
+the hash browns I ordered, well you can’t have it all I guess.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Out with Labour</title>
+        <link href="http://www.alexpringle.co.uk/out-with-labour.html" rel="alternate"></link>
+        <updated>2012-11-08T21:59:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-11-08:out-with-labour.html</id>
+        <summary type="html">&lt;p&gt;The other day I headed out with my good friend Joe and the University’s
+Labour Club to campaign on behalf of John Prescott. He’s running for
+Humberside Police and Crime Commissioner.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/leaflet.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The People's Voice&lt;/p&gt;
+&lt;p&gt;I think he’s a good candidate for the job and I got a great experience
+out in Bransholme North leafleting with the Labour folks. Something much
+different from the average Comp Sci day.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/prescott.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It's not every day Prescott serves you curry #badPhotographySkills&lt;/p&gt;
+&lt;p&gt;Make sure you vote on November 15th, no matter what your political
+alignment is!&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Politics"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Caffeine, Monkey, Under Attack – No Method(), No Class{}</title>
+        <link href="http://www.alexpringle.co.uk/caffeine-monkey-under-attack-no-method-no-class.html" rel="alternate"></link>
+        <updated>2012-10-26T00:34:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-10-26:caffeine-monkey-under-attack-no-method-no-class.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/bransholme.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Bransholme, North Hull at night. #irrelevant&lt;/p&gt;
+&lt;p&gt;Three Thing Game is back on. This time I’m on-board with an entirely new
+team consisting of me, Shaun and John. Awesome team name too, well
+played Shaun.&lt;/p&gt;
+&lt;p&gt;We’ve got Caffeine, Monkey and “Under Attack”. A good combination if you
+ask me, here’s hoping nothing goes horrifically wrong (ha).&lt;/p&gt;
+&lt;p&gt;I didn’t even get Visual Studio 2010 installed and running until the
+early hours of Thursday.&lt;/p&gt;
+&lt;p&gt;No matter though, the intense coding sessions have begun, looking
+forward to Saturday.&lt;/p&gt;
+&lt;p&gt;Game on.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Call Me, Love Me</title>
+        <link href="http://www.alexpringle.co.uk/call-me-love-me.html" rel="alternate"></link>
+        <updated>2012-10-21T22:48:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-10-21:call-me-love-me.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20121013_193008.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The stage&lt;/p&gt;
+&lt;p&gt;The Samaritans have been in Hull for 50 years. As a celebration the
+drama department presented a three night showing of “Call Me, Love Me”.
+In part directed by my housemate &lt;a href="https://twitter.com/BrutonJulian"&gt;Julian&lt;/a&gt; and written by Melanie Ball,
+it followed the story of a number of linked characters going through
+tough situations in their lives. Call Me, Love Me really showcased some
+great Hull talent and proved to be a good night’s entertainment.
+Increased awareness forthe Samaritans is top stuff too.&lt;/p&gt;
+&lt;p&gt;As a Software Development student, living with drama
+students certainty adds some variety to Uni life.&lt;/p&gt;
+&lt;p&gt;Find out more:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.samaritans.org/"&gt;http://www.samaritans.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.samaritans.org/how-we-can-help-you/contact-us"&gt;http://www.samaritans.org/how-we-can-help-you/contact-us&lt;/a&gt;&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Charity"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Hull Fair</title>
+        <link href="http://www.alexpringle.co.uk/hull-fair.html" rel="alternate"></link>
+        <updated>2012-10-20T14:56:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-10-20:hull-fair.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20121012_220530.png" /&gt;&lt;/p&gt;
+&lt;p&gt;An awesome piece of engineering&lt;/p&gt;
+&lt;p&gt;The Hull Fair was back in town, good stuff. We went on this crazy ride
+pictured above. It was great for the first three minutes, then the last
+two reminded me of years of trips to Scotland.&lt;/p&gt;
+&lt;p&gt;All in all a good time, didn’t get on the dodgems though, maybe next
+time.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Windows 8 Convert</title>
+        <link href="http://www.alexpringle.co.uk/windows-8-convert.html" rel="alternate"></link>
+        <updated>2012-10-20T00:19:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-10-20:windows-8-convert.html</id>
+        <summary type="html">&lt;p&gt;I’ve been hating the release preview for Windows 8 on my laptop for
+ages. It’s trying far too hard to be a tablet. It’s just like being
+on a mobile device with all the UI design choices and sacrifices that
+come with the territory.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20121013_133037.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Irrelevant steak, it was awesome though #greyMare&lt;/p&gt;
+&lt;p&gt;But then I treated myself with a nice SanDisk SSD for my desktop and
+took the plunge and installed Windows 8 from DreamSpark. It’s pretty
+awesome. I have a few gripes, but the machine is running fast and
+there’s a lot of good stuff I’m loving in Windows 8. I’m still not
+absolutely 100% on metro but it’s not a problem.&lt;/p&gt;
+&lt;p&gt;It’s great to be up to date with a proper build of 8, the experience on
+my PC is so much better than on the laptop. I’m hoping a clean reformat
+and install will bring the laptop experience up to scratch. Fingers
+crossed.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="hull"></category>
+        <category term="Windows 8"></category>
+    </entry>
+    <entry>
+        <title>Calling Three Thing Gamers</title>
+        <link href="http://www.alexpringle.co.uk/calling-three-thing-gamers.html" rel="alternate"></link>
+        <updated>2012-10-11T12:17:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-10-11:calling-three-thing-gamers.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20121010_174336.png" /&gt;
+Milk Shack - Newland Avenue #treatYourself&lt;/p&gt;
+&lt;p&gt;So Three Thing Game is back on.&lt;/p&gt;
+&lt;p&gt;I need a team, or if a team needs +1, I’m in.&lt;/p&gt;
+&lt;p&gt;contact@alexpringle.co.uk&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Freshers</title>
+        <link href="http://www.alexpringle.co.uk/freshers.html" rel="alternate"></link>
+        <updated>2012-10-04T13:28:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-10-04:freshers.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120924_012344.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Tinchy Stryder&lt;/p&gt;
+&lt;p&gt;Freshers week was once again a blur, good stuff though. Perhaps the best
+part of freshers is that people actually talk, they haven’t got locked
+into a small group of friends yet. Random encounters are the order of
+the day, excellent.&lt;/p&gt;
+&lt;p&gt;A big highlight for me was helping freshers move in at The Lawns. It was
+a great feeling helping people out, chatting to parents and giving them
+a good first impression.Living in halls was a fantastic experience and
+seeing all the freshers was exciting.&lt;/p&gt;
+&lt;p&gt;Being at Uni is crazy, one minute you’re watching Tinchy Stryder get
+“grimey” with his lyrics, next your sinking into an arm chair listening
+to an in depth conversation about 30′s media and racial stereotypes.
+Quality.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Home Sweet Hull</title>
+        <link href="http://www.alexpringle.co.uk/home-sweet-hull.html" rel="alternate"></link>
+        <updated>2012-09-14T17:13:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-09-14:home-sweet-hull.html</id>
+        <summary type="html">&lt;p&gt;So summer ended how it started, with a trip to the pub. I’m back in Hull
+and in-between putting my foot down at our housing provider’s office
+I’ve been at the pub, playing minecraft with H-bomb &amp;amp; Dean and turning
+my Raspberry Pi into a media center for the living room.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/1347181648569.png" /&gt;&lt;/p&gt;
+&lt;p&gt;On the road once again&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120909_120724.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The Humber Bridge in the sun.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120914_122620.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Got the case today, it looks epic. Great piece of hardware&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120909_201817.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Went to Uni for a gander - Robert Blackburn at night&lt;/p&gt;
+&lt;p&gt;Year 2 approaches&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Holidays"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>A Pleasant PC World Experience</title>
+        <link href="http://www.alexpringle.co.uk/a-pleasant-pc-world-experience.html" rel="alternate"></link>
+        <updated>2012-09-03T14:01:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-09-03:a-pleasant-pc-world-experience.html</id>
+        <summary type="html">&lt;p&gt;My 5.1 speakers decided to die the other day, after threatening to for
+months. I started googlingfor something more practical for Uni and I
+ended upchoosingthe &lt;a href="http://www.amazon.co.uk/Creative-Gigaworks-Series-Multimedia-Speakers/dp/B001IZZ2PO/ref=dp_ob_title_ce"&gt;Creative Gigaworks T40&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/speakerblog.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Looking and sounding good&lt;/p&gt;
+&lt;p&gt;They look and sound great and I can’t wait to set them up in Hull and
+get some tunes on. I was pleasantly surprised when I found out they were
+available at a mere £3 more than Amazon at PC World, shocking
+considering PC World’s prices. I headed into Leicester to get some and I
+even got to try some out in the shop. Normally I hate PC World, but
+they’ve impressed on this occasion.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Hardware"></category>
+    </entry>
+    <entry>
+        <title>Football</title>
+        <link href="http://www.alexpringle.co.uk/football.html" rel="alternate"></link>
+        <updated>2012-08-20T11:22:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-08-20:football.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/hinckley1.png" /&gt;
+4-1 victory over Hinckley United (who?)&lt;/p&gt;
+&lt;p&gt;I’m not really a football fan but this summer I’ve been to a couple of
+LCFC pre season friendlies. I’m not saying I’m lucky but 2/2 wins so
+far, maybe I should go to some games during the season.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/lcfc1.png" /&gt;
+1-0 victory against Sunderland&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="LCFC"></category>
+        <category term="Leicester"></category>
+    </entry>
+    <entry>
+        <title>New devices &amp; new features</title>
+        <link href="http://www.alexpringle.co.uk/new-devices-new-features.html" rel="alternate"></link>
+        <updated>2012-07-27T17:36:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-07-27:new-devices-new-features.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/nexus7.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Quality tablet&lt;/p&gt;
+&lt;p&gt;So I’ve acquired a Nexus 7, it’s the latest Nexus branded device and the
+first tablet from Google. It’s awesome, and priced amazingly cheap. It’s
+the third Nexus device with a NFC chip, which allows for short distance
+communication between two devices by bringing the backs together.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/s3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Amy's new Galaxy S3&lt;/p&gt;
+&lt;p&gt;With the NFC enabled Samsung Galaxy S3 taking a massive share of the
+smartphone market I figured it would be a good idea to play around with
+some NFC features. I’ve just added sharing support to &lt;a href="https://play.google.com/store/apps/details?id=com.havmedia.hullcsblogs"&gt;Hull CS
+Blogs&lt;/a&gt; using Android Beam, and it works very well.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="HullCSBlogs"></category>
+    </entry>
+    <entry>
+        <title>Hull CS Blogs Android &amp; Greece</title>
+        <link href="http://www.alexpringle.co.uk/hull-cs-blogs-android-greece.html" rel="alternate"></link>
+        <updated>2012-07-06T16:32:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-07-06:hull-cs-blogs-android-greece.html</id>
+        <summary type="html">&lt;p&gt;So I’m in Greece for my holidays, good stuff. Whilst I’ve been really
+far away from my PC I’ve been road testing my Android version of the
+Hull CS Blogs app.&lt;/p&gt;
+&lt;p&gt;It’s pretty close to being finished (and would be if I wasn’t hiding in
+the shade halfway across the world #ginger)&lt;/p&gt;
+&lt;p&gt;On with the screenshots:&lt;/p&gt;
+&lt;p&gt;![Imported Image]&lt;a href="/images/wpid-Screenshot_2012-07-06-19-26-39.png"&gt;image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![Imported Image]&lt;a href="/images/wpid-Screenshot_2012-07-06-19-11-33.png"&gt;image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![Imported Image]&lt;a href="/images/wpid-Screenshot_2012-07-06-19-11-56.png"&gt;image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![Imported Image]&lt;a href="/images/wpid-Screenshot_2012-07-06-19-10-55.png"&gt;image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;![Imported Image]&lt;a href="/images/wpid-Screenshot_2012-07-06-19-10-42.png"&gt;image&lt;/a&gt;&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Paradise City</title>
+        <link href="http://www.alexpringle.co.uk/paradise-city.html" rel="alternate"></link>
+        <updated>2012-06-28T18:31:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-06-28:paradise-city.html</id>
+        <summary type="html">&lt;p&gt;So we all went to Skegness the other day for what I insisted was a
+holiday (despite everyone saying it was a day trip).&lt;/p&gt;
+&lt;p&gt;We all arrived at half 8, all set for an epic road trip.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-08.21.271.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Assembled at 8:30am&lt;/p&gt;
+&lt;p&gt;First stop, Mc D’s for breakfast. Barnes and Sam ended up somewhere else
+but caught up on the route later (to mine and Adam’s delight).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-08.43.17.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Breakfast stop&lt;/p&gt;
+&lt;p&gt;After this is was full speed to Skegness. We we’re singing Paradise City
+at the top of our voices and enjoying some dubstep when the sun made an
+appearance.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-10.44.40.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A promising sight&lt;/p&gt;
+&lt;p&gt;First things first we hit the beach.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-11.41.05.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It's a beach with a pier&lt;/p&gt;
+&lt;p&gt;Then we strolled on down to the arcades where Massey “won big”.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-12.43.54.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Such a high roller&lt;/p&gt;
+&lt;p&gt;After this followed some bowling, some shopping and
+many unsuccessful attempts by me to win cuddly toys.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-14.00.42.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A clock&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-16.11.53.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Wild times on the attractions&lt;/p&gt;
+&lt;p&gt;As the day came to a close, it was on to the “dubious” Beijing Dragon.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-17.53.10.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A dubious but reasonable place to dine&lt;/p&gt;
+&lt;p&gt;We managed to acquire a number of goldfish on our travels, which we’re
+named  Enrique, Fred (or gold-finger) and something else I can’t
+remember.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-17.59.10.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Adam called him Gold-finger, but apparently he's called Fred.&lt;/p&gt;
+&lt;p&gt;Unfortunately the day had to come to an end, it was a great time and
+everyone seemed to enjoy themselves thoroughly.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-16-17.53.40.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Messing around before heading home&lt;/p&gt;
+&lt;p&gt;Good times, great friends, bring on the next road trip.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Holidays"></category>
+        <category term="Leicester"></category>
+    </entry>
+    <entry>
+        <title>Nclip, Android fragmentation and a fancy image</title>
+        <link href="http://www.alexpringle.co.uk/nclip-android-fragmentation-and-a-fancy-image.html" rel="alternate"></link>
+        <updated>2012-06-17T19:18:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-06-17:nclip-android-fragmentation-and-a-fancy-image.html</id>
+        <summary type="html">&lt;p&gt;Recently I’ve been working on updating &lt;a href="https://play.google.com/store/apps/details?id=com.havmedia.nclip&amp;amp;feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5oYXZtZWRpYS5uY2xpcCJd"&gt;Nclip&lt;/a&gt;, which hasn’t seen much
+in the way of love from me for many months. I’ve spent a few hours
+adding some highly requested features and also getting it to look like a
+proper ICS app. My main problem now is getting it to look respectable on
+older versions of Android (which make the majority of my user base).&lt;/p&gt;
+&lt;p&gt;I’m using a library called &lt;a href="http://actionbarsherlock.com/"&gt;ActionBarSherlock&lt;/a&gt;, which has eased some
+pain, but there’s still an inevitable hit to productivity ensuring
+everything looks good on every supported version of the OS.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/png-e1339960749168.png" /&gt;
+Fancy graphic using - Android Asset Studio&lt;/p&gt;
+&lt;p&gt;Android Asset Studio
+: &lt;a href="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/index.html"&gt;http://android-ui-utils.googlecode.com/hg/asset-studio/dist/index.html&lt;/a&gt;&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="Nclip"></category>
+    </entry>
+    <entry>
+        <title>End Of Year Ball</title>
+        <link href="http://www.alexpringle.co.uk/end-of-year-ball.html" rel="alternate"></link>
+        <updated>2012-06-17T14:27:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-06-17:end-of-year-ball.html</id>
+        <summary type="html">&lt;p&gt;It was the End Of Year Ball at Uni a couple of weeks ago, we all looked
+pretty swish and had a good night of drinks, music and laughs. It was
+good seeing 9 months of new friends and acquaintances all looking sharp,
+a top notch way to end the year. Good stuff.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-02-20.19.25-e1339942871362.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Looking good I say&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-02-21.20.55-e1339942881468.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Downs C Comp Sci&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-02-23.56.15-e1339942831888.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The Main Stage&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Home, Cows &amp; Dropbox</title>
+        <link href="http://www.alexpringle.co.uk/home-cows-dropbox.html" rel="alternate"></link>
+        <updated>2012-06-13T17:50:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-06-13:home-cows-dropbox.html</id>
+        <summary type="html">&lt;p&gt;So I’m back in ~~sunny~~ rainy Leicester with not much to do but play
+Counter Strike, read, bike around and code things between trips out with
+the mates.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-13-16.25.02-e1339609510570.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Fountain @ Leicester Town Hall Square&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/2012-06-12-21.04.10-e1339609588688.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Cows!&lt;/p&gt;
+&lt;p&gt;Random note -&lt;/p&gt;
+&lt;p&gt;So Dropbox is awesome, if I need anything,anytime its on my phones, pc,
+laptop, the web and the tablet. I started using it ten times more since
+I got to uni so get it, it’s pretty badass.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Leicester"></category>
+    </entry>
+    <entry>
+        <title>Monopoly</title>
+        <link href="http://www.alexpringle.co.uk/monopoly.html" rel="alternate"></link>
+        <updated>2012-06-04T14:06:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-06-04:monopoly.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/wpid-IMG_20120531_211701.png" /&gt;&lt;/p&gt;
+&lt;p&gt;What do you call monopoly money when you’re collecting rent? M’s ,
+mounds, mollars?&lt;/p&gt;
+&lt;p&gt;None of us could come up with a good name, Monopoly was still awesome
+though.&lt;/p&gt;
+&lt;p&gt;We really do have nothing better to do now year one’s coming to an
+abrupt end.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Hot hot hot</title>
+        <link href="http://www.alexpringle.co.uk/hot-hot-hot.html" rel="alternate"></link>
+        <updated>2012-05-25T16:53:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-05-25:hot-hot-hot.html</id>
+        <summary type="html">&lt;p&gt;So it’s hot again, this called for chilling outside with Downs C.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120524_190419r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Plenty of food&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120524_183543r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;H-bomb takes a break from Minecraft to relax in the sun&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120524_115709r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Even sooty loves the sun&lt;/p&gt;
+&lt;p&gt;Good times and good weather.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="hull"></category>
+    </entry>
+    <entry>
+        <title>Year 1 at Hull Uni</title>
+        <link href="http://www.alexpringle.co.uk/year-1-at-hull-uni.html" rel="alternate"></link>
+        <updated>2012-05-17T18:33:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-05-17:year-1-at-hull-uni.html</id>
+        <summary type="html">&lt;p&gt;So the end of my first year at Hull Uni is fast approaching, it’s been
+pretty insane. There are only a couple of exams left and I probably
+should be revising for them.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/eoyrainbow.png" /&gt;&lt;/p&gt;
+&lt;p&gt;There was a nice rainbow the other day&lt;/p&gt;
+&lt;p&gt;All considered it’s been a good year and I’ve seen good results so far,
+with regards to work I have mainly been focusing on my own projects and
+goals. I’ve managed to build up some example software and gain loads of
+knowledge in my free time whilst having a great time as a fresher. One
+of the biggest problems I’ve found this year is keeping my focus on one
+thing, there’s so many half finished things I have on the go and I still
+keep starting new projects – no worries though, it’s all good fun.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000091.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Stopped a Sheffield one time #randomPictures&lt;/p&gt;
+&lt;p&gt;A few things I have hated this year:&lt;/p&gt;
+&lt;p&gt;The Lawns being so far away from the University  &lt;/p&gt;
+&lt;p&gt;Some 105 bus drivers  &lt;/p&gt;
+&lt;p&gt;Students outright insulting Mike Brayshaw (he has passion, so what if
+it’s for Unix and trains)  &lt;/p&gt;
+&lt;p&gt;The guy who harasses people in labs and attempts to bribe
+students/demonstrators into doing his coursework.  &lt;/p&gt;
+&lt;p&gt;Having to tell people to be quiet in tutorials  &lt;/p&gt;
+&lt;p&gt;Most of the Lawns food (although it is cheap)  &lt;/p&gt;
+&lt;p&gt;Being abandoned at Three Thing Game  &lt;/p&gt;
+&lt;p&gt;Apparent variance in marking styles of programming coursework between
+markers&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000089.png" /&gt;&lt;/p&gt;
+&lt;p&gt;At the bus stop at 7am #randomPictures&lt;/p&gt;
+&lt;p&gt;A few highlights:&lt;/p&gt;
+&lt;p&gt;New friends, girlfriend, flatmates and acquaintances  &lt;/p&gt;
+&lt;p&gt;The insane blur that was freshers  &lt;/p&gt;
+&lt;p&gt;Three Thing Game  &lt;/p&gt;
+&lt;p&gt;Guest lectures + talks  &lt;/p&gt;
+&lt;p&gt;Free Blackberry Playbook  &lt;/p&gt;
+&lt;p&gt;Reasonable app success  &lt;/p&gt;
+&lt;p&gt;Cheap bars  &lt;/p&gt;
+&lt;p&gt;Heron Foods  &lt;/p&gt;
+&lt;p&gt;Enter Shikari  &lt;/p&gt;
+&lt;p&gt;Bang Tidy Fridays at Sanctuary  &lt;/p&gt;
+&lt;p&gt;Bing Wang Breakfasts (fry up after his 9am lecture)  &lt;/p&gt;
+&lt;p&gt;No pointless A-levels  &lt;/p&gt;
+&lt;p&gt;Not being treated like dirt by staff (like at college)  &lt;/p&gt;
+&lt;p&gt;Getting good quality teaching and feedback  &lt;/p&gt;
+&lt;p&gt;Lectures and staff that are happy to talk to you (and not down), email
+back promptly and go out of their way to assist you (even in their free
+time)  &lt;/p&gt;
+&lt;p&gt;Great resources and environment for getting work done (especially the
+intranet, library &amp;amp; labs)  &lt;/p&gt;
+&lt;p&gt;A department that goes out of their way to notify you of any
+events,competitions or opportunities to aid your education (and stuff
+that’s just fun)&lt;/p&gt;
+&lt;p&gt;and of course, the union shop&lt;/p&gt;
+&lt;p&gt;Summer approaches.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Enter Shikari</title>
+        <link href="http://www.alexpringle.co.uk/enter-shikari.html" rel="alternate"></link>
+        <updated>2012-04-14T23:26:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-04-14:enter-shikari.html</id>
+        <summary type="html">&lt;p&gt;So months ago I saw that Enter Shikari were going to come to Hull
+University and play at Asylum. I had promised myself that I would go see
+them should they come to Hull, so that was that,I booked my ticket and
+more or less forgot about it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_0001232.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Sorting the hair at TLC&lt;/p&gt;
+&lt;p&gt;A few months passed an eventually March came round, nobody else I knew
+had bothered to get tickets, which didn’t bother me, it was going to be
+epic anyway.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000126r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Young Guns on stage&lt;/p&gt;
+&lt;p&gt;As it turns out Amy managed to get hold of a ticket and the whole thing
+turned into an epic date.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000127r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Epic white light&lt;/p&gt;
+&lt;p&gt;We started off at TLC (The Lawns Bar) where Amy convinced Mike to open
+up so I could get some JD and Coke.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000136r.png" /&gt;
+More lights&lt;/p&gt;
+&lt;p&gt;Got the bus to Uni, got a couple drinks in Asylum, got a good spot with
+an ace view and enjoyed Young Guns and Enter Shikari.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000132r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Enter Shikari on stage&lt;/p&gt;
+&lt;p&gt;It was a truly epic night, they played a good mix of old and new in my
+opinion and most importantly, there was cheesy chips on the way home.&lt;/p&gt;
+&lt;p&gt;Amazing time.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>The Unholy Alliance (and why we bailed)</title>
+        <link href="http://www.alexpringle.co.uk/the-unholy-alliance-and-why-we-bailed.html" rel="alternate"></link>
+        <updated>2012-04-01T15:31:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-04-01:the-unholy-alliance-and-why-we-bailed.html</id>
+        <summary type="html">&lt;p&gt;So Three Thing Game happened the other week, we had dog, flamethrower
+and party as our things – an improvement on last time: summoner, bomb
+and speedboat. We rocked up to the 24 hour session with a basic
+framework for some minigames and some art work.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000119-Copy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A healthy healthy breakfast&lt;/p&gt;
+&lt;p&gt;We also found our name had changed to The Unholy Alliance, maybe next
+time we’ll go for The Unnamed Alliance or perhaps
+The Unpredictable Alliance.&lt;/p&gt;
+&lt;p&gt;We started on some games, I ended up creating a robot wars style battle
+arena type thing, Waseem ended up working on a maze game, Scott started
+on “falling kennels” and Danny was working on a dog racing game.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000118-Copy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Everyone coding away&lt;/p&gt;
+&lt;p&gt;Everything was going well, especially considering we came into the
+session with a casual outlook and next to nothing code wise. Amy turned
+up late into the evening with biscuits and Pepsi (amazing girlfriend
+move) and hung out with us creating some graphics. At quarter past ten
+we all headed off to Mc D’s apart from Danny who decided to stay. Me and
+Waseem were both keen to keep the Three Thing Game late night Maccys
+tradition going (we got table service last time).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000115-Copy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A dog with a flamethrower and a party hat -Thanks to Dan H for helping
+with the artwork&lt;/p&gt;
+&lt;p&gt;After a sizeable meal and discussing how we thought the project would
+come together nicely we returned at about half 11 to crack on with the
+coding. When we got back to the lab we found Danny wasn’t at his desk,
+we thought nothing of it until we checked Facebook.&lt;/p&gt;
+&lt;p&gt;Apparently Danny didn’t think the project was going anywhere and had
+decided to go home as he wasn’t enjoing himself, unfortunately  for us
+he hadn’t left us any of his code or given us a chance to talk him
+round. This was a big knock to team morale and after a couple of hours
+of the four of us working (even Amy hadn’t left) we decided to put going
+home on the result of a triple coin toss. The result – get a cab home.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000114-Copy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It's a party hat&lt;/p&gt;
+&lt;p&gt;It was pretty disappointing seeing as we could see it coming together
+after starting with nothing on the day. It wasn’t all bad though we
+enjoyed ourselves for the most part and I got some much needed sleep for
+Enter Shikari the next day, which as it turns out was a great call.&lt;/p&gt;
+&lt;p&gt;The important lesson we’ve learned here is to pick your team mates
+carefully, we’ll certainly be doing Three Thing Game next semester. Bring it on.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>The BlackBerry PlayBook Saga</title>
+        <link href="http://www.alexpringle.co.uk/the-blackberry-playbook-saga.html" rel="alternate"></link>
+        <updated>2012-03-27T17:56:00+01:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-03-27:the-blackberry-playbook-saga.html</id>
+        <summary type="html">&lt;p&gt;So it all started at the beginning of February when I received an email
+from the old man who’d been browsing Engadget on his Asus Transformer.
+Turns out BlackBerry were releasing a update to their tablet (the
+PlayBook) which included the BlackBerry Android runtime environment and
+were offering a free PlayBook to anyone who ports their Android app to
+the platform (new life goal acquired). This lead to me hit the white
+boards drawing up a 8 day plan to port [Nclip][] to the PlayBook .&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000160r-300x225.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The device itself (complete with blog)&lt;/p&gt;
+&lt;p&gt;After sending of a copy of my ID to BlackBerry I downloaded and fired up
+the PlayBook simulator and Eclipse plugin. Once everything was up and
+running I started to remove any features that weren’t compatible with
+the PlayBook, sadly quite a number of them, pretty lame considering its
+a simple app and the Android api’s I used were actually highlighted by
+BlackBerry as being compatible. This wasn’t the only problem, the
+simulator was slow and confusing and didn’t seem to handle changing
+orientation correctly.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000161r-300x225.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Nclip running in portrait&lt;/p&gt;
+&lt;p&gt;Despite this I managed to use my Android knowledge to create a tablet
+sized UI which looked good. The next step was signing and packaging the
+app for the BlackBerry App World, the Eclipse plug-in seemed to to a
+good job and I sent the release to BlackBerry for approval. 6 days later
+I received notice that my app release had been denied because the file
+had not been signed properly - strange considering I used all the proper
+tools. It turned out that the file hadn’t been signed at all, so after
+much fiddling around with the SDK I managed to get something that looked
+like it was signed.&lt;/p&gt;
+&lt;p&gt;But this isn’t the end of the story, the file wouldn’t upload, the
+signature on the new release didn’t match that of the old release – of
+course not, it isn’t signed! This led to some slow paced back and forth
+with developer support, having eventually sorted the problem I sat back
+and waited for approval.&lt;/p&gt;
+&lt;p&gt;Two and a half weeks later, I got an email saying the release was
+approved – success. I only had to provide my shipping details and wait.
+A further 16 days later, having received a tracking number for someone
+else’s PlayBook (headed to Budapest) I found my PlayBook waiting for me
+at The Lawns. Life goal complete.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000166r.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The screen is superb&lt;/p&gt;
+&lt;p&gt;The actual tablet is great, and it was well worth the hassle in
+exchange, plus now I’ve expanded to another platform. I’m intending to
+do some native development for the tablet soon, which should prove to be
+more successful with what looks to be a much nicer SDK.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="BlackBerry"></category>
+        <category term="Blog"></category>
+        <category term="Nclip"></category>
+    </entry>
+    <entry>
+        <title>Excessive blog choices</title>
+        <link href="http://www.alexpringle.co.uk/excessive-blog-choices.html" rel="alternate"></link>
+        <updated>2012-03-21T18:59:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-03-21:excessive-blog-choices.html</id>
+        <summary type="html">&lt;p&gt;So many things to blog about, I haven’t been able to choose. So as a
+placeholder whilst I decide where to start on my backlog, here’s Downs
+Hall in the sun.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/WP_000138r.png" /&gt;&lt;/p&gt;</summary>
+        <category term="Uncategorized"></category>
+    </entry>
+    <entry>
+        <title>The Unlikely Alliance Roll Again</title>
+        <link href="http://www.alexpringle.co.uk/the-unlikely-alliance-roll-again.html" rel="alternate"></link>
+        <updated>2012-03-14T22:09:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-03-14:the-unlikely-alliance-roll-again.html</id>
+        <summary type="html">&lt;p&gt;A cool team name right, we thought we might as well use it again for
+this semester’s Three Thing Game. For those not in the know, you acquire
+3 “things” , this time via auction (complete with “thing money”), to
+base your game around. There’s then a week long development period
+climaxing in a 24 dev session in the labs followed by judging.&lt;/p&gt;
+&lt;p&gt;This time Danny Q has joined us and we’re current throwing game concepts
+around, although I feel the urge to have spinning cakes and exploding
+presents.&lt;/p&gt;
+&lt;p&gt;More later in the week, back to coding.&lt;/p&gt;
+&lt;p&gt;www.threethinggame.com&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="ThreeThingGame"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Distractions, Android, Linux &amp; Ubuntu</title>
+        <link href="http://www.alexpringle.co.uk/distractions-android-linux-ubuntu.html" rel="alternate"></link>
+        <updated>2012-03-06T19:06:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-03-06:distractions-android-linux-ubuntu.html</id>
+        <summary type="html">&lt;p&gt;So Visual Studio blew up the other day taking most of my Windows 7 with
+it, instead of re-installing or using the laptop I got distracted by
+loads of other things, including Ubuntu on the Nexus.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/Screenshot_2012-03-06-18-32-19.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Inside the Ubuntu terminal on Android&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/Screenshot_2012-03-06-18-40-46.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It's running along side Ice Cream Sandwich&lt;/p&gt;
+&lt;p&gt;It’s possible because Android runs on top of the Linux kernel. This
+means any Android device can run an Linux image along side the system so
+long as it has loop device support built into it’s kernel. No problem
+for me as I’m using CyanogenMod 9 on the Nexus.&lt;/p&gt;
+&lt;p&gt;It’s not just a Linux terminal, the image has GNOME and LXDE,
+both accessible through VNC.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/Screenshot_2012-03-06-18-32-51.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A screenshot from the Nexus&lt;/p&gt;
+&lt;p&gt;The rest of my devices got in on the action via VNC.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/tabletubuntu.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It looks good on the cheap Android tablet. Running Open Office too.&lt;/p&gt;
+&lt;p&gt;It’s not just a pretty face, why not compile and run some c?.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/img2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Nano running smoothly&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/img3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The program running, success!&lt;/p&gt;
+&lt;p&gt;So the Nexus runs Ubuntu well on the side, another reason why I love
+Android so much. It’s also a great example of Linux doing it’s thing.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Linux"></category>
+        <category term="Ubuntu"></category>
+    </entry>
+    <entry>
+        <title>Pub?</title>
+        <link href="http://www.alexpringle.co.uk/pub.html" rel="alternate"></link>
+        <updated>2012-03-06T02:50:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-03-06:pub.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/128h.png" title="Pub logo" /&gt;&lt;/p&gt;
+&lt;p&gt;I’m a student and therefore spend a decent amount of time at the pub.
+Over christmas we ended up talking about apps, In the end we decided it
+needs to be easier to orginise a trip to the local.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/pubscreens.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The interface itself&lt;/p&gt;
+&lt;p&gt;Enter “Pub?” – the app I created in a week, each time adding features
+after coming back from the local. A true student app.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Instantly let your friends know when and where you want to meet up for
+drinks with custom text messages.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Features:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Easily store and manage friends/pubs.  &lt;/p&gt;
+&lt;p&gt;Add a time to messages.  &lt;/p&gt;
+&lt;p&gt;Makes your evening better!
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://market.android.com/details?id=com.havmedia.pubbingit"&gt;
+&lt;img alt="Imported Image" src="/images/60_avail_market_logo2.png" /&gt;
+&lt;/a&gt;&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Pub?"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Nokia Lumia 800</title>
+        <link href="http://www.alexpringle.co.uk/nokia-lumia-800.html" rel="alternate"></link>
+        <updated>2012-03-01T22:49:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-03-01:nokia-lumia-800.html</id>
+        <summary type="html">&lt;p&gt;So my contract ran out, and because I bought my fancy Nexus S with my
+own cash it means there was no greater phone available to “upgrade” to.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120301_181115.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Lock screen looking good&lt;/p&gt;
+&lt;p&gt;This meant I could grab a Nokia Lumia 800 for no extra charge a month
+and add another platform to my life. I’m a massive Android fan so it’s
+been an interesting week so far road testing the competition. It’s a
+great actual phone, the implementation for calls,texts,emails,music and
+the calendar has all been fantastic so far. What lets it down for me is
+Internet Explorer, 6 tabs and no text reflow really leave me wanting to
+grab the Nexus where I can get a superb experience with Chrome for
+Android. Another major annoyance for me is the app
+Marketplace, everything’s hard to find and there doesn’t seem to be much
+to find in the first place. There’s plenty more things I don’t like,
+what gets me is that in Android if there’s a problem or something I want
+to do on the phone I can usually find the answer or do it myself. So far
+I find this not to be the case on WP7.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120301_224102.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A flashy box for a flashy phone&lt;/p&gt;
+&lt;p&gt;Android gets a lot of stick for things it doesn’t deserve in my opinion.
+It’s open to modification in any way, sometimes this ends in Orange
+butchering a phone with their software, but for me it means getting a
+new super fast build of android with loads of mods, tweaks and features
+for free every few days. So I can see why people might have issues with
+their Android phones, unfortunately most of these tend to
+be completely avoidable had the manufacturers and networks fixed the
+device up properly. There’s normally solutions available online in
+places such as XDA-Developers but it’s not viable for everyone to be
+flashing their phone.&lt;/p&gt;
+&lt;p&gt;Windows Phone 7 leaves me wanting more in this department but the closed
+system gives a really good rounded experience – sadly not the default in
+a lot of android phones. I still have the Nexus and plenty of computing
+power to build Android, so I’m not missing my Android fix anytime
+soon. I could go on to talk all day about the two platforms but this
+blog would be ridiculous.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120301_181131.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The hardware design is ace&lt;/p&gt;
+&lt;p&gt;I’m actually enjoying using the WP7 for day to day life and I
+guess that’s the important thing when I’m on the move round campus.
+Also, the Nokia is a brilliant device, the hardware is top notch and it
+looks superb.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+        <category term="WP7"></category>
+    </entry>
+    <entry>
+        <title>GI Joe</title>
+        <link href="http://www.alexpringle.co.uk/gi-joe.html" rel="alternate"></link>
+        <updated>2012-02-28T14:48:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-02-28:gi-joe.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/ruleexcerpt.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Excerpt from the rules&lt;/p&gt;
+&lt;p&gt;So GI Joe hit the block the other week, it’s a highly entertaining
+electric shock giving laser quest game. I maintained an unbeaten streak
+for a while, but it didn’t last long thanks to Ryan’s pro skills, I
+guess CS:S prowess only gets you so far in GI Joe.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Lectures, results and not Skyrim</title>
+        <link href="http://www.alexpringle.co.uk/lectures-results-and-not-skyrim.html" rel="alternate"></link>
+        <updated>2012-02-20T12:02:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-02-20:lectures-results-and-not-skyrim.html</id>
+        <summary type="html">&lt;p&gt;So lectures are in full swing and the semester is going top speed,
+results were out today – only good news for myself.&lt;/p&gt;
+&lt;p&gt;One thing I like about our little group is that we’re not obsessed with
+Skyrim. It’s a game not a lifestyle , perhaps I’m missing something but
+I don’t think It’s worth talking about 24/7.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Algorithms From India</title>
+        <link href="http://www.alexpringle.co.uk/algorithms-from-india.html" rel="alternate"></link>
+        <updated>2012-02-11T12:37:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-02-11:algorithms-from-india.html</id>
+        <summary type="html">&lt;p&gt;So my much anticipated DHL package from New Delhi arrived this week.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120211_122343.png" /&gt;&lt;/p&gt;
+&lt;p&gt;So many algorithms&lt;/p&gt;
+&lt;p&gt;Originally published in the US I got a good deal on the Indian version –
+student life. A great example of Globalisation I thought too, good
+stuff.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Snow</title>
+        <link href="http://www.alexpringle.co.uk/snow.html" rel="alternate"></link>
+        <updated>2012-02-10T14:07:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-02-10:snow.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120205_011901.png" /&gt;&lt;/p&gt;
+&lt;p&gt;So it’s snowy in Hull, with exams out of the way it meant only one
+thing.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120209_2354261.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Found in the downstairs shower..&lt;/p&gt;
+&lt;p&gt;#snowBanter&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>The C is for coding</title>
+        <link href="http://www.alexpringle.co.uk/the-c-is-for-coding.html" rel="alternate"></link>
+        <updated>2012-02-01T15:59:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-02-01:the-c-is-for-coding.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120201_153711.png" /&gt;&lt;/p&gt;
+&lt;p&gt;One week loan - plenty of time to master it&lt;/p&gt;
+&lt;p&gt;Downs C are on the programming this week, Ryan’s on the C#, Dean’s
+being tested by Fortran and Dave is working on Java.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120201_154442.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Random maths and diagrams whilst fixing up gps on Android&lt;/p&gt;
+&lt;p&gt;All of this in addition to the usual Comp Sci activity in the block,
+this is what I call a development environment.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120201_153703.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Code all over the block&lt;/p&gt;
+&lt;p&gt;Who knows where this is heading, hopefully some 2012 software releases.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="hull"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Back in Hull</title>
+        <link href="http://www.alexpringle.co.uk/back-in-hull.html" rel="alternate"></link>
+        <updated>2012-01-24T12:55:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-01-24:back-in-hull.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/roomview.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Room with a view?&lt;/p&gt;
+&lt;p&gt;So, the Christmas period ended with ale, chinese takeaway, and a trip to
+the co-op with Ed. It’s exam season now, so I’m taking advantage of the
+silence to get some work done on some mini projects of mine, along with
+reading through the vast library on my shelf.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/coffee.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Working at 10am during a week off? #studentLife ?&lt;/p&gt;
+&lt;p&gt;I may be hooked on coffee, strange considering I’m not a fan of hot
+drinks. Who knows if this is a good development.&lt;/p&gt;
+&lt;p&gt;Roll on semester 2&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="Uni Life"></category>
+    </entry>
+    <entry>
+        <title>Lan</title>
+        <link href="http://www.alexpringle.co.uk/lan.html" rel="alternate"></link>
+        <updated>2012-01-11T14:40:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-01-11:lan.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/PANO_20120106_215616-e1326292582298.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A panoramic shot, taken with my Nexus S, a feature new to Ice Cream
+Sandwich&lt;/p&gt;
+&lt;p&gt;We decided to LAN it up at Tom’s after new year. 8p donuts, a massive
+pork pie and a load more of co-op finest reduced goods later we were
+ready to go. The Ship proved to be  a favorite of the night, simply
+because nothing is quite as satisfying as smashing your mate over the
+head with a frying pan on a 1920′s cruise liner (and then turning around
+to gloat).&lt;/p&gt;
+&lt;p&gt;As usual with Lans, most of our time was spent fixing problems and
+staring at 9 hour progress bars for left 4 dead 2, still a good time was
+had by all.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="Lan"></category>
+        <category term="Leicester"></category>
+    </entry>
+    <entry>
+        <title>Harvester</title>
+        <link href="http://www.alexpringle.co.uk/harvester.html" rel="alternate"></link>
+        <updated>2012-01-10T00:27:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-01-10:harvester.html</id>
+        <summary type="html">&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20120108_130321.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Does this need a description? #delicious&lt;/p&gt;
+&lt;p&gt;Everyone loves pizza hut, but imagine if it was steak instead of pizza.
+This is what i was pleasantly suprised to find on Sunday at my Nan’s
+local Harvester in Luton. Pepsi by the bucket load, great helpings of
+salad bar and a beastly cut of gammon – all the ingredients for a top
+notch meal with the family. Also featuring a quality chocolate cake to
+finish things off, all in all another great food experience.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="Luton"></category>
+    </entry>
+    <entry>
+        <title>Facebook vs SQL</title>
+        <link href="http://www.alexpringle.co.uk/facebook-vs-sql.html" rel="alternate"></link>
+        <updated>2012-01-05T17:28:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2012-01-05:facebook-vs-sql.html</id>
+        <summary type="html">&lt;p&gt;It’s amazing what you can do when you spend some time focusing on
+something thats not pointless. I just looked up SQL for a while and
+gained some valuable knowledge, in that time most of my peers have been
+discussing Jaffa Cakes on Facebook. SQL is genuinely more interesting,
+how can Facebook be that addictive when there’s an abundance of things
+to read/learn/do on the internet.&lt;/p&gt;</summary>
+        <category term="Android"></category>
+        <category term="Blog"></category>
+        <category term="SQL"></category>
+    </entry>
+    <entry>
+        <title>Chilling &amp; Christmas</title>
+        <link href="http://www.alexpringle.co.uk/chilling-christmas.html" rel="alternate"></link>
+        <updated>2011-12-27T13:43:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2011-12-27:chilling-christmas.html</id>
+        <summary type="html">&lt;p&gt;I’ts a chilled out time of the year, when im not repeatly “hitting the
+town” with the usual crew.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20111227_133521-e1325524450777.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Joe playing "a bitta league"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/IMG_20111224_164556-1-e1325524486244.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A View From A Bridge, Christmas Eve - Groby&lt;/p&gt;
+&lt;p&gt;Merry Christmas&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="christmas"></category>
+    </entry>
+    <entry>
+        <title>Epic Breakfast Tuesdays</title>
+        <link href="http://www.alexpringle.co.uk/epic-breakfast-tuesdays.html" rel="alternate"></link>
+        <updated>2011-12-21T21:20:00+00:00</updated>
+        <author>
+            <name>Alex</name>
+        </author>
+        <id>tag:www.alexpringle.co.uk,2011-12-21:epic-breakfast-tuesdays.html</id>
+        <summary type="html">&lt;p&gt;Many things go down in Downs C, aside from my blurry photography skills
+and sporadic exchanges with the cleaners, we eat, breakfast to be
+precise.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/epicbreakfast.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Ryan, pondering epic breakfast tuesdays.&lt;/p&gt;
+&lt;p&gt;The above image doesn’t stress how much food was consumed (half of it
+whilst running to the bus), I’m pretty sure I’ve spent half my budget
+for the semester on Heron Foods Hashy B’s.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imported Image" src="/images/epicbreakfast2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Stole some ketchup, finished the OJ.&lt;/p&gt;
+&lt;p&gt;I love Tuesdays.&lt;/p&gt;</summary>
+        <category term="Blog"></category>
+        <category term="Food &amp; Drink"></category>
+        <category term="Uni Life"></category>
+    </entry>
+</feed>
