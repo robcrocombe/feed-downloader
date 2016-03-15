@@ -22,13 +22,13 @@ describe('extract-post-image', () => {
     });
   });
 
-  // describe('extractATOMPostImage', () => {
-  //   it('should extract first image in description HTML', () => {
-  //     expect(extractATOMPostImage(bloggerImageInDescription)).to.equal('https://1.bp.blogspot.com/-74kEkoti2zU/Vs84kp7mLdI/AAAAAAAAEM0/MFcbjuNxPM8/s640/2016-02-25_17-18-06.png');
-  //   });
+  describe('extractATOMPostImage', () => {
+    it('should extract first image in description HTML', () => {
+      expect(extractATOMPostImage(bloggerImageInDescription)).to.equal('https://1.bp.blogspot.com/-74kEkoti2zU/Vs84kp7mLdI/AAAAAAAAEM0/MFcbjuNxPM8/s640/2016-02-25_17-18-06.png');
+    });
 
-  //   it('should return undefined if there is no image in post', () => {
-  //     expect(extractATOMPostImage(bloggerNoImage)).to.equal(undefined);
-  //   });
-  // });
+    it('should return undefined if there is no image in post', () => {
+      expect(extractATOMPostImage(bloggerNoImage)).to.equal(undefined);
+    });
+  });
 });
