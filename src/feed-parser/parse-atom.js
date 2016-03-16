@@ -16,12 +16,20 @@ function getBestLink(postLinks) {
   return preferredLink;
 }
 
+function getDescription(post) {
+  if (post.content) {
+    return post.content[0]._;
+  } else if (post.summary) {
+    return post.summary[0]._;
+  }
+}
+
 export default function parseATOMPosts(parsedXML) {
   return parsedXML.feed.entry.map(entry => {
     const blogPost = {
       title: entry.title[0]._,
       link: getBestLink(entry.link),
-      description: formatDescription(entry.content[0]._)
+      description: formatDescription(getDescription(entry))
     };
 
     const image = extractATOMPostImage(entry);
