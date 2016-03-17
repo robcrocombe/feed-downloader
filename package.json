@@ -45,6 +45,7 @@
     "cheerio": "^0.20.0",
     "pg": "^4.4.4",
     "pg-hstore": "^2.3.2",
+    "promise-settle": "^0.3.0",
     "sequelize": "^3.19.2",
     "urijs": "^1.17.1",
     "xml2js": "^0.4.16"
