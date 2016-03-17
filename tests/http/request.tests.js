@@ -1,5 +1,5 @@
-import * as httpMocks from './mocks/http-mocks';
-import request from '../src/http/request';
+import * as httpMocks from '../mocks/http-mocks';
+import request from '../../src/http/request';
 
 const expect = global.expect;
 

@@ -1,4 +1,4 @@
-import { notifyWorkingSNS, notifyErroringSNS } from './mocks/sns-mocks';
+import { notifyWorkingSNS, notifyErroringSNS } from '../mocks/sns-mocks';
 
 const expect = global.expect;
 

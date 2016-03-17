@@ -10,7 +10,7 @@
     "build": "npm run build:js",
     "build:js": "rm -rf app/ && babel src/ -d app/",
     "lint": "eslint .",
-    "test": "istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel-register --require tests/chai-config.js --recursive ./tests/*.tests.js",
+    "test": "istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel-register --require tests/chai-config.js --recursive ./tests/**/*.tests.js",
     "start": "npm run build && node app/start.js",
     "start-cli": "npm start | bunyan",
     "deploy": "npm run create-deployment-package && npm run upload-deployment-package && npm run delete-deployment-package && npm install",
@@ -42,9 +42,12 @@
     "aws-sdk": "^2.2.35",
     "bunyan": "^1.5.1",
     "check-types": "^6.0.0",
+    "cheerio": "^0.20.0",
     "pg": "^4.4.4",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^3.19.2"
+    "sequelize": "^3.19.2",
+    "urijs": "^1.17.1",
+    "xml2js": "^0.4.16"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",

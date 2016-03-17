@@ -1,5 +1,5 @@
-import requestIfModifiedSince from '../src/http/if-modified-since-request';
-import * as httpMocks from './mocks/http-mocks';
+import requestIfModifiedSince from '../../src/http/if-modified-since-request';
+import * as httpMocks from '../mocks/http-mocks';
 
 const expect = global.expect;
 
@@ -13,12 +13,11 @@ describe('if-modified-since-request', () => {
       }).catch(done);
     });
 
-    it(`should return modified:true, data and new lastModifiedDate if status code 200`, done => {
+    it(`should return data and new lastModifiedDate if status code 200`, done => {
       const expectedModifiedDate = httpMocks.mockModifiedResponse();
       requestIfModifiedSince('https://httpmock-feeds.com/modified', new Date()).then(result => {
-        expect(result.modified).to.equal(true);
         expect(result.data).to.equal(httpMocks.expectedFeedData);
-        expect(result.newLastModifiedDateTime.toUTCString()).to.equal(expectedModifiedDate.toUTCString());
+        expect(result.lastModified.toUTCString()).to.equal(expectedModifiedDate.toUTCString());
         done();
       }).catch(done);
     });
