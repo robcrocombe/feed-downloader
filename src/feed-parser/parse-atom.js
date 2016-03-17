@@ -18,22 +18,25 @@ function getBestLink(postLinks) {
 }
 
 function getTitle(post) {
-  console.log(post.title[0]);
+  let title = '';
   if (post.title[0]._) {
     // Some titles include format information, and so their info resides in _
-    return post.title[0]._;
-  } else if (post.title[0]) {
+    title = post.title[0]._;
+  } else {
     // Some contain just plain text titles, return directly
     return post.title[0];
   }
+  return title;
 }
 
 export function getDescription(post) {
+  let description = '';
   if (post.content) {
-    return post.content[0]._;
-  } else if (post.summary) {
-    return post.summary[0]._;
+    description = post.content[0]._;
+  } else {
+    description = post.summary[0]._;
   }
+  return description;
 }
 
 export function fixRelativePath(resource, postLink) {
