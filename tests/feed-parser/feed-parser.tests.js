@@ -26,6 +26,10 @@ describe('feed-parser', () => {
       ])
     );
 
+    it('should throw if feedString is valid XML but isn\'t a valid ATOM/RSS feed', () =>
+      expect(parseSyndicationFeed('<?xml version = "1.0"?><notAFeed></notAFeed>')).to.be.rejectedWith('Valid RSS/ATOM Required')
+    );
+
     it('should correctly parse minimum.rss', () => {
       const minimumRSS = loadTestSyndicationFeed('rss', 'minimum');
       const expectedItems = [
