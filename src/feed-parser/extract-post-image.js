@@ -1,14 +1,18 @@
-import url from 'url';
+import URI from 'urijs';
 import cheerio from 'cheerio';
 import { getDescription } from './parse-atom';
 
-function removeImageSizeGetParamsFromURL(imageURL) {
-  // Wordpress tends to add image resizing get parameters. Remove them for full size image
-  return `${imageURL.protocol}${imageURL.slashes ? '//' : ''}${imageURL.host}${imageURL.pathname}`;
+function imageURIAbsoluteToBlog(imageURI) {
+  return imageURI.absoluteTo('http://www.alexpringle.co.uk');
 }
 
-function isGravatar(imageURL) {
-  return (imageURL.hostname.includes('gravatar.com'));
+function removeImageSizeGetParamsFromURL(imageURI) {
+  // Wordpress tends to add image resizing get parameters. Remove them for full size image
+  return imageURI.removeSearch(['w', 'h']);
+}
+
+function isGravatar(imageURI) {
+  return (imageURI.hostname().includes('gravatar.com'));
 }
 
 function extractImageFromDescriptionHTML(description) {
@@ -16,18 +20,18 @@ function extractImageFromDescriptionHTML(description) {
   const firstImage = $('img').first().attr('src');
 
   if (firstImage) {
-    return firstImage;
+    return new URI(firstImage);
   }
 }
 
 export function extractRSSPostImage(post) {
   if (post['media:content']) {
     // Wordpress uses media:content for images. 0th index is first or feature image,
-    const imageURL = url.parse(post['media:content'][0].$.url);
+    const imageURI = new URI(post['media:content'][0].$.url);
 
     // except when it's a gravatar
-    if (!isGravatar(imageURL)) {
-      return removeImageSizeGetParamsFromURL(imageURL);
+    if (!isGravatar(imageURI)) {
+      return removeImageSizeGetParamsFromURL(imageURI).toString();
     }
   }
 }
@@ -35,6 +39,6 @@ export function extractRSSPostImage(post) {
 export function extractATOMPostImage(post) {
   const imageFromDescription = extractImageFromDescriptionHTML(getDescription(post));
   if (imageFromDescription) {
-    return imageFromDescription;
+    return imageURIAbsoluteToBlog(imageFromDescription).toString();
   }
 }
