@@ -5,7 +5,7 @@ import { extractATOMPostImage } from './extract-post-image';
 function getBestLink(postLinks) {
   let preferredLink = '';
   if (postLinks.length === 1) {
-    preferredLink = postLinks[0].href;
+    preferredLink = postLinks[0].$.href;
   } else {
     // Prefer alternative URIs to self URIs
     const alternateLinks = postLinks.filter(link => link.$.rel === 'alternate').map(link => link.$.href);
