@@ -1,4 +1,5 @@
 import moment from 'moment';
+import URI from 'urijs';
 import formatDescription from './format-description';
 import { extractATOMPostImage } from './extract-post-image';
 
@@ -35,6 +36,15 @@ export function getDescription(post) {
   }
 }
 
+export function fixRelativePath(resource, postLink) {
+  let resourceURI = new URI(resource);
+  if (resourceURI.is('relative')) {
+    resourceURI = resourceURI.absoluteTo(postLink).toString();
+  }
+
+  return resourceURI.toString();
+}
+
 export default function parseATOMPosts(parsedXML) {
   return parsedXML.feed.entry.map(entry => {
     const blogPost = {
@@ -44,7 +54,7 @@ export default function parseATOMPosts(parsedXML) {
     };
 
     const image = extractATOMPostImage(entry);
-    if (image) { blogPost.imageURI = image; }
+    if (image) { blogPost.imageURI = fixRelativePath(image, blogPost.link); }
 
     if (entry.updated) { blogPost.dateUpdated = moment(new Date(entry.updated[0])); }
     if (entry.published) { blogPost.datePublished = moment(new Date(entry.published[0])); }

@@ -2,10 +2,6 @@ import URI from 'urijs';
 import cheerio from 'cheerio';
 import { getDescription } from './parse-atom';
 
-function imageURIAbsoluteToBlog(imageURI) {
-  return imageURI.absoluteTo('http://www.alexpringle.co.uk');
-}
-
 function removeImageSizeGetParamsFromURL(imageURI) {
   // Wordpress tends to add image resizing get parameters. Remove them for full size image
   return imageURI.removeSearch(['w', 'h']);
@@ -39,6 +35,6 @@ export function extractRSSPostImage(post) {
 export function extractATOMPostImage(post) {
   const imageFromDescription = extractImageFromDescriptionHTML(getDescription(post));
   if (imageFromDescription) {
-    return imageURIAbsoluteToBlog(imageFromDescription).toString();
+    return imageFromDescription.toString();
   }
 }
