@@ -1,6 +1,6 @@
 import log from '../log';
 import requestUserFeed from './request-user-feed';
-import parseSyndicationFeed from './feed-parser';
+import parseSyndicationFeed from '../feed-parser';
 
 export default function getUsersNewPosts(user) {
   return new Promise((resolve, reject) => {
