@@ -17,7 +17,9 @@ The application code is written in Node.js, using [Babel](https://babeljs.io) to
 
 ## How do I develop?
 ### Get yourself a task!
-The very first thing you should do is speak to the project coordinator to discuss exactly which feature or fix you want to work on. Danny can be contacted by emailing [danny@csblogs.com](mailto:danny@csblogs.com). If an item in the issue tracker has a `myfirstpr` label on it and no one has commented to claim it then you can start work on it once you've commented to say you're claiming it.
+The very first thing you should do is speak to the project coordinator to discuss exactly which feature or fix you want to work on. Danny can be contacted by emailing [danny@csblogs.com](mailto:danny@csblogs.com), but an even better way to get in touch is to join the Slack group by hitting the slack button in the README of this repository.
+
+If an item in the issue tracker has a `myfirstpr` label on it and no one has commented to claim it then you can start work on it, wihtout having to contact anyone, once you've commented to say you're claiming it.
 
 ### Fork the code
 Hit the fork button in the top right hand corner of this repositories page on Github. Forking makes your own personal copy of the code under your name. Clone this new repo to your PC/Mac.
