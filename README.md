@@ -16,3 +16,6 @@ It replaces the [csblogs-feed-aggregator](https://github.com/csblogs/csblogs-fee
   * Increased use of concurrency using [ES2015 Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 The application uses some AWS (Amazon Web Services) specific features, however it is platform agnostic and can be ran from any system which supports Node.js. The transpiled output of the source code has been verified as working on node v0.10.36 and above.
+
+## Contributing
+If you'd like to contribute to this project then checkout the [contributing guide](https://github.com/csblogs/feed-downloader/blob/master/CONTRIBUTING.md).
