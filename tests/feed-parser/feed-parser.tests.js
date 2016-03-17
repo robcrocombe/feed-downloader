@@ -127,6 +127,49 @@ describe('feed-parser', () => {
       return expect(parseSyndicationFeed(bloggerATOM)).to.eventually.deep.equal(expectedItems);
     });
 
+    it.skip('should correctly parse alexs-custom-feed.atom', () => {
+      const customATOM = loadTestSyndicationFeed('atom', 'alexs-custom-feed');
+      const expectedItems = [
+        {
+          title: 'Cycling out of the north',
+          link: 'http://www.alexpringle.co.uk/cycling-out-of-the-north.html',
+          description: 'Many students spend the few days (weeks) after finishing university drinking heavily and enjoying themselves. I however had my eye on an epic bike ride for a few months and used the downtime as the perfect opportunity to cycle from Hull to Leicester. The whole trip covered 110 miles of Humberside, Lincolnshire and Leicestershire. Passing over the Humber bridge, through Lincoln and through many many villages on the way. It was quite a nice day, conditions were good and my spirits were high throughout. The day started at 6am and I arrived as planned in time for a friends birthday meal out - perfect. All in all, a great day out cycling and much better than stumbling home at 4am.',
+          imageURI: 'http://www.alexpringle.co.uk/images/humber-from-ferriby.png',
+          dateUpdated: moment(new Date('2015-07-30T15:28:00+01:00'))
+        },
+        {
+          title: 'Touring the North',
+          link: 'http://www.alexpringle.co.uk/touring-the-north.html',
+          description: 'It\'s been a long time since I last posted, a lot has happened but I\'ve largely been touring The North™ on my bike. As usual there has been plenty of development action, however I\'ll leave that for future posts. I\'ve also been to plenty of football ...',
+          imageURI: 'http://www.alexpringle.co.uk/images/humberbike.jpg',
+          dateUpdated: moment(new Date('2015-05-07T14:38:00+01:00'))
+        },
+        {
+          title: 'End Of The Tour',
+          link: 'http://www.alexpringle.co.uk/end-of-the-tour.html',
+          description: 'My tour of ‘The South’ finally came to a close as I left IBM in August. It\'s was a truly epic 14 months of nonstop friend making, code writing, landlord ranting, and train journeys. I’ve spent a large amount of time in London, seeing the sights, planning world ...',
+          imageURI: 'http://www.alexpringle.co.uk/images/IMG_20140815_081559.jpg',
+          dateUpdated: moment(new Date('2014-10-18T13:25:00+01:00'))
+        },
+        {
+          title: 'About 30 Minutes',
+          link: 'http://www.alexpringle.co.uk/about-30-minutes.html',
+          description: 'In the past three years I\'ve had some \'interesting\' living experiences, with everything usually descending into madness. Crazy landlords, insane hazards and genuinely disturbing living conditions have all featured in my stories at the pub. Back in January I fled my last house, which was a good call. It ...',
+          imageURI: 'http://www.alexpringle.co.uk/images/IMG_20140601_195851.png',
+          dateUpdated: moment(new Date('2014-06-14T11:00:00+01:00'))
+        },
+        {
+          title: 'Touring The South : Trains, Software Engineering & Friends',
+          link: 'http://www.alexpringle.co.uk/touring-the-south-trains-software-engineering-friends.html',
+          description: 'IBM Hursley - Hursley House I’m in the south, and while not being caught in record heat waves and storms I’ve been engineering software, on trains and hanging out with friends. Sometimes all three at once. The primary reason I’m in the south however, is that I’m ...',
+          imageURI: 'http://www.alexpringle.co.uk/images/IMG_20130710_163544.png',
+          dateUpdated: moment(new Date(''))
+        }
+      ];
+
+      return expect(parseSyndicationFeed(customATOM)).to.eventually.deep.equal(expectedItems);
+    });
+
     it('should correctly parse wordpress.com.rss', () => {
       const wordpressComRSS = loadTestSyndicationFeed('rss', 'wordpress.com');
       const expectedItems = [
