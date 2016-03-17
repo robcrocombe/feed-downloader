@@ -16,7 +16,7 @@ function getBestLink(postLinks) {
   return preferredLink;
 }
 
-function getDescription(post) {
+export function getDescription(post) {
   if (post.content) {
     return post.content[0]._;
   } else if (post.summary) {

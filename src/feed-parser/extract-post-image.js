@@ -1,5 +1,6 @@
 import url from 'url';
 import cheerio from 'cheerio';
+import { getDescription } from './parse-atom';
 
 function removeImageSizeGetParamsFromURL(imageURL) {
   // Wordpress tends to add image resizing get parameters. Remove them for full size image
@@ -32,7 +33,7 @@ export function extractRSSPostImage(post) {
 }
 
 export function extractATOMPostImage(post) {
-  const imageFromDescription = extractImageFromDescriptionHTML(post.content[0]._);
+  const imageFromDescription = extractImageFromDescriptionHTML(getDescription(post));
   if (imageFromDescription) {
     return imageFromDescription;
   }
