@@ -18,8 +18,7 @@ export default function aggregate() {
       .then(users => {
         const getUsersNewPostsPromises = users.map(user => getNewPosts(user));
         log.info('Queued up %s get-users-new-posts promises', getUsersNewPostsPromises.length);
-        // TODO: Settle once all users have got feeds.
-        // Make transaction so that lastModifiedDates are only updated if new posts added OK
+        // TODO: Make transaction so that lastModifiedDates are only updated if new posts added OK
         return settle(getUsersNewPostsPromises);
       })
       .then(resolve)
