@@ -3,6 +3,7 @@ import { parseString as parseXMLString } from 'xml2js';
 import parseRSSPosts from './parse-rss';
 import parseATOMPosts from './parse-atom';
 
+// There are no non-native XSD validators at the moment, so this is a bad hack
 function isRSS(parsedXml) {
   return parsedXml.rss !== undefined;
 }
