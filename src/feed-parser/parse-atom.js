@@ -16,6 +16,17 @@ function getBestLink(postLinks) {
   return preferredLink;
 }
 
+function getTitle(post) {
+  console.log(post.title[0]);
+  if (post.title[0]._) {
+    // Some titles include format information, and so their info resides in _
+    return post.title[0]._;
+  } else if (post.title[0]) {
+    // Some contain just plain text titles, return directly
+    return post.title[0];
+  }
+}
+
 export function getDescription(post) {
   if (post.content) {
     return post.content[0]._;
@@ -27,7 +38,7 @@ export function getDescription(post) {
 export default function parseATOMPosts(parsedXML) {
   return parsedXML.feed.entry.map(entry => {
     const blogPost = {
-      title: entry.title[0]._,
+      title: getTitle(entry),
       link: getBestLink(entry.link),
       description: formatDescription(getDescription(entry))
     };
