@@ -14,6 +14,7 @@ export default function getUsersNewPosts(user) {
       )
       .then(({ lastModified, feed }) => {
         log.info({ user, lastModified, feed }, 'Parsed users feed');
+        resolve();
       })
       .catch(reject);
   });
