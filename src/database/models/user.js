@@ -3,9 +3,15 @@ import database from '../';
 
 export default database.define('user', {
   id: {
-    type: Sequelize.STRING,
-    field: 'id',
+    type: Sequelize.INTEGER,
+    autoIncrement: true,
     primaryKey: true,
+    field: 'id',
+    allowNull: false
+  },
+  authenticationId: {
+    type: Sequelize.STRING,
+    field: 'authentication_id',
     allowNull: false
   },
   authenticationProvider: {
