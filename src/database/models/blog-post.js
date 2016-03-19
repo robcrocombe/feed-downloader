@@ -2,7 +2,7 @@ import Sequelize from 'sequelize';
 import database from '../';
 import User from './user';
 
-const blogPostDatabaseDefintion = database.define('blog_post', {
+const blogPostDatabaseDefinition = database.define('blog_post', {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -37,6 +37,6 @@ const blogPostDatabaseDefintion = database.define('blog_post', {
   }
 });
 
-blogPostDatabaseDefintion.belongsTo(User, { as: 'author' });
+blogPostDatabaseDefinition.belongsTo(User, { as: 'author' });
 
-export default blogPostDatabaseDefintion;
+export default blogPostDatabaseDefinition;
