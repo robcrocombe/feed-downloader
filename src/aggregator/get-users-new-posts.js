@@ -1,6 +1,7 @@
 import log from '../log';
 import requestUserFeed from './request-user-feed';
 import parseSyndicationFeed from '../feed-parser';
+import filterExistingPosts from './filter-existing-posts';
 
 export default function getUsersNewPosts(user) {
   return new Promise((resolve, reject) => {
@@ -17,8 +18,9 @@ export default function getUsersNewPosts(user) {
       })
       .then(blogPosts => {
         log.info({ user, lastModifiedDate, blogPosts }, 'Parsed users feed');
-        resolve();
+        return filterExistingPosts(blogPosts);
       })
+      .then(() => resolve())
       .catch(reject);
   });
 }
