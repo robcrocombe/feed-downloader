@@ -24,6 +24,18 @@ export default function getUsersNewPosts(user) {
         if (newPosts.length === 0 && modifiedPosts.length === 0) {
           resolve(null);
         } else {
+          newPosts.map(post => {
+            const postWithUser = post;
+            postWithUser.authorId = user.id;
+            return postWithUser;
+          });
+
+          modifiedPosts.map(post => {
+            const postWithUser = post;
+            postWithUser.authorId = user.id;
+            return postWithUser;
+          });
+
           log.info({ newPosts, modifiedPosts }, 'Found new or modified posts');
           resolve({ authorId: user.id, newPosts, modifiedPosts, lastModifiedDate });
         }
