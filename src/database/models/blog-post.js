@@ -21,7 +21,7 @@ const blogPostDatabaseDefinition = database.define('blog_post', {
     allowNull: false
   },
   description: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     field: 'description',
     allowNull: false
   },
