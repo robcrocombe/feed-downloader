@@ -1,21 +1,34 @@
 import log from '../log';
 import requestUserFeed from './request-user-feed';
 import parseSyndicationFeed from '../feed-parser';
+import filterExistingPosts from './filter-existing-posts';
 
 export default function getUsersNewPosts(user) {
   return new Promise((resolve, reject) => {
+    let lastModifiedDate = null;
+
     requestUserFeed(user)
       .then(result => {
-        // Return null if not modified
+        // Resolve null if not modified
         if (result === null) { resolve(null); } else { return result; }
       })
-      .then(({ lastModified, data }) =>
-        ({ lastModified, feed: parseSyndicationFeed(data) })
-      )
-      .then(({ lastModified, feed }) => {
-        log.info({ user, lastModified, feed }, 'Parsed users feed');
-        resolve();
+      .then(({ lastModified, data }) => {
+        lastModifiedDate = lastModified;
+        return parseSyndicationFeed(data);
       })
+      .then(blogPosts => {
+        log.info({ user, lastModifiedDate, blogPosts }, 'Parsed users feed');
+        return filterExistingPosts(blogPosts, user.id);
+      })
+      .then(({ newPosts, modifiedPosts }) => {
+        if (newPosts.length === 0 && modifiedPosts.length === 0) {
+          resolve(null);
+        } else {
+          log.info({ newPosts, modifiedPosts }, 'Found new or modified posts');
+          resolve({ authorId: user.id, newPosts, modifiedPosts, lastModifiedDate });
+        }
+      })
+      .then(() => resolve())
       .catch(reject);
   });
 }
