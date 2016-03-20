@@ -1,5 +1,6 @@
 import database from '../database';
 import User from '../database/models/user';
+import BlogPost from '../database/models/blog-post';
 import log from '../log';
 import getNewPosts from './get-users-new-posts';
 import settle from 'promise-settle';
@@ -34,6 +35,13 @@ export default function aggregate() {
         return settle(getUsersNewPostsPromises);
       })
       .then(collateUpdateInformation)
+      .then(updates =>
+        database.transaction(transaction =>
+          BlogPost.bulkCreate(updates.map(update => update.newPosts).reduce((a, b) => a.concat(b)), { transaction })
+        ).then(() => {
+          log.info('Transaction complete');
+        })
+      )
       .then(resolve)
       .catch(reject);
   });
