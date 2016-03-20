@@ -14,7 +14,7 @@ function collateUpdateInformation(getNewPostResults) {
         newAndModifiedBlogMetadata.push(result.value());
       }
     } else {
-      log.warn({ error: result.reason() }, 'getUsersNewPost promise was rejected');
+      log.warn({ error: `${result.reason()}` }, 'getUsersNewPost promise was rejected');
     }
   });
   return newAndModifiedBlogMetadata;
