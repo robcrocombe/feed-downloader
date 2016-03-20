@@ -20,6 +20,14 @@ export default function getUsersNewPosts(user) {
         log.info({ user, lastModifiedDate, blogPosts }, 'Parsed users feed');
         return filterExistingPosts(blogPosts, user.id);
       })
+      .then(({ newPosts, modifiedPosts }) => {
+        if (newPosts.length === 0 && modifiedPosts.length === 0) {
+          resolve(null);
+        } else {
+          log.info({ newPosts, modifiedPosts }, 'Found new or modified posts');
+          resolve({ authorId: user.id, newPosts, modifiedPosts, lastModifiedDate });
+        }
+      })
       .then(() => resolve())
       .catch(reject);
   });
