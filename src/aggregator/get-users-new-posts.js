@@ -18,7 +18,7 @@ export default function getUsersNewPosts(user) {
       })
       .then(blogPosts => {
         log.info({ user, lastModifiedDate, blogPosts }, 'Parsed users feed');
-        return filterExistingPosts(blogPosts);
+        return filterExistingPosts(blogPosts, user.id);
       })
       .then(() => resolve())
       .catch(reject);
