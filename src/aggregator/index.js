@@ -9,7 +9,8 @@ export default function aggregate() {
     database.sync()
       .then(() =>
         User.findAll({
-          attributes: ['id', 'authenticationProvider', 'firstName', 'lastName', 'blogFeedURI']
+          attributes: ['id', 'authenticationProvider', 'firstName', 'lastName', 'blogFeedURI'],
+          where: { verified: true }
         }))
       .then(users => {
         log.info({ users }, 'Users loaded from database');
