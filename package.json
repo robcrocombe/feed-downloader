@@ -43,6 +43,7 @@
     "bunyan": "^1.5.1",
     "check-types": "^6.0.0",
     "cheerio": "^0.20.0",
+    "dotenv": "^2.0.0",
     "pg": "^4.4.4",
     "pg-hstore": "^2.3.2",
     "promise-settle": "^0.3.0",
