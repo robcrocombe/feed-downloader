@@ -20,6 +20,12 @@ export default database.define('user', {
     field: 'authentication_provider',
     allowNull: false
   },
+  verified: {
+    type: Sequelize.BOOLEAN,
+    field: 'verified',
+    defaultValue: false,
+    allowNull: false
+  },
   firstName: {
     type: Sequelize.STRING,
     field: 'first_name',
