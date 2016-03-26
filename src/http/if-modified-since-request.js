@@ -2,6 +2,7 @@ import request from 'request';
 import log from '../log';
 import check from 'check-types';
 import config from '../../config/config.json';
+import getLastModifiedDate from './get-last-modified-date';
 
 export default function httpRequestIfModifiedSince(uri, dateTime) {
   return new Promise((resolve, reject) => {
@@ -34,7 +35,7 @@ export default function httpRequestIfModifiedSince(uri, dateTime) {
                     'Requested resource has not been modified since lastModified date');
             resolve({ modified: false });
           } else {
-            const newLastModifiedDateTime = new Date(response.headers['last-modified']);
+            const newLastModifiedDateTime = getLastModifiedDate(response.headers);
 
             log.info({ uri,
                        oldLastModified: dateTime.toUTCString(),
