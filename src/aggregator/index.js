@@ -23,15 +23,14 @@ function collateUpdateInformation(getNewPostResults) {
 export default function aggregate() {
   return new Promise((resolve, reject) => {
     database.sync()
-      .then(() => {
-        const users = User.findAll({
+      .then(() =>
+        User.findAll({
           attributes: ['id', 'authenticationProvider', 'firstName', 'lastName', 'blogFeedURI'],
           where: { verified: true }
-        });
-        log.info({ users }, 'Users loaded from database');
-        return users;
-      })
+        })
+      )
       .then(users => {
+        log.info({ users }, 'Users loaded from database');
         const getUsersNewPostsPromises = users.map(user => getNewPosts(user));
         return settle(getUsersNewPostsPromises);
       })
