@@ -1,11 +1,10 @@
 import request from 'request';
 import log from '../log';
-import config from '../../config/config.json';
 import check from 'check-types';
 
 export default function httpRequest(uri) {
   return new Promise((resolve, reject) => {
-    request({ uri, timeout: config.http.timeoutInMilliseconds }, (error, response, data) => {
+    request({ uri, timeout: process.env.CSBLOGS_HTTP_TIMEOUT_IN_MILLISECONDS }, (error, response, data) => {
       if (!check.nonEmptyString(uri)) {
         reject(new Error('Valid URI required'));
       }

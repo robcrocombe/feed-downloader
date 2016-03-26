@@ -1,7 +1,6 @@
 import request from 'request';
 import log from '../log';
 import check from 'check-types';
-import config from '../../config/config.json';
 
 export default function httpRequestIfModifiedSince(uri, dateTime) {
   return new Promise((resolve, reject) => {
@@ -16,7 +15,7 @@ export default function httpRequestIfModifiedSince(uri, dateTime) {
     const requestOptions = {
       uri,
       headers: { 'If-Modified-Since': dateTime.toUTCString() },
-      timeout: config.http.timeoutInMilliseconds
+      timeout: process.env.CSBLOGS_HTTP_TIMEOUT_IN_MILLISECONDS
     };
 
     request(requestOptions, (error, response, data) => {

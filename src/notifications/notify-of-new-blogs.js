@@ -1,15 +1,20 @@
 import AWS from 'aws-sdk';
 import check from 'check-types';
-import config from '../../config/config.json';
 import log from '../log';
 
-AWS.config.update(config.AWS.credentials);
+AWS.config.update({
+  accessKeyId: process.env.CSBLOGS_AWS_CREDENTIALS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.CSBLOGS_AWS_CREDENTIALS_SECRET_ACCESS_KEY,
+  region: process.env.CSBLOGS_AWS_REGION,
+  sslEnabled: process.env.CSBLOGS_AWS_SSL_ENABLED,
+  signatureVersion: process.env.CSBLOGS_AWS_SIGNATURE_VERSION
+});
 
 function publishToNewPostTopic(subject, message) {
   return new Promise((resolve, reject) => {
     const sns = new AWS.SNS();
     sns.publish({
-      TargetArn: config.AWS.SNS.newPostARN,
+      TargetArn: process.env.CSBLOGS_AWS_SNS_NEW_POST_ARN,
       Subject: subject,
       Message: message
     }, (error, data) => {
