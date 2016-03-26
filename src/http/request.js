@@ -2,6 +2,7 @@ import request from 'request';
 import log from '../log';
 import config from '../../config/config.json';
 import check from 'check-types';
+import getLastModifiedDate from './get-last-modified-date';
 
 export default function httpRequest(uri) {
   return new Promise((resolve, reject) => {
@@ -19,7 +20,7 @@ export default function httpRequest(uri) {
           log.info({ uri, response }, 'HTTP Request returned non-success status code');
           reject(new Error('Non-success status code'));
         } else {
-          const lastModifiedDateTime = new Date(response.headers['last-modified']);
+          const lastModifiedDateTime = getLastModifiedDate(response.headers);
           resolve({ lastModified: lastModifiedDateTime, data });
         }
       }
