@@ -40,7 +40,7 @@ export default function aggregate() {
           BlogPost.bulkCreate(updates.map(update => update.newPosts).reduce((a, b) => a.concat(b)), { transaction })
           .then(() => {
             const authorUpdatePromises = updates.map(update => User.update({ feedLastModified: update.lastModifiedDate },
-                                                                          { where: { id: update.authorId }, transaction }));
+                                                                          { where: { id: update.author_id }, transaction }));
             return Promise.all(authorUpdatePromises);
           })
         )
