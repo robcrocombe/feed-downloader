@@ -40,7 +40,7 @@ export default function getUsersNewPosts(user) {
           modifiedPosts.map(post => addAuthorAndDates(post, user.id));
 
           log.info({ newPosts, modifiedPosts }, 'Found new or modified posts');
-          resolve({ authorId: user.id, newPosts, modifiedPosts, lastModifiedDate });
+          resolve({ author_id: user.id, newPosts, modifiedPosts, lastModifiedDate });
         }
       })
       .then(() => resolve())

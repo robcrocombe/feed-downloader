@@ -26,7 +26,7 @@ export default function filterExistingPosts(blogPostsFromFeed, authorId) {
   return new Promise((resolve, reject) => {
     blogPost.findAll({
       where: {
-        authorId
+        author_id: authorId
       },
       order: [
         ['dateUpdated', 'DESC'] // Most recent first
