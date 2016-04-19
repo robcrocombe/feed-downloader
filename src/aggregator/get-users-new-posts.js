@@ -5,7 +5,7 @@ import filterExistingPosts from './filter-existing-posts';
 
 function addAuthorAndDates(post, userId) {
   const postWithUser = post;
-  postWithUser.authorId = userId;
+  postWithUser.author_id = userId;
   if (!postWithUser.dateUpdated) {
     postWithUser.dateUpdated = postWithUser.datePublished;
   }

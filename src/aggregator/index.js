@@ -37,7 +37,7 @@ export default function aggregate() {
       .then(collateUpdateInformation)
       .then(updates =>
         database.transaction(transaction =>
-          BlogPost.bulkCreate(updates.map(update => update.newPosts).reduce((a, b) => a.concat(b)), { transaction })
+          BlogPost.bulkCreate(updates.map(update => update.newPosts).reduce((a, b) => a.concat(b)), { transaction, validate: true })
           .then(() => {
             const authorUpdatePromises = updates.map(update => User.update({ feedLastModified: update.lastModifiedDate },
                                                                           { where: { id: update.author_id }, transaction }));
