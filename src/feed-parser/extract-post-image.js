@@ -1,6 +1,6 @@
 import URI from 'urijs';
 import cheerio from 'cheerio';
-import { getDescription } from './parse-atom';
+import { getDescription as getAtomDescription } from './parse-atom';
 
 function removeImageSizeGetParamsFromURL(imageURI) {
   // Wordpress tends to add image resizing get parameters. Remove them for full size image
@@ -21,19 +21,25 @@ function extractImageFromDescriptionHTML(description) {
 }
 
 export function extractRSSPostImage(post) {
+  let imageURI = null;
   if (post['media:content']) {
     // Wordpress uses media:content for images. 0th index is first or feature image,
-    const imageURI = new URI(post['media:content'][0].$.url);
-
-    // except when it's a gravatar
-    if (!isGravatar(imageURI)) {
-      return removeImageSizeGetParamsFromURL(imageURI).toString();
+    imageURI = new URI(post['media:content'][0].$.url);
+  } else if (post['content:encoded']) {
+    const imageFromDescription = extractImageFromDescriptionHTML(post['content:encoded'][0]);
+    if (imageFromDescription) {
+      imageURI = imageFromDescription;
     }
+  }
+
+  // Gravatar images aren't what we're after
+  if (imageURI && !isGravatar(imageURI)) {
+    return removeImageSizeGetParamsFromURL(imageURI).toString();
   }
 }
 
 export function extractATOMPostImage(post) {
-  const imageFromDescription = extractImageFromDescriptionHTML(getDescription(post));
+  const imageFromDescription = extractImageFromDescriptionHTML(getAtomDescription(post));
   if (imageFromDescription) {
     return imageFromDescription.toString();
   }
