@@ -6,7 +6,13 @@ import getLastModifiedDate from './get-last-modified-date';
 
 export default function httpRequest(uri) {
   return new Promise((resolve, reject) => {
-    request({ uri, timeout: config.http.timeoutInMilliseconds }, (error, response, data) => {
+    request({
+      uri,
+      timeout: config.http.timeoutInMilliseconds,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
+      }
+    }, (error, response, data) => {
       if (!check.nonEmptyString(uri)) {
         reject(new Error('Valid URI required'));
       }
