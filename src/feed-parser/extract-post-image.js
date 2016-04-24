@@ -11,6 +11,10 @@ function isGravatar(imageURI) {
   return (imageURI.hostname().includes('gravatar.com'));
 }
 
+function isWordPressAddCommentImage(imageURI) {
+  return (imageURI.toString().includes('http://feeds.wordpress.com/1.0/comments'));
+}
+
 function extractImageFromDescriptionHTML(description) {
   const $ = cheerio.load(description);
   const firstImage = $('img').first().attr('src');
@@ -35,8 +39,8 @@ export function extractRSSPostImage(post) {
     imageURI = extractImageFromDescriptionHTML(post.description[0]);
   }
 
-  // Gravatar images aren't what we're after
-  if (imageURI && !isGravatar(imageURI)) {
+  // Reject gravatar images and click to comment images
+  if (imageURI && !isGravatar(imageURI) && !isWordPressAddCommentImage(imageURI)) {
     return removeImageSizeGetParamsFromURL(imageURI).toString();
   }
 }
