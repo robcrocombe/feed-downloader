@@ -24,11 +24,21 @@ function extractImageFromDescriptionHTML(description) {
   }
 }
 
+function isValidImage(image) {
+  return !(isWordPressAddCommentImage(image) || isGravatar(image));
+}
+
 export function extractRSSPostImage(post) {
   let imageURI = null;
   if (post['media:content']) {
-    // Wordpress uses media:content for images. 0th index is first or feature image,
-    imageURI = new URI(post['media:content'][0].$.url);
+    const validMediaContentImageURLs = post['media:content']
+                                        .map(media => media.$)
+                                        .reduce((images, media) => (media.medium === 'image' ? images.concat(new URI(media.url)) : images), [])
+                                        .reduce((validImageURLs, image) => (isValidImage(image) ? validImageURLs.concat(image) : validImageURLs), []);
+
+    if (validMediaContentImageURLs > 0) {
+      imageURI = validMediaContentImageURLs[0];
+    }
   }
 
   if (!imageURI && post['content:encoded']) {
