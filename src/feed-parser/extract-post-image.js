@@ -25,11 +25,15 @@ export function extractRSSPostImage(post) {
   if (post['media:content']) {
     // Wordpress uses media:content for images. 0th index is first or feature image,
     imageURI = new URI(post['media:content'][0].$.url);
-  } else if (post['content:encoded']) {
-    const imageFromDescription = extractImageFromDescriptionHTML(post['content:encoded'][0]);
-    if (imageFromDescription) {
-      imageURI = imageFromDescription;
-    }
+  }
+
+  if (!imageURI && post['content:encoded']) {
+    imageURI = extractImageFromDescriptionHTML(post['content:encoded'][0]);
+  }
+
+  if (!imageURI && post.description) {
+    imageURI = extractImageFromDescriptionHTML(post.description[0]);
+  }
   }
 
   // Gravatar images aren't what we're after
