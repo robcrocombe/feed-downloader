@@ -4,7 +4,7 @@ import { getDescription as getAtomDescription } from './parse-atom';
 
 function removeImageSizeGetParamsFromURL(imageURI) {
   // Wordpress tends to add image resizing get parameters. Remove them for full size image
-  return imageURI.removeSearch(['w', 'h']);
+  return imageURI.removeSearch(['w', 'h', 'resize']);
 }
 
 function isGravatar(imageURI) {
