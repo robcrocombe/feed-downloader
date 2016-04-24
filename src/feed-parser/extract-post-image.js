@@ -34,7 +34,6 @@ export function extractRSSPostImage(post) {
   if (!imageURI && post.description) {
     imageURI = extractImageFromDescriptionHTML(post.description[0]);
   }
-  }
 
   // Gravatar images aren't what we're after
   if (imageURI && !isGravatar(imageURI)) {
