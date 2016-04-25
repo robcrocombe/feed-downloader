@@ -1,6 +1,5 @@
 import log from '../log';
 import blogPost from '../database/models/blog-post';
-import moment from 'moment';
 
 function isNewBlogPost(post, existingPosts) {
   const existingBlogsMatchingLink = existingPosts.filter(existingPost => existingPost.link === post.link);
@@ -14,7 +13,9 @@ function isModifiedBlogPost(post, existingPosts) {
   }
 
   if (existingBlogsMatchingLink.length === 1) {
-    return (moment(existingBlogsMatchingLink[0].dateUpdated) !== post.dateUpdated);
+    return false;
+    // TODO: Check for modification properly
+    // return (existingBlogsMatchingLink[0].dateUpdated !== post.dateUpdated);
   }
 
   // More than one post in database with same link. Dodgy?
@@ -33,7 +34,7 @@ export default function filterExistingPosts(blogPostsFromFeed, authorId) {
       ]
     })
       .then(blogPostsFromDatabase => {
-        log.info({ authorId, blogPostsFromDatabase }, 'Retrieved blog posts for author from Database');
+        // log.info({ authorId, blogPostsFromDatabase }, 'Retrieved blog posts for author from Database');
         const newBlogPosts = blogPostsFromFeed.filter(post => isNewBlogPost(post, blogPostsFromDatabase));
         const modifiedBlogPosts = blogPostsFromFeed.filter(post => isModifiedBlogPost(post, blogPostsFromDatabase));
         resolve({
