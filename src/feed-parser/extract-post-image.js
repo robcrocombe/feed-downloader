@@ -36,7 +36,7 @@ export function extractRSSPostImage(post) {
                                         .reduce((images, media) => (media.medium === 'image' ? images.concat(new URI(media.url)) : images), [])
                                         .reduce((validImageURLs, image) => (isValidImage(image) ? validImageURLs.concat(image) : validImageURLs), []);
 
-    if (validMediaContentImageURLs > 0) {
+    if (validMediaContentImageURLs.length > 0) {
       imageURI = validMediaContentImageURLs[0];
     }
   }
