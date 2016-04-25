@@ -12,10 +12,11 @@ export default function formatDescription(unformattedDescription) {
   // Fix for feeds with &nbps; (NO-BREAK SPACE) characters, where we want just normal spaces
   textRepresentation = textRepresentation.replace(new RegExp('\xA0', 'g'), ' ');
 
-  // Some ATOM feeds include a new-line character, which we replace with a space
+  // Some feeds include a new-line character or tab character, which we replace with a space
   textRepresentation = textRepresentation.replace(new RegExp('\n', 'g'), ' ');
+  textRepresentation = textRepresentation.replace(new RegExp('\t', 'g'), ' ');
 
   // The previous two replacements can result in double spacs, remove those
-  textRepresentation = textRepresentation.replace(new RegExp('  ', 'g'), ' ');
+  textRepresentation = textRepresentation.replace(new RegExp('\\s\\s+', 'g'), ' ');
   return textRepresentation.trim();
 }
