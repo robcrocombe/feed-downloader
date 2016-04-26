@@ -24,6 +24,16 @@ describe('format-description', () => {
       expect(formatDescription(descriptionEndingInEllipses)).to.equal('Interesting things await');
     });
 
+    it('should remove "Continue reading →" which is added by some wordpress blogs', () => {
+      const descriptionEndingInContinueReading = '3D printing is easy. You can buy a 3D printer off the shelf for a few hundred of your Earth pounds, download patterns from thingiverse and be printing solid stuff straight away. Creating your own 3D models is harder, and … Continue reading →';
+      expect(formatDescription(descriptionEndingInContinueReading)).to.equal('3D printing is easy. You can buy a 3D printer off the shelf for a few hundred of your Earth pounds, download patterns from thingiverse and be printing solid stuff straight away. Creating your own 3D models is harder, and');
+    });
+
+    it('should remove "First appeared on" message added by some wordpress blogs', () => {
+      const descriptionEndingInFirstAppeared = 'After on and off work for a year, and many thousand words later, my final year BSc dissertation project and report was completed. Can a ray tracer ever be truly ‘complete’? This post a brief description and summary of my project. … Continue reading → The post CUDA Ray Tracer – Dissertation Project appeared first on Alex Rodgers.';
+      expect(formatDescription(descriptionEndingInFirstAppeared)).to.equal('After on and off work for a year, and many thousand words later, my final year BSc dissertation project and report was completed. Can a ray tracer ever be truly ‘complete’? This post a brief description and summary of my project.');
+    });
+
     it('should parse a wordpress.com description correctly', () => {
       const wordpressComDescription = 'On January 23rd I graduated with an MSc in Advanced Computer Science from The University of York. It was a nice occasion to get together and be merry with the family, and of course for some photos in my cap and gown &#8212; this time they were grey and blue. My parents took my degree [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=dannycomputerscientist.wordpress.com&#038;blog=27683847&#038;post=3840&#038;subd=dannycomputerscientist&#038;ref=&#038;feed=1" width="1" height="1" />';
 
