@@ -4,8 +4,14 @@ export default function formatDescription(unformattedDescription) {
   const $ = cheerio.load(unformattedDescription);
   let textRepresentation = $.root().text();
 
+  // Remove "continue reading" etc from end of descriptions
   if (textRepresentation.endsWith('[…]')) {
     textRepresentation = textRepresentation.slice(0, textRepresentation.length - 3);
+  }
+
+  const continueReadingLocation = textRepresentation.indexOf('… Continue reading →');
+  if (continueReadingLocation !== -1) {
+    textRepresentation = textRepresentation.slice(0, continueReadingLocation);
   }
 
   /* eslint no-control-regex: 0 */ /* We do actually deal with control characters here */
