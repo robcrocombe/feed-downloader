@@ -1,6 +1,7 @@
 # CS Blogs Feed Downloader
 [![Build Status](https://travis-ci.org/csblogs/feed-downloader.svg?branch=master)](https://travis-ci.org/csblogs/feed-downloader)
 [![Coverage Status](https://coveralls.io/repos/github/csblogs/feed-downloader/badge.svg?branch=master)](https://coveralls.io/github/csblogs/feed-downloader?branch=master)
+[![Code Climate](https://codeclimate.com/github/csblogs/feed-downloader/badges/gpa.svg)](https://codeclimate.com/github/csblogs/feed-downloader)
 [![Dependency Status](https://david-dm.org/csblogs/feed-downloader.svg)](https://david-dm.org/csblogs/feed-downloader)
 [![Slack Status](http://csblogs-slack-signup.azurewebsites.net/badge.svg)](http://csblogs-slack-signup.azurewebsites.net)
 
