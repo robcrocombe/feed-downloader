@@ -1,7 +1,7 @@
 import request from 'request';
+import check from 'check-types';
 import log from '../log';
 import config from '../../config/config.json';
-import check from 'check-types';
 import getLastModifiedDate from './get-last-modified-date';
 
 export default function httpRequest(uri) {
@@ -21,14 +21,12 @@ export default function httpRequest(uri) {
         log.error({ uri, error },
                   'HTTP Request for resource resulted in error');
         reject(new Error('HTTP request unsuccessful'));
+      } else if ((response.statusCode !== 200)) {
+        log.info({ uri, response }, 'HTTP Request returned non-success status code');
+        reject(new Error('Non-success status code'));
       } else {
-        if ((response.statusCode !== 200)) {
-          log.info({ uri, response }, 'HTTP Request returned non-success status code');
-          reject(new Error('Non-success status code'));
-        } else {
-          const lastModifiedDateTime = getLastModifiedDate(response.headers);
-          resolve({ lastModified: lastModifiedDateTime, data });
-        }
+        const lastModifiedDateTime = getLastModifiedDate(response.headers);
+        resolve({ lastModified: lastModifiedDateTime, data });
       }
     });
   });

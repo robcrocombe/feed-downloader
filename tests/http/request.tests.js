@@ -5,9 +5,9 @@ const expect = global.expect;
 
 describe('request', () => {
   describe('httpRequest(uri)', () => {
-    it('should return lastModified date and data if status code 200', done => {
+    it('should return lastModified date and data if status code 200', (done) => {
       const expectedModifiedDate = httpMocks.mockModifiedResponse();
-      request('https://httpmock-feeds.com/modified').then(result => {
+      request('https://httpmock-feeds.com/modified').then((result) => {
         expect(result.lastModified.toUTCString()).to.equal(expectedModifiedDate.toUTCString());
         expect(result.data).to.equal(httpMocks.expectedFeedData);
         done();

@@ -14,11 +14,11 @@ describe('extract-post-image', () => {
     });
 
     it('should ignore gravatar images if they are the only image in the post', () => {
-      expect(extractRSSPostImage(dcsMediaContentGravatarOnly)).to.equal(undefined);
+      expect(extractRSSPostImage(dcsMediaContentGravatarOnly)).to.equal(null);
     });
 
     it('should return undefined if there is no image in post', () => {
-      expect(extractRSSPostImage(dcsNoImage)).to.equal(undefined);
+      expect(extractRSSPostImage(dcsNoImage)).to.equal(null);
     });
   });
 
@@ -28,7 +28,7 @@ describe('extract-post-image', () => {
     });
 
     it('should return undefined if there is no image in post', () => {
-      expect(extractATOMPostImage(bloggerNoImage)).to.equal(undefined);
+      expect(extractATOMPostImage(bloggerNoImage)).to.equal(null);
     });
   });
 });

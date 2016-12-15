@@ -22,6 +22,7 @@ function extractImageFromDescriptionHTML(description) {
   if (firstImage) {
     return new URI(firstImage);
   }
+  return null;
 }
 
 function isValidImage(image) {
@@ -53,6 +54,8 @@ export function extractRSSPostImage(post) {
   if (imageURI && !isGravatar(imageURI) && !isWordPressAddCommentImage(imageURI)) {
     return removeImageSizeGetParamsFromURL(imageURI).toString();
   }
+
+  return null;
 }
 
 export function extractATOMPostImage(post) {
@@ -60,4 +63,6 @@ export function extractATOMPostImage(post) {
   if (imageFromDescription) {
     return imageFromDescription.toString();
   }
+
+  return null;
 }
