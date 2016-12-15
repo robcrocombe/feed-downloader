@@ -4,12 +4,11 @@ export function mockUnmodifiedResponse() {
   let modifiedSince = null;
   nock('https://httpmock-feeds.com', {
     reqHeaders: {
-      'If-Modified-Since': value => {
+      'If-Modified-Since': (value) => {
         if (value) {
           modifiedSince = value;
-        } else {
-          return false;
         }
+        return false;
       }
     }
   }).get('/not-modified')

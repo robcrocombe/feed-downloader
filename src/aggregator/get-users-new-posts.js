@@ -20,15 +20,18 @@ export default function getUsersNewPosts(user) {
     let lastModifiedDate = null;
 
     requestUserFeed(user)
-      .then(result => {
+      .then((result) => {
         // Resolve null if not modified
-        if (result === null) { resolve(null); } else { return result; }
+        if (result === null) {
+          return resolve(null);
+        }
+        return result;
       })
       .then(({ lastModified, data }) => {
         lastModifiedDate = lastModified;
         return parseSyndicationFeed(data);
       })
-      .then(blogPosts => {
+      .then((blogPosts) => {
         log.info({ user, lastModifiedDate, blogPosts }, 'Parsed users feed');
         return filterExistingPosts(blogPosts, user.id);
       })

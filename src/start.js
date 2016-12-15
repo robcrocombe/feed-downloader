@@ -2,14 +2,14 @@
 // but allows you to do it from your local machine for development
 // or from a non-AWS server
 
-import { handle } from './lambda-handle';
+import handle from './lambda-handle';
 import log from './log';
 
 handle({}, {
-  succeed: result => {
+  succeed: (result) => {
     log.info({ result: result || 'No result returned' }, 'Process succeeded');
   },
-  fail: error => {
+  fail: (error) => {
     log.error({ error: error || 'No error returned' }, 'Process failed');
   }
 });

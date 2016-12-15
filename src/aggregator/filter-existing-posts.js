@@ -33,7 +33,7 @@ export default function filterExistingPosts(blogPostsFromFeed, authorId) {
         ['dateUpdated', 'DESC'] // Most recent first
       ]
     })
-      .then(blogPostsFromDatabase => {
+      .then((blogPostsFromDatabase) => {
         // log.info({ authorId, blogPostsFromDatabase }, 'Retrieved blog posts for author from Database');
         const newBlogPosts = blogPostsFromFeed.filter(post => isNewBlogPost(post, blogPostsFromDatabase));
         const modifiedBlogPosts = blogPostsFromFeed.filter(post => isModifiedBlogPost(post, blogPostsFromDatabase));
@@ -42,7 +42,7 @@ export default function filterExistingPosts(blogPostsFromFeed, authorId) {
           modifiedPosts: modifiedBlogPosts
         });
       })
-      .catch(error => {
+      .catch((error) => {
         log.error({ error, authorId }, 'Error occured querying database for authors existing posts');
         reject(error);
       });

@@ -3,7 +3,7 @@ import formatDescription from './format-description';
 import { extractRSSPostImage } from './extract-post-image';
 
 export default function parseRSSPosts(parsedXML) {
-  return parsedXML.rss.channel[0].item.map(item => {
+  return parsedXML.rss.channel[0].item.map((item) => {
     const blogPost = {
       title: item.title[0],
       link: item.link[0]

@@ -1,13 +1,13 @@
+import settle from 'promise-settle';
 import database from '../database';
 import User from '../database/models/user';
 import BlogPost from '../database/models/blog-post';
 import log from '../log';
 import getNewPosts from './get-users-new-posts';
-import settle from 'promise-settle';
 
 function collateUpdateInformation(getNewPostResults) {
   const newAndModifiedBlogMetadata = [];
-  getNewPostResults.forEach(result => {
+  getNewPostResults.forEach((result) => {
     if (result.isFulfilled()) {
       const postMetadata = result.value();
       if (postMetadata) {
@@ -29,7 +29,7 @@ export default function aggregate() {
           where: { verified: true }
         })
       )
-      .then(users => {
+      .then((users) => {
         log.info({ users }, 'Users loaded from database');
         const getUsersNewPostsPromises = users.map(user => getNewPosts(user));
         return settle(getUsersNewPostsPromises);

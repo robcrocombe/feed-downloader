@@ -49,7 +49,7 @@ export function fixRelativePath(resource, postLink) {
 }
 
 export default function parseATOMPosts(parsedXML) {
-  return parsedXML.feed.entry.map(entry => {
+  return parsedXML.feed.entry.map((entry) => {
     const blogPost = {
       title: getTitle(entry),
       link: getBestLink(entry.link),
