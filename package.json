@@ -2,7 +2,7 @@
   "name": "csblogs-feed-downloader",
   "version": "0.0.1",
   "description": "An application to aggregate blog feeds for CS Blogs",
-  "main": "app/main.js",
+  "main": "app/start.js",
   "directories": {
     "test": "tests"
   },
