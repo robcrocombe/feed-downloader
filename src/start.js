@@ -2,7 +2,7 @@
 // but allows you to do it from your local machine for development
 // or from a non-AWS server
 
-import handle from './lambda-handle';
+import handle from './index';
 import log from './log';
 
 handle({}, {
