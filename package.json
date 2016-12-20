@@ -6,7 +6,7 @@
     "npm": "3.x.x"
   },
   "description": "An application to aggregate blog feeds for CS Blogs",
-  "main": "app/start.js",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },
