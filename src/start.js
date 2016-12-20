@@ -10,6 +10,6 @@ handle({}, {
     log.info({ result: result || 'No result returned' }, 'Process succeeded');
   },
   fail: (error) => {
-    log.error({ error: error || 'No error returned' }, 'Process failed');
+    log.error({ error: error.message || 'No error returned' }, 'Process failed');
   }
 });
