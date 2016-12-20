@@ -8,7 +8,7 @@ export default function httpRequest(uri) {
   return new Promise((resolve, reject) => {
     request({
       uri,
-      timeout: config.http.timeoutInMilliseconds,
+      timeout: process.env.CSBLOGS_HTTP_TIMEOUT,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
       }
