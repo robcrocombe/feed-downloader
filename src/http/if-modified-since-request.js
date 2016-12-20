@@ -1,7 +1,6 @@
 import request from 'request';
 import check from 'check-types';
 import log from '../log';
-import config from '../../config/config.json';
 import getLastModifiedDate from './get-last-modified-date';
 
 export default function httpRequestIfModifiedSince(uri, dateTime) {
@@ -16,7 +15,7 @@ export default function httpRequestIfModifiedSince(uri, dateTime) {
 
     const requestOptions = {
       uri,
-      timeout: config.http.timeoutInMilliseconds,
+      timeout: process.env.CSBLOGS_HTTP_TIMEOUT,
       headers: {
         'If-Modified-Since': dateTime.toUTCString(),
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
