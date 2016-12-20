@@ -1,6 +1,5 @@
 import AWS from 'aws-sdk';
 import check from 'check-types';
-import config from '../../config/config.json';
 import log from '../log';
 
 AWS.config.update({

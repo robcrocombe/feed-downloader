@@ -1,7 +1,6 @@
 import request from 'request';
 import check from 'check-types';
 import log from '../log';
-import config from '../../config/config.json';
 import getLastModifiedDate from './get-last-modified-date';
 
 export default function httpRequestIfModifiedSince(uri, dateTime) {
