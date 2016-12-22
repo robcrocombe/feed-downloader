@@ -1,15 +1,14 @@
-// This function invokes the AWS Lambda Handle as AWS would
-// but allows you to do it from your local machine for development
-// or from a non-AWS server
+import aggregate from './aggregator';
 
-import handle from './index';
-import log from './log';
-
-handle({}, {
-  succeed: (result) => {
-    log.info({ result: result || 'No result returned' }, 'Process succeeded');
-  },
-  fail: (error) => {
-    log.error({ error: error.message || 'No error returned' }, 'Process failed');
-  }
-});
+export default function handle(context) {
+  context.log('CS Blogs Feed Aggregator started');
+  aggregate()
+    .then(() => {
+      // context.done() called so Azure knows function completed successfully
+      context.done();
+    })
+    .catch((error) => {
+      // context.done(error) to report error to Azure Function
+      context.done(error);
+    });
+}

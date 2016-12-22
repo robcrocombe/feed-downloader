@@ -16,7 +16,7 @@
     "build-and-run": "npm run build && node ./app/start.js",
     "build": "babel src/ -d app/",
     "build-azure": "babel src/ -d .",
-    "lint": "eslint .",
+    "lint": "eslint src/",
     "test": "istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel-register --require tests/chai-config.js --recursive ./tests/**/*.tests.js",
     "deploy": "npm run create-deployment-package && npm run upload-deployment-package && npm run delete-deployment-package && npm install",
     "create-deployment-package": "npm run build && rm -rf node_modules && npm install --production && zip -r lambda-deployment-package.zip .",
