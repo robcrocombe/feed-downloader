@@ -15,7 +15,7 @@
     "start-dev": "npm run build-and-run | bunyan",
     "build-and-run": "npm run build && node ./app/start.js",
     "build": "babel src/ -d app/",
-    "build-azure": "babel ../src/ -d .",
+    "build-azure": "babel src/ -d function/",
     "lint": "eslint src/",
     "test": "istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel-register --require tests/chai-config.js --recursive ./tests/**/*.tests.js",
     "deploy": "npm run create-deployment-package && npm run upload-deployment-package && npm run delete-deployment-package && npm install",
@@ -23,6 +23,10 @@
     "delete-deployment-package": "rm lambda-deployment-package.zip",
     "upload-deployment-package": "aws lambda update-function-code --function-name csblogs-feed-downloader --zip-file fileb://lambda-deployment-package.zip"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/csblogs/feed-downloader.git"
@@ -67,6 +71,7 @@
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^3.0.2",
     "nock": "^9.0.2",
+    "pre-commit": "^1.1.2",
     "proxyquire": "^1.7.4"
   }
 }
