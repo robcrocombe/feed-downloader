@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "npm run build-and-run | bunyan",
-    "build-and-run": "npm run build && node app/start.js",
+    "build-and-run": "npm run build && node app/set-env.js app/start.js",
     "build": "npm run build:js",
     "build:js": "rm -rf app/ && babel src/ -d app/",
     "lint": "eslint .",
@@ -43,6 +43,7 @@
     "bunyan": "^1.5.1",
     "check-types": "^7.0.0",
     "cheerio": "^0.22.0",
+    "dotenv": "^2.0.0",
     "moment": "^2.17.1",
     "pg": "^6.1.0",
     "pg-hstore": "^2.3.2",

@@ -1028,6 +1028,10 @@ domutils@1.5.1, domutils@^1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
+dotenv@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-2.0.0.tgz#bd759c357aaa70365e01c96b7b0bec08a6e0d949"
+
 dottie@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/dottie/-/dottie-1.1.1.tgz#45c2a3f48bd6528eeed267a69a848eaaca6faa6a"
