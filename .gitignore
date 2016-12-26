@@ -34,3 +34,4 @@ node_modules
 
 app/
 lambda-deployment-package.zip
+.env
