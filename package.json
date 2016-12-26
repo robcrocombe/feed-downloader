@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node app.js | bunyan",
     "start-dev": "npm run build-and-run | bunyan",
-    "build-and-run": "npm run build && node node app/set-env.js app/app.js",
+    "build-and-run": "npm run build && node -r ./app/set-env.js ./app/start.js",
     "build": "babel src/ -d app/",
     "postinstall": "node -e \"process.env.NODE_ENV == 'production' && process.exit(1)\" || babel src/ -d function/",
     "lint": "eslint src/",
