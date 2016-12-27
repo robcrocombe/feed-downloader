@@ -46,6 +46,12 @@ export default database.define('user', {
     field: 'profile_picture_uri',
     allowNull: false
   },
+  vanityName: {
+    type: Sequelize.STRING,
+    field: 'vanity_name',
+    allowNull: false,
+    unique: true
+  },
   bio: {
     type: Sequelize.TEXT,
     field: 'bio',
@@ -57,11 +63,14 @@ export default database.define('user', {
   },
   blogURI: {
     type: Sequelize.STRING,
-    field: 'blog_uri'
+    field: 'blog_uri',
+    allowNull: false
   },
   blogFeedURI: {
     type: Sequelize.STRING,
-    field: 'blog_feed_uri'
+    field: 'blog_feed_uri',
+    allowNull: false,
+    unique: true
   },
   cvURI: {
     type: Sequelize.STRING,

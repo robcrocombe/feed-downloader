@@ -21,7 +21,7 @@ const blogPostDatabaseDefinition = database.define('blog_post', {
     allowNull: false
   },
   imageURI: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     field: 'image_uri',
     allowNull: true
   },
@@ -47,3 +47,4 @@ const blogPostDatabaseDefinition = database.define('blog_post', {
 blogPostDatabaseDefinition.belongsTo(User, { as: 'author', foreignKey: { name: 'author_id', allowNull: false } });
 
 export default blogPostDatabaseDefinition;
+
