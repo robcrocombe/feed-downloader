@@ -59,7 +59,8 @@
     "request": "^2.79.0",
     "sequelize": "^3.19.2",
     "urijs": "^1.17.1",
-    "xml2js": "^0.4.16"
+    "xml2js": "^0.4.16",
+    "csblogs-common": "csblogs/common#add/npm-package"
   },
   "devDependencies": {
     "chai": "^3.5.0",
