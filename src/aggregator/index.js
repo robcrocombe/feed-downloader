@@ -1,7 +1,5 @@
 import settle from 'promise-settle';
-import database from '../database';
-import User from '../database/models/user';
-import BlogPost from '../database/models/blog-post';
+import { initDbLogger, database, BlogPost, User } from 'csblogs-common';
 import log from '../log';
 import getNewPosts from './get-users-new-posts';
 
@@ -21,6 +19,8 @@ function collateUpdateInformation(getNewPostResults) {
 }
 
 export default function aggregate() {
+  initDbLogger(log);
+
   return new Promise((resolve, reject) => {
     database.sync()
       .then(() =>
@@ -40,7 +40,7 @@ export default function aggregate() {
           BlogPost.bulkCreate(updates.map(update => update.newPosts).reduce((a, b) => a.concat(b), []), { transaction, validate: true })
           .then(() => {
             const authorUpdatePromises = updates.map(update => User.update({ feedLastModified: update.lastModifiedDate },
-                                                                          { where: { id: update.author_id }, transaction }));
+                                                                          { where: { id: update.authorId }, transaction }));
             return Promise.all(authorUpdatePromises);
           })
         )

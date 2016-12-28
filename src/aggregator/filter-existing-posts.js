@@ -1,5 +1,5 @@
+import { BlogPost } from 'csblogs-common';
 import log from '../log';
-import blogPost from '../database/models/blog-post';
 
 function isNewBlogPost(post, existingPosts) {
   const existingBlogsMatchingLink = existingPosts.filter(existingPost => existingPost.link === post.link);
@@ -25,9 +25,9 @@ function isModifiedBlogPost(post, existingPosts) {
 
 export default function filterExistingPosts(blogPostsFromFeed, authorId) {
   return new Promise((resolve, reject) => {
-    blogPost.findAll({
+    BlogPost.findAll({
       where: {
-        author_id: authorId
+        authorId
       },
       order: [
         ['dateUpdated', 'DESC'] // Most recent first

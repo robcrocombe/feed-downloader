@@ -53,13 +53,11 @@
     "cheerio": "^0.22.0",
     "dotenv": "^2.0.0",
     "moment": "^2.17.1",
-    "pg": "^6.1.0",
-    "pg-hstore": "^2.3.2",
     "promise-settle": "^0.3.0",
     "request": "^2.79.0",
-    "sequelize": "^3.19.2",
     "urijs": "^1.17.1",
-    "xml2js": "^0.4.16"
+    "xml2js": "^0.4.16",
+    "csblogs-common": "csblogs/common#master"
   },
   "devDependencies": {
     "chai": "^3.5.0",
