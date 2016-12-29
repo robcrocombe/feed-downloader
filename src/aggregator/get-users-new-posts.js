@@ -5,7 +5,7 @@ import filterExistingPosts from './filter-existing-posts';
 
 function addAuthorAndDates(post, userId) {
   const postWithUser = post;
-  postWithUser.author_id = userId;
+  postWithUser.authorId = userId;
   if (!postWithUser.dateUpdated) {
     postWithUser.dateUpdated = postWithUser.datePublished;
   }
@@ -43,7 +43,7 @@ export default function getUsersNewPosts(user) {
           modifiedPosts.map(post => addAuthorAndDates(post, user.id));
 
           log.info({ newPosts, modifiedPosts }, 'Found new or modified posts');
-          resolve({ author_id: user.id, newPosts, modifiedPosts, lastModifiedDate });
+          resolve({ authorId: user.id, newPosts, modifiedPosts, lastModifiedDate });
         }
       })
       .then(() => resolve())
